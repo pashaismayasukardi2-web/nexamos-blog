@@ -1,0 +1,254 @@
+{
+  "draft": {
+    "id": "draft-mu9tqrov",
+    "topicId": "top-mu9tq9v8",
+    "researchProjectId": "proj-telegram",
+    "title": "Lead Magnet: Antara Senjata Konversi dan Batas Otoritas Konten",
+    "dek": "Lead Magnet bukan sekadar umpan gratis, melainkan instrumen strategis yang memilih audiens mana yang layak dijadikan data lead melalui mekanisme filtrasi sosial dan algoritma personalisasi.",
+    "slug": "lead-magnet-alat-konversi-known-audience-ke-lead",
+    "territory": "TACTICAL",
+    "articleType": "ANALYSIS",
+    "editorialRole": "AUTHORITY",
+    "thesis": "Lead Magnet bukanlah sekadar alat konversi pasif, melainkan ekspresi aktif dari otoritas konten yang memediasi transisi audiens dikenal menjadi *lead* dengan cara yang strategis dan bertanggung jawab.",
+    "editorialAngle": "Artikel ini menolak pandangan komoditas yang mereduksi Lead Magnet sebagai 'umpan gratis' semata. Sebaliknya, Lead Magnet harus dipahami sebagai instrumen konkrit yang mengukuhkan dominasi naratif pemasaran digital dan membentuk infrastruktur data audiens secara sistematis.",
+    "sections": [
+      {
+        "id": "sec-1",
+        "heading": "Lead Magnet: Definisi Otoritatif vs. Praktik Komoditas",
+        "content": "Lead Magnet sering dipahami secara simplistik sebagai 'konten gratis' yang ditawarkan kepada audiens untuk mendapatkan alamat email atau data pribadi. Namun, definisi ini keliru karena mengabaikan konteks infrastruktur digital yang menjadi latar belakang Lead Magnet. Lead Magnet adalah bagian integral dari arsitektur pengumpulan data dan algoritma personalisasi yang mengatur distribusi konten di era informasi. Ia bukan sekadar hadiah, melainkan ekspresi otoritas konten yang memilih audiens mana yang layak dijadikan *lead* melalui syarat interaksi tertentu. Dengan demikian, Lead Magnet selalu terikat pada kerangka kerja teknokratis yang mendefinisikan ulang hubungan antara produsen konten dan konsumennya.",
+        "order": 1,
+        "purpose": "CONTEXT",
+        "claimUsageIds": []
+      },
+      {
+        "id": "sec-2",
+        "heading": "Lead Magnet sebagai Mekanisme Seleksi Audiens",
+        "content": "Lead Magnet secara inheren melakukan filtrasi sosial dengan menyaring audiens yang memiliki kesediaan untuk memberikan data pribadi demi akses konten. Implementasi Lead Magnet menciptakan polarisasi antara audiens internal (yang sudah terkumpul) dengan audiens eksternal (yang tidak dijangkau), memperkuat insularitas platform. Lead Magnet mempercepat monetisasi perhatian audiens dengan mengonversi engagement menjadi aset data yang siap dimonetisasi ulang oleh pihak ketiga. Oleh karena itu, Lead Magnet bukan hanya alat konversi pasif, tetapi juga mesin seleksi yang membentuk hierarki partisipasi digital.",
+        "order": 2,
+        "purpose": "ARGUMENT",
+        "claimUsageIds": [
+          "finding-01"
+        ]
+      },
+      {
+        "id": "sec-3",
+        "heading": "Limitasi Riset & Ancaman Bias dalam Adopsi Lead Magnet",
+        "content": "Temuan kunci dari ResearchBrief belum mampu mengukur dampak jangka panjang Lead Magnet terhadap loyalitas merek dan keterlibatan substantif audiens. Terjadi sengketa epistemologis karena sebagian besar riset Lead Magnet bersifat self-reported dan rentan terhadap bias penyelidikan. Adopsi Lead Magnet secara masif tanpa verifikasi empiris yang kuat berpotensi menciptakan ekosistem informasi yang tertutup dan bias data.",
+        "order": 3,
+        "purpose": "COUNTERPOINT",
+        "claimUsageIds": [
+          "finding-01"
+        ]
+      },
+      {
+        "id": "sec-4",
+        "heading": "Praktik Strategis Mengelola Lead Magnet Tanpa Bias Insularitas",
+        "content": "Untuk menghindari bias insularitas, pemasar harus mengadopsi kerangka evaluasi yang membedakan Lead Magnet berbasis nilai (value-based) versus Lead Magnet berbasis intrusi (intrusion-based). Lead Magnet harus dirancang sebagai tahapan (onboarding) menuju keterlibatan yang lebih dalam, bukan pintu masuk tunggal yang mengisolasi audiens. Transparansi ekspektasi data dan tujuan konversi harus diungkapkan secara eksplisit agar Lead Magnet tidak menjadi bentuk manipulasi terselubung.",
+        "order": 4,
+        "purpose": "FRAMEWORK",
+        "claimUsageIds": []
+      }
+    ],
+    "claimUsages": [
+      {
+        "id": "cu-1",
+        "claimId": "finding-01",
+        "sectionId": "sec-2",
+        "usageType": "PARAPHRASED",
+        "statement": "Analisis otoritas mengenai Lead Magnet = alat konversi Known audience ke Lead"
+      },
+      {
+        "id": "cu-2",
+        "claimId": "finding-01",
+        "sectionId": "sec-3",
+        "usageType": "PARAPHRASED",
+        "statement": "Analisis otoritas mengenai Lead Magnet = alat konversi Known audience ke Lead"
+      }
+    ],
+    "citationMap": [
+      {
+        "claimUsageId": "cu-1",
+        "claimId": "finding-01",
+        "sourceIds": [
+          "src-nexamos-internal"
+        ],
+        "evidenceIds": [
+          "ev-nexamos-internal-01"
+        ]
+      },
+      {
+        "claimUsageId": "cu-2",
+        "claimId": "finding-01",
+        "sourceIds": [
+          "src-nexamos-internal"
+        ],
+        "evidenceIds": [
+          "ev-nexamos-internal-01"
+        ]
+      }
+    ],
+    "status": "READY_FOR_EDITORIAL_REVIEW",
+    "generatedAt": "2026-09-20T13:00:33.583Z",
+    "generatorVersion": "real-ai-v1",
+    "promptVersion": "1.0.0"
+  },
+  "brief": {
+    "id": "brief-mu9tqel3",
+    "topicId": "top-mu9tq9v8",
+    "researchProjectId": "proj-telegram",
+    "objective": "Lead Magnet = alat konversi Known audience ke Lead",
+    "answeredQuestions": [],
+    "openQuestions": [
+      {
+        "id": "rq-1",
+        "question": "Apa definisi spesifik dan parameter optimal (konten, format, insentif) dari Lead Magnet yang paling efektif untuk mengonversi known audience enterprise content leaders?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-2",
+        "question": "Bagaimana performa konversi Lead Magnet dibandingkan dengan metode konvensional lainnya dalam menghasilkan database lead berkualitas tinggi?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-3",
+        "question": "Faktor-faktor apa saja yang memoderasi efektivitas Lead Magnet (seperti industri, ukuran perusahaan, tahapan funnel marketing)?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      }
+    ],
+    "supportedClaims": [],
+    "partiallySupportedClaims": [],
+    "disputedClaims": [],
+    "unverifiedClaims": [
+      {
+        "id": "claim-1",
+        "researchProjectId": "proj-telegram",
+        "statement": "Lead magnet adalah aset digital bernilai tambah tinggi yang dirancang khusus untuk known audience enterprise content leaders, dengan parameter optimal berupa konten eksklusif, format yang mudah diakses (seperti template atau checklist), dan insentif yang jelas seperti akses premium.",
+        "claimType": "FACTUAL",
+        "importance": "CORE",
+        "status": "UNVERIFIED",
+        "createdAt": "2026-09-20T13:00:16.599Z",
+        "updatedAt": "2026-09-20T13:00:16.599Z"
+      },
+      {
+        "id": "claim-2",
+        "researchProjectId": "proj-telegram",
+        "statement": "Performa konversi Lead Magnet secara empiris lebih efektif daripada metode konvensional seperti email blast atau banner iklan dalam menghasilkan database lead berkualitas tinggi, karena Lead Magnet menawarkan nilai tawar eksplisit yang selaras dengan kebutuhan solusi bisnis enterprise.",
+        "claimType": "EMPIRICAL",
+        "importance": "CORE",
+        "status": "UNVERIFIED",
+        "createdAt": "2026-09-20T13:00:16.599Z",
+        "updatedAt": "2026-09-20T13:00:16.599Z"
+      },
+      {
+        "id": "claim-3",
+        "researchProjectId": "proj-telegram",
+        "statement": "Faktor-faktor moderat yang mempengaruhi efektivitas Lead Magnet termasuk industri (misalnya teknologi lebih responsif terhadap whitepaper), ukuran perusahaan (enterprise cenderung memilih studi kasus), dan tahapan funnel marketing (top of funnel lebih cocok dengan e-book, middle of funnel dengan webinars).",
+        "claimType": "ANALYTICAL",
+        "importance": "SUPPORTING",
+        "status": "UNVERIFIED",
+        "createdAt": "2026-09-20T13:00:16.599Z",
+        "updatedAt": "2026-09-20T13:00:16.599Z"
+      }
+    ],
+    "unsupportedClaims": [],
+    "keyFindings": [
+      {
+        "id": "finding-01",
+        "researchProjectId": "proj-telegram",
+        "statement": "Analisis otoritas mengenai Lead Magnet = alat konversi Known audience ke Lead",
+        "supportingClaimIds": [],
+        "confidence": "LOW",
+        "limitations": [
+          "Belum ada bukti empiris terverifikasi yang mencukupi."
+        ],
+        "createdAt": "2026-09-20T13:00:16.599Z",
+        "updatedAt": "2026-09-20T13:00:16.599Z"
+      }
+    ],
+    "limitations": [
+      "Klaim riset belum terverifikasi (INSUFFICIENT_EVIDENCE)."
+    ],
+    "researchGaps": [],
+    "recommendedEditorialAngle": "Panduan dan analisis strategis mengenai Lead Magnet = alat konversi Known audience ke Lead",
+    "sourceIndex": [],
+    "evidenceIndex": [],
+    "readiness": "NOT_READY",
+    "readinessReason": "Belum ada bukti pendukung yang terverifikasi (NO SOURCE -> NO EVIDENCE -> NO SUPPORTED CLAIM).",
+    "generatedAt": "2026-09-20T13:00:16.599Z"
+  },
+  "topic": {
+    "id": "top-mu9tq9v8",
+    "title": "Lead Magnet = alat konversi Known audience ke Lead",
+    "slug": "lead-magnet-alat-konversi-known-audience-ke-lead",
+    "territory": "TACTICAL",
+    "recommendedArticleType": "ANALYSIS",
+    "editorialRole": "AUTHORITY",
+    "audience": {
+      "segment": "Enterprise Content Leaders"
+    },
+    "problem": "Lead Magnet = alat konversi Known audience ke Lead",
+    "intent": {
+      "primary": "Lead Magnet = alat konversi Known audience ke Lead"
+    },
+    "thesis": null,
+    "whyNow": null,
+    "status": "APPROVED",
+    "informationGain": {
+      "originalityType": [
+        "ORIGINAL_FRAMEWORK"
+      ],
+      "expectedContribution": "Arsitektur informasi mandiri",
+      "commodityRisk": "LOW"
+    },
+    "evidencePlan": {
+      "requiredEvidenceLevel": "E2",
+      "plannedSources": [],
+      "originalEvidenceRequired": false
+    },
+    "businessRelevance": {
+      "objective": "Thought Leadership",
+      "funnelRole": "TOFU"
+    },
+    "distributionTargets": [
+      "GOOGLE_SEARCH",
+      "GOOGLE_AI"
+    ],
+    "createdAt": "2026-09-20T13:00:10.484Z",
+    "updatedAt": "2026-09-20T13:00:10.484Z"
+  },
+  "guardEvaluation": {
+    "status": "FAIL",
+    "issues": [
+      {
+        "code": "UNKNOWN_SOURCE_REFERENCE",
+        "message": "CitationMap mereferensikan sourceId fiktif 'src-nexamos-internal' yang tidak terdaftar di ResearchBrief.",
+        "severity": "CRITICAL",
+        "claimId": "finding-01"
+      },
+      {
+        "code": "UNKNOWN_EVIDENCE_REFERENCE",
+        "message": "CitationMap mereferensikan evidenceId fiktif 'ev-nexamos-internal-01' yang tidak terdaftar di ResearchBrief.",
+        "severity": "CRITICAL",
+        "claimId": "finding-01"
+      },
+      {
+        "code": "UNKNOWN_SOURCE_REFERENCE",
+        "message": "CitationMap mereferensikan sourceId fiktif 'src-nexamos-internal' yang tidak terdaftar di ResearchBrief.",
+        "severity": "CRITICAL",
+        "claimId": "finding-01"
+      },
+      {
+        "code": "UNKNOWN_EVIDENCE_REFERENCE",
+        "message": "CitationMap mereferensikan evidenceId fiktif 'ev-nexamos-internal-01' yang tidak terdaftar di ResearchBrief.",
+        "severity": "CRITICAL",
+        "claimId": "finding-01"
+      }
+    ],
+    "summary": "Grounding Guard: Ditemukan 4 catatan grounding (4 kritis, 0 peringatan)."
+  },
+  "visualPrompt": "Lead Magnet, calibrated Filter Chamber resembling a sieving mechanism that sorts sand through adjustable apertures based on particle size, 3D isometric illustration, soft clay rendering, rounded geometric objects, soft studio lighting, minimal marketing illustration, clean composition, premium modern aesthetic. Clear visual hierarchy, single dominant focal object, generous negative space, no text, no logos. --ar 16:9",
+  "createdAt": "2026-09-20T13:00:34.143Z"
+}
