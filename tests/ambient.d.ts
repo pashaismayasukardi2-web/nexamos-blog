@@ -192,6 +192,12 @@ declare class Buffer extends Uint8Array {
   static from(data: any): Buffer;
 }
 
+declare module 'node:buffer' {
+  export class Buffer extends Uint8Array {
+    static from(data: any): Buffer;
+  }
+}
+
 declare function fetch(input: string | URL, init?: any): Promise<{
   ok: boolean;
   status: number;

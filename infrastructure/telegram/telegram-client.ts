@@ -1,3 +1,4 @@
+/// <reference path="../../tests/ambient.d.ts" />
 /**
  * NexaMOS Telegram Client (Native Node.js Implementation)
  *
@@ -5,6 +6,7 @@
  * Mendukung pengiriman pesan, pembaruan pesan, aksi indikator mengetik, dan polling pembaruan.
  */
 
+import { Buffer } from 'node:buffer';
 import type { TelegramConfig } from './telegram-config.ts';
 import { loadTelegramConfig } from './telegram-config.ts';
 
