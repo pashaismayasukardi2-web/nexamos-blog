@@ -55,7 +55,11 @@ export type ResearchDomainErrorCode =
   | 'AI_OUTPUT_INVALID'
   | 'CITATION_REFERENCE_INVALID'
   | 'RESEARCH_PLAN_REJECTED'
-  | 'MAX_ITERATIONS_EXCEEDED';
+  | 'MAX_ITERATIONS_EXCEEDED'
+  | 'SOURCE_DISCOVERY_FAILED'
+  | 'NO_SOURCE_FOUND'
+  | 'SOURCE_ACQUISITION_FAILED'
+  | 'NO_VERIFIED_EVIDENCE';
 
 export interface ResearchDomainError {
   code: ResearchDomainErrorCode;

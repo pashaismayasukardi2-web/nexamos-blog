@@ -24,15 +24,7 @@ import { loadTelegramConfig, isUserAuthorized } from '../infrastructure/telegram
 import { loadAIProviderConfig, isAIConfigured } from '../infrastructure/ai/ai-provider-config.ts';
 import { AIProviderFactory } from '../infrastructure/ai/ai-provider-factory.ts';
 import { AIHttpClient } from '../infrastructure/ai/ai-http-client.ts';
-import { HttpSourceAcquisitionProvider } from '../engines/research/acquisition/providers/http-source-acquisition-provider.ts';
-import type { SourceCandidate } from '../engines/research/acquisition/source-candidate.ts';
-import { ResearchIngestionService } from '../engines/research/ingestion/research-ingestion-service.ts';
-import { InMemoryResearchSourceRepository } from '../engines/research/repository/in-memory-research-source-repository.ts';
-import { InMemoryResearchEvidenceRepository } from '../engines/research/repository/in-memory-research-evidence-repository.ts';
-import { InMemoryResearchEventRepository } from '../engines/research/repository/in-memory-research-event-repository.ts';
-import { ResearchAcquisitionService } from '../engines/research/acquisition/research-acquisition-service.ts';
-import { ResearchSearchProviderFactory } from '../engines/research/acquisition/providers/research-search-provider-factory.ts';
-import { DeterministicClaimEvidenceVerifier } from '../engines/research/claim-evidence-verifier.ts';
+import { CanonicalResearchPipeline } from '../engines/research/canonical-research-pipeline.ts';
 import { GroundingGuard } from '../engines/editorial/grounding-guard.ts';
 import type { Topic } from '../engines/ideation/domain/topic.types.ts';
 import type { EditorialRole } from '../engines/ideation/domain/editorial-role.ts';
@@ -40,9 +32,6 @@ import type { ArticleType } from '../engines/ideation/domain/article-type.ts';
 import type { Territory } from '../engines/ideation/domain/territory.ts';
 import type { EditorialGenerationRequest } from '../engines/editorial/editorial-generation-request.ts';
 import type { ResearchBrief } from '../engines/research/orchestrator/research-brief.ts';
-import type { ResearchEvidence } from '../engines/research/domain/research-evidence.ts';
-import type { ResearchQuestion } from '../engines/research/domain/research-question.ts';
-import type { ResearchClaim } from '../engines/research/domain/research-claim.ts';
 import type { ArticleDraft } from '../engines/editorial/article-draft.ts';
 import type { PublicationCandidate } from '../engines/distribution/distribution-readiness.ts';
 import type { ArticleSEOMetadata } from '../engines/seo-validator/article-seo-metadata.ts';
@@ -558,7 +547,7 @@ Atau cukup bagikan link studi/berita yang ingin dianalisis!
     // Kirim konfirmasi penerimaan tugas
     await this.client.sendMessage(
       chatId,
-      `⏳ <b>Menerima Permintaan Artikel Baru</b>\n\n• <b>Topik:</b> "${parsed.topic}"\n• <b>Wilayah (Territory):</b> <code>${territory}</code>\n• <b>Tipe Format:</b> <code>${recommendedType}</code>\n• <b>Slug:</b> <code>${slug}</code>\n• <b>Sumber:</b> ${parsed.urls.length > 0 ? parsed.urls.join('\n') : '<i>(Tanpa link eksternal — menggunakan basis pengetahuan internal NexaMOS)</i>'}\n\n<i>Sedang memproses riset dan draf naskah...</i>`,
+      `⏳ <b>Menerima Permintaan Artikel Baru</b>\n\n• <b>Topik:</b> "${parsed.topic}"\n• <b>Wilayah (Territory):</b> <code>${territory}</code>\n• <b>Tipe Format:</b> <code>${recommendedType}</code>\n• <b>Slug:</b> <code>${slug}</code>\n• <b>Sumber:</b> ${parsed.urls.length > 0 ? parsed.urls.join('\n') : '<i>(Tanpa link eksternal — pencarian sumber primer secara otonom via Tavily)</i>'}\n\n<i>Sedang memproses riset dan draf naskah...</i>`,
       { parse_mode: 'HTML', disable_web_page_preview: true }
     );
 
@@ -575,82 +564,7 @@ Atau cukup bagikan link studi/berita yang ingin dianalisis!
 
       const { researchProvider, editorialProvider } = AIProviderFactory.createProductionProviders(aiConfig);
 
-      // 1. Ekstraksi Bukti dari Sumber URL jika ada
-      const extractedEvidence: ResearchEvidence[] = [];
-      const acquiredSources: any[] = [];
-
-      const acquisitionProvider = new HttpSourceAcquisitionProvider();
-      const sourceRepo = new InMemoryResearchSourceRepository();
-      const evidenceRepo = new InMemoryResearchEvidenceRepository();
-      const eventRepo = new InMemoryResearchEventRepository();
-      const ingestionService = new ResearchIngestionService({ sourceRepo, evidenceRepo, eventRepo });
-
-      if (parsed.urls.length > 0) {
-        for (let i = 0; i < parsed.urls.length; i++) {
-          const url = parsed.urls[i];
-          const candidate: SourceCandidate = {
-            id: `cand-${Date.now().toString(36)}-${i}`,
-            queryId: 'rq-telegram-01',
-            researchProjectId: 'proj-telegram',
-            url,
-            title: parsed.topic,
-            provider: 'DIRECT_INPUT',
-            discoveredAt: new Date().toISOString(),
-            status: 'DISCOVERED'
-          };
-
-          const acquireResult = await acquisitionProvider.acquire(candidate, { timeoutMs: 15000 });
-          if (acquireResult.ok) {
-            const rawInput = {
-              ...acquireResult.value,
-              researchProjectId: 'proj-telegram'
-            };
-            const ingestResult = await ingestionService.ingest(rawInput, { extractEvidence: true });
-            if (ingestResult.ok) {
-              acquiredSources.push(ingestResult.value.source);
-              if (ingestResult.value.persistedEvidence) {
-                extractedEvidence.push(...ingestResult.value.persistedEvidence);
-              }
-            }
-          }
-        }
-      } else {
-        // Topik tanpa URL langsung: jalankan Source Discovery untuk menemukan sumber riil secara otonom
-        const discoveryProvider = ResearchSearchProviderFactory.createDiscoveryProvider();
-        const acquisitionService = new ResearchAcquisitionService({
-          discoveryProvider,
-          acquisitionProvider,
-          ingestionService,
-          eventRepo,
-          sourceRepo
-        });
-
-        const exploratoryQuestion: ResearchQuestion = {
-          id: 'rq-telegram-disc-01',
-          question: `Data industri dan riset pasar mengenai ${parsed.topic}`,
-          priority: 'HIGH',
-          status: 'OPEN'
-        };
-
-        const acqReportRes = await acquisitionService.runAcquisitionPipeline(
-          exploratoryQuestion,
-          'proj-telegram',
-          [],
-          { actor: 'telegram-discovery' }
-        );
-
-        if (acqReportRes.ok) {
-          const report = acqReportRes.value;
-          for (const ir of report.ingestionResults) {
-            acquiredSources.push(ir.source);
-            if (ir.persistedEvidence) {
-              extractedEvidence.push(...ir.persistedEvidence);
-            }
-          }
-        }
-      }
-
-      // 2. Entitas Topik
+      // 1. Entitas Topik Kanonikal
       const topicEntity: Topic = {
         id: `top-${Date.now().toString(36)}`,
         title: parsed.topic,
@@ -683,114 +597,47 @@ Atau cukup bagikan link studi/berita yang ingin dianalisis!
         updatedAt: new Date().toISOString()
       };
 
-      // 3. Plan Research via AI
-      const planResult = await researchProvider.planResearch({ topic: topicEntity });
-      if (!planResult.ok) {
-        throw new Error(`AI Research Planning gagal: ${planResult.error.message}`);
-      }
-
-      const questions: ResearchQuestion[] = planResult.value.researchQuestions.map((q: any, idx: number) => ({
-        id: `rq-${idx + 1}`,
-        question: q.question,
-        priority: 'HIGH',
-        status: 'OPEN' as const
-      }));
-
-      // 4. Propose Claims (Hanya usulan awal dari AI)
-      const claimsResult = await researchProvider.proposeClaims({
-        projectId: 'proj-telegram',
-        evidence: extractedEvidence.slice(0, 20),
-        questions
+      // 2. Eksekusi Riset Kanonikal via CanonicalResearchPipeline
+      const researchPipeline = new CanonicalResearchPipeline({
+        aiResearchProvider: researchProvider
       });
 
-      // 4.5. CLAIM ↔ EVIDENCE VERIFICATION GATE
-      const claimVerifier = new DeterministicClaimEvidenceVerifier();
-      const supportedClaims: ResearchClaim[] = [];
-      const unverifiedClaims: ResearchClaim[] = [];
+      const researchExecRes = await researchPipeline.execute({
+        topic: topicEntity,
+        directUrls: parsed.urls,
+        actor: `telegram-user-${chatId}`
+      });
 
-      const rawClaims = claimsResult.ok ? claimsResult.value : [];
-      for (let idx = 0; idx < rawClaims.length; idx++) {
-        const c = rawClaims[idx];
-        const claim: ResearchClaim = {
-          id: `claim-${idx + 1}`,
-          researchProjectId: 'proj-telegram',
-          statement: c.statement,
-          claimType: c.claimType || 'FACTUAL',
-          importance: c.importance || 'CRITICAL',
-          status: 'UNVERIFIED',
-          createdAt: new Date().toISOString(),
-          updatedAt: new Date().toISOString()
-        };
-
-        const verifyRes = await claimVerifier.verify(claim, extractedEvidence);
-        claim.status = verifyRes.status;
-
-        if (claim.status === 'SUPPORTED') {
-          supportedClaims.push(claim);
-        } else {
-          unverifiedClaims.push(claim);
-        }
+      if (!researchExecRes.ok) {
+        clearInterval(typingInterval);
+        console.warn(`[RESEARCH BLOCKED] Riset gagal: ${researchExecRes.error.code} - ${researchExecRes.error.message}`);
+        await this.client.sendMessage(
+          chatId,
+          `⛔ <b>Riset Belum Memenuhi Syarat Publikasi</b>\n\n` +
+          `• <b>Kode Masalah:</b> <code>${researchExecRes.error.code}</code>\n` +
+          `• <b>Keterangan:</b> ${researchExecRes.error.message}\n\n` +
+          `<i>Sesuai Doktrin NexaMOS: <b>NO SOURCE → NO EVIDENCE → NO SUPPORTED CLAIM</b>. Naskah editorial dilarang ditulis tanpa bukti empiris primer yang terverifikasi.</i>\n\n` +
+          `💡 <i>Saran: Sertakan URL rujukan/studi langsung saat mengajukan topik.</i>`,
+          { parse_mode: 'HTML' }
+        );
+        return;
       }
 
-      // Indeks Sumber Riil (Hanya jika benar-benar berhasil diakuisisi, tanpa rekayasa fiktif)
-      const finalSourceIndex = acquiredSources.map((s: any, idx: number) => ({
-        sourceId: s.id || `src-${idx + 1}`,
-        title: s.title || parsed.topic,
-        url: s.url,
-        canonicalUrl: s.canonicalUrl || s.url,
-        publisher: s.publisher || 'Referensi Otoritatif',
-        sourceType: s.type || 'COMPANY_PUBLICATION',
-        authorityScore: s.qualityAssessment?.authority ?? 80,
-        publicationAllowed: true
-      }));
+      const { researchBrief, metrics } = researchExecRes.value;
 
-      // Indeks Bukti Riil
-      const finalEvidenceIndex = extractedEvidence.slice(0, 20).map((e: any) => ({
-        evidenceId: e.id,
-        sourceId: e.sourceId,
-        quote: e.content.slice(0, 200),
-        level: e.evidenceLevel || 'E2',
-        verified: e.verified !== undefined ? e.verified : true,
-        provenanceType: e.provenanceType || 'EXTERNAL_EVIDENCE',
-        sourceUrl: e.sourceUrl || undefined
-      }));
-
-      const isResearchSufficient = supportedClaims.length > 0;
-      const researchBrief: ResearchBrief = {
-        id: `brief-${Date.now().toString(36)}`,
-        topicId: topicEntity.id,
-        researchProjectId: 'proj-telegram',
-        objective: parsed.topic,
-        answeredQuestions: [],
-        openQuestions: questions,
-        supportedClaims,
-        partiallySupportedClaims: [],
-        disputedClaims: [],
-        unverifiedClaims,
-        unsupportedClaims: [],
-        keyFindings: [
-          {
-            id: 'finding-01',
-            researchProjectId: 'proj-telegram',
-            statement: `Analisis otoritas mengenai ${parsed.topic}`,
-            supportingClaimIds: supportedClaims.map((c) => c.id),
-            confidence: isResearchSufficient ? 'HIGH' : 'LOW',
-            limitations: isResearchSufficient ? [] : ['Belum ada bukti empiris terverifikasi yang mencukupi.'],
-            createdAt: new Date().toISOString(),
-            updatedAt: new Date().toISOString()
-          }
-        ],
-        limitations: isResearchSufficient ? [] : ['Klaim riset belum terverifikasi (INSUFFICIENT_EVIDENCE).'],
-        researchGaps: [],
-        recommendedEditorialAngle: `Panduan dan analisis strategis mengenai ${parsed.topic}`,
-        sourceIndex: finalSourceIndex,
-        evidenceIndex: finalEvidenceIndex,
-        readiness: isResearchSufficient ? 'READY_FOR_EDITORIAL' : 'NOT_READY',
-        readinessReason: isResearchSufficient
-          ? 'Kecukupan bukti riset terpenuhi secara terverifikasi.'
-          : 'Belum ada bukti pendukung yang terverifikasi (NO SOURCE -> NO EVIDENCE -> NO SUPPORTED CLAIM).',
-        generatedAt: new Date().toISOString()
-      };
+      // Hard Invariant Gate: Tolak pembuatan draf jika readiness belum READY_FOR_EDITORIAL atau supportedClaims kosong
+      if (researchBrief.readiness !== 'READY_FOR_EDITORIAL' || researchBrief.supportedClaims.length === 0) {
+        clearInterval(typingInterval);
+        console.warn(`[RESEARCH INSUFFICIENT] Kesiapan riset NOT_READY. Supported claims: ${researchBrief.supportedClaims.length}`);
+        await this.client.sendMessage(
+          chatId,
+          `⚠️ <b>Kecukupan Bukti Belum Terpenuhi (INSUFFICIENT_EVIDENCE)</b>\n\n` +
+          `Riset tidak menghasilkan klaim faktual yang terverifikasi (SUPPORTED: 0).\n` +
+          `Pembuatan naskah artikel dibatalkan demi menjaga integritas otoritas naskah.`,
+          { parse_mode: 'HTML' }
+        );
+        return;
+      }
 
       // 5. Generate Article Draft via AI Editorial Provider
       const editorialRole: EditorialRole = topicEntity.editorialRole || 'AUTHORITY';
@@ -910,7 +757,8 @@ Atau cukup bagikan link studi/berita yang ingin dianalisis!
 • Seksi: ${draft.sections.length} bagian
 • Kata: ~${totalWords} kata (Waktu baca: ~${estMinutes} menit)
 • Grounding: <b>${guardResult.status}</b> (${guardResult.issues.length} catatan)
-• Sumber Sitasi: ${researchBrief.sourceIndex.length} rujukan
+• Sumber Primer: ${researchBrief.sourceIndex.length} rujukan
+• Klaim Terverifikasi: ${researchBrief.supportedClaims.length} klaim faktual (SUPPORTED)
 
 🎨 <b>Prompt Visual NexaMOS (Siap Copy ke Midjourney / Flux / DALL-E):</b>
 <code>${visualPrompt}</code>
