@@ -22,10 +22,14 @@ import type { AIProviderConfig } from './ai-provider-config.ts';
 
 const EDITORIAL_SYSTEM_HARD_RULE = `Anda adalah Lead Content Architect & Engineering Editor untuk NexaMOS Blog.
 ATURAN UTAMA (MUTLAK & TIDAK DAPAT DITAWAR):
-1. GROUNDED RESEARCH ONLY: Seluruh klaim faktual WAJIB ditautkan ke claimId yang sah dari ResearchBrief yang disediakan.
-2. ZERO TOLERANCE FOR FABRICATION: Dilarang mengarang URL, nama institusi fiktif, angka statistik baru, atau ID sitasi fiktif.
-3. KUTIPAN & ANGKA: Angka statistik atau persentase hanya boleh ditulis jika tercantum dalam ResearchBrief.
-4. FORMAT OUTPUT: Seluruh respon WAJIB berupa JSON terstruktur tanpa markdown text pembuka atau penutup.`;
+1. GROUNDED RESEARCH ONLY: Seluruh klaim faktual eksternal WAJIB berakar langsung dari Supported Claims dan Evidence Index pada ResearchBrief yang disediakan.
+2. ANTI-SCOPE DRIFT (FOKUS 100% PADA RISET): Naskah dan rencana editorial WAJIB fokus murni pada topik dan temuan riset yang disediakan. DILARANG KERAS mengalihkan atau memperluas naskah ke domain baru yang tidak dibahas dalam bukti riset (misalnya: dilarang tiba-tiba membahas privasi data, regulasi kepatuhan hukum/GDPR, enkripsi, keamanan siber, dll., jika bukti riset tidak membahas hal tersebut).
+3. ZERO TOLERANCE FOR FABRICATION: Dilarang mengarang URL, nama institusi fiktif, angka statistik baru, kapabilitas teknis/algoritmik fiktif, atau ID sitasi fiktif.
+4. KUTIPAN & ANGKA: Angka statistik atau persentase HANYA boleh ditulis jika persis tercantum dalam ResearchBrief. Dilarang mengarang persentase baru (misal 75%, 85%).
+5. PEMBEDAAN KLAIM FAKTUAL VS ANALISIS ORISINAL:
+   - Setiap proposisi tentang realitas industri, algoritma, atau kapabilitas pihak ketiga wajib merujuk ke claimId yang sah dan dicantumkan di claimUsages & citationMap.
+   - Rekomendasi taktis, sintesis, atau alur kerja NexaMOS WAJIB diformulasikan sebagai analisis/rekomendasi orisinal (gunakan frasa seperti: "Dalam perspektif strategis NexaMOS...", "Rekomendasi taktis bagi tim editorial...", "Bagi praktisi, implikasinya...", "Oleh karena itu, langkah praktis...") dan ditempatkan pada seksi ber-purpose 'ANALYSIS', 'FRAMEWORK', 'IMPLICATION', atau 'PRACTICAL_APPLICATION'.
+6. FORMAT OUTPUT: Seluruh respon WAJIB berupa JSON terstruktur tanpa markdown text pembuka atau penutup.`;
 
 export class RealAIEditorialProvider implements AIEditorialProvider {
   private readonly client: AIHttpClient;
@@ -58,6 +62,12 @@ ${JSON.stringify(findings, null, 2)}
 
 LIMITASI & SENGKETA:
 ${JSON.stringify(limitations, null, 2)}
+
+PANDUAN PENYUSUNAN RENCANA (ANTI-SCOPE DRIFT):
+- workingTitle, thesis, dan angle WAJIB setia pada topik "${request.topic.title}" dan substansi klaim terverifikasi di atas. JANGAN melenceng ke ranah di luar bukti riset (misal: privasi data, kepatuhan hukum).
+- sectionPlan:
+  * Untuk seksi fakta/konteks industri: gunakan purpose HOOK, CONTEXT, ARGUMENT, atau EVIDENCE dan sebutkan plannedClaimIds dari daftar di atas.
+  * Untuk seksi rekomendasi/taktik/analisis NexaMOS: gunakan purpose ANALYSIS, FRAMEWORK, IMPLICATION, atau PRACTICAL_APPLICATION.
 
 FORMAT JSON YANG WAJIB DIHASILKAN:
 {
@@ -148,9 +158,11 @@ ${JSON.stringify(effectiveEvidenceIndex.slice(0, 10).map((e) => ({ id: (e as any
 Indeks Sumber:
 ${JSON.stringify(effectiveSourceIndex.map((s) => ({ id: (s as any).sourceId || (s as any).id, title: s.title, url: s.url })), null, 2)}
 
-PERINGATAN KERAS GROUNDING:
-- Dilarang membuat claimId atau sourceId atau evidenceId palsu!
-- Seluruh klaim dalam claimUsages dan citationMap WAJIB bersumber dari ID di atas.
+INSTRUKSI INTEGRITAS & ANTI-HALUSINASI (SANGAT PENTING):
+1. FOKUS TOPIK (ANTI-SCOPE DRIFT): Tulis naskah HANYA seputar topik "${request.topic.title}" dan bukti riset di atas. DILARANG menambahkan topik baru yang tidak ada di riset (seperti privasi data, kepatuhan legal, enkripsi, dll).
+2. KLAIM FAKTUAL EKSTERNAL: Setiap kali Anda menulis fakta mengenai kondisi pasar, kapabilitas AI, kinerja tool, atau temuan industri, Anda WAJIB mengambil substansinya dari 'Klaim Terbukti' di atas dan mencatat claimId-nya di claimUsages dan citationMap. DILARANG membuat klaim fakta eksternal baru tanpa dasar bukti!
+3. REKOMENDASI & TAKTIK NEXAMOS: Untuk bagian langkah praktis, kerangka kerja, atau alur kerja NexaMOS, letakkan dalam seksi dengan purpose 'ANALYSIS', 'FRAMEWORK', atau 'PRACTICAL_APPLICATION' dan gunakan frasa analisis orisinal (misal: "Rekomendasi taktis bagi tim editorial adalah...", "Bagi praktisi konten, implikasinya...", "Dalam perspektif strategis NexaMOS...", "Oleh karena itu, langkah praktis...").
+4. INTEGRITAS ID SITASI: Dilarang membuat claimId, sourceId, atau evidenceId palsu! Seluruh ID dalam claimUsages dan citationMap WAJIB bersumber dari data di atas.
 
 FORMAT JSON YANG WAJIB DIHASILKAN:
 {
@@ -163,7 +175,7 @@ FORMAT JSON YANG WAJIB DIHASILKAN:
     {
       "id": "sec-1",
       "heading": "Judul Seksi",
-      "purpose": "HOOK | CONTEXT | ARGUMENT | EVIDENCE | FRAMEWORK | ANALYSIS | COUNTERPOINT | IMPLICATION | CONCLUSION",
+      "purpose": "HOOK | CONTEXT | ARGUMENT | EVIDENCE | FRAMEWORK | ANALYSIS | COUNTERPOINT | IMPLICATION | PRACTICAL_APPLICATION | CONCLUSION",
       "content": "Isi lengkap naskah artikel per seksi...",
       "order": 1,
       "claimUsageIds": ["cu-1"]
