@@ -47,6 +47,7 @@ export interface EditorialGenerationResult {
   draft?: ArticleDraft | null;
   plan?: EditorialPlan | null;
   guardResult: GroundingGuardResult;
+  integrityResult?: import('./draft-claim-auditor-types.ts').EditorialIntegrityResult;
   metrics?: EditorialGenerationMetrics | null;
   errors?: string[];
 }

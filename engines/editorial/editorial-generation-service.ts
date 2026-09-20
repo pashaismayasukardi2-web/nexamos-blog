@@ -15,19 +15,31 @@ import type {
 } from './editorial-generation-result.ts';
 import type { AIEditorialProvider } from './ai-editorial-provider.ts';
 import { GroundingGuard } from './grounding-guard.ts';
+import { EditorialIntegrityGate } from './editorial-integrity-gate.ts';
 
 export interface EditorialGenerationServiceDependencies {
   aiProvider: AIEditorialProvider;
   groundingGuard?: GroundingGuard;
+  integrityGate?: EditorialIntegrityGate;
 }
 
 export class EditorialGenerationService {
   private readonly aiProvider: AIEditorialProvider;
   private readonly groundingGuard: GroundingGuard;
+  private readonly integrityGate: EditorialIntegrityGate;
 
   constructor(deps: EditorialGenerationServiceDependencies) {
     this.aiProvider = deps.aiProvider;
     this.groundingGuard = deps.groundingGuard || new GroundingGuard();
+    this.integrityGate =
+      deps.integrityGate ||
+      new EditorialIntegrityGate({
+        guardOptions: {
+          strictNumericalCheck: true,
+          strictQuoteCheck: true,
+          strictLimitationCheck: true
+        }
+      });
   }
 
   /**
@@ -140,13 +152,14 @@ export class EditorialGenerationService {
       reviewNotes: []
     };
 
-    // 6. Jalankan Grounding Guard
-    const guardResult = this.groundingGuard.evaluate(draft, brief, plan);
+    // 6. Jalankan Editorial Integrity Gate (DraftClaimAuditor + GroundingGuard)
+    const integrityResult = this.integrityGate.evaluate(draft, brief, plan);
+    const guardResult = integrityResult.groundingGuard;
 
     // 7. Tentukan Status Akhir Draft
     let finalStatus: DraftStatus = 'READY_FOR_EDITORIAL_REVIEW';
 
-    if (guardResult.status === 'FAIL') {
+    if (integrityResult.status === 'FAIL' || guardResult.status === 'FAIL') {
       finalStatus = 'REJECTED';
     } else if (
       guardResult.status === 'REVIEW_REQUIRED' ||
@@ -156,8 +169,11 @@ export class EditorialGenerationService {
     }
 
     draft.status = finalStatus;
-    if (guardResult.issues.length > 0) {
-      draft.reviewNotes = guardResult.issues.map((i) => `[${i.severity}] ${i.code}: ${i.message}`);
+    const allNotes: string[] = [
+      ...integrityResult.issues.map((i) => `[${i.severity}] ${i.code}: ${i.message}`)
+    ];
+    if (allNotes.length > 0) {
+      draft.reviewNotes = allNotes;
     }
 
     // 8. Hitung Metrik Editorial
@@ -168,8 +184,9 @@ export class EditorialGenerationService {
       draft,
       plan,
       guardResult,
+      integrityResult,
       metrics,
-      errors: finalStatus === 'REJECTED' ? guardResult.issues.map((i) => i.message) : undefined
+      errors: finalStatus === 'REJECTED' ? integrityResult.issues.map((i) => i.message) : undefined
     };
   }
 

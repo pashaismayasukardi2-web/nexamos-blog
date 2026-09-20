@@ -816,7 +816,7 @@ describe('Pilot 01 Step 3: Real AI Adapter Suite', () => {
       );
     });
 
-    test('generateArticleDraft menormalisasi jika LLM keliru menempatkan finding-01 ke sourceIds', async () => {
+    test('generateArticleDraft menolak keras sitasi fiktif jika LLM menempatkan finding-01 ke sourceIds (tanpa auto-repair)', async () => {
       const mockFetch = createMockFetch(async () => ({
         status: 200,
         ok: true,
@@ -852,8 +852,8 @@ describe('Pilot 01 Step 3: Real AI Adapter Suite', () => {
         unverifiedClaims: [],
         keyFindings: [{ id: 'finding-01', statement: 'Temuan spionase pasar', supportingClaimIds: ['claim-01'], confidence: 'HIGH' } as any],
         limitations: [],
-        evidenceIndex: [{ id: 'ev-01', sourceId: 'src-nexamos-internal', textSnippet: '', evidenceType: 'STATISTIC', evidenceLevel: 'E2' }],
-        sourceIndex: [{ id: 'src-nexamos-internal', title: 'Basis Pengetahuan NexaMOS', url: 'https://nexamos.com/knowledge', sourceType: 'PRIMARY_RESEARCH' }],
+        evidenceIndex: [{ id: 'ev-01', evidenceId: 'ev-01', sourceId: 'src-01', textSnippet: '', evidenceType: 'STATISTIC', evidenceLevel: 'E2' } as any],
+        sourceIndex: [{ id: 'src-01', sourceId: 'src-01', title: 'Riset Primer', url: 'https://example.com', sourceType: 'PRIMARY_RESEARCH' } as any],
         builtAt: '',
         briefVersion: '1.0.0'
       };
@@ -877,13 +877,18 @@ describe('Pilot 01 Step 3: Real AI Adapter Suite', () => {
         intendedTakeaway: ''
       };
 
-      const draftPayload = await provider.generateArticleDraft(request, plan);
-      assert.strictEqual(draftPayload.title, 'Draft Normalisasi');
-      assert.strictEqual(draftPayload.citationMap[0].sourceIds[0], 'src-nexamos-internal');
-      assert.strictEqual(draftPayload.citationMap[0].evidenceIds[0], 'ev-01');
+      await assert.rejects(
+        async () => {
+          await provider.generateArticleDraft(request, plan);
+        },
+        (err: Error) => {
+          assert.match(err.message, /GROUNDING_VIOLATION/);
+          return true;
+        }
+      );
     });
 
-    test('generateArticleDraft menyediakan sovereign source fallback jika brief.sourceIndex kosong', async () => {
+    test('generateArticleDraft melempar EDITORIAL_NOT_READY jika brief.sourceIndex kosong (anti synthetic source fallback)', async () => {
       const mockFetch = createMockFetch(async () => ({
         status: 200,
         ok: true,
@@ -897,7 +902,7 @@ describe('Pilot 01 Step 3: Real AI Adapter Suite', () => {
                 sections: [{ id: 'sec-1', heading: 'Seksi 1', content: 'Paragraf naskah...', order: 1, claimUsageIds: ['cu-1'] }],
                 claimUsages: [{ id: 'cu-1', claimId: 'claim-01', statement: 'Klaim mandiri' }],
                 citationMap: [
-                  { claimUsageId: 'cu-1', claimId: 'claim-01', sourceIds: ['src-nexamos-internal'], evidenceIds: ['ev-nexamos-internal-01'] }
+                  { claimUsageId: 'cu-1', claimId: 'claim-01', sourceIds: ['src-01'], evidenceIds: ['ev-01'] }
                 ]
               })
             }
@@ -914,7 +919,7 @@ describe('Pilot 01 Step 3: Real AI Adapter Suite', () => {
         topicId: 'top-01',
         topicTitle: 'Riset Mandiri',
         readiness: 'READY_FOR_EDITORIAL',
-        supportedClaims: [{ id: 'claim-01', statement: 'Klaim mandiri', claimType: 'FACTUAL', importance: 'CORE', status: 'SUPPORTED', evidenceIds: ['ev-nexamos-internal-01'], projectId: 'proj-01', createdAt: '' }],
+        supportedClaims: [{ id: 'claim-01', statement: 'Klaim mandiri', claimType: 'FACTUAL', importance: 'CORE', status: 'SUPPORTED', evidenceIds: ['ev-01'], projectId: 'proj-01', createdAt: '' }],
         disputedClaims: [],
         unverifiedClaims: [],
         keyFindings: [{ id: 'finding-01', statement: 'Temuan', supportingClaimIds: ['claim-01'], confidence: 'HIGH' } as any],
@@ -944,9 +949,15 @@ describe('Pilot 01 Step 3: Real AI Adapter Suite', () => {
         intendedTakeaway: ''
       };
 
-      const draftPayload = await provider.generateArticleDraft(request, plan);
-      assert.strictEqual(draftPayload.title, 'Draft Mandiri');
-      assert.strictEqual(draftPayload.citationMap[0].sourceIds[0], 'src-nexamos-internal');
+      await assert.rejects(
+        async () => {
+          await provider.generateArticleDraft(request, plan);
+        },
+        (err: Error) => {
+          assert.match(err.message, /EDITORIAL_NOT_READY/);
+          return true;
+        }
+      );
     });
   });
 

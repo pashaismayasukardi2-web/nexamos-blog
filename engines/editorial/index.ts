@@ -16,4 +16,7 @@ export * from './ai-editorial-provider.ts';
 export * from './providers/mock-ai-editorial-provider.ts';
 export * from './editorial-generation-service.ts';
 export * from './article-generator.ts';
+export * from './draft-claim-auditor-types.ts';
+export * from './draft-claim-auditor.ts';
+export * from './editorial-integrity-gate.ts';
 export * from './review/index.ts';

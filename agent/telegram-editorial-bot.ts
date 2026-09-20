@@ -26,6 +26,7 @@ import { AIProviderFactory } from '../infrastructure/ai/ai-provider-factory.ts';
 import { AIHttpClient } from '../infrastructure/ai/ai-http-client.ts';
 import { CanonicalResearchPipeline } from '../engines/research/canonical-research-pipeline.ts';
 import { GroundingGuard } from '../engines/editorial/grounding-guard.ts';
+import { EditorialIntegrityGate } from '../engines/editorial/editorial-integrity-gate.ts';
 import type { Topic } from '../engines/ideation/domain/topic.types.ts';
 import type { EditorialRole } from '../engines/ideation/domain/editorial-role.ts';
 import type { ArticleType } from '../engines/ideation/domain/article-type.ts';
@@ -678,10 +679,10 @@ Atau cukup bagikan link studi/berita yang ingin dianalisis!
         promptVersion: draftPayload.promptVersion || '1.0.0'
       };
 
-      // 6. Grounding Guard
-      const groundingGuard = new GroundingGuard();
-      const guardResult = groundingGuard.evaluate(draft, researchBrief, editorialPlan);
-
+      // 6. Evaluasi Gerbang Integritas Editorial Keras (DraftClaimAuditor + GroundingGuard)
+      const integrityGate = new EditorialIntegrityGate();
+      const integrityResult = integrityGate.evaluate(draft, researchBrief, editorialPlan);
+      const guardResult = integrityResult.groundingGuard;
 
       // 7. Rumuskan Visual Prompt dengan AI Provider sesuai formula [SUBJECT] + [VISUAL METAPHOR] + [CORE_STYLE]
       const visualPrompt = await this.generateVisualPrompt(
@@ -703,6 +704,7 @@ Atau cukup bagikan link studi/berita yang ingin dianalisis!
             draft,
             brief: researchBrief,
             topic: topicEntity,
+            editorialIntegrity: integrityResult,
             guardEvaluation: guardResult,
             visualPrompt,
             createdAt: new Date().toISOString()
@@ -722,29 +724,45 @@ Atau cukup bagikan link studi/berita yang ingin dianalisis!
       // Callback data Telegram maksimal 64 byte
       const safeSlug = slug.slice(0, 45);
 
-      // Kirim hasil draf dan tombol persetujuan
+      // P0-E: Hard Publication Gate - Tombol publikasi HANYA muncul jika Editorial Integrity bernilai PASS
+      const isIntegrityPassed = integrityResult.status === 'PASS';
+
       const inlineMarkup: TelegramInlineKeyboardMarkup = {
-        inline_keyboard: [
-          [
-            {
-              text: '🚀 Setujui & Publish ke Live',
-              callback_data: `publish:${safeSlug}`
-            }
-          ],
-          [
-            {
-              text: '👁️ Baca Ringkasan Draf',
-              callback_data: `read:${safeSlug}`
-            },
-            {
-              text: '❌ Batalkan',
-              callback_data: `cancel:${safeSlug}`
-            }
-          ]
-        ]
+        inline_keyboard: isIntegrityPassed
+          ? [
+              [
+                {
+                  text: '🚀 Setujui & Publish ke Live',
+                  callback_data: `publish:${safeSlug}`
+                }
+              ],
+              [
+                {
+                  text: '👁️ Baca Ringkasan Draf',
+                  callback_data: `read:${safeSlug}`
+                },
+                {
+                  text: '❌ Batalkan',
+                  callback_data: `cancel:${safeSlug}`
+                }
+              ]
+            ]
+          : [
+              [
+                {
+                  text: '👁️ Baca Ringkasan Draf',
+                  callback_data: `read:${safeSlug}`
+                },
+                {
+                  text: '❌ Batalkan',
+                  callback_data: `cancel:${safeSlug}`
+                }
+              ]
+            ]
       };
 
-      const responseText = `✅ <b>Draf Artikel Selesai Disusun!</b>
+      const responseText = isIntegrityPassed
+        ? `✅ <b>Draf Artikel Selesai Disusun!</b>
 
 📰 <b>${draft.title}</b>
 <i>${draft.dek || ''}</i>
@@ -753,12 +771,17 @@ Atau cukup bagikan link studi/berita yang ingin dianalisis!
 • <b>Wilayah (Territory):</b> <code>${draft.territory}</code>
 • <b>Tipe Format:</b> <code>${draft.articleType}</code>
 
-📊 <b>Rincian Naskah:</b>
+📊 <b>Rincian Naskah & Integritas:</b>
 • Seksi: ${draft.sections.length} bagian
 • Kata: ~${totalWords} kata (Waktu baca: ~${estMinutes} menit)
-• Grounding: <b>${guardResult.status}</b> (${guardResult.issues.length} catatan)
+• <b>Editorial Integrity: PASS</b>
+• Klaim Faktual Eksternal: ${integrityResult.groundedExternalFacts + integrityResult.ungroundedExternalFacts}
+• Ter-grounding (ENTAILED): ${integrityResult.groundedExternalFacts}
+• Perluasan Semantik (PARTIAL): ${integrityResult.partialSupportCount}
+• Analisis Orisinal NexaMOS: ${integrityResult.originalAnalysisCount}
+• Interpretasi: ${integrityResult.interpretationCount}
 • Sumber Primer: ${researchBrief.sourceIndex.length} rujukan
-• Klaim Terverifikasi: ${researchBrief.supportedClaims.length} klaim faktual (SUPPORTED)
+• Klaim Terverifikasi: ${researchBrief.supportedClaims.length} klaim faktual
 
 🎨 <b>Prompt Visual NexaMOS (Siap Copy ke Midjourney / Flux / DALL-E):</b>
 <code>${visualPrompt}</code>
@@ -766,7 +789,29 @@ Atau cukup bagikan link studi/berita yang ingin dianalisis!
 📸 <b>Langkah QC Gambar:</b>
 Kirim/upload foto hasil generate langsung ke chat bot ini! File otomatis disimpan ke <code>public/images/hero-${safeSlug}.webp</code>.
 
-Silakan pilih tindakan berikut:`;
+Silakan pilih tindakan berikut:`
+        : `⛔ <b>Draf Artikel Gagal Memenuhi Integritas Editorial</b>
+
+📰 <b>${draft.title}</b>
+<i>${draft.dek || ''}</i>
+
+🏷️ <b>Klasifikasi Editorial:</b>
+• <b>Wilayah (Territory):</b> <code>${draft.territory}</code>
+• <b>Tipe Format:</b> <code>${draft.articleType}</code>
+
+📊 <b>Hasil Audit Integritas:</b>
+• <b>Editorial Integrity: FAIL</b>
+• Klaim Faktual Tak Didukung: ${integrityResult.ungroundedExternalFacts}
+• Perluasan Semantik Tak Sah: ${integrityResult.partialSupportCount}
+• Isu Integritas Sitasi / Angka: ${integrityResult.issues.filter((i) => i.severity === 'CRITICAL').length} catatan kritis
+
+⚠️ <b>Penerbitan Diblokir:</b>
+<i>Naskah memuat klaim faktual, angka, atau sitasi yang melampaui bukti riset terverifikasi. Publikasi langsung dinonaktifkan demi menjaga doktrin naskah.</i>
+
+💡 <i>Catatan Pemeriksaan:</i>
+${integrityResult.issues.slice(0, 3).map((i) => `• [${i.code}] ${i.message}`).join('\n')}
+
+Silakan tinjau ringkasan draf atau batalkan:`;
 
       await this.client.sendMessage(chatId, responseText, {
         parse_mode: 'HTML',
@@ -910,6 +955,20 @@ Silakan pilih tindakan berikut:`;
     const brief: ResearchBrief = draftData.brief;
     const slug = draft.slug || slugInput;
 
+    // P0-E: Hard Publication Gate - Evaluasi ulang integritas editorial sebelum merilis
+    const integrityGate = new EditorialIntegrityGate();
+    const integrityResult = integrityGate.evaluate(draft, brief);
+
+    if (integrityResult.status === 'FAIL') {
+      const issueSummary = integrityResult.issues
+        .filter((i) => i.severity === 'CRITICAL')
+        .map((i) => `[${i.code}] ${i.message}`)
+        .join('; ');
+      throw new Error(
+        `EDITORIAL_INTEGRITY_BLOCKED: Naskah '${slug}' gagal memenuhi syarat integritas editorial (FAIL). Publikasi dibatalkan demi menjaga doktrin. Detail pelanggaran: ${issueSummary}`
+      );
+    }
+
     const candidate: PublicationCandidate = {
       candidateId: `cand-${slug}`,
       articleId: `art-${slug}`,
@@ -919,7 +978,7 @@ Silakan pilih tindakan berikut:`;
       approvedAt: new Date().toISOString(),
       overallStatus: 'READY_TO_PUBLISH',
       warnings: [],
-      policyVersion: 'TELEGRAM_BOT_APPROVAL'
+      policyVersion: 'EDITORIAL_INTEGRITY_VERIFIED'
     };
 
     const seoMeta: ArticleSEOMetadata = {

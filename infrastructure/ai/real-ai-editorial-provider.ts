@@ -98,35 +98,25 @@ FORMAT JSON YANG WAJIB DIHASILKAN:
   ): Promise<GeneratedDraftPayload> {
     const brief = request.researchBrief;
 
-    // Pastikan jika brief belum memiliki sumber (misal riset internal tanpa URL eksternal), sediakan sovereign source default
-    const effectiveSourceIndex = (brief.sourceIndex && brief.sourceIndex.length > 0)
-      ? brief.sourceIndex
-      : [
-          {
-            sourceId: 'src-nexamos-internal',
-            id: 'src-nexamos-internal',
-            title: `Riset Doktrin & Arsitektur Strategis NexaMOS: ${request.topic.title}`,
-            url: 'https://nexamos.com/knowledge',
-            canonicalUrl: 'https://nexamos.com/knowledge',
-            publisher: 'NexaMOS Sovereign Knowledge Base',
-            sourceType: 'COMPANY_PUBLICATION',
-            authorityScore: 100,
-            publicationAllowed: true
-          } as any
-        ];
+    // P0-A: Hard Grounding Invariant - Editorial Layer DILARANG membuat sumber/bukti sintetis sendiri
+    if (
+      !brief ||
+      brief.readiness === 'NOT_READY' ||
+      !Array.isArray(brief.sourceIndex) ||
+      brief.sourceIndex.length === 0 ||
+      !Array.isArray(brief.evidenceIndex) ||
+      brief.evidenceIndex.length === 0 ||
+      !Array.isArray(brief.supportedClaims) ||
+      brief.supportedClaims.length === 0
+    ) {
+      throw new AIClientError(
+        'EDITORIAL_NOT_READY',
+        'ResearchBrief tidak memiliki sumber, bukti, atau klaim terverifikasi yang memadai (EDITORIAL_NOT_READY). Penulisan draf dihentikan.'
+      );
+    }
 
-    const effectiveEvidenceIndex = (brief.evidenceIndex && brief.evidenceIndex.length > 0)
-      ? brief.evidenceIndex
-      : [
-          {
-            evidenceId: 'ev-nexamos-internal-01',
-            id: 'ev-nexamos-internal-01',
-            sourceId: (effectiveSourceIndex[0] as any).sourceId || (effectiveSourceIndex[0] as any).id,
-            quote: `Doktrin metodologi sovereign NexaMOS untuk: ${request.topic.title}`,
-            level: 'E2',
-            verified: true
-          } as any
-        ];
+    const effectiveSourceIndex = brief.sourceIndex;
+    const effectiveEvidenceIndex = brief.evidenceIndex;
 
     // Himpun ID yang sah untuk validasi ketat anti-halusinasi
     const allowedClaimIds = new Set([
@@ -209,7 +199,7 @@ FORMAT JSON YANG WAJIB DIHASILKAN:
 
     const parsed = StructuredOutputValidator.parseJson(response.content);
 
-    // Normalisasi variasi minor format claimId jika cocok dengan allowedClaimIds
+    // Normalisasi variasi minor casing/format claimId jika secara deterministik merujuk ID yang sama
     if (parsed && Array.isArray(parsed.claimUsages) && allowedClaimIds.size > 0) {
       for (const cu of parsed.claimUsages) {
         if (cu && cu.claimId && !allowedClaimIds.has(cu.claimId)) {
@@ -224,6 +214,7 @@ FORMAT JSON YANG WAJIB DIHASILKAN:
       }
     }
 
+    // P0-B: HAPUS CITATION AUTO-REPAIR (INVALID CITATION -> INVALID CITATION)
     if (parsed && Array.isArray(parsed.citationMap)) {
       const validSourceList = Array.from(allowedSourceIds);
       const validEvidenceList = Array.from(allowedEvidenceIds);
@@ -231,7 +222,7 @@ FORMAT JSON YANG WAJIB DIHASILKAN:
       for (const cm of parsed.citationMap) {
         if (!cm) continue;
 
-        // 1. Normalisasi claimId
+        // 1. Normalisasi casing/hyphen claimId jika merujuk ID yang sama
         if (cm.claimId && !allowedClaimIds.has(cm.claimId)) {
           const match = Array.from(allowedClaimIds).find(
             (id) => id.toLowerCase() === cm.claimId.toLowerCase() ||
@@ -242,32 +233,25 @@ FORMAT JSON YANG WAJIB DIHASILKAN:
           }
         }
 
-        // 2. Normalisasi sourceIds (Tangani kasus LLM memasukkan findingId atau claimId ke dalam sourceIds)
-        if (Array.isArray(cm.sourceIds) && validSourceList.length > 0) {
+        // 2. Normalisasi format sourceIds HANYA jika merujuk ke ID yang sama persis (tanpa substitusi validSourceList[0])
+        if (Array.isArray(cm.sourceIds)) {
           cm.sourceIds = cm.sourceIds.map((sId: string) => {
             if (allowedSourceIds.has(sId)) return sId;
 
-            // 2a. Case-insensitive / strip match
             const match = validSourceList.find(
               (id) => id.toLowerCase() === sId.toLowerCase() ||
                       id.replace(/-/g, '') === sId.replace(/-/g, '')
             );
             if (match) return match;
 
-            // 2b. Model keliru mencantumkan findingId atau claimId di sourceIds
-            if (allowedClaimIds.has(sId) || sId.startsWith('finding-') || sId.startsWith('claim-')) {
-              return validSourceList[0];
-            }
-
+            // Jangan gantikan ke validSourceList[0]! Biarkan ID apa adanya agar downstream validator mendeteksi kesalahan.
             return sId;
           });
           cm.sourceIds = Array.from(new Set(cm.sourceIds));
-        } else if (validSourceList.length > 0 && (!cm.sourceIds || cm.sourceIds.length === 0)) {
-          cm.sourceIds = [validSourceList[0]];
         }
 
-        // 3. Normalisasi evidenceIds (Tangani transposisi ID ke evidenceIds)
-        if (Array.isArray(cm.evidenceIds) && validEvidenceList.length > 0) {
+        // 3. Normalisasi format evidenceIds HANYA jika merujuk ke ID yang sama persis (tanpa substitusi validEvidenceList[0])
+        if (Array.isArray(cm.evidenceIds)) {
           cm.evidenceIds = cm.evidenceIds.map((eId: string) => {
             if (allowedEvidenceIds.has(eId)) return eId;
 
@@ -277,15 +261,10 @@ FORMAT JSON YANG WAJIB DIHASILKAN:
             );
             if (match) return match;
 
-            if (allowedClaimIds.has(eId) || eId.startsWith('finding-') || eId.startsWith('claim-')) {
-              return validEvidenceList[0];
-            }
-
+            // Jangan gantikan ke validEvidenceList[0]! Biarkan ID apa adanya agar downstream validator mendeteksi kesalahan.
             return eId;
           });
           cm.evidenceIds = Array.from(new Set(cm.evidenceIds));
-        } else if (validEvidenceList.length > 0 && (!cm.evidenceIds || cm.evidenceIds.length === 0)) {
-          cm.evidenceIds = [validEvidenceList[0]];
         }
       }
     }

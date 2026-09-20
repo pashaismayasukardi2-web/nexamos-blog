@@ -94,11 +94,13 @@ export class GroundingGuard {
     brief: ResearchBrief,
     issues: GroundingIssue[]
   ): void {
+    const extractClaimId = (c: any): string | undefined => c.id || c.claimId;
     const validClaimIds = new Set<string>([
-      ...brief.supportedClaims.map((c) => c.id),
-      ...brief.partiallySupportedClaims.map((c) => c.id),
-      ...brief.disputedClaims.map((c) => c.id),
-      ...(brief.keyFindings || []).map((f) => f.id)
+      ...(brief.supportedClaims || []).map(extractClaimId).filter((id): id is string => Boolean(id)),
+      ...((brief as any).partiallySupportedClaims || []).map(extractClaimId).filter((id): id is string => Boolean(id)),
+      ...((brief as any).disputedClaims || []).map(extractClaimId).filter((id): id is string => Boolean(id)),
+      ...((brief as any).unsupportedClaims || []).map(extractClaimId).filter((id): id is string => Boolean(id)),
+      ...((brief as any).keyFindings || []).map((f: any) => f.id || f.findingId).filter((id): id is string => Boolean(id))
     ]);
 
     const validSourceIds = new Set<string>(brief.sourceIndex.map((s) => s.sourceId));
@@ -167,12 +169,13 @@ export class GroundingGuard {
     const largeNumberRegex = /\b\d{1,3}([,.]\d{3})+\b/g;
 
     // Kumpulkan seluruh teks bukti yang ada di ResearchBrief
-    const briefEvidenceTexts = brief.evidenceIndex.map((e) => e.quote).join(' ');
+    const briefEvidenceTexts = (brief.evidenceIndex || []).map((e) => e.quote).join(' ');
     const briefClaimTexts = [
-      ...brief.supportedClaims.map((c) => c.statement),
-      ...brief.partiallySupportedClaims.map((c) => c.statement)
+      ...(brief.supportedClaims || []).map((c) => c.statement),
+      ...((brief as any).partiallySupportedClaims || []).map((c: any) => c.statement)
     ].join(' ');
     const allBriefFactualText = `${briefEvidenceTexts} ${briefClaimTexts}`;
+    const normalizedBriefText = allBriefFactualText.replace(/,/g, '.');
 
     for (const section of draft.sections) {
       const content = section.content;
@@ -180,9 +183,11 @@ export class GroundingGuard {
       // Cari persentase
       const percentages = content.match(percentageRegex) || [];
       for (const pct of percentages) {
-        // Cek apakah angka persentase ini terdapat dalam bukti atau klaim ResearchBrief
-        const foundInBrief = allBriefFactualText.includes(pct);
-        const hasClaimUsage = section.claimUsageIds && section.claimUsageIds.length > 0;
+        // Cek apakah angka persentase ini terdapat dalam bukti atau klaim ResearchBrief (dengan toleransi koma/titik)
+        const normalizedPct = pct.replace(/,/g, '.');
+        const foundInBrief = allBriefFactualText.includes(pct) || normalizedBriefText.includes(normalizedPct);
+        const hasClaimUsage = (section.claimUsageIds && section.claimUsageIds.length > 0) ||
+          (draft.claimUsages && draft.claimUsages.length > 0);
 
         if (!foundInBrief || !hasClaimUsage) {
           issues.push({
@@ -202,8 +207,10 @@ export class GroundingGuard {
         const isYear = /^(19|20)\d{2}$/.test(num);
         if (isYear) continue;
 
-        const foundInBrief = allBriefFactualText.includes(num);
-        const hasClaimUsage = section.claimUsageIds && section.claimUsageIds.length > 0;
+        const normalizedNum = num.replace(/,/g, '.');
+        const foundInBrief = allBriefFactualText.includes(num) || normalizedBriefText.includes(normalizedNum);
+        const hasClaimUsage = (section.claimUsageIds && section.claimUsageIds.length > 0) ||
+          (draft.claimUsages && draft.claimUsages.length > 0);
 
         if (!foundInBrief || !hasClaimUsage) {
           issues.push({
