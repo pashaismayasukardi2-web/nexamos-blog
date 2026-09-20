@@ -82,9 +82,13 @@ export class ResearchBriefBuilder {
     const projectSources = await this.sourceRepo.listByProjectId(project.id);
     const projectEvidence = await this.evidenceRepo.listByProjectId(project.id);
 
-    // Ambil partially supported claims dari repositori
+    // Ambil partially supported, unverified, dan unsupported claims dari repositori
     const allProjectClaims = await this.claimRepo.listByProjectId(project.id);
     const partiallySupportedClaims = allProjectClaims.filter((c) => c.status === 'PARTIALLY_SUPPORTED');
+    const unverifiedClaims = allProjectClaims.filter((c) => c.status === 'UNVERIFIED');
+    const unsupportedClaims = allProjectClaims.filter(
+      (c) => c.status === 'INSUFFICIENT_EVIDENCE' || c.status === 'CONTRADICTED'
+    );
 
     // 2. Bangun Indeks Sumber Terverifikasi
     const sourceIndex: ResearchBriefSourceEntry[] = projectSources.map((s) => ({
@@ -92,11 +96,11 @@ export class ResearchBriefBuilder {
       title: s.title,
       url: s.url || undefined,
       sourceType: s.type,
-      authorityScore: s.qualityAssessment?.authorityScore ?? 70,
+      authorityScore: s.qualityAssessment?.authority ?? 70,
       freshnessStatus: s.recencyRisk === 'HIGH' ? 'AGING' : 'FRESH'
     }));
 
-    // 3. Bangun Indeks Bukti Terverifikasi
+    // 3. Bangun Indeks Bukti Terverifikasi (Hanya bukti sah)
     const evidenceIndex: ResearchBriefEvidenceEntry[] = [];
     for (const ev of projectEvidence) {
       // Verifikasi relasi integritas: pastikan sourceId dari evidence benar-benar ada
@@ -110,14 +114,41 @@ export class ResearchBriefBuilder {
         );
       }
 
+      // Bukti diverifikasi berdasarkan integritas faktual sumber riil, bukan semata publicationAllowed
+      const isVerified = ev.verified !== undefined ? ev.verified : ev.publicationAllowed;
+
       evidenceIndex.push({
         evidenceId: ev.id,
         sourceId: ev.sourceId,
         quote: ev.content,
         level: ev.evidenceLevel,
-        verified: ev.publicationAllowed
+        verified: isVerified,
+        provenanceType: ev.provenanceType,
+        sourceUrl: ev.sourceUrl || undefined
       });
     }
+
+    // Pemisahan eksplisit: Pengetahuan internal dan analisis orisinal
+    const internalKnowledge = projectEvidence
+      .filter(
+        (e) =>
+          e.provenanceType === 'INTERNAL_KNOWLEDGE' ||
+          projectSources.find((s) => s.id === e.sourceId)?.isInternal
+      )
+      .map((e) => ({
+        id: e.id,
+        content: e.content,
+        source: projectSources.find((s) => s.id === e.sourceId)?.title || e.sourceId,
+        notes: e.notes || undefined
+      }));
+
+    const originalAnalysis = projectEvidence
+      .filter((e) => e.provenanceType === 'ORIGINAL_ANALYSIS')
+      .map((e) => ({
+        id: e.id,
+        content: e.content,
+        framework: e.notes || undefined
+      }));
 
     // 4. Verifikasi Findings
     const keyFindings = await this.findingRepo.listByProjectId(project.id);
@@ -129,13 +160,13 @@ export class ResearchBriefBuilder {
 
     if (requiresHumanReview || sufficiencyResult.status === 'REVIEW_REQUIRED') {
       readiness = 'HUMAN_REVIEW_REQUIRED';
-      readinessReason = sufficiencyResult.reason || 'Dibutuhkan review manusia karena adanya kontradiksi atau bukti lemah.';
+      readinessReason = sufficiencyResult.summary || 'Dibutuhkan review manusia karena adanya kontradiksi atau bukti lemah.';
     } else if (sufficiencyResult.status === 'SUFFICIENT' && synthesis.readiness === 'READY_FOR_EDITORIAL') {
       readiness = 'READY_FOR_EDITORIAL';
       readinessReason = 'Seluruh kriteria kecukupan bukti dan validasi klaim telah terpenuhi secara kanonikal.';
     } else {
       readiness = 'NOT_READY';
-      readinessReason = sufficiencyResult.reason || 'Bukti belum memenuhi ambang batas kecukupan.';
+      readinessReason = sufficiencyResult.summary || 'Bukti belum memenuhi ambang batas kecukupan.';
     }
 
     const briefId = `rbrief-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 6)}`;
@@ -152,6 +183,11 @@ export class ResearchBriefBuilder {
       supportedClaims: synthesis.supportedClaims,
       partiallySupportedClaims,
       disputedClaims: synthesis.disputedClaims,
+      unverifiedClaims,
+      unsupportedClaims,
+
+      internalKnowledge: internalKnowledge.length > 0 ? internalKnowledge : undefined,
+      originalAnalysis: originalAnalysis.length > 0 ? originalAnalysis : undefined,
 
       keyFindings,
       limitations: synthesis.limitations,

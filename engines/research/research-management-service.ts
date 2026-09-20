@@ -654,7 +654,7 @@ export class ResearchManagementService {
     projectId: string
   ): Promise<Result<{ topicId: string; recommendedAction: RecommendedTopicAction; reason: string }, ResearchDomainError>> {
     const synthRes = await this.synthesize(projectId);
-    if (!synthRes.ok) return synthRes;
+    if (!synthRes.ok) return err(synthRes.error);
 
     const synth = synthRes.value;
 

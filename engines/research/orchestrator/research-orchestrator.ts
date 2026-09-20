@@ -33,6 +33,8 @@ import type { ResearchBudgetPolicy } from '../acquisition/research-budget-policy
 import type { TopicVolatility } from '../acquisition/freshness-evaluator.ts';
 import type { ClaimType } from '../domain/claim-status.ts';
 import type { EvidenceSufficiencyResult } from '../evidence-sufficiency.ts';
+import type { ClaimEvidenceVerifier } from '../claim-evidence-verifier.ts';
+import { DeterministicClaimEvidenceVerifier } from '../claim-evidence-verifier.ts';
 
 export const ORCHESTRATOR_VERSION = '2.4.0';
 export const RESEARCH_POLICY_VERSION = '2.4.0';
@@ -49,6 +51,7 @@ export interface ResearchOrchestratorDependencies {
   claimRepo: ResearchClaimRepository;
   evidenceRepo: ResearchEvidenceRepository;
   findingRepo: ResearchFindingRepository;
+  claimVerifier?: ClaimEvidenceVerifier;
 }
 
 export interface OrchestrateResearchOptions {
@@ -72,6 +75,7 @@ export class ResearchOrchestrator {
   private claimRepo: ResearchClaimRepository;
   private evidenceRepo: ResearchEvidenceRepository;
   private findingRepo: ResearchFindingRepository;
+  private claimVerifier: ClaimEvidenceVerifier;
 
   constructor(deps: ResearchOrchestratorDependencies) {
     this.managementService = deps.managementService;
@@ -85,6 +89,7 @@ export class ResearchOrchestrator {
     this.claimRepo = deps.claimRepo;
     this.evidenceRepo = deps.evidenceRepo;
     this.findingRepo = deps.findingRepo;
+    this.claimVerifier = deps.claimVerifier || new DeterministicClaimEvidenceVerifier();
   }
 
   /**
@@ -100,7 +105,7 @@ export class ResearchOrchestrator {
     // 1. RUMUSKAN RESEARCH PLAN
     const planRes = await this.planner.planTopicResearch(topic, { actor });
     if (!planRes.ok) {
-      return planRes;
+      return err(planRes.error);
     }
     const plan = planRes.value;
 
@@ -118,7 +123,7 @@ export class ResearchOrchestrator {
       actor
     );
     if (!projectRes.ok) {
-      return projectRes;
+      return err(projectRes.error);
     }
     const project = projectRes.value;
 
@@ -232,15 +237,41 @@ export class ResearchOrchestrator {
 
             if (createClaimRes.ok) {
               const newClaim = createClaimRes.value;
-              // Hubungkan bukti yang relevan secara deterministik
-              for (const ev of projectEvidence) {
+              // Evaluasi kecocokan bukti melalui ClaimEvidenceVerifier (bukan penautan buta)
+              const verifyRes = await this.claimVerifier.verify(newClaim, projectEvidence);
+
+              for (const evId of verifyRes.supportingEvidenceIds) {
                 await this.managementService.linkClaimEvidence(
                   project.id,
                   newClaim.id,
-                  ev.id,
+                  evId,
                   'SUPPORTS',
+                  'STRONG',
+                  verifyRes.reason,
+                  actor
+                );
+              }
+
+              for (const evId of verifyRes.contradictingEvidenceIds) {
+                await this.managementService.linkClaimEvidence(
+                  project.id,
+                  newClaim.id,
+                  evId,
+                  'CONTRADICTS',
+                  'STRONG',
+                  verifyRes.reason,
+                  actor
+                );
+              }
+
+              for (const evId of verifyRes.qualifyingEvidenceIds) {
+                await this.managementService.linkClaimEvidence(
+                  project.id,
+                  newClaim.id,
+                  evId,
+                  'QUALIFIES',
                   'MODERATE',
-                  undefined,
+                  verifyRes.reason,
                   actor
                 );
               }
@@ -261,7 +292,7 @@ export class ResearchOrchestrator {
       const synthRes = await this.managementService.synthesize(project.id, actor);
 
       if (!synthRes.ok) {
-        return synthRes;
+        return err(synthRes.error);
       }
       const currentSynthesis = synthRes.value;
 
@@ -377,7 +408,7 @@ export class ResearchOrchestrator {
     // 4. SINTESIS AKHIR & AI ASSISTANCE
     const finalSynthRes = await this.managementService.synthesize(project.id, actor);
     if (!finalSynthRes.ok) {
-      return finalSynthRes;
+      return err(finalSynthRes.error);
     }
     const finalSynthesis = finalSynthRes.value;
 
@@ -417,7 +448,7 @@ export class ResearchOrchestrator {
     });
 
     if (!briefRes.ok) {
-      return briefRes;
+      return err(briefRes.error);
     }
     const brief = briefRes.value;
 

@@ -41,6 +41,7 @@ import type { ResearchEvidence } from '../engines/research/domain/research-evide
 import type { ResearchSource } from '../engines/research/domain/research-source.ts';
 import type { ResearchQuestion, QuestionPriority } from '../engines/research/domain/research-question.ts';
 import type { ResearchClaim } from '../engines/research/domain/research-claim.ts';
+import { DeterministicClaimEvidenceVerifier } from '../engines/research/claim-evidence-verifier.ts';
 import type { EditorialGenerationRequest } from '../engines/editorial/editorial-generation-request.ts';
 
 interface PilotConfig {
@@ -220,18 +221,35 @@ async function runPilot(): Promise<void> {
     console.warn(`  [WARN] Perumusan klaim AI: ${proposedClaimsResult.error.message}`);
   }
 
-  const supportedClaims: ResearchClaim[] = (proposedClaimsResult.ok ? proposedClaimsResult.value : []).map((c, idx) => ({
-    id: `claim-pilot-${idx + 1}`,
-    researchProjectId: 'proj-pilot-01',
-    statement: c.statement,
-    claimType: c.claimType,
-    importance: c.importance,
-    status: 'SUPPORTED' as const,
-    createdAt: new Date().toISOString(),
-    updatedAt: new Date().toISOString()
-  }));
+  const claimVerifier = new DeterministicClaimEvidenceVerifier();
+  const supportedClaims: ResearchClaim[] = [];
+  const unverifiedClaims: ResearchClaim[] = [];
 
-  console.log(`Klaim Riset: ${supportedClaims.length} klaim faktual berhasil ditautkan.`);
+  const rawProposed = proposedClaimsResult.ok ? proposedClaimsResult.value : [];
+  for (let idx = 0; idx < rawProposed.length; idx++) {
+    const c = rawProposed[idx];
+    const candidateClaim: ResearchClaim = {
+      id: `claim-pilot-${idx + 1}`,
+      researchProjectId: 'proj-pilot-01',
+      statement: c.statement,
+      claimType: c.claimType,
+      importance: c.importance,
+      status: 'UNVERIFIED',
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString()
+    };
+
+    const verifyRes = await claimVerifier.verify(candidateClaim, extractedEvidence);
+    candidateClaim.status = verifyRes.status;
+
+    if (candidateClaim.status === 'SUPPORTED') {
+      supportedClaims.push(candidateClaim);
+    } else {
+      unverifiedClaims.push(candidateClaim);
+    }
+  }
+
+  console.log(`Klaim Riset: ${supportedClaims.length} klaim faktual berhasil diverifikasi (SUPPORTED), ${unverifiedClaims.length} belum terverifikasi.`);
 
   // Susun ResearchBrief
   const researchBrief: ResearchBrief = {
@@ -244,6 +262,8 @@ async function runPilot(): Promise<void> {
     supportedClaims,
     partiallySupportedClaims: [],
     disputedClaims: [],
+    unverifiedClaims,
+    unsupportedClaims: [],
     keyFindings: [
       {
         id: 'finding-01',
@@ -271,9 +291,10 @@ async function runPilot(): Promise<void> {
       sourceId: e.sourceId,
       quote: e.content.slice(0, 200),
       level: e.evidenceLevel,
-      verified: true
+      verified: e.verified !== undefined ? e.verified : true,
+      provenanceType: e.provenanceType || 'EXTERNAL_EVIDENCE'
     })),
-    readiness: 'READY_FOR_EDITORIAL',
+    readiness: supportedClaims.length > 0 ? 'READY_FOR_EDITORIAL' : 'NOT_READY',
     generatedAt: new Date().toISOString()
   };
 

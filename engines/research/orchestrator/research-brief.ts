@@ -13,6 +13,8 @@ import type { ResearchGap } from '../domain/research-gap.ts';
 import type { SourceType } from '../domain/source-type.ts';
 import type { EvidenceLevel } from '../../ideation/domain/evidence-level.ts';
 
+import type { EvidenceProvenanceType } from '../domain/research-evidence.ts';
+
 export type ResearchBriefReadiness =
   | 'NOT_READY'
   | 'READY_FOR_EDITORIAL'
@@ -37,6 +39,21 @@ export interface ResearchBriefEvidenceEntry {
   quote: string;
   level: EvidenceLevel;
   verified: boolean;
+  provenanceType?: EvidenceProvenanceType;
+  sourceUrl?: string;
+}
+
+export interface InternalKnowledgeEntry {
+  id: string;
+  content: string;
+  source: string;
+  notes?: string;
+}
+
+export interface OriginalAnalysisEntry {
+  id: string;
+  content: string;
+  framework?: string;
 }
 
 export interface ResearchBrief {
@@ -48,9 +65,17 @@ export interface ResearchBrief {
   answeredQuestions: ResearchQuestion[];
   openQuestions: ResearchQuestion[];
 
+  // Kontrak Integritas Klaim Terpisah
   supportedClaims: ResearchClaim[];
+  keyClaims?: ResearchClaim[]; // Alias opsional untuk backward compatibility
   partiallySupportedClaims: ResearchClaim[];
   disputedClaims: ResearchClaim[];
+  unverifiedClaims?: ResearchClaim[];
+  unsupportedClaims?: ResearchClaim[];
+
+  // Pemisahan Pengetahuan Internal & Analisis Orisinal
+  internalKnowledge?: InternalKnowledgeEntry[];
+  originalAnalysis?: OriginalAnalysisEntry[];
 
   keyFindings: ResearchFinding[];
   limitations: string[];

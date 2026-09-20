@@ -23,6 +23,7 @@ import { ParserRegistry } from './parsers/parser-registry.ts';
 import { SourceNormalizer } from './source-normalizer.ts';
 import { SourceDeduplicator } from './source-deduplicator.ts';
 import { EvidenceExtractor } from './evidence-extractor.ts';
+import { EvidenceIntegrityValidator } from '../evidence-integrity-validator.ts';
 import type { ResearchSourceRepository } from '../repository/research-source-repository.ts';
 import type { ResearchEvidenceRepository } from '../repository/research-evidence-repository.ts';
 import type { ResearchEventRepository } from '../repository/research-event-repository.ts';
@@ -35,6 +36,7 @@ export interface ResearchIngestionServiceDependencies {
   normalizer?: SourceNormalizer;
   deduplicator?: SourceDeduplicator;
   extractor?: EvidenceExtractor;
+  integrityValidator?: EvidenceIntegrityValidator;
 }
 
 export interface ResearchIngestionOptions {
@@ -52,6 +54,7 @@ export class ResearchIngestionService {
   private normalizer: SourceNormalizer;
   private deduplicator: SourceDeduplicator;
   private extractor: EvidenceExtractor;
+  private integrityValidator: EvidenceIntegrityValidator;
 
   constructor(deps: ResearchIngestionServiceDependencies) {
     this.sourceRepo = deps.sourceRepo;
@@ -61,6 +64,7 @@ export class ResearchIngestionService {
     this.normalizer = deps.normalizer || new SourceNormalizer();
     this.deduplicator = deps.deduplicator || new SourceDeduplicator();
     this.extractor = deps.extractor || new EvidenceExtractor();
+    this.integrityValidator = deps.integrityValidator || new EvidenceIntegrityValidator();
   }
 
   async ingest(
@@ -265,7 +269,7 @@ export class ResearchIngestionService {
       for (let i = 0; i < evidenceCandidates.length; i++) {
         const candidate = evidenceCandidates[i];
         const eviId = `evi-${source.id}-${i + 1}`;
-        const evidence: ResearchEvidence = {
+        const baseEvidence: ResearchEvidence = {
           id: eviId,
           sourceId: source.id,
           researchProjectId: input.researchProjectId,
@@ -275,8 +279,22 @@ export class ResearchIngestionService {
           capturedAt: now,
           publicationAllowed: !source.isInternal,
           notes: `Extracted candidate type: ${candidate.candidateType}`,
+          provenanceType: source.isInternal ? 'INTERNAL_KNOWLEDGE' : 'EXTERNAL_EVIDENCE',
+          sourceUrl: source.url || null,
           createdAt: now,
           updatedAt: now
+        };
+
+        const validation = this.integrityValidator.validate({
+          evidence: baseEvidence,
+          source,
+          sourceRawContent: input.content
+        });
+
+        const evidence: ResearchEvidence = {
+          ...baseEvidence,
+          verified: validation.verified,
+          provenanceType: validation.provenanceType
         };
 
         const saveEviRes = await this.evidenceRepo.create(evidence);

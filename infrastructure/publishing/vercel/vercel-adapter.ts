@@ -6,8 +6,8 @@
  * atau token autentikasi Git. Adapter ini deployment-safe dan human-controlled.
  */
 
-import type { PublishingProvider, BuildOutput, DeploymentOutput, DeploymentStatus, ProductionApproval, DeploymentMode } from '../../engines/publishing/publishing-provider.ts';
-import type { PublicationPackage } from '../../engines/publishing/publication.ts';
+import type { PublishingProvider, BuildOutput, DeploymentOutput, DeploymentStatus, ProductionApproval, DeploymentMode } from '../../../engines/publishing/publishing-provider.ts';
+import type { PublicationPackage } from '../../../engines/publishing/publication.ts';
 
 export interface VercelAdapterConfig {
   token?: string;

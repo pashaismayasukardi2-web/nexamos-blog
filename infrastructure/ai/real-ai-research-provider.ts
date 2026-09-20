@@ -100,7 +100,7 @@ FORMAT JSON YANG WAJIB DIHASILKAN:
 
 TUGAS: Analisis kesenjangan bukti riset (Gap Analysis) berdasarkan data yang tersedia saat ini:
 Klaim Saat Ini: ${JSON.stringify(input.claims.map((c) => ({ id: c.id, statement: c.statement, status: c.status })))}
-Evaluasi Grounding: ${JSON.stringify(input.groundingResults.map((g) => ({ claimId: g.claimId, status: g.groundingStatus })))}
+Evaluasi Grounding: ${JSON.stringify(input.groundingResults.map((g) => ({ claimId: g.claimId, status: g.claimStatus })))}
 Gaps yang sudah terdeteksi: ${JSON.stringify(input.currentGaps.map((g) => ({ type: g.type, description: g.description })))}
 
 FORMAT JSON YANG WAJIB DIHASILKAN:
@@ -201,7 +201,7 @@ ${JSON.stringify(input.supportedClaims.map((c) => c.statement))}
 Klaim Bersengketa (Disputed):
 ${JSON.stringify(input.disputedClaims.map((c) => c.statement))}
 Temuan Kunci:
-${JSON.stringify(input.keyFindings.map((f) => f.headline))}
+${JSON.stringify(input.keyFindings.map((f) => f.statement))}
 Keterbatasan:
 ${JSON.stringify(input.limitations)}
 

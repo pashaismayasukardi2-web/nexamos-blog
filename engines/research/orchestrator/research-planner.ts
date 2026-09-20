@@ -62,7 +62,7 @@ export class ResearchPlanner {
     });
 
     if (!proposalRes.ok) {
-      return proposalRes;
+      return err(proposalRes.error);
     }
 
     const proposal = proposalRes.value;
@@ -70,7 +70,7 @@ export class ResearchPlanner {
     // 2. Deterministic Validation Policy
     const validationRes = this.validateProposal(proposal, topic);
     if (!validationRes.ok) {
-      return validationRes;
+      return err(validationRes.error);
     }
 
     // 3. Bangun ResearchPlan kanonikal

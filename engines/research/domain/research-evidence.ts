@@ -18,6 +18,11 @@ export interface EvidenceLocator {
   timestamp?: string | null; // e.g. for audio/video/interviews
 }
 
+export type EvidenceProvenanceType =
+  | 'EXTERNAL_EVIDENCE'
+  | 'INTERNAL_KNOWLEDGE'
+  | 'ORIGINAL_ANALYSIS';
+
 export interface ResearchEvidence {
   id: string;
   sourceId: string;
@@ -28,6 +33,9 @@ export interface ResearchEvidence {
   capturedAt: string;
   publicationAllowed: boolean; // Menandai apakah data ini boleh dipublikasikan secara publik mentah (terutama E4 proprietary)
   notes?: string | null;
+  provenanceType?: EvidenceProvenanceType; // Membedakan bukti eksternal, pengetahuan internal, dan analisis orisinal
+  verified?: boolean; // Menandai status verifikasi integritas sumber riil
+  sourceUrl?: string | null;
   createdAt: string;
   updatedAt: string;
 }

@@ -76,7 +76,7 @@ export class ResearchGapAnalyzer {
     });
 
     if (!aiProposalRes.ok) {
-      return aiProposalRes;
+      return err(aiProposalRes.error);
     }
 
     const aiProposal = aiProposalRes.value;
@@ -118,7 +118,7 @@ export class ResearchGapAnalyzer {
     // Cek kontradiksi tajam yang belum terselesaikan
     const hasUnresolvedContradiction =
       validatedGaps.some((g) => g.type === 'UNRESOLVED_CONTRADICTION') ||
-      input.groundingResults.some((gr) => gr.status === 'CONTRADICTED' || gr.status === 'DISPUTED');
+      input.groundingResults.some((gr) => gr.claimStatus === 'CONTRADICTED' || gr.claimStatus === 'DISPUTED');
 
     if (hasUnresolvedContradiction || input.synthesis.readiness === 'REVIEW_REQUIRED') {
       nextAction = 'REQUEST_HUMAN_REVIEW';
@@ -206,7 +206,7 @@ export class ResearchGapAnalyzer {
     for (const c of criticalClaims) {
       // Cek apakah ada bukti primer
       const hasPrimary = input.sourcesList.some(
-        (s) => s.sourceType === 'PRIMARY_RESEARCH' || s.sourceType === 'DATASET' || s.sourceType === 'ACADEMIC_PAPER'
+        (s) => s.type === 'PRIMARY_RESEARCH' || s.type === 'DATASET' || s.type === 'ACADEMIC_PAPER'
       );
       if (!hasPrimary && input.sourcesList.length > 0) {
         if (!validatedGaps.some((g) => g.type === 'MISSING_PRIMARY_SOURCE' && g.claimId === c.id)) {

@@ -9,15 +9,15 @@
 import { AIClientError } from './ai-http-client.ts';
 import type {
   ResearchPlanProposal
-} from '../engines/research/orchestrator/research-plan.ts';
+} from '../../engines/research/orchestrator/research-plan.ts';
 import type {
   AIGapAnalysisProposal,
   ProposedClaim,
   AISynthesisAssistance
-} from '../engines/research/orchestrator/ai-research-provider.ts';
-import type { EditorialPlan } from '../engines/editorial/editorial-plan.ts';
-import type { GeneratedDraftPayload } from '../engines/editorial/ai-editorial-provider.ts';
-import type { ArticleSection } from '../engines/editorial/article-section.ts';
+} from '../../engines/research/orchestrator/ai-research-provider.ts';
+import type { EditorialPlan } from '../../engines/editorial/editorial-plan.ts';
+import type { GeneratedDraftPayload } from '../../engines/editorial/ai-editorial-provider.ts';
+import type { ArticleSection } from '../../engines/editorial/article-section.ts';
 
 export class StructuredOutputValidator {
   /**

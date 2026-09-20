@@ -87,6 +87,9 @@ export function evaluateClaimGrounding(input: ClaimGroundingInput): ClaimGroundi
     const ev = evidenceMap.get(rel.evidenceId);
     if (!ev) continue;
 
+    // Doktrin integritas: Bukti yang tidak terverifikasi tidak boleh memperkuat klaim
+    if (ev.verified === false) continue;
+
     // Track highest evidence level
     const rank = EVIDENCE_RANK[ev.evidenceLevel] ?? 0;
     if (rank > highestRank) {
