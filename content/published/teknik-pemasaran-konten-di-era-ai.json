@@ -1,0 +1,275 @@
+{
+  "id": "pkg-mua1s6kj-fmi8we",
+  "candidateId": "cand-teknik-pemasaran-konten-di-era-ai",
+  "articleId": "art-teknik-pemasaran-konten-di-era-ai",
+  "slug": "teknik-pemasaran-konten-di-era-ai",
+  "internalRoute": "/teknik-pemasaran-konten-di-era-ai",
+  "publicCanonicalPath": "/blog/teknik-pemasaran-konten-di-era-ai",
+  "canonicalPath": "/blog/teknik-pemasaran-konten-di-era-ai",
+  "canonicalUrl": "https://nexamos.cloud/blog/teknik-pemasaran-konten-di-era-ai",
+  "title": "Overcoming AI Hype: Sustainable and Strategic Content Marketing Techniques",
+  "description": "Many companies adopt AI for content marketing, but without a unified governance framework, these implementations often fail to deliver sustainable business impact. This article outlines a concrete framework to mandate cross-functional collaboration and governance policies, ensuring that AI becomes a strategic enabler rather than just a fleeting gimmick.",
+  "territory": "TACTICAL",
+  "articleType": "ANALYSIS",
+  "editorialRole": "AUTHORITY",
+  "articleContent": {
+    "headline": "Overcoming AI Hype: Sustainable and Strategic Content Marketing Techniques",
+    "dek": "Many companies adopt AI for content marketing, but without a unified governance framework, these implementations often fail to deliver sustainable business impact. This article outlines a concrete framework to mandate cross-functional collaboration and governance policies, ensuring that AI becomes a strategic enabler rather than just a fleeting gimmick.",
+    "sections": [
+      {
+        "id": "sec-1",
+        "heading": "Understanding the Reality of AI Implementation in Content Marketing",
+        "content": "The hype surrounding Artificial Intelligence (AI) has dominated industry conversations in marketing for several years. Many organizations race to integrate AI into their content marketing strategies, hoping to enhance efficiency and scale production. However, reality is far less smooth than anticipated. Studies show that while the majority of companies have adopted AI, only a small fraction actually realize sustainable business impact. One major cause is the lack of solid governance foundations. Without an integrated governance architecture, AI implementations tend to become silo projects that are misaligned with long-term business goals, ultimately becoming nothing more than a fleeting gimmick devoid of real strategic value.",
+        "order": 1,
+        "purpose": "CONTEXT"
+      },
+      {
+        "id": "sec-2",
+        "heading": "Governance Architecture: The Primary Foundation for AI Content Marketing Techniques",
+        "content": "To address these challenges, an integrated governance framework is required that mandates cross-team collaboration. This framework encompasses clear AI usage policies, measurable resource allocation, and performance evaluation mechanisms based on business outcomes, not merely operational efficiency. For example, poor governance policies—such as the absence of human verification protocols for content—can destroy the business value of AI investments. Without validation mechanisms, AI-generated content is vulnerable to factual errors or inaccuracies, which in turn damage brand reputation and audience trust. Therefore, governance architecture serves as the primary foundation distinguishing between successful and failed AI implementations.",
+        "order": 2,
+        "purpose": "FRAMEWORK"
+      },
+      {
+        "id": "sec-3",
+        "heading": "Practical Steps Towards Responsible AI Content Marketing",
+        "content": "Marketing teams must adopt AI responsibly by detailing specific stages. First, identify appropriate use cases, such as using AI for repetitive tasks like headline optimization or executive summaries, rather than for critical content requiring deep analytical depth. Second, ensure clear Return on Investment (ROI) measurement through A/B testing to compare the performance of AI-assisted content against manually created content. Third, workflow adaptation should be flexible, with team time allocated for experimentation and learning. Internal audit checklists must cover aspects of audience data security and privacy compliance, as well as editorial human review protocols before publication. These concrete steps ensure that AI adoption is not only innovative but also safe, ethical, and aligned with business objectives.",
+        "order": 3,
+        "purpose": "PRACTICAL_APPLICATION"
+      },
+      {
+        "id": "sec-4",
+        "heading": "Strategic Implications for Marketers in the AI Era",
+        "content": "AI governance will become a competitive differentiator in the future. Successful marketers are those who can holistically align technological innovation with organizational capabilities. Those who ignore governance and focus solely on technical hype will face implementation failure risks. Without good governance, AI will only serve as a tool generating meaningless content devoid of strategic value. Therefore, an engineering mindset—with scalable, testable, and sustainable system design—must be the primary foundation for implementing AI. Success is no longer about how smart the algorithm is, but rather about how robust its governance infrastructure is in supporting a dynamic marketing ecosystem.",
+        "order": 4,
+        "purpose": "IMPLICATION"
+      },
+      {
+        "id": "sec-5",
+        "heading": "Conclusion: Toward More Discerning Content Marketing in the AI Era",
+        "content": "Content marketing techniques in the AI era must begin with a fundamental question: Do we have a ready governance structure? If not, all efforts to adopt AI are simply wasteful resource expenditure. Marketing teams need to adopt a more prudent approach, building integrated governance foundations before integrating AI technologies. Consequently, AI innovation will become a strategic enabler driving sustainable growth, rather than just a fleeting trend quickly abandoned.",
+        "order": 5,
+        "purpose": "CONCLUSION"
+      }
+    ],
+    "plainTextSummary": "The hype surrounding Artificial Intelligence (AI) has dominated industry conversations in marketing for several years. Many organizations race to integrate AI into their content marketing strategies, hoping to enhance efficiency and scale production. However, reality is far less smooth than anticipated. Studies show that while the majority of companies have adopted AI, only a small fraction actually realize sustainable business impact. One major cause is the lack of solid governance foundations. Without an integrated governance architecture, AI implementations tend to become silo projects that are misaligned with long-term business goals, ultimately becoming nothing more than a fleeting gimmick devoid of real strategic value. To address these challenges, an integrated governance framework is required that mandates cross-team collaboration. This framework encompasses clear AI usage policies, measurable resource allocation, and performance evaluation mechanisms based on business outcomes, not merely operational efficiency. For example, poor governance policies—such as the absence of human verification protocols for content—can destroy the business value of AI investments. Without validation mechanisms, AI-generated content is vulnerable to factual errors or inaccuracies, which in turn damage brand reputation and audience trust. Therefore, governance architecture serves as the primary foundation distinguishing between successful and failed AI implementations. Marketing teams must adopt AI responsibly by detailing specific stages. First, identify appropriate use cases, such as using AI for repetitive tasks like headline optimization or executive summaries, rather than for critical content requiring deep analytical depth. Second, ensure clear Return on Investment (ROI) measurement through A/B testing to compare the performance of AI-assisted content against manually created content. Third, workflow adaptation should be flexible, with team time allocated for experimentation and learning. Internal audit checklists must cover aspects of audience data security and privacy compliance, as well as editorial human review protocols before publication. These concrete steps ensure that AI adoption is not only innovative but also safe, ethical, and aligned with business objectives. AI governance will become a competitive differentiator in the future. Successful marketers are those who can holistically align technological innovation with organizational capabilities. Those who ignore governance and focus solely on technical hype will face implementation failure risks. Without good governance, AI will only serve as a tool generating meaningless content devoid of strategic value. Therefore, an engineering mindset—with scalable, testable, and sustainable system design—must be the primary foundation for implementing AI. Success is no longer about how smart the algorithm is, but rather about how robust its governance infrastructure is in supporting a dynamic marketing ecosystem. Content marketing techniques in the AI era must begin with a fundamental question: Do we have a ready governance structure? If not, all efforts to adopt AI are simply wasteful resource expenditure. Marketing teams need to adopt a more prudent approach, building integrated governance foundations before integrating AI technologies. Consequently, AI innovation will become a strategic enabler driving sustainable growth, rather than just a fleeting trend quickly abandoned."
+  },
+  "defaultLanguage": "en",
+  "translations": {
+    "id": {
+      "title": "Mengatasi Hype AI: Teknik Pemasaran Konten yang Berkelanjutan dan Terarah",
+      "description": "Banyak perusahaan mengadopsi AI untuk pemasaran konten, tetapi tanpa arsitektur tata kelola terpadu, implementasi ini seringkali gagal menciptakan dampak bisnis yang berkelanjutan. Artikel ini menguraikan kerangka kerja konkret untuk mensyaratkan kolaborasi lintas fungsi dan kebijakan tata kelola, sehingga AI bukan sekadar gimmick, melainkan enabler strategis.",
+      "headline": "Mengatasi Hype AI: Teknik Pemasaran Konten yang Berkelanjutan dan Terarah",
+      "dek": "Banyak perusahaan mengadopsi AI untuk pemasaran konten, tetapi tanpa arsitektur tata kelola terpadu, implementasi ini seringkali gagal menciptakan dampak bisnis yang berkelanjutan. Artikel ini menguraikan kerangka kerja konkret untuk mensyaratkan kolaborasi lintas fungsi dan kebijakan tata kelola, sehingga AI bukan sekadar gimmick, melainkan enabler strategis.",
+      "sections": [
+        {
+          "id": "sec-1",
+          "heading": "Memahami Realitas Implementasi AI dalam Pemasaran Konten",
+          "content": "Hype tentang Artificial Intelligence (AI) telah mendominasi percakapan industri pemasaran selama beberapa tahun terakhir. Banyak perusahaan berlomba-lomba mengintegrasikan AI ke dalam strategi pemasaran kontennya dengan harapan meningkatkan efisiensi dan skala produksi. Namun, kenyataannya tidak semulus yang dibayangkan. Studi menunjukkan bahwa meskipun mayoritas perusahaan telah mengadopsi AI, hanya sebagian kecil yang benar-benar merealisasikan dampak bisnis yang berkelanjutan. Salah satu penyebab utamanya adalah kurangnya fondasi tata kelola yang solid. Tanpa arsitektur tata kelola terpadu, implementasi AI cenderung menjadi proyek silo yang tidak selaras dengan tujuan bisnis jangka panjang, akhirnya hanya menjadi sekadar gimmick tanpa nilai strategis nyata.",
+          "order": 1,
+          "purpose": "CONTEXT"
+        },
+        {
+          "id": "sec-2",
+          "heading": "Arsitektur Tata Kelola: Fondasi Utama untuk Teknik Pemasaran Konten AI",
+          "content": "Untuk mengatasi tantangan tersebut, diperlukan kerangka kerja tata kelola terpadu yang mensyaratkan kolaborasi lintas tim. Kerangka ini mencakup kebijakan penggunaan AI yang jelas, alokasi sumber daya yang terukur, serta mekanisme evaluasi kinerja yang berbasis pada hasil bisnis, bukan sekadar efisiensi operasional. Sebagai contoh, kebijakan tata kelola yang buruk—seperti tidak adanya protokol verifikasi konten oleh tim manusia—dapat menghancurkan nilai bisnis dari investasi AI. Tanpa mekanisme validasi, konten yang dihasilkan AI rentan terhadap kesalahan fakta atau ketidakakuratan, yang pada gilirannya merusak reputasi merek dan kepercayaan audiens. Oleh karena itu, arsitektur tata kelola menjadi fondasi utama yang membedakan antara implementasi AI yang sukses dan yang gagal.",
+          "order": 2,
+          "purpose": "FRAMEWORK"
+        },
+        {
+          "id": "sec-3",
+          "heading": "Langkah Praktis Menuju Pemasaran Konten AI yang Bertanggung Jawab",
+          "content": "Tim pemasaran harus mengadopsi AI secara bertanggung jawab dengan merinci tahapan spesifik. Pertama, identifikasi use case yang tepat, misalnya menggunakan AI untuk tugas-tugas repetitif seperti optimisasi headline atau ringkasan eksekutif, bukan untuk konten kritis yang membutuhkan kedalaman analitis. Kedua, pastikan pengukuran Return on Investment (ROI) yang jelas dengan melakukan A/B testing untuk membandingkan performa konten AI-assisted versus konten yang dibuat manusia. Ketiga, adaptasi proses kerja harus fleksibel, dengan alokasi waktu tim untuk eksperimen dan pembelajaran. Checklist audit internal harus mencakup aspek keamanan data audiens dan kepatusan privasi, serta protokol review oleh editor manusia sebelum publikasi. Langkah-langkah konkret ini memastikan bahwa adopsisi AI tidak hanya inovatif tetapi juga aman, etis, dan selaras dengan tujuan bisnis.",
+          "order": 3,
+          "purpose": "PRACTICAL_APPLICATION"
+        },
+        {
+          "id": "sec-4",
+          "heading": "Implikasi Strategis bagi Pemimpin Pemasaran di Era AI",
+          "content": "Tata kelola AI akan menjadi diferensiator kompetitif di masa depan. Pemimpin pemasaran yang berhasil adalah mereka yang bisa menyelaraskan inovasi teknologi dengan kapabilitas organisasi secara holistik. Mereka yang mengabaikan tata kelola dan hanya fokus pada hype teknis akan menghadapi risiko kegagalan implementasi. Tanpa tata kelola yang baik, AI hanya akan menjadi alat yang menghasilkan konten asal-asalan tanpa nilai strategis. Oleh karena itu, mindset engineering—dengan desain sistem yang terukur, teruji, dan berkelanjutan—harus menjadi landasan utama dalam mengimplementasikan AI. Keberhasilan bukan lagi tentang seberapa pintar algoritmanya, melainkan seberapa tangguh infrastruktur tata kelolanya dalam mendukung ekosistem pemasaran yang dinamis.",
+          "order": 4,
+          "purpose": "IMPLICATION"
+        },
+        {
+          "id": "sec-5",
+          "heading": "Penutup: Menuju Pemasaran Konten yang Lebih Bijak di Era AI",
+          "content": "Teknik pemasaran konten di era AI harus dimulai dengan pertanyaan fundamental: Apakah kita memiliki struktur tata kelola yang siap? Jika tidak, semua upaya mengadopsi AI hanyalah pemborosan sumber daya. Tim pemasaran perlu mengadopsi pendekatan yang lebih bijak, dengan membangun fondasi tata kelola terpadu sebelum mengintegrasikan teknologi AI. Dengan demikian, inovasi AI akan menjadi enabler strategis yang mendorong pertumbuhan berkelanjutan, bukan sekadar tren musiman yang cepat ditinggalkan.",
+          "order": 5,
+          "purpose": "CONCLUSION"
+        }
+      ]
+    },
+    "en": {
+      "title": "Overcoming AI Hype: Sustainable and Strategic Content Marketing Techniques",
+      "description": "Many companies adopt AI for content marketing, but without a unified governance framework, these implementations often fail to deliver sustainable business impact. This article outlines a concrete framework to mandate cross-functional collaboration and governance policies, ensuring that AI becomes a strategic enabler rather than just a fleeting gimmick.",
+      "headline": "Overcoming AI Hype: Sustainable and Strategic Content Marketing Techniques",
+      "dek": "Many companies adopt AI for content marketing, but without a unified governance framework, these implementations often fail to deliver sustainable business impact. This article outlines a concrete framework to mandate cross-functional collaboration and governance policies, ensuring that AI becomes a strategic enabler rather than just a fleeting gimmick.",
+      "sections": [
+        {
+          "id": "sec-1",
+          "heading": "Understanding the Reality of AI Implementation in Content Marketing",
+          "content": "The hype surrounding Artificial Intelligence (AI) has dominated industry conversations in marketing for several years. Many organizations race to integrate AI into their content marketing strategies, hoping to enhance efficiency and scale production. However, reality is far less smooth than anticipated. Studies show that while the majority of companies have adopted AI, only a small fraction actually realize sustainable business impact. One major cause is the lack of solid governance foundations. Without an integrated governance architecture, AI implementations tend to become silo projects that are misaligned with long-term business goals, ultimately becoming nothing more than a fleeting gimmick devoid of real strategic value.",
+          "order": 1,
+          "purpose": "CONTEXT"
+        },
+        {
+          "id": "sec-2",
+          "heading": "Governance Architecture: The Primary Foundation for AI Content Marketing Techniques",
+          "content": "To address these challenges, an integrated governance framework is required that mandates cross-team collaboration. This framework encompasses clear AI usage policies, measurable resource allocation, and performance evaluation mechanisms based on business outcomes, not merely operational efficiency. For example, poor governance policies—such as the absence of human verification protocols for content—can destroy the business value of AI investments. Without validation mechanisms, AI-generated content is vulnerable to factual errors or inaccuracies, which in turn damage brand reputation and audience trust. Therefore, governance architecture serves as the primary foundation distinguishing between successful and failed AI implementations.",
+          "order": 2,
+          "purpose": "FRAMEWORK"
+        },
+        {
+          "id": "sec-3",
+          "heading": "Practical Steps Towards Responsible AI Content Marketing",
+          "content": "Marketing teams must adopt AI responsibly by detailing specific stages. First, identify appropriate use cases, such as using AI for repetitive tasks like headline optimization or executive summaries, rather than for critical content requiring deep analytical depth. Second, ensure clear Return on Investment (ROI) measurement through A/B testing to compare the performance of AI-assisted content against manually created content. Third, workflow adaptation should be flexible, with team time allocated for experimentation and learning. Internal audit checklists must cover aspects of audience data security and privacy compliance, as well as editorial human review protocols before publication. These concrete steps ensure that AI adoption is not only innovative but also safe, ethical, and aligned with business objectives.",
+          "order": 3,
+          "purpose": "PRACTICAL_APPLICATION"
+        },
+        {
+          "id": "sec-4",
+          "heading": "Strategic Implications for Marketers in the AI Era",
+          "content": "AI governance will become a competitive differentiator in the future. Successful marketers are those who can holistically align technological innovation with organizational capabilities. Those who ignore governance and focus solely on technical hype will face implementation failure risks. Without good governance, AI will only serve as a tool generating meaningless content devoid of strategic value. Therefore, an engineering mindset—with scalable, testable, and sustainable system design—must be the primary foundation for implementing AI. Success is no longer about how smart the algorithm is, but rather about how robust its governance infrastructure is in supporting a dynamic marketing ecosystem.",
+          "order": 4,
+          "purpose": "IMPLICATION"
+        },
+        {
+          "id": "sec-5",
+          "heading": "Conclusion: Toward More Discerning Content Marketing in the AI Era",
+          "content": "Content marketing techniques in the AI era must begin with a fundamental question: Do we have a ready governance structure? If not, all efforts to adopt AI are simply wasteful resource expenditure. Marketing teams need to adopt a more prudent approach, building integrated governance foundations before integrating AI technologies. Consequently, AI innovation will become a strategic enabler driving sustainable growth, rather than just a fleeting trend quickly abandoned.",
+          "order": 5,
+          "purpose": "CONCLUSION"
+        }
+      ]
+    }
+  },
+  "author": {
+    "name": "Tim Riset & Rekayasa NexaMOS",
+    "role": "NexaMOS Knowledge & AI Engineering",
+    "avatarUrl": "https://nexamos.cloud/authors/default.png"
+  },
+  "publishedAt": "2026-09-20T16:45:36.451Z",
+  "updatedAt": "2026-09-20T16:45:29.955Z",
+  "seoMetadata": {
+    "metaTitle": "Overcoming AI Hype: Sustainable and Strategic Content Marketing Techniques | NexaMOS",
+    "metaDescription": "Many companies adopt AI for content marketing, but without a unified governance framework, these implementations often fail to deliver sustainable business impact. This article outlines a concrete framework to mandate cross-functional collaboration and governance policies, ensuring that AI becomes a strategic enabler rather than just a fleeting gimmick.",
+    "openGraph": {
+      "og:title": "Overcoming AI Hype: Sustainable and Strategic Content Marketing Techniques",
+      "og:description": "Many companies adopt AI for content marketing, but without a unified governance framework, these implementations often fail to deliver sustainable business impact. This article outlines a concrete framework to mandate cross-functional collaboration and governance policies, ensuring that AI becomes a strategic enabler rather than just a fleeting gimmick.",
+      "og:url": "https://nexamos.cloud/blog/teknik-pemasaran-konten-di-era-ai",
+      "og:type": "article"
+    },
+    "twitterCard": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Overcoming AI Hype: Sustainable and Strategic Content Marketing Techniques",
+      "twitter:description": "Many companies adopt AI for content marketing, but without a unified governance framework, these implementations often fail to deliver sustainable business impact. This article outlines a concrete framework to mandate cross-functional collaboration and governance policies, ensuring that AI becomes a strategic enabler rather than just a fleeting gimmick."
+    }
+  },
+  "discoverMetadata": {
+    "hasLargeImagePreview": true,
+    "interestFit": "Teknik pemasaran konten di era AI"
+  },
+  "aiVisibilityMetadata": {
+    "retrievability": "HIGH",
+    "answerability": "STRONG",
+    "claimTraceability": "FULL"
+  },
+  "heroImage": {
+    "url": "/blog/images/hero-teknik-pemasaran-konten-di-era-ai.webp",
+    "alt": "Mengatasi Hype AI: Teknik Pemasaran Konten yang Berkelanjutan dan Terarah",
+    "width": 1200,
+    "height": 630,
+    "caption": "Banyak perusahaan mengadopsi AI untuk pemasaran konten, tetapi tanpa arsitektur tata kelola terpadu, implementasi ini seringkali gagal menciptakan dampak bisnis yang berkelanjutan. Artikel ini menguraikan kerangka kerja konkret untuk mensyaratkan kolaborasi lintas fungsi dan kebijakan tata kelola, sehingga AI bukan sekadar gimmick, melainkan enabler strategis."
+  },
+  "visualAssets": [
+    {
+      "url": "/blog/images/hero-teknik-pemasaran-konten-di-era-ai.webp",
+      "width": 1200,
+      "height": 630,
+      "aspectRatio": "16:9",
+      "alt": "Mengatasi Hype AI: Teknik Pemasaran Konten yang Berkelanjutan dan Terarah",
+      "caption": "Banyak perusahaan mengadopsi AI untuk pemasaran konten, tetapi tanpa arsitektur tata kelola terpadu, implementasi ini seringkali gagal menciptakan dampak bisnis yang berkelanjutan. Artikel ini menguraikan kerangka kerja konkret untuk mensyaratkan kolaborasi lintas fungsi dan kebijakan tata kelola, sehingga AI bukan sekadar gimmick, melainkan enabler strategis."
+    }
+  ],
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": "https://nexamos.cloud/blog/teknik-pemasaran-konten-di-era-ai#article",
+        "headline": "Mengatasi Hype AI: Teknik Pemasaran Konten yang Berkelanjutan dan Terarah",
+        "description": "Banyak perusahaan mengadopsi AI untuk pemasaran konten, tetapi tanpa arsitektur tata kelola terpadu, implementasi ini seringkali gagal menciptakan dampak bisnis yang berkelanjutan. Artikel ini menguraikan kerangka kerja konkret untuk mensyaratkan kolaborasi lintas fungsi dan kebijakan tata kelola, sehingga AI bukan sekadar gimmick, melainkan enabler strategis.",
+        "mainEntityOfPage": "https://nexamos.cloud/blog/teknik-pemasaran-konten-di-era-ai",
+        "datePublished": "2026-09-20T16:45:36.451Z",
+        "dateModified": "2026-09-20T16:45:29.955Z",
+        "author": {
+          "@type": "Person",
+          "name": "Tim Riset & Rekayasa NexaMOS",
+          "jobTitle": "NexaMOS Knowledge & AI Engineering"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "NexaMOS Knowledge Journal",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://nexamos.cloud/brand/logo.png"
+          }
+        },
+        "image": [
+          "/blog/images/hero-teknik-pemasaran-konten-di-era-ai.webp"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://nexamos.cloud/blog/teknik-pemasaran-konten-di-era-ai#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://nexamos.cloud"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://nexamos.cloud/blog"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Mengatasi Hype AI: Teknik Pemasaran Konten yang Berkelanjutan dan Terarah",
+            "item": "https://nexamos.cloud/blog/teknik-pemasaran-konten-di-era-ai"
+          }
+        ]
+      }
+    ]
+  },
+  "internalLinks": [],
+  "externalCitations": [
+    {
+      "id": "cit-1",
+      "title": "Teknik pemasaran konten di era AI",
+      "url": "https://contentmarketinginstitute.com/ai-content-creation-tools/how-to-work-ai-into-content-marketing-in-a-way-that-works-for-you",
+      "publisher": "Referensi Web",
+      "isPubliclyAccessible": true
+    }
+  ],
+  "robots": {
+    "index": true,
+    "follow": true,
+    "maxSnippet": -1,
+    "maxImagePreview": "large",
+    "maxVideoPreview": -1
+  },
+  "sitemapEntry": {
+    "loc": "https://nexamos.cloud/blog/teknik-pemasaran-konten-di-era-ai",
+    "lastmod": "2026-09-20T16:45:36.451Z",
+    "changefreq": "weekly",
+    "priority": 0.8
+  },
+  "isSyntheticTestData": false,
+  "fixtureOnly": false,
+  "generatedAt": "2026-09-20T16:45:36.451Z",
+  "packageVersion": "v1.0.0"
+}
