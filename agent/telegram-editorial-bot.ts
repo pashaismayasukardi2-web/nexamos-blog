@@ -31,7 +31,7 @@ import { InMemoryResearchSourceRepository } from '../engines/research/repository
 import { InMemoryResearchEvidenceRepository } from '../engines/research/repository/in-memory-research-evidence-repository.ts';
 import { InMemoryResearchEventRepository } from '../engines/research/repository/in-memory-research-event-repository.ts';
 import { ResearchAcquisitionService } from '../engines/research/acquisition/research-acquisition-service.ts';
-import { MockResearchDiscoveryProvider } from '../engines/research/acquisition/providers/mock-discovery-provider.ts';
+import { ResearchSearchProviderFactory } from '../engines/research/acquisition/providers/research-search-provider-factory.ts';
 import { DeterministicClaimEvidenceVerifier } from '../engines/research/claim-evidence-verifier.ts';
 import { GroundingGuard } from '../engines/editorial/grounding-guard.ts';
 import type { Topic } from '../engines/ideation/domain/topic.types.ts';
@@ -615,8 +615,8 @@ Atau cukup bagikan link studi/berita yang ingin dianalisis!
           }
         }
       } else {
-        // Topik tanpa URL langsung: jalankan Source Discovery untuk menemukan sumber riil
-        const discoveryProvider = new MockResearchDiscoveryProvider();
+        // Topik tanpa URL langsung: jalankan Source Discovery untuk menemukan sumber riil secara otonom
+        const discoveryProvider = ResearchSearchProviderFactory.createDiscoveryProvider();
         const acquisitionService = new ResearchAcquisitionService({
           discoveryProvider,
           acquisitionProvider,
