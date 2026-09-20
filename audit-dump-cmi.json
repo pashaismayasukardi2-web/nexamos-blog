@@ -1,0 +1,680 @@
+{
+  "researchMetrics": {
+    "researchQuestionsCount": 4,
+    "searchRequestsCount": 0,
+    "candidateSourcesCount": 1,
+    "acquiredSourcesCount": 1,
+    "evidenceCandidatesCount": 41,
+    "verifiedEvidenceCount": 33,
+    "proposedClaimsCount": 6,
+    "supportedClaimsCount": 4,
+    "unverifiedClaimsCount": 2,
+    "unsupportedClaimsCount": 0
+  },
+  "supportedClaims": [
+    {
+      "id": "claim-1",
+      "researchProjectId": "proj-mua010ix",
+      "statement": "Untuk mengintegrasikan AI dengan benar, tanyakan 'Di mana AI paling masuk akal digunakan?'",
+      "claimType": "FACTUAL",
+      "importance": "CORE",
+      "status": "SUPPORTED",
+      "createdAt": "2026-09-20T15:56:38.423Z",
+      "updatedAt": "2026-09-20T15:56:38.423Z",
+      "supportingEvidenceIds": [
+        "evi-src-mua013cz-avxm-5"
+      ]
+    },
+    {
+      "id": "claim-3",
+      "researchProjectId": "proj-mua010ix",
+      "statement": "Implementasikan kontrol untuk menjaga kualitas konten yang dihasilkan AI.",
+      "claimType": "FACTUAL",
+      "importance": "CORE",
+      "status": "SUPPORTED",
+      "createdAt": "2026-09-20T15:56:39.189Z",
+      "updatedAt": "2026-09-20T15:56:39.189Z",
+      "supportingEvidenceIds": [
+        "evi-src-mua013cz-avxm-19"
+      ]
+    },
+    {
+      "id": "claim-5",
+      "researchProjectId": "proj-mua010ix",
+      "statement": "Fokus pada efektivitas, bukan hanya efisiensi waktu saat mengukur dampak AI.",
+      "claimType": "ANALYTICAL",
+      "importance": "SUPPORTING",
+      "status": "SUPPORTED",
+      "createdAt": "2026-09-20T15:56:39.857Z",
+      "updatedAt": "2026-09-20T15:56:39.857Z",
+      "supportingEvidenceIds": [
+        "evi-src-mua013cz-avxm-9"
+      ]
+    },
+    {
+      "id": "claim-6",
+      "researchProjectId": "proj-mua010ix",
+      "statement": "Hindari menggunakan alat AI 'rogue' yang tidak disahkan perusahaan untuk menjaga keamanan data.",
+      "claimType": "FACTUAL",
+      "importance": "SUPPORTING",
+      "status": "SUPPORTED",
+      "createdAt": "2026-09-20T15:56:40.196Z",
+      "updatedAt": "2026-09-20T15:56:40.196Z",
+      "supportingEvidenceIds": [
+        "evi-src-mua013cz-avxm-13",
+        "evi-src-mua013cz-avxm-32"
+      ]
+    }
+  ],
+  "unverifiedClaims": [
+    {
+      "id": "claim-2",
+      "researchProjectId": "proj-mua010ix",
+      "statement": "Gunakan A/B testing untuk membandingkan kinerja konten AI-assisted dengan yang dibuat manusia.",
+      "claimType": "EMPIRICAL",
+      "importance": "CORE",
+      "status": "PARTIALLY_SUPPORTED",
+      "createdAt": "2026-09-20T15:56:38.802Z",
+      "updatedAt": "2026-09-20T15:56:38.802Z",
+      "supportingEvidenceIds": []
+    },
+    {
+      "id": "claim-4",
+      "researchProjectId": "proj-mua010ix",
+      "statement": "Bangun kebijakan tata kelola AI untuk mengelola risiko dan kolaborasi tim.",
+      "claimType": "FACTUAL",
+      "importance": "CORE",
+      "status": "PARTIALLY_SUPPORTED",
+      "createdAt": "2026-09-20T15:56:39.474Z",
+      "updatedAt": "2026-09-20T15:56:39.474Z",
+      "supportingEvidenceIds": []
+    }
+  ],
+  "auditResult": {
+    "status": "FAIL",
+    "summary": "DraftClaimAuditor: GAGAL. Terdeteksi 5 klaim eksternal tak berdasar / perluasan semantik dan 5 isu integritas.",
+    "groundedExternalFacts": 3,
+    "ungroundedExternalFacts": 5,
+    "partialSupportCount": 0,
+    "originalAnalysisCount": 22,
+    "interpretationCount": 0,
+    "internalKnowledgeCount": 0,
+    "nonFactualCount": 5,
+    "issues": [
+      {
+        "code": "UNGROUNDED_EXTERNAL_FACT",
+        "severity": "CRITICAL",
+        "message": "Proposisi faktual eksternal 'prop-6' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"Organisasi harus menganalisis seluruh siklus hidup konten untuk mengidentifikasi bottleneck atau peluang diferensiasi.\"",
+        "propositionId": "prop-6",
+        "sectionId": "sec-2",
+        "snippet": "Organisasi harus menganalisis seluruh siklus hidup konten untuk mengidentifikasi bottleneck atau peluang diferensiasi."
+      },
+      {
+        "code": "UNGROUNDED_EXTERNAL_FACT",
+        "severity": "CRITICAL",
+        "message": "Proposisi faktual eksternal 'prop-7' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"Contohnya termasuk riset kata kunci, personalisasi skrip, atau optimasi distribusi berbasis perilaku audiens.\"",
+        "propositionId": "prop-7",
+        "sectionId": "sec-2",
+        "snippet": "Contohnya termasuk riset kata kunci, personalisasi skrip, atau optimasi distribusi berbasis perilaku audiens."
+      },
+      {
+        "code": "UNGROUNDED_EXTERNAL_FACT",
+        "severity": "CRITICAL",
+        "message": "Proposisi faktual eksternal 'prop-8' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"Pertanyaan ini memaksa stakeholder untuk berpikir holistik daripada fragmentatif.\"",
+        "propositionId": "prop-8",
+        "sectionId": "sec-2",
+        "snippet": "Pertanyaan ini memaksa stakeholder untuk berpikir holistik daripada fragmentatif."
+      },
+      {
+        "code": "UNGROUNDED_EXTERNAL_FACT",
+        "severity": "CRITICAL",
+        "message": "Proposisi faktual eksternal 'prop-11' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"Banyak kasus kebocoran data sensitif terjadi karena penggunaan platform konsumen tanpa kebijakan yang memadai.\"",
+        "propositionId": "prop-11",
+        "sectionId": "sec-3",
+        "snippet": "Banyak kasus kebocoran data sensitif terjadi karena penggunaan platform konsumen tanpa kebijakan yang memadai."
+      },
+      {
+        "code": "UNGROUNDED_EXTERNAL_FACT",
+        "severity": "CRITICAL",
+        "message": "Proposisi faktual eksternal 'prop-13' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"Organisasi wajib memiliki kerangka aprobasi teknologi yang ketat untuk mitigasi risiko.\"",
+        "propositionId": "prop-13",
+        "sectionId": "sec-3",
+        "snippet": "Organisasi wajib memiliki kerangka aprobasi teknologi yang ketat untuk mitigasi risiko."
+      }
+    ],
+    "propositions": [
+      {
+        "propositionId": "prop-1",
+        "sectionId": "sec-1",
+        "text": "Dominasi percakapan tentang AI dalam pemasaran konten sering kali terjebak pada aspek operasional dan efisiensi.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-2",
+        "sectionId": "sec-1",
+        "text": "Banyak tim pemasaran gagal mengaitkan adopsi AI dengan tujuan bisnis yang lebih luas.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-3",
+        "sectionId": "sec-1",
+        "text": "Tanpa arah strategis yang jelas, investasi AI rentan menghasilkan output yang tidak relevan.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-4",
+        "sectionId": "sec-1",
+        "text": "Studi menunjukkan bahwa mayoritas perusahaan mengukur dampak AI hanya berdasarkan penghematan waktu, bukan efektivitas bisnis nyata.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-5",
+        "sectionId": "sec-1",
+        "text": "Oleh karena itu, integrasi AI harus dimulai dengan pertanyaan fundamental: di mana teknologi ini paling bermakna digunakan?",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-6",
+        "sectionId": "sec-2",
+        "text": "Organisasi harus menganalisis seluruh siklus hidup konten untuk mengidentifikasi bottleneck atau peluang diferensiasi.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "UNSUPPORTED",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Tidak ditemukan klaim riset dengan kesesuaian semantik yang mencukupi.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-7",
+        "sectionId": "sec-2",
+        "text": "Contohnya termasuk riset kata kunci, personalisasi skrip, atau optimasi distribusi berbasis perilaku audiens.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "UNSUPPORTED",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Tidak ditemukan klaim riset dengan kesesuaian semantik yang mencukupi.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-8",
+        "sectionId": "sec-2",
+        "text": "Pertanyaan ini memaksa stakeholder untuk berpikir holistik daripada fragmentatif.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "UNSUPPORTED",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Tidak ditemukan klaim riset dengan kesesuaian semantik yang mencukupi.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-9",
+        "sectionId": "sec-2",
+        "text": "Dengan demikian, tim pemasaran dapat mengalokasikan sumber daya dengan lebih efektif dan menciptakan konten yang benar-benar bernilai strategis.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-1"
+        ],
+        "evidenceIds": [
+          "evi-src-mua013cz-avxm-5"
+        ],
+        "sourceIds": [
+          "src-mua013cz-avxm"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-10",
+        "sectionId": "sec-3",
+        "text": "Adopsi alat AI 'rogue' (tidak disetujui perusahaan) menciptakan celah keamanan data yang signifikan.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-6"
+        ],
+        "evidenceIds": [
+          "evi-src-mua013cz-avxm-13",
+          "evi-src-mua013cz-avxm-32"
+        ],
+        "sourceIds": [
+          "src-mua013cz-avxm"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-6 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-11",
+        "sectionId": "sec-3",
+        "text": "Banyak kasus kebocoran data sensitif terjadi karena penggunaan platform konsumen tanpa kebijakan yang memadai.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "UNSUPPORTED",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Tidak ditemukan klaim riset dengan kesesuaian semantik yang mencukupi.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-12",
+        "sectionId": "sec-3",
+        "text": "Untuk menjaga keamanan data, hindari menggunakan alat AI 'rogue' yang tidak disahkan perusahaan.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-6"
+        ],
+        "evidenceIds": [
+          "evi-src-mua013cz-avxm-13",
+          "evi-src-mua013cz-avxm-32"
+        ],
+        "sourceIds": [
+          "src-mua013cz-avxm"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-6 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-13",
+        "sectionId": "sec-3",
+        "text": "Organisasi wajib memiliki kerangka aprobasi teknologi yang ketat untuk mitigasi risiko.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "UNSUPPORTED",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Tidak ditemukan klaim riset dengan kesesuaian semantik yang mencukupi.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-14",
+        "sectionId": "sec-4",
+        "text": "Key Performance Indicator (KPI) tradisional seperti jumlah postingan atau waktu produksi harus dilengkapi metrik bisnis nyata.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-15",
+        "sectionId": "sec-4",
+        "text": "Penting untuk mengukur bagaimana konten yang diperkuat AI mempengaruhi konversi, retensi pelanggan, atau penciptaan nilai jangka panjang.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-16",
+        "sectionId": "sec-4",
+        "text": "Fokus pada return on investment (ROI) strategis, bukan sekadar penghematan biaya.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-17",
+        "sectionId": "sec-4",
+        "text": "Sebagaimana dikemukakan oleh para ahli, sebagian besar perusahaan mengukur dampak AI dalam hal waktu",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-18",
+        "sectionId": "sec-4",
+        "text": "pendekatan ini mengukur efisiensi, bukan efektivitas.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-19",
+        "sectionId": "sec-5",
+        "text": "AI dapat meningkatkan produktivitas, tetapi risiko generasi konten yang tidak akurat atau bias sangat tinggi.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-20",
+        "sectionId": "sec-5",
+        "text": "Implementasikan workflow validasi manusia di ujung proses, audit algoritma berkala",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-21",
+        "sectionId": "sec-5",
+        "text": "transparansi sumber data.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-22",
+        "sectionId": "sec-5",
+        "text": "Standarisasi ini melindungi reputasi merek dan memastikan pesan tetap selaras dengan nilai organisasi.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-23",
+        "sectionId": "sec-5",
+        "text": "Untuk mengelola risiko tersebut, Meghan merekomendasikan investasi dalam keterampilan jurnalistik seperti penyuntingan, verifikasi fakta",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-24",
+        "sectionId": "sec-5",
+        "text": "pengecekan sumber",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-25",
+        "sectionId": "sec-5",
+        "text": "membangun langkah-langkah ini ke dalam produksi konten.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-26",
+        "sectionId": "sec-6",
+        "text": "Teknologi AI seharusnya menjadi asisten, bukan substitusi bagi pemasar kreatif dan strategis.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-27",
+        "sectionId": "sec-6",
+        "text": "Tim pemasaran yang sukses adalah yang mengalokasikan waktu untuk inovasi tingkat tinggi",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-28",
+        "sectionId": "sec-6",
+        "text": "AI menangani repetisi.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-29",
+        "sectionId": "sec-6",
+        "text": "Kolaborasi ini menghasilkan konten yang lebih relevan, responsif",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-30",
+        "sectionId": "sec-6",
+        "text": "berdampak secara bisnis.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-31",
+        "sectionId": "sec-6",
+        "text": "Dengan demikian, integrasi AI harus difokuskan pada peningkatan kapabilitas manusia, bukan penggantian peran mereka.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-32",
+        "sectionId": "sec-7",
+        "text": "Mulailah dengan melakukan audit internal terhadap siklus konten saat ini untuk mengidentifikasi area potensial.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-33",
+        "sectionId": "sec-7",
+        "text": "Buatlah daftar kriteria aprobasi teknologi AI yang mencakup aspek keamanan, privasi, dan integritas.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-34",
+        "sectionId": "sec-7",
+        "text": "Bangun budaya eksperimen yang terkontrol, di mana setiap implementasi AI dievaluasi berdasarkan dampak bisnis nyata.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-35",
+        "sectionId": "sec-7",
+        "text": "Langkah-langkah ini akan memastikan bahwa adopsi AI selaras dengan tujuan strategis organisasi.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      }
+    ]
+  },
+  "guardResult": {
+    "status": "PASS",
+    "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief.",
+    "issues": []
+  },
+  "gateResult": {
+    "status": "FAIL",
+    "summary": "Editorial Integrity Gate: FAIL. Ditemukan 5 klaim faktual tak ter-grounding dan 5 catatan kritis. Publikasi diblokir.",
+    "issues": [
+      {
+        "code": "UNGROUNDED_EXTERNAL_FACT",
+        "severity": "CRITICAL",
+        "message": "Proposisi faktual eksternal 'prop-6' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"Organisasi harus menganalisis seluruh siklus hidup konten untuk mengidentifikasi bottleneck atau peluang diferensiasi.\"",
+        "propositionId": "prop-6",
+        "sectionId": "sec-2",
+        "snippet": "Organisasi harus menganalisis seluruh siklus hidup konten untuk mengidentifikasi bottleneck atau peluang diferensiasi."
+      },
+      {
+        "code": "UNGROUNDED_EXTERNAL_FACT",
+        "severity": "CRITICAL",
+        "message": "Proposisi faktual eksternal 'prop-7' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"Contohnya termasuk riset kata kunci, personalisasi skrip, atau optimasi distribusi berbasis perilaku audiens.\"",
+        "propositionId": "prop-7",
+        "sectionId": "sec-2",
+        "snippet": "Contohnya termasuk riset kata kunci, personalisasi skrip, atau optimasi distribusi berbasis perilaku audiens."
+      },
+      {
+        "code": "UNGROUNDED_EXTERNAL_FACT",
+        "severity": "CRITICAL",
+        "message": "Proposisi faktual eksternal 'prop-8' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"Pertanyaan ini memaksa stakeholder untuk berpikir holistik daripada fragmentatif.\"",
+        "propositionId": "prop-8",
+        "sectionId": "sec-2",
+        "snippet": "Pertanyaan ini memaksa stakeholder untuk berpikir holistik daripada fragmentatif."
+      },
+      {
+        "code": "UNGROUNDED_EXTERNAL_FACT",
+        "severity": "CRITICAL",
+        "message": "Proposisi faktual eksternal 'prop-11' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"Banyak kasus kebocoran data sensitif terjadi karena penggunaan platform konsumen tanpa kebijakan yang memadai.\"",
+        "propositionId": "prop-11",
+        "sectionId": "sec-3",
+        "snippet": "Banyak kasus kebocoran data sensitif terjadi karena penggunaan platform konsumen tanpa kebijakan yang memadai."
+      },
+      {
+        "code": "UNGROUNDED_EXTERNAL_FACT",
+        "severity": "CRITICAL",
+        "message": "Proposisi faktual eksternal 'prop-13' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"Organisasi wajib memiliki kerangka aprobasi teknologi yang ketat untuk mitigasi risiko.\"",
+        "propositionId": "prop-13",
+        "sectionId": "sec-3",
+        "snippet": "Organisasi wajib memiliki kerangka aprobasi teknologi yang ketat untuk mitigasi risiko."
+      }
+    ]
+  },
+  "preflightResult": {
+    "status": "PASS",
+    "blockingErrors": [],
+    "warnings": []
+  },
+  "publicationAuthorized": false
+}
