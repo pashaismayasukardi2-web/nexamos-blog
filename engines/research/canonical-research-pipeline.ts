@@ -51,6 +51,8 @@ import { InMemoryResearchEvidenceRepository } from './repository/in-memory-resea
 import { InMemoryResearchEventRepository } from './repository/in-memory-research-event-repository.ts';
 import { EvidenceIntegrityValidator } from './evidence-integrity-validator.ts';
 import { DeterministicClaimEvidenceVerifier } from './claim-evidence-verifier.ts';
+import { EvidenceRelevanceSelector } from './relevance/evidence-relevance-selector.ts';
+import { DeterministicCrossLanguageNormalizer } from './grounding/cross-language-grounding.ts';
 import { ok, err, createResearchDomainError, type Result, type ResearchDomainError } from './domain/research-result.ts';
 
 export interface CanonicalResearchPipelineDependencies {
@@ -60,6 +62,7 @@ export interface CanonicalResearchPipelineDependencies {
   searchProviderType?: SupportedSearchProvider;
   integrityValidator?: EvidenceIntegrityValidator;
   claimVerifier?: DeterministicClaimEvidenceVerifier;
+  evidenceRelevanceSelector?: EvidenceRelevanceSelector;
 }
 
 export interface CanonicalResearchInput {
@@ -110,6 +113,7 @@ export class CanonicalResearchPipeline {
   private searchProviderType?: SupportedSearchProvider;
   private integrityValidator: EvidenceIntegrityValidator;
   private claimVerifier: DeterministicClaimEvidenceVerifier;
+  private evidenceRelevanceSelector: EvidenceRelevanceSelector;
 
   constructor(deps: CanonicalResearchPipelineDependencies = {}) {
     this.aiResearchProvider = deps.aiResearchProvider;
@@ -117,7 +121,15 @@ export class CanonicalResearchPipeline {
     this.searchProvider = deps.searchProvider;
     this.searchProviderType = deps.searchProviderType;
     this.integrityValidator = deps.integrityValidator || new EvidenceIntegrityValidator();
-    this.claimVerifier = deps.claimVerifier || new DeterministicClaimEvidenceVerifier();
+
+    const aiClient = (this.aiResearchProvider as any)?.getClient?.();
+    this.claimVerifier =
+      deps.claimVerifier ||
+      new DeterministicClaimEvidenceVerifier({
+        crossLanguageNormalizer: new DeterministicCrossLanguageNormalizer(aiClient)
+      });
+
+    this.evidenceRelevanceSelector = deps.evidenceRelevanceSelector || new EvidenceRelevanceSelector();
   }
 
   /**
@@ -326,12 +338,20 @@ export class CanonicalResearchPipeline {
     // =========================================================================
     // 5. CLAIM PROPOSAL & DETERMINISTIC VERIFICATION GATE
     // =========================================================================
+    const MAX_CLAIM_PROPOSAL_EVIDENCE = 20;
+    const selectedEvidenceForClaims = this.evidenceRelevanceSelector.selectTopEvidence(
+      verifiedEvidenceList,
+      input.topic,
+      questions,
+      { maxItems: MAX_CLAIM_PROPOSAL_EVIDENCE }
+    );
+
     let rawProposedClaims: any[] = [];
 
     if (this.aiResearchProvider) {
       const claimsProposalRes = await this.aiResearchProvider.proposeClaims({
         projectId,
-        evidence: verifiedEvidenceList.slice(0, 20),
+        evidence: selectedEvidenceForClaims,
         questions
       });
 
@@ -340,9 +360,9 @@ export class CanonicalResearchPipeline {
       }
     }
 
-    // Fallback perumusan klaim langsung dari kutipan bukti terverifikasi jika LLM proposal kosong
+    // Fallback perumusan klaim langsung dari bukti relevan terverifikasi jika LLM proposal kosong
     if (rawProposedClaims.length === 0) {
-      rawProposedClaims = verifiedEvidenceList.slice(0, 5).map((ev, idx) => ({
+      rawProposedClaims = selectedEvidenceForClaims.slice(0, 5).map((ev, idx) => ({
         statement: ev.content.slice(0, 150),
         claimType: 'FACTUAL',
         importance: idx === 0 ? 'CRITICAL' : 'SUPPORTING'
@@ -370,6 +390,7 @@ export class CanonicalResearchPipeline {
       // Gerbang verifikasi deterministik
       const verifyRes = await this.claimVerifier.verify(claim, verifiedEvidenceList);
       claim.status = verifyRes.status;
+      claim.supportingEvidenceIds = verifyRes.supportingEvidenceIds;
 
       // Kumpulkan provenance trace untuk observabilitas
       const supportingEvDocs: SupportingEvidenceTrace[] = [];
@@ -424,7 +445,7 @@ export class CanonicalResearchPipeline {
       publicationAllowed: true
     }));
 
-    const evidenceIndex = verifiedEvidenceList.slice(0, 20).map((e) => ({
+    const evidenceIndex = selectedEvidenceForClaims.map((e) => ({
       evidenceId: e.id,
       sourceId: e.sourceId,
       quote: e.content.slice(0, 250),

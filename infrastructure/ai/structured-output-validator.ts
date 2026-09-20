@@ -150,7 +150,10 @@ export class StructuredOutputValidator {
         statement: item.statement.trim(),
         claimType,
         importance,
-        rationale: typeof item.rationale === 'string' ? item.rationale.trim() : undefined
+        rationale: typeof item.rationale === 'string' ? item.rationale.trim() : undefined,
+        proposedEvidenceIds: Array.isArray(item.proposedEvidenceIds)
+          ? item.proposedEvidenceIds.filter((id: any) => typeof id === 'string')
+          : undefined
       };
     });
   }
@@ -228,15 +231,19 @@ export class StructuredOutputValidator {
       throw new AIClientError('AI_OUTPUT_INVALID', 'ArticleDraft payload bukan object.');
     }
 
-    if (!data.title || typeof data.title !== 'string' || data.title.trim().length === 0) {
+    const root = data?.draft || data?.article || data;
+    const rawTitle = root?.title || root?.headline || root?.articleTitle || data?.title;
+
+    if (!rawTitle || typeof rawTitle !== 'string' || rawTitle.trim().length === 0) {
       throw new AIClientError('AI_OUTPUT_INVALID', 'ArticleDraft kehilangan "title".');
     }
 
-    if (!Array.isArray(data.sections) || data.sections.length === 0) {
+    const rawSections = root?.sections || data?.sections;
+    if (!Array.isArray(rawSections) || rawSections.length === 0) {
       throw new AIClientError('AI_OUTPUT_INVALID', 'ArticleDraft harus memiliki minimal satu seksi.');
     }
 
-    const sections: ArticleSection[] = data.sections.map((s: any, idx: number) => {
+    const sections: ArticleSection[] = rawSections.map((s: any, idx: number) => {
       if (!s || typeof s.content !== 'string' || s.content.trim().length === 0) {
         throw new AIClientError('AI_OUTPUT_INVALID', `Seksi artikel pada index ${idx} tidak memiliki konten teks.`);
       }
@@ -250,8 +257,16 @@ export class StructuredOutputValidator {
       };
     });
 
-    const claimUsages = Array.isArray(data.claimUsages) ? data.claimUsages : [];
-    const citationMap = Array.isArray(data.citationMap) ? data.citationMap : [];
+    const claimUsages = Array.isArray(root?.claimUsages)
+      ? root.claimUsages
+      : Array.isArray(data?.claimUsages)
+      ? data.claimUsages
+      : [];
+    const citationMap = Array.isArray(root?.citationMap)
+      ? root.citationMap
+      : Array.isArray(data?.citationMap)
+      ? data.citationMap
+      : [];
 
     // HARD GUARD: Verifikasi Keterlacakan Klaim (Claim Traceability)
     if (context?.allowedClaimIds) {
@@ -297,11 +312,11 @@ export class StructuredOutputValidator {
     }
 
     return {
-      title: data.title.trim(),
-      dek: typeof data.dek === 'string' ? data.dek.trim() : null,
-      slug: typeof data.slug === 'string' ? data.slug.trim() : null,
-      thesis: typeof data.thesis === 'string' ? data.thesis.trim() : '',
-      editorialAngle: typeof data.editorialAngle === 'string' ? data.editorialAngle.trim() : '',
+      title: rawTitle.trim(),
+      dek: typeof root?.dek === 'string' ? root.dek.trim() : typeof data?.dek === 'string' ? data.dek.trim() : null,
+      slug: typeof root?.slug === 'string' ? root.slug.trim() : typeof data?.slug === 'string' ? data.slug.trim() : null,
+      thesis: typeof root?.thesis === 'string' ? root.thesis.trim() : typeof data?.thesis === 'string' ? data.thesis.trim() : '',
+      editorialAngle: typeof root?.editorialAngle === 'string' ? root.editorialAngle.trim() : typeof data?.editorialAngle === 'string' ? data.editorialAngle.trim() : '',
       sections,
       claimUsages,
       citationMap,

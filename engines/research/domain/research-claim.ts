@@ -15,6 +15,7 @@ export interface ResearchClaim {
   claimType: ClaimType;
   status: ClaimStatus;
   importance: ClaimImportance;
+  supportingEvidenceIds?: string[];
   createdAt: string;
   updatedAt: string;
 }

@@ -61,6 +61,7 @@ export interface ProposedClaim {
   claimType: ClaimType;
   importance: ClaimImportance;
   rationale?: string;
+  proposedEvidenceIds?: string[];
   // Catatan doktrin: AI TIDAK BOLEH menentukan status claim.
   // Status selalu diinisialisasi sebagai UNVERIFIED di domain model.
 }

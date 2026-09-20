@@ -43,6 +43,10 @@ export class RealAIResearchProvider implements AIResearchProvider {
     this.client = client || new AIHttpClient(config);
   }
 
+  public getClient(): AIHttpClient {
+    return this.client;
+  }
+
   public getMetadata(): AIProviderMetadata {
     return {
       providerName: this.config.provider,
@@ -144,31 +148,38 @@ FORMAT JSON YANG WAJIB DIHASILKAN:
   public async proposeClaims(input: ProposeClaimsInput): Promise<Result<ProposedClaim[], ResearchDomainError>> {
     const evidenceList = input.evidence.slice(0, 30).map((e) => ({
       id: e.id,
-      content: e.content.length > 300 ? e.content.slice(0, 300) + '...' : e.content,
+      content: e.content.length > 400 ? e.content.slice(0, 400) + '...' : e.content,
       sourceId: e.sourceId,
       level: (e as any).evidenceLevel || (e as any).level
     }));
 
     const prompt = `${SYSTEM_HARD_RULE}
 
-TUGAS: Berdasarkan BUKTI NYATA berikut, usulkan klaim faktual/analitis yang dapat ditarik:
+TUGAS: Berdasarkan BUKTI NYATA berikut, usulkan 3 hingga 6 klaim faktual/analitis yang ringkas dan padat untuk menjawab pertanyaan riset:
 Bukti yang Disediakan:
 ${JSON.stringify(evidenceList, null, 2)}
 
 Pertanyaan Riset yang Ingin Dijawab:
 ${JSON.stringify(input.questions.map((q) => q.question))}
 
-PERINGATAN: Jangan membuat klaim yang tidak memiliki dasar dalam bukti di atas!
-Status klaim ini otomatis diinisialisasi sebagai UNVERIFIED di sistem.
+PERINGATAN DAN PETUNJUK GROUNDING MUTLAK:
+1. Jangan membuat klaim spekulatif tanpa dasar pada bukti di atas!
+2. Setiap klaim WAJIB merupakan rangkuman langsung (grounded synthesis) dari salah satu bukti di atas.
+3. Sebutkan persis ID bukti pendukung dalam array "proposedEvidenceIds" (misal: ["id-bukti-1"]).
+4. Buatlah pernyataan klaim yang RINGKAS, FOKUS, dan PADAT (12 - 20 kata). Hindari kalimat majemuk bertingkat yang terlalu panjang.
+5. Pertahankan angka, metrik, persentase, nama institusi, dan entitas spesifik persis sesuai bukti aslinya.
+6. Jika membuat klaim dalam Bahasa Indonesia dari bukti Bahasa Inggris, pertahankan istilah teknis dan nama entitas agar grounding dapat diverifikasi.
+7. Status klaim otomatis diinisialisasi sebagai UNVERIFIED di sistem.
 
 FORMAT JSON YANG WAJIB DIHASILKAN:
 {
   "claims": [
     {
-      "statement": "Pernyataan klaim presisi yang didukung bukti di atas",
+      "statement": "Pernyataan klaim ringkas dan presisi yang didukung bukti di atas",
       "claimType": "FACTUAL | EMPIRICAL | ANALYTICAL | CAUSAL | PREDICTIVE",
       "importance": "CORE | SUPPORTING | PERIPHERAL",
-      "rationale": "Mengapa bukti di atas mendukung klaim ini"
+      "rationale": "Mengapa bukti di atas mendukung klaim ini",
+      "proposedEvidenceIds": ["id-bukti-1"]
     }
   ]
 }`;

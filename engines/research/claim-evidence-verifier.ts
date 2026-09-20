@@ -17,6 +17,10 @@
 import type { ResearchClaim } from './domain/research-claim.ts';
 import type { ClaimStatus } from './domain/claim-status.ts';
 import type { ResearchEvidence } from './domain/research-evidence.ts';
+import {
+  type CrossLanguageNormalizer,
+  DeterministicCrossLanguageNormalizer
+} from './grounding/cross-language-grounding.ts';
 
 export interface ClaimVerificationResult {
   claimId: string;
@@ -32,6 +36,7 @@ export interface ClaimVerificationResult {
 export interface ClaimEvidenceVerifierOptions {
   minimumOverlapRatio?: number;
   minimumSupportingCount?: number;
+  crossLanguageNormalizer?: CrossLanguageNormalizer;
 }
 
 export interface ClaimEvidenceVerifier {
@@ -60,9 +65,12 @@ const CONTRADICTION_TRIGGERS = [
  */
 export class DeterministicClaimEvidenceVerifier implements ClaimEvidenceVerifier {
   private minimumOverlapRatio: number;
+  private crossLanguageNormalizer: CrossLanguageNormalizer;
 
   constructor(options: ClaimEvidenceVerifierOptions = {}) {
     this.minimumOverlapRatio = options.minimumOverlapRatio ?? 0.25;
+    this.crossLanguageNormalizer =
+      options.crossLanguageNormalizer || new DeterministicCrossLanguageNormalizer();
   }
 
   async verify(
@@ -106,6 +114,10 @@ export class DeterministicClaimEvidenceVerifier implements ClaimEvidenceVerifier
     const claimWords = this.tokenize(claim.statement);
     const claimNumbers = this.extractNumbers(claim.statement);
 
+    // Cache representasi normalisasi jika bahasa klaim berbeda dari bukti (evaluasi sekali per klaim)
+    let normalizedClaimWords: Set<string> | null = null;
+    let crossLanguageChecked = false;
+
     const supportingIds: string[] = [];
     const contradictingIds: string[] = [];
     const qualifyingIds: string[] = [];
@@ -116,19 +128,48 @@ export class DeterministicClaimEvidenceVerifier implements ClaimEvidenceVerifier
       const evWords = this.tokenize(ev.content);
       const evNumbers = this.extractNumbers(ev.content);
 
-      // Hitung kata tumpang tindih
+      // Hitung kata tumpang tindih langsung (Direct Lexical Overlap)
       let overlapCount = 0;
       for (const w of claimWords) {
         if (evWords.has(w)) overlapCount++;
       }
 
-      const overlapRatio = claimWords.size > 0 ? overlapCount / claimWords.size : 0;
+      let overlapRatio = claimWords.size > 0 ? overlapCount / claimWords.size : 0;
 
       // Cek konsistensi data numerik jika klaim memuat angka/persentase
       let numericMatch = true;
       if (claimNumbers.length > 0) {
         // Jika klaim memuat angka spesifik, bukti harus memuat setidaknya 1 angka yang sama
         numericMatch = claimNumbers.some((num) => evNumbers.includes(num));
+      }
+
+      // Jika overlap langsung belum mencapai threshold dan verifier memiliki crossLanguageNormalizer:
+      // coba evaluasi via representasi ter-normalisasi (Bahasa Indonesia -> English)
+      if (overlapRatio < this.minimumOverlapRatio && this.crossLanguageNormalizer) {
+        if (!crossLanguageChecked) {
+          crossLanguageChecked = true;
+          try {
+            const normRes = await this.crossLanguageNormalizer.normalizeProposition(claim.statement, 'en');
+            if (normRes.isValid && !normRes.mutationDetected) {
+              normalizedClaimWords = this.tokenize(normRes.normalizedStatement);
+            }
+          } catch {
+            normalizedClaimWords = null;
+          }
+        }
+
+        if (normalizedClaimWords && normalizedClaimWords.size > 0) {
+          let normOverlapCount = 0;
+          for (const w of normalizedClaimWords) {
+            if (evWords.has(w)) normOverlapCount++;
+          }
+          const normOverlapRatio =
+            normalizedClaimWords.size > 0 ? normOverlapCount / normalizedClaimWords.size : 0;
+
+          if (normOverlapRatio > overlapRatio) {
+            overlapRatio = normOverlapRatio;
+          }
+        }
       }
 
       // Deteksi sinyal kontradiksi
@@ -219,7 +260,7 @@ export class DeterministicClaimEvidenceVerifier implements ClaimEvidenceVerifier
   }
 
   private extractNumbers(text: string): string[] {
-    const matches = text.match(/\b\d+(?:[.,]\d+)?%?\b/g);
+    const matches = text.match(/\b\d+(?:[.,]\d+)?%?(?!\w)/g);
     return matches ? matches.map((m) => m.replace(',', '.')) : [];
   }
 }
