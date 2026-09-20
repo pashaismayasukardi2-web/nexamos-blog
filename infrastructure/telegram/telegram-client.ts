@@ -226,4 +226,20 @@ export class TelegramClient {
       signal
     );
   }
+
+  /**
+   * Hapus webhook agar mode long-polling getUpdates dapat berjalan tanpa conflict 409
+   */
+  public async deleteWebhook(dropPendingUpdates: boolean = false): Promise<boolean> {
+    return this.callApi<boolean>('deleteWebhook', {
+      drop_pending_updates: dropPendingUpdates
+    });
+  }
+
+  /**
+   * Ambil status konfigurasi webhook saat ini dari Telegram Bot API
+   */
+  public async getWebhookInfo(): Promise<any> {
+    return this.callApi<any>('getWebhookInfo');
+  }
 }

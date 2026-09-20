@@ -233,6 +233,15 @@ export class TelegramEditorialBot {
     }
 
     console.log(`Bot terhubung: @${me.username} (${me.first_name})`);
+
+    // Pastikan webhook Telegram non-aktif agar polling getUpdates tidak terhalang error 409
+    try {
+      await this.client.deleteWebhook(false);
+      console.log('[POLLING] Memastikan webhook Telegram non-aktif untuk long-polling.');
+    } catch (err: any) {
+      console.warn('[WARN] Pengecekan webhook Telegram awal dilewati:', err?.message || err);
+    }
+
     console.log('Menunggu pesan masuk dari Telegram...\n');
 
     while (this.isRunning) {
@@ -253,6 +262,18 @@ export class TelegramEditorialBot {
         }
         const isConflict = err?.message?.includes('409') || err?.message?.includes('Conflict');
         if (isConflict) {
+          // Jika 409 disebabkan oleh webhook yang aktif, bersihkan webhook dan lanjutkan polling
+          if (/webhook/i.test(err?.message || '')) {
+            console.warn('[WARN] Terdeteksi webhook aktif memblokir getUpdates. Menghapus webhook...');
+            try {
+              await this.client.deleteWebhook(false);
+              console.log('[POLLING] Webhook berhasil dibersihkan. Memulai polling kembali...');
+              continue;
+            } catch (whErr: any) {
+              console.error('[ERROR] Gagal menghapus webhook:', whErr?.message || whErr);
+            }
+          }
+
           // Backoff dinamis dengan jitter 8-14 detik untuk meredakan collision loop
           // jika terjadi overlapping zero-downtime deploy di cloud (Render/Koyeb)
           const backoff = Math.floor(8000 + Math.random() * 6000);

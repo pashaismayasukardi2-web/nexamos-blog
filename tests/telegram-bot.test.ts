@@ -188,6 +188,41 @@ describe('NexaMOS Telegram Editorial Bot Unit Tests', () => {
         globalThis.fetch = originalFetch;
       }
     });
+
+    test('deleteWebhook dan getWebhookInfo memanggil endpoint Telegram API yang sesuai', async () => {
+      const calls: string[] = [];
+      const originalFetch = globalThis.fetch;
+      try {
+        globalThis.fetch = async (url: any, init?: any) => {
+          calls.push(`${init?.method} ${url}`);
+          if (String(url).endsWith('/deleteWebhook')) {
+            return new Response(JSON.stringify({ ok: true, result: true }), { status: 200 });
+          }
+          if (String(url).endsWith('/getWebhookInfo')) {
+            return new Response(JSON.stringify({ ok: true, result: { url: '' } }), { status: 200 });
+          }
+          return new Response(JSON.stringify({ ok: true, result: {} }), { status: 200 });
+        };
+
+        const client = new TelegramClient({
+          botToken: 'mock-token',
+          allowedUserId: '1455808077',
+          apiBaseUrl: 'https://api.telegram.org'
+        });
+
+        const delResult = await client.deleteWebhook(false);
+        assert.strictEqual(delResult, true);
+
+        const infoResult = await client.getWebhookInfo();
+        assert.strictEqual(infoResult.url, '');
+
+        assert.strictEqual(calls.length, 2);
+        assert.match(calls[0], /\/deleteWebhook$/);
+        assert.match(calls[1], /\/getWebhookInfo$/);
+      } finally {
+        globalThis.fetch = originalFetch;
+      }
+    });
   });
 
   // ===========================================================================
