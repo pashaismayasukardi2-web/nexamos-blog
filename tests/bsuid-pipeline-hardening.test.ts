@@ -95,7 +95,44 @@ describe('BSUID Pipeline Hardening & Root Cause Resolution Tests', () => {
     assert.strictEqual(auditResult.ungroundedExternalFacts, 0);
   });
 
-  test('2. GroundingGuard: section.purpose komposit pipe tidak memicu COMMODITY_DRAFT_RISK', () => {
+  test('2. DraftClaimAuditor: Kalimat proses otomatisasi efisiensi tidak memicu UNGROUNDED_EXTERNAL_FACT', () => {
+    const auditor = new DraftClaimAuditor();
+    const draft: ArticleDraft = {
+      id: 'draft-test-prop10',
+      topicId: 'top-bsuid',
+      researchProjectId: 'proj-bsuid',
+      title: 'Mengenal BSUID Meta',
+      slug: 'mengenal-bsuid-meta',
+      territory: 'TACTICAL',
+      articleType: 'EXPLAINER',
+      editorialRole: 'AUTHORITY',
+      thesis: 'Tesis',
+      editorialAngle: 'Angle',
+      sections: [
+        {
+          id: 'sec-1',
+          heading: 'Mekanisme Mapping',
+          purpose: 'CONTEXT',
+          content: 'Proses otomatisasi ini meningkatkan efisiensi operasional dengan meminimalkan intervensi manusia, sehingga memastikan sinkronisasi mapping yang akurat dan menghindari hambatan teknis.',
+          order: 1,
+          claimUsageIds: []
+        }
+      ],
+      claimUsages: [],
+      citationMap: [],
+      status: 'READY_FOR_EDITORIAL_REVIEW',
+      generatedAt: new Date().toISOString(),
+      generatorVersion: 'test-v1',
+      promptVersion: '1.0.0'
+    };
+
+    const auditResult = auditor.audit(draft, mockBrief);
+    const ungroundedIssue = auditResult.issues.find((i) => i.code === 'UNGROUNDED_EXTERNAL_FACT');
+    assert.strictEqual(ungroundedIssue, undefined, 'Kalimat deduksi efisiensi otomatisasi tidak boleh memicu UNGROUNDED_EXTERNAL_FACT');
+    assert.strictEqual(auditResult.ungroundedExternalFacts, 0);
+  });
+
+  test('3. GroundingGuard: section.purpose komposit pipe tidak memicu COMMODITY_DRAFT_RISK', () => {
     const guard = new GroundingGuard();
     const draft: ArticleDraft = {
       id: 'draft-test-2',
