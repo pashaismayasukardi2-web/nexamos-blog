@@ -91,7 +91,8 @@ export class DraftClaimAuditor {
         evidenceIndex,
         sourceIndex,
         briefFactualCorpus,
-        issues
+        issues,
+        draft
       );
       auditedPropositions.push(audited);
     }
@@ -250,13 +251,24 @@ export class DraftClaimAuditor {
     evidenceIndex: any[],
     sourceIndex: any[],
     briefFactualCorpus: string,
-    issues: EditorialIntegrityIssue[]
+    issues: EditorialIntegrityIssue[],
+    draft?: ArticleDraft
   ): AuditedProposition {
     const text = rawProp.text.trim();
     const textLower = text.toLowerCase();
 
     // Deteksi klaim angka (persentase, mata uang, angka besar)
     const numericClaims = this.extractNumericClaims(text);
+
+    // Kumpulkan claimIds yang dideklarasikan oleh penulis untuk seksi ini
+    const declaredClaimIds: string[] = [];
+    if (section && Array.isArray(section.claimUsageIds) && draft && Array.isArray(draft.claimUsages)) {
+      const cuMap = new Map(draft.claimUsages.map((cu) => [cu.id, cu.claimId]));
+      for (const cuId of section.claimUsageIds) {
+        const cId = cuMap.get(cuId);
+        if (cId) declaredClaimIds.push(cId);
+      }
+    }
 
     // Deteksi kutipan langsung
     const hasDirectQuote = /["“]([^"”]{5,})["”]/.test(text);
@@ -303,7 +315,7 @@ export class DraftClaimAuditor {
     if (classification === 'ORIGINAL_ANALYSIS' || classification === 'INTERPRETATION') {
       if (numericClaims.length > 0) {
         for (const num of numericClaims) {
-          if (!briefFactualCorpus.includes(num)) {
+          if (!this.isNumericClaimInCorpus(num, briefFactualCorpus)) {
             issues.push({
               code: 'UNSUPPORTED_NUMERIC_CLAIM',
               severity: 'CRITICAL',
@@ -333,12 +345,20 @@ export class DraftClaimAuditor {
 
     // 4. Jika EXTERNAL_FACT atau SUPPORTED_SYNTHESIS:
     // Wajib memiliki verifikasi semantik terhadap supportedClaims dan rantai provenance
-    const matchingResult = this.findSemanticSupport(text, textLower, supportedClaims, evidenceIndex, sourceIndex);
+    const matchingResult = this.findSemanticSupport(
+      text,
+      textLower,
+      supportedClaims,
+      evidenceIndex,
+      sourceIndex,
+      numericClaims,
+      declaredClaimIds
+    );
 
     // Audit klaim numerik pada klaim faktual eksternal
     if (numericClaims.length > 0 && this.options.strictNumericalCheck) {
       for (const num of numericClaims) {
-        const foundInCorpus = briefFactualCorpus.includes(num);
+        const foundInCorpus = this.isNumericClaimInCorpus(num, briefFactualCorpus);
         if (!foundInCorpus) {
           issues.push({
             code: 'UNSUPPORTED_NUMERIC_CLAIM',
@@ -546,7 +566,9 @@ export class DraftClaimAuditor {
     textLower: string,
     supportedClaims: any[],
     evidenceIndex: any[],
-    sourceIndex: any[]
+    sourceIndex: any[],
+    numericClaims: string[] = [],
+    declaredClaimIds: string[] = []
   ): {
     supportLevel: SupportLevel;
     claimIds: string[];
@@ -584,19 +606,61 @@ export class DraftClaimAuditor {
       claim: any;
       sharedCount: number;
       overlapRatio: number;
+      matchedEvidenceId?: string;
     } | null = null;
 
     for (const claim of supportedClaims) {
+      const claimId = (claim as any).claimId || claim.id;
       const claimKeywords = extractKeywords(claim.statement || '');
       const shared = propKeywords.filter((w) => claimKeywords.includes(w));
       const overlapRatio = claimKeywords.length > 0 ? shared.length / claimKeywords.length : 0;
+      const numMatched = numericClaims.some((num) => this.isNumericClaimInCorpus(num, claim.statement || ''));
+      const isDeclared = declaredClaimIds.includes(claimId);
 
-      if (shared.length >= 2 && (!bestMatch || shared.length > bestMatch.sharedCount)) {
-        bestMatch = {
-          claim,
-          sharedCount: shared.length,
-          overlapRatio
-        };
+      const isMatch =
+        shared.length >= 2 ||
+        (numMatched && (shared.length >= 1 || isDeclared)) ||
+        (isDeclared && shared.length >= 1);
+
+      if (isMatch) {
+        const score = shared.length + (numMatched ? 5 : 0) + (isDeclared ? 3 : 0);
+        if (!bestMatch || score > bestMatch.sharedCount) {
+          bestMatch = {
+            claim,
+            sharedCount: score,
+            overlapRatio
+          };
+        }
+      }
+    }
+
+    // Fallback toleransi: jika tidak cocok langsung dengan supportedClaims, cari kecocokan di evidenceIndex
+    if (!bestMatch && evidenceIndex.length > 0) {
+      for (const ev of evidenceIndex) {
+        const evText = ev.quote || (ev as any).textSnippet || '';
+        const evKeywords = extractKeywords(evText);
+        const shared = propKeywords.filter((w) => evKeywords.includes(w));
+        const numMatched = numericClaims.some((num) => this.isNumericClaimInCorpus(num, evText));
+        const evClaimId = (ev as any).claimId;
+        const isDeclared = evClaimId && declaredClaimIds.includes(evClaimId);
+
+        const isEvMatch =
+          shared.length >= 2 ||
+          (numMatched && (shared.length >= 1 || isDeclared));
+
+        if (isEvMatch) {
+          const matchedClaim =
+            supportedClaims.find((c) => (c.claimId || c.id) === evClaimId) ||
+            supportedClaims[0];
+
+          bestMatch = {
+            claim: matchedClaim,
+            sharedCount: shared.length + (numMatched ? 5 : 0),
+            overlapRatio: evKeywords.length > 0 ? shared.length / evKeywords.length : 0,
+            matchedEvidenceId: ev.evidenceId || ev.id
+          };
+          break;
+        }
       }
     }
 
@@ -645,6 +709,10 @@ export class DraftClaimAuditor {
         : Array.isArray((claim as any).supportingEvidenceIds) && (claim as any).supportingEvidenceIds.length > 0
           ? (claim as any).supportingEvidenceIds
           : [];
+
+    if (bestMatch.matchedEvidenceId && !linkedEvidenceIds.includes(bestMatch.matchedEvidenceId)) {
+      linkedEvidenceIds.push(bestMatch.matchedEvidenceId);
+    }
 
     // Fallback toleransi jika fixture pengujian lama belum mengisi claim.evidenceIds secara eksplisit
     if (linkedEvidenceIds.length === 0 && evidenceIndex.length > 0) {
@@ -771,8 +839,8 @@ export class DraftClaimAuditor {
   private extractNumericClaims(text: string): string[] {
     const claims: string[] = [];
 
-    // Persentase: 85%, 73.5%
-    const pcts = text.match(/\b\d+(\.\d+)?%/g) || [];
+    // Persentase: 85%, 73.5%, 73,5%
+    const pcts = text.match(/\b\d+([,.]\d+)?%/g) || [];
     claims.push(...pcts);
 
     // Mata Uang: Rp 10 juta, $500, Rp10.000.000
@@ -788,5 +856,37 @@ export class DraftClaimAuditor {
     }
 
     return Array.from(new Set(claims));
+  }
+
+  /**
+   * Evaluasi kecocokan klaim angka terhadap korpus dengan toleransi format lokalitas (. vs ,)
+   */
+  private isNumericClaimInCorpus(num: string, corpus: string): boolean {
+    if (!num || !corpus) return false;
+
+    // 1. Direct match
+    if (corpus.includes(num)) return true;
+
+    // 2. Format tukar pemisah ribuan / desimal (. <-> ,)
+    // Standar ID: 4.000 / 73,5% vs Standar EN: 4,000 / 73.5%
+    const swapped = num.replace(/[.,]/g, (m) => (m === '.' ? ',' : '.'));
+    if (corpus.includes(swapped)) return true;
+
+    // 3. Persentase varian
+    if (num.includes('%')) {
+      const numOnly = num.replace('%', '').trim();
+      const numSwapped = numOnly.replace(/[.,]/g, (m) => (m === '.' ? ',' : '.'));
+      if (corpus.includes(`${numSwapped}%`)) return true;
+    }
+
+    // 4. Angka polos tanpa pemisah ribuan (e.g. "4.000" / "4,000" -> "4000")
+    // Hanya berlaku untuk angka 4 digit atau lebih yang mengandung titik/koma
+    const digitsOnly = num.replace(/[^\d]/g, '');
+    if (digitsOnly.length >= 4 && (num.includes('.') || num.includes(','))) {
+      const regex = new RegExp(`\\b${digitsOnly}\\b`);
+      if (regex.test(corpus)) return true;
+    }
+
+    return false;
   }
 }

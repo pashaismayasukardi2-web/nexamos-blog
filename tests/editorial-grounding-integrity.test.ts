@@ -324,6 +324,135 @@ describe('NexaMOS Editorial Grounding & Draft Claim Integrity Suite', () => {
   });
 
   // =========================================================================
+  // Test 6B — Multi-locale Numeric Matching (Indonesian . vs English ,)
+  // =========================================================================
+  test('Test 6B — Multi-locale Numeric Matching: Angka 4.000 dalam draf bahasa Indonesia cocok dengan 4,000 di ResearchBrief', () => {
+    const brief = createBaseBrief({
+      supportedClaims: [
+        {
+          id: 'claim-01',
+          researchProjectId: 'proj-test-001',
+          statement: 'A study on 4,000 news posts from Facebook pages indicates that unusual punctuation increases reactions.',
+          claimType: 'EMPIRICAL',
+          importance: 'CORE',
+          status: 'SUPPORTED',
+          evidenceIds: ['ev-01'],
+          createdAt: '',
+          updatedAt: ''
+        }
+      ],
+      evidenceIndex: [
+        {
+          id: 'ev-01',
+          evidenceId: 'ev-01',
+          sourceId: 'src-01',
+          quote: 'We analyzed 4,000 news posts from 10 Facebook pages of US and UK media.',
+          textSnippet: 'We analyzed 4,000 news posts from 10 Facebook pages of US and UK media.',
+          evidenceType: 'STATISTIC',
+          evidenceLevel: 'E2'
+        } as any
+      ]
+    });
+
+    const draft = createBaseDraft(
+      'Berdasarkan evidence dari riset yang dilakukan pada 4.000 postingan berita dari Facebook media, penggunaan tanda baca tidak biasa di judul meningkatkan reaksi.'
+    );
+
+    const result = auditor.audit(draft, brief);
+
+    assert.strictEqual(result.status, 'PASS');
+    assert.strictEqual(result.unsupportedNumericCount, 0);
+    assert.strictEqual(result.ungroundedExternalFacts, 0);
+    assert.strictEqual(result.propositions[0].supportLevel, 'ENTAILED');
+  });
+
+  // =========================================================================
+  // Test 6C — Multi-locale Decimal Percentage Matching (73,5% vs 73.5%)
+  // =========================================================================
+  test('Test 6C — Multi-locale Decimal Percentage Matching: Angka 73,5% cocok dengan 73.5% di ResearchBrief', () => {
+    const brief = createBaseBrief({
+      supportedClaims: [
+        {
+          id: 'claim-01',
+          researchProjectId: 'proj-test-001',
+          statement: '73.5% of surveyed publishers report higher initial clickthrough rates.',
+          claimType: 'EMPIRICAL',
+          importance: 'CORE',
+          status: 'SUPPORTED',
+          evidenceIds: ['ev-01'],
+          createdAt: '',
+          updatedAt: ''
+        }
+      ],
+      evidenceIndex: [
+        {
+          id: 'ev-01',
+          evidenceId: 'ev-01',
+          sourceId: 'src-01',
+          quote: 'Survey findings show that 73.5% of publishers observed elevated engagement.',
+          textSnippet: 'Survey findings show that 73.5% of publishers observed elevated engagement.',
+          evidenceType: 'STATISTIC',
+          evidenceLevel: 'E2'
+        } as any
+      ]
+    });
+
+    const draft = createBaseDraft(
+      'Sebanyak 73,5% dari penerbit yang disurvei melaporkan lonjakan rasio klik.'
+    );
+
+    const result = auditor.audit(draft, brief);
+
+    assert.strictEqual(result.status, 'PASS');
+    assert.strictEqual(result.unsupportedNumericCount, 0);
+    assert.strictEqual(result.ungroundedExternalFacts, 0);
+  });
+
+  // =========================================================================
+  // Test 6D — Fallback Matching via evidenceIndex Quote
+  // =========================================================================
+  test('Test 6D — Fallback Matching via evidenceIndex: Fakta angka dalam kutipan bukti evidenceIndex terverifikasi walau klaim berlainan redaksi', () => {
+    const brief = createBaseBrief({
+      supportedClaims: [
+        {
+          id: 'claim-01',
+          researchProjectId: 'proj-test-001',
+          statement: 'Sensational headlines significantly amplify user engagement across social networks.',
+          claimType: 'EMPIRICAL',
+          importance: 'CORE',
+          status: 'SUPPORTED',
+          evidenceIds: ['ev-01'],
+          createdAt: '',
+          updatedAt: ''
+        }
+      ],
+      evidenceIndex: [
+        {
+          id: 'ev-01',
+          evidenceId: 'ev-01',
+          sourceId: 'src-01',
+          quote: 'A dataset of 4,000 news posts from media Facebook pages demonstrates increased reactions.',
+          textSnippet: 'A dataset of 4,000 news posts from media Facebook pages demonstrates increased reactions.',
+          evidenceType: 'STATISTIC',
+          evidenceLevel: 'E2'
+        } as any
+      ]
+    });
+
+    const draft = createBaseDraft(
+      'Riset pada 4.000 postingan berita di halaman Facebook media membuktikan peningkatan reaksi pembaca.'
+    );
+
+    const result = auditor.audit(draft, brief);
+
+    assert.strictEqual(result.status, 'PASS');
+    assert.strictEqual(result.unsupportedNumericCount, 0);
+    assert.strictEqual(result.ungroundedExternalFacts, 0);
+    assert.strictEqual(result.propositions[0].supportLevel, 'ENTAILED');
+    assert.ok(result.propositions[0].evidenceIds.includes('ev-01'));
+  });
+
+  // =========================================================================
   // Test 7 — Invalid Citation ID
   // =========================================================================
   test('Test 7 — Invalid Citation ID: Penulis mencantumkan sourceId palsu, sistem menolak CITATION_INTEGRITY_FAILED (tanpa auto-repair)', () => {
