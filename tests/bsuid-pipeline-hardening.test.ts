@@ -95,7 +95,7 @@ describe('BSUID Pipeline Hardening & Root Cause Resolution Tests', () => {
     assert.strictEqual(auditResult.ungroundedExternalFacts, 0);
   });
 
-  test('2. DraftClaimAuditor: Kalimat proses otomatisasi efisiensi tidak memicu UNGROUNDED_EXTERNAL_FACT', () => {
+  test('2. DraftClaimAuditor: Klaim efisiensi/intervensi tanpa bukti di seksi CONTEXT wajib di-flag sebagai UNGROUNDED_EXTERNAL_FACT', () => {
     const auditor = new DraftClaimAuditor();
     const draft: ArticleDraft = {
       id: 'draft-test-prop10',
@@ -128,8 +128,8 @@ describe('BSUID Pipeline Hardening & Root Cause Resolution Tests', () => {
 
     const auditResult = auditor.audit(draft, mockBrief);
     const ungroundedIssue = auditResult.issues.find((i) => i.code === 'UNGROUNDED_EXTERNAL_FACT');
-    assert.strictEqual(ungroundedIssue, undefined, 'Kalimat deduksi efisiensi otomatisasi tidak boleh memicu UNGROUNDED_EXTERNAL_FACT');
-    assert.strictEqual(auditResult.ungroundedExternalFacts, 0);
+    assert.ok(ungroundedIssue, 'Klaim efisiensi tanpa bukti empiris di seksi CONTEXT wajib ditolak sebagai UNGROUNDED_EXTERNAL_FACT');
+    assert.strictEqual(auditResult.ungroundedExternalFacts, 1);
   });
 
   test('3. GroundingGuard: section.purpose komposit pipe tidak memicu COMMODITY_DRAFT_RISK', () => {

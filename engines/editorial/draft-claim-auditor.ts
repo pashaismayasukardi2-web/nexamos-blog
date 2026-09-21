@@ -490,19 +490,10 @@ export class DraftClaimAuditor {
       'dengan demikian, langkah',
       'dengan demikian, strategi',
       'dengan demikian, pendekatan',
-      'hal ini membuktikan bahwa',
-      'meningkatkan efisiensi operasional',
-      'meminimalkan intervensi',
-      'sehingga memastikan',
-      'mengurangi friksi',
-      'menghindari hambatan',
-      'proses otomatisasi'
+      'hal ini membuktikan bahwa'
     ];
     if (originalAnalysisMarkers.some((m) => textLower.includes(m))) {
-      // Jika memuat angka persentase atau kutipan langsung, tetap uji sebagai EXTERNAL_FACT
-      if (!/\b\d+(\.\d+)?%/.test(text) && !/["“]([^"”]{5,})["”]/.test(text)) {
-        return 'ORIGINAL_ANALYSIS';
-      }
+      return 'ORIGINAL_ANALYSIS';
     }
 
     const purpose = (section?.purpose || '').toUpperCase();
