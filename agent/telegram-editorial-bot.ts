@@ -38,6 +38,7 @@ import type { PublicationCandidate } from '../engines/distribution/distribution-
 import type { ArticleSEOMetadata } from '../engines/seo-validator/article-seo-metadata.ts';
 import { PublicationPackageBuilder } from '../engines/publishing/publication-package.ts';
 import { PublicationPreflightValidator } from '../engines/publishing/publication-preflight.ts';
+import { PublicationHtmlRenderer } from '../engines/publishing/html-renderer.ts';
 import { runBuild } from '../scripts/build-blog.ts';
 
 const execAsync = promisify(exec);
@@ -670,7 +671,10 @@ Atau cukup bagikan link studi/berita yang ingin dianalisis!
         editorialRole: editorialRequest.editorialRole,
         thesis: draftPayload.thesis,
         editorialAngle: draftPayload.editorialAngle,
-        sections: draftPayload.sections,
+        sections: draftPayload.sections.map((s) => ({
+          ...s,
+          heading: PublicationHtmlRenderer.sanitizeSectionHeading(s.heading ?? '')
+        })),
         claimUsages: draftPayload.claimUsages,
         citationMap: draftPayload.citationMap,
         status: 'READY_FOR_EDITORIAL_REVIEW',
@@ -1043,7 +1047,7 @@ Silakan tinjau ringkasan draf atau batalkan:`;
               dek: draft.dek,
               sections: draft.sections.map((s) => ({
                 id: s.id,
-                heading: s.heading ?? '',
+                heading: PublicationHtmlRenderer.sanitizeSectionHeading(s.heading ?? ''),
                 content: s.content,
                 order: s.order,
                 purpose: s.purpose
@@ -1054,7 +1058,10 @@ Silakan tinjau ringkasan draf atau batalkan:`;
               description: enResult.dek || enResult.title,
               headline: enResult.title,
               dek: enResult.dek,
-              sections: enResult.sections
+              sections: (enResult.sections || []).map((s: any) => ({
+                ...s,
+                heading: PublicationHtmlRenderer.sanitizeSectionHeading(s.heading ?? '')
+              }))
             }
           };
         }

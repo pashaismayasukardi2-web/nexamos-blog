@@ -25,35 +25,35 @@
       },
       {
         "id": "sec-2",
-        "heading": "Definition and Characteristics of BSUID: Claim 1 Authenticating",
+        "heading": "Definition and Characteristics of BSUID",
         "content": "BSUID is a unique, closed identifier assigned by Meta to WhatsApp users within a business portfolio. As a business identity, BSUID is exclusive and independent of public information such as phone numbers or end-user usernames. The internal structure of BSUID is designed to serve as a stable handle for back-end systems, ensuring continuity in message delivery even if users change their public details. Therefore, BSUID functions as a stable and closed identity solution for business automation on the WhatsApp platform.",
         "order": 2,
         "purpose": "ARGUMENT"
       },
       {
         "id": "sec-3",
-        "heading": "BSUID Workflows in Webhook Payloads: Claim 2 Authenticating",
+        "heading": "BSUID Workflows in Webhook Payloads",
         "content": "When users adopt usernames, their phone numbers will not appear in webhook payloads. However, both pieces of information remain available if certain conditions are met. In practice, integrators need to understand that although usernames are active, user phone numbers can still be accessed via the payload. This enables integrators to efficiently parse data, choosing between using phone numbers or BSUID depending on their integration requirements.",
         "order": 3,
         "purpose": "CONTEXT"
       },
       {
         "id": "sec-4",
-        "heading": "Technical Rules for Sending Messages via BSUID: Claim 3 Authenticating",
+        "heading": "Technical Rules for Sending Messages via BSUID",
         "content": "To send messages to a BSUID, the entire BSUID value including country codes and periods must be used. If any part of the BSUID string is cut or modified, the request will fail and return error 400. This rule is prescriptive and must be strictly adhered to by engineering teams so that the messaging endpoint functions properly. For example, the complete format to be used is `countryCode.identifier`, where `identifier` is a unique string provided by Meta.",
         "order": 4,
         "purpose": "EVIDENCE"
       },
       {
         "id": "sec-5",
-        "heading": "Automated BSUID Mapping by Meta's Contact Book: Claim 5 Authenticating",
+        "heading": "Automated BSUID Mapping by Meta's Contact Book",
         "content": "The Contact Book provided by Meta automatically stores mappings of phone numbers and BSUIDs from user interactions without requiring additional integration. This reduces the complexity of integration for developers because they do not need to build their own mapping systems. However, to ensure reliable production delivery, engineering teams must validate this mapping first before using it. Thus, the Contact Book becomes an efficient primary data source for optimizing integration workflows.",
         "order": 5,
         "purpose": "ANALYSIS"
       },
       {
         "id": "sec-6",
-        "heading": "Rollout Timeline: When Does BSUID Take Effect? Claim 6 Authenticating",
+        "heading": "Rollout Timeline: When Does BSUID Take Effect?",
         "content": "BSUID usage began in June 2026 when Meta launched the WhatsApp username feature to end-users. This timeline is a critical milestone for engineering teams to plan migrations or feature development that depend on BSUID. Integrators should closely monitor the implementation of this feature and prepare their systems to transition from using phone numbers to BSUID as the primary identifier.",
         "order": 6,
         "purpose": "FRAMEWORK"
@@ -92,35 +92,35 @@
         },
         {
           "id": "sec-2",
-          "heading": "Definisi dan Karakteristik BSUID: Klaim 1 Terotentasi",
+          "heading": "Definisi dan Karakteristik BSUID",
           "content": "BSUID adalah pengidentifikasi unik tertutup yang diberikan oleh Meta kepada pengguna WhatsApp dalam suatu portofolio bisnis. Sebagai identitas bisnis, BSUID bersifat eksklusif dan tidak bergantung pada informasi publik seperti nomor telepon atau username pengguna akhir. Struktur internal BSUID dirancang untuk menjadi stable handle bagi sistem back-end bisnis, memastikan continuity dalam pengiriman pesan meskipun pengguna mengubah detail publik mereka. Oleh karena itu, BSUID berfungsi sebagai solusi identitas yang stabil dan tertutup untuk automasi bisnis di platform WhatsApp.",
           "order": 2,
           "purpose": "ARGUMENT"
         },
         {
           "id": "sec-3",
-          "heading": "Cara Kerja BSUID dalam Payload Webhook: Klaim 2 Terotentasi",
+          "heading": "Cara Kerja BSUID dalam Payload Webhook",
           "content": "Saat pengguna mengadopsi username, nomor telepon mereka tidak akan ditampilkan dalam payload webhook. Namun, kedua informasi tersebut tetap tersedia jika kondisi tertentu terpenuhi. Dalam praktiknya, integrator perlu memahami bahwa meskipun username aktif, nomor telepon pengguna masih dapat diakses melalui payload. Ini memungkinkan integrator untuk melakukan parsing data dengan lebih efisien, memilih antara menggunakan nomor telepon atau BSUID sesuai kebutuhan integrasi mereka.",
           "order": 3,
           "purpose": "CONTEXT"
         },
         {
           "id": "sec-4",
-          "heading": "Aturan Teknis Pengiriman Pesan via BSUID: Klaim 3 Terotentasi",
+          "heading": "Aturan Teknis Pengiriman Pesan via BSUID",
           "content": "Untuk mengirim pesan ke BSUID, seluruh nilai BSUID termasuk kode negara dan titik harus digunakan. Jika bagian apapun dari string BSUID dipotong atau dimodifikasi, permintaan akan gagal dan menghasilkan error 400. Aturan ini bersifat preskriptif dan harus dipatuhi secara ketat oleh tim engineering agar endpoint pengiriman pesan berfungsi dengan baik. Contohnya, format lengkap yang harus digunakan adalah `countryCode.identifier`, di mana `identifier` merupakan string unik yang diberikan oleh Meta.",
           "order": 4,
           "purpose": "EVIDENCE"
         },
         {
           "id": "sec-5",
-          "heading": "Pemetaan BSUID Otomatis oleh Contact Book Meta: Klaim 5 Terotentasi",
+          "heading": "Pemetaan BSUID Otomatis oleh Contact Book Meta",
           "content": "Contact Book yang disediakan oleh Meta secara otomatis menyimpan pemetaan nomor telepon dan BSUID dari interaksi pengguna tanpa memerlukan integrasi tambahan. Hal ini mengurangi kompleksitas integrasi bagi pengembang, karena mereka tidak perlu membangun sistem pemetaan sendiri. Namun, untuk memastikan pengiriman produksi yang andal, tim engineering harus memvalidasi mapping ini terlebih dahulu sebelum menggunakannya. Dengan demikian, Contact Book menjadi sumber data primary yang efisien untuk mengoptimalkan alur kerja integrasi.",
           "order": 5,
           "purpose": "ANALYSIS"
         },
         {
           "id": "sec-6",
-          "heading": "Timeline Peluncuran: Kapan BSUID Mulai Berlaku? Klaim 6 Terotentasi",
+          "heading": "Timeline Peluncuran: Kapan BSUID Mulai Berlaku?",
           "content": "Penggunaan BSUID dimulai pada Juni 2026 saat Meta meluncurkan fitur username WhatsApp kepada pengguna akhir. Timeline ini menjadi milestone krusial bagi tim engineering untuk merencanakan migrasi atau pengembangan fitur yang bergantung pada BSUID. Integrator harus memonitor implementasi fitur ini secara cermat dan mempersiapkan sistem mereka untuk beralih dari penggunaan nomor telepon ke BSUID sebagai pengidentifikasi utama.",
           "order": 6,
           "purpose": "FRAMEWORK"
@@ -156,35 +156,35 @@
         },
         {
           "id": "sec-2",
-          "heading": "Definition and Characteristics of BSUID: Claim 1 Authenticating",
+          "heading": "Definition and Characteristics of BSUID",
           "content": "BSUID is a unique, closed identifier assigned by Meta to WhatsApp users within a business portfolio. As a business identity, BSUID is exclusive and independent of public information such as phone numbers or end-user usernames. The internal structure of BSUID is designed to serve as a stable handle for back-end systems, ensuring continuity in message delivery even if users change their public details. Therefore, BSUID functions as a stable and closed identity solution for business automation on the WhatsApp platform.",
           "order": 2,
           "purpose": "ARGUMENT"
         },
         {
           "id": "sec-3",
-          "heading": "BSUID Workflows in Webhook Payloads: Claim 2 Authenticating",
+          "heading": "BSUID Workflows in Webhook Payloads",
           "content": "When users adopt usernames, their phone numbers will not appear in webhook payloads. However, both pieces of information remain available if certain conditions are met. In practice, integrators need to understand that although usernames are active, user phone numbers can still be accessed via the payload. This enables integrators to efficiently parse data, choosing between using phone numbers or BSUID depending on their integration requirements.",
           "order": 3,
           "purpose": "CONTEXT"
         },
         {
           "id": "sec-4",
-          "heading": "Technical Rules for Sending Messages via BSUID: Claim 3 Authenticating",
+          "heading": "Technical Rules for Sending Messages via BSUID",
           "content": "To send messages to a BSUID, the entire BSUID value including country codes and periods must be used. If any part of the BSUID string is cut or modified, the request will fail and return error 400. This rule is prescriptive and must be strictly adhered to by engineering teams so that the messaging endpoint functions properly. For example, the complete format to be used is `countryCode.identifier`, where `identifier` is a unique string provided by Meta.",
           "order": 4,
           "purpose": "EVIDENCE"
         },
         {
           "id": "sec-5",
-          "heading": "Automated BSUID Mapping by Meta's Contact Book: Claim 5 Authenticating",
+          "heading": "Automated BSUID Mapping by Meta's Contact Book",
           "content": "The Contact Book provided by Meta automatically stores mappings of phone numbers and BSUIDs from user interactions without requiring additional integration. This reduces the complexity of integration for developers because they do not need to build their own mapping systems. However, to ensure reliable production delivery, engineering teams must validate this mapping first before using it. Thus, the Contact Book becomes an efficient primary data source for optimizing integration workflows.",
           "order": 5,
           "purpose": "ANALYSIS"
         },
         {
           "id": "sec-6",
-          "heading": "Rollout Timeline: When Does BSUID Take Effect? Claim 6 Authenticating",
+          "heading": "Rollout Timeline: When Does BSUID Take Effect?",
           "content": "BSUID usage began in June 2026 when Meta launched the WhatsApp username feature to end-users. This timeline is a critical milestone for engineering teams to plan migrations or feature development that depend on BSUID. Integrators should closely monitor the implementation of this feature and prepare their systems to transition from using phone numbers to BSUID as the primary identifier.",
           "order": 6,
           "purpose": "FRAMEWORK"

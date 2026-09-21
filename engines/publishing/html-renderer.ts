@@ -228,6 +228,19 @@ export class PublicationHtmlRenderer {
   }
 
   /**
+   * Sanitasi judul seksi editorial dari artifak verifikasi klaim internal (misal: ": Klaim 1 Terotentasi", ": Claim 1 Authenticating")
+   */
+  public static sanitizeSectionHeading(heading: string): string {
+    if (!heading) return '';
+    return heading
+      .replace(/\s*[:\-]\s*(?:Klaim|Claim)\s+\d+\s*(?:Terotent(?:ik)?asi|Authenticating)?/gi, '')
+      .replace(/\s*[\(\[](?:Klaim|Claim)\s+\d+[\)\]]/gi, '')
+      .replace(/\s+(?:Klaim|Claim)\s+\d+\s*(?:Terotent(?:ik)?asi|Authenticating)?/gi, '')
+      .replace(/^(?:Klaim|Claim)\s+\d+\s*[:\-]?\s*/gi, '')
+      .trim();
+  }
+
+  /**
    * Konversi inline markdown (bold, italic, inline code) menjadi elemen HTML semantis
    */
   public static renderInlineMarkdown(content: string): string {
@@ -286,7 +299,7 @@ export class PublicationHtmlRenderer {
     // Base fallback dari properti utama paket
     const baseSections = (pkg.articleContent?.sections || []).map((s, idx) => ({
       id: s.id || `sec-${idx + 1}`,
-      heading: s.heading ?? '',
+      heading: this.sanitizeSectionHeading(s.heading ?? ''),
       content: s.content ?? '',
       order: s.order ?? idx + 1,
       purpose: s.purpose ?? 'ANALYSIS'
@@ -306,7 +319,7 @@ export class PublicationHtmlRenderer {
       if (pkg.translations.en.sections && pkg.translations.en.sections.length > 0) {
         enSections = pkg.translations.en.sections.map((s, idx) => ({
           id: s.id || `sec-${idx + 1}`,
-          heading: s.heading ?? '',
+          heading: this.sanitizeSectionHeading(s.heading ?? ''),
           content: s.content ?? '',
           order: s.order ?? idx + 1,
           purpose: s.purpose ?? 'ANALYSIS'
@@ -325,7 +338,7 @@ export class PublicationHtmlRenderer {
       if (pkg.translations.id.sections && pkg.translations.id.sections.length > 0) {
         idSections = pkg.translations.id.sections.map((s, idx) => ({
           id: s.id || `sec-${idx + 1}`,
-          heading: s.heading ?? '',
+          heading: this.sanitizeSectionHeading(s.heading ?? ''),
           content: s.content ?? '',
           order: s.order ?? idx + 1,
           purpose: s.purpose ?? 'ANALYSIS'
@@ -357,7 +370,8 @@ export class PublicationHtmlRenderer {
       return sections
         .sort((a, b) => a.order - b.order)
         .map((s) => {
-          const headingHtml = s.heading ? `<h2>${this.renderInlineMarkdown(s.heading)}</h2>` : '';
+          const cleanHeading = this.sanitizeSectionHeading(s.heading);
+          const headingHtml = cleanHeading ? `<h2>${this.renderInlineMarkdown(cleanHeading)}</h2>` : '';
           const bodyParagraphs = s.content
             .split('\n\n')
             .map((p) => p.trim())

@@ -31,6 +31,20 @@ ATURAN UTAMA (MUTLAK & TIDAK DAPAT DITAWAR):
    - Rekomendasi taktis, sintesis, atau alur kerja NexaMOS WAJIB diformulasikan sebagai analisis/rekomendasi orisinal (gunakan frasa seperti: "Dalam perspektif strategis NexaMOS...", "Rekomendasi taktis bagi tim editorial...", "Bagi praktisi, implikasinya...", "Oleh karena itu, langkah praktis...") dan ditempatkan pada seksi ber-purpose 'ANALYSIS', 'FRAMEWORK', 'IMPLICATION', atau 'PRACTICAL_APPLICATION'.
 6. FORMAT OUTPUT: Seluruh respon WAJIB berupa JSON terstruktur tanpa markdown text pembuka atau penutup.`;
 
+/**
+ * Membersihkan artifak verifikasi klaim internal (misal: ": Klaim 1 Terotentasi", ": Claim 1 Authenticating")
+ * dari judul seksi (heading) agar judul tampil murni dan profesional secara editorial.
+ */
+export function sanitizeSectionHeading(heading: string): string {
+  if (!heading) return '';
+  return heading
+    .replace(/\s*[:\-]\s*(?:Klaim|Claim)\s+\d+\s*(?:Terotent(?:ik)?asi|Authenticating)?/gi, '')
+    .replace(/\s*[\(\[](?:Klaim|Claim)\s+\d+[\)\]]/gi, '')
+    .replace(/\s+(?:Klaim|Claim)\s+\d+\s*(?:Terotent(?:ik)?asi|Authenticating)?/gi, '')
+    .replace(/^(?:Klaim|Claim)\s+\d+\s*[:\-]?\s*/gi, '')
+    .trim();
+}
+
 export class RealAIEditorialProvider implements AIEditorialProvider {
   private readonly client: AIHttpClient;
   private readonly config: AIProviderConfig;
@@ -66,6 +80,7 @@ ${JSON.stringify(limitations, null, 2)}
 PANDUAN PENYUSUNAN RENCANA (ANTI-SCOPE DRIFT):
 - workingTitle, thesis, dan angle WAJIB setia pada topik "${request.topic.title}" dan substansi klaim terverifikasi di atas. JANGAN melenceng ke ranah di luar bukti riset (misal: privasi data, kepatuhan hukum).
 - sectionPlan:
+  * DILARANG KERAS mencantumkan nomor klaim, ID klaim, kata 'Claim x', atau 'Klaim x Terotentasi' pada heading. Judul seksi harus berupa judul editorial yang bersih dan profesional.
   * Untuk seksi fakta/konteks industri: gunakan purpose HOOK, CONTEXT, ARGUMENT, atau EVIDENCE dan sebutkan plannedClaimIds dari daftar di atas.
   * Untuk seksi rekomendasi/taktik/analisis NexaMOS: gunakan purpose ANALYSIS, FRAMEWORK, IMPLICATION, atau PRACTICAL_APPLICATION.
 
@@ -172,6 +187,7 @@ INSTRUKSI INTEGRITAS & ANTI-HALUSINASI (SANGAT PENTING):
 3. REKOMENDASI & TAKTIK NEXAMOS: Untuk bagian langkah praktis, kerangka kerja, atau alur kerja NexaMOS, letakkan dalam seksi dengan purpose 'ANALYSIS', 'FRAMEWORK', atau 'PRACTICAL_APPLICATION' dan gunakan frasa analisis orisinal (misal: "Rekomendasi taktis bagi tim editorial adalah...", "Bagi praktisi konten, implikasinya...", "Dalam perspektif strategis NexaMOS...", "Oleh karena itu, langkah praktis...").
 4. INTEGRITAS ID SITASI: Dilarang membuat claimId, sourceId, atau evidenceId palsu! Seluruh ID dalam claimUsages dan citationMap WAJIB bersumber dari data di atas. Gunakan supportingEvidenceIds resmi dari Klaim Terbukti di atas saat mengisi evidenceIds pada citationMap.
 5. LARANGAN KLAIM MANFAAT SPEKULATIF (ANTI-MARKETING FLUFF): DILARANG KERAS mengarang klaim manfaat, efisiensi operasional, atau hasil bisnis (seperti "meningkatkan efisiensi operasional", "meminimalkan intervensi manusia", "menghemat biaya", "mengurangi beban kerja", dsb.) di seksi mana pun jika klaim tersebut TIDAK didukung bukti empiris eksplisit di 'Klaim Terbukti' di atas. Tuliskan mekanisme teknis secara objektif apa adanya tanpa melebih-lebihkan dampak yang belum terbukti.
+6. LARANGAN ARTIFAK KLAIM PADA JUDUL (ANTI-LABEL LEAKAGE): DILARANG KERAS mencantumkan nomor klaim, kata 'Claim x', atau 'Klaim x Terotentasi' pada judul seksi (heading). ID klaim HANYA boleh dicatat di dalam field claimUsageIds, claimUsages, dan citationMap, BUKAN di dalam teks heading!
 
 FORMAT JSON YANG WAJIB DIHASILKAN:
 {
@@ -220,7 +236,7 @@ FORMAT JSON YANG WAJIB DIHASILKAN:
 
     const parsed = StructuredOutputValidator.parseJson(response.content);
 
-    // Normalisasi section.purpose jika LLM menghasilkan pipe '|' atau variasi format
+    // Normalisasi heading dan section.purpose jika LLM menghasilkan artifak atau pipe '|'
     if (parsed && Array.isArray(parsed.sections)) {
       const priority = [
         'PRACTICAL_APPLICATION',
@@ -236,6 +252,9 @@ FORMAT JSON YANG WAJIB DIHASILKAN:
       ];
 
       for (const sec of parsed.sections) {
+        if (sec && typeof sec.heading === 'string') {
+          sec.heading = sanitizeSectionHeading(sec.heading);
+        }
         if (sec && typeof sec.purpose === 'string' && sec.purpose.includes('|')) {
           const parts = sec.purpose.split('|').map((p: string) => p.trim().toUpperCase());
           const chosen = priority.find((p) => parts.includes(p)) || parts[0];
@@ -409,7 +428,7 @@ FORMAT JSON YANG WAJIB DIHASILKAN:
 Translate this authoritative Indonesian marketing & technology analysis article into sophisticated, high-impact, fluent English for enterprise executives and search generative engines.
 CRITICAL INSTRUCTIONS:
 1. Maintain the exact same section IDs, ordering, and purposes.
-2. Translate all headings and body paragraphs accurately, preserving any specific technical terminology, metrics, and claim tags (e.g. claim-1, claim-2, KPI names).
+2. Translate all headings and body paragraphs accurately, preserving any specific technical terminology and metrics. Do NOT include claim verification tags, claim numbers, or words like 'Claim x Authenticating' in headings.
 3. Do NOT add new claims or invent facts.
 4. Output MUST be valid JSON only matching the schema.`;
 
@@ -450,7 +469,7 @@ REQUIRED JSON OUTPUT FORMAT:
       dek: parsed.dek || '',
       sections: parsed.sections.map((s: any, idx: number) => ({
         id: s.id || `sec-${idx + 1}`,
-        heading: s.heading || '',
+        heading: sanitizeSectionHeading(s.heading || ''),
         content: s.content || '',
         order: s.order || idx + 1,
         purpose: s.purpose || 'ANALYSIS'

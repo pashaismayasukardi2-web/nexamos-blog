@@ -697,5 +697,59 @@ describe('Phase 6 Tests: Publishing & Production Workflow', () => {
       assert.ok(indexHtml.includes('<div class="card-lang-block" data-lang="id" style="display:none;">'));
       assert.ok(indexHtml.includes('<h2>Kartu Judul ID</h2>'));
     });
+
+    test('PublicationHtmlRenderer.sanitizeSectionHeading membersihkan artifak klaim internal dari heading', () => {
+      assert.strictEqual(
+        PublicationHtmlRenderer.sanitizeSectionHeading('Definisi dan Karakteristik BSUID: Klaim 1 Terotentasi'),
+        'Definisi dan Karakteristik BSUID'
+      );
+      assert.strictEqual(
+        PublicationHtmlRenderer.sanitizeSectionHeading('Definition and Characteristics of BSUID: Claim 1 Authenticating'),
+        'Definition and Characteristics of BSUID'
+      );
+      assert.strictEqual(
+        PublicationHtmlRenderer.sanitizeSectionHeading('Timeline Peluncuran: Kapan BSUID Mulai Berlaku? Klaim 6 Terotentasi'),
+        'Timeline Peluncuran: Kapan BSUID Mulai Berlaku?'
+      );
+      assert.strictEqual(
+        PublicationHtmlRenderer.sanitizeSectionHeading('Rollout Timeline: When Does BSUID Take Effect? Claim 6 Authenticating'),
+        'Rollout Timeline: When Does BSUID Take Effect?'
+      );
+      assert.strictEqual(
+        PublicationHtmlRenderer.sanitizeSectionHeading('Aturan Teknis Pengiriman Pesan via BSUID (Klaim 3)'),
+        'Aturan Teknis Pengiriman Pesan via BSUID'
+      );
+      assert.strictEqual(
+        PublicationHtmlRenderer.sanitizeSectionHeading('Klaim 1: Pengantar Dasar'),
+        'Pengantar Dasar'
+      );
+    });
+
+    test('PublicationHtmlRenderer.renderArticlePage otomatis membersihkan heading tercemar label klaim', () => {
+      const candidate = createMockCandidate({ slug: 'clean-heading-test' });
+      const draft = createMockDraft({
+        slug: 'clean-heading-test',
+        sections: [
+          {
+            id: 'sec-1',
+            heading: 'Definisi dan Karakteristik BSUID: Klaim 1 Terotentasi',
+            content: 'Isi teks penjelasan mengenai BSUID.',
+            order: 1,
+            purpose: 'ARGUMENT',
+            claimUsageIds: []
+          }
+        ]
+      });
+      const topic = createMockTopic();
+      const seoMeta = createMockSEOMetadata({ slug: 'clean-heading-test' });
+
+      const pkg = PublicationPackageBuilder.build(candidate, draft, topic, seoMeta, null);
+      const html = PublicationHtmlRenderer.renderArticlePage(pkg);
+
+      assert.ok(html.includes('<h2>Definisi dan Karakteristik BSUID</h2>'));
+      assert.ok(!html.includes('Klaim 1 Terotentasi'));
+      assert.ok(!html.includes('Claim 1 Authenticating'));
+    });
   });
 });
+
