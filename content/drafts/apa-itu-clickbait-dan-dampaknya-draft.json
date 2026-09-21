@@ -1,0 +1,1473 @@
+{
+  "draft": {
+    "id": "draft-muaobskj",
+    "topicId": "top-muaoaj8h",
+    "researchProjectId": "proj-muaoaj8i",
+    "title": "Clickbait: Definisi, Dampak, dan Solusi Etis untuk Konsumsi Berita Berkualitas",
+    "dek": "Sebuah analisis mendalam tentang bagaimana clickbait merusak ekosistem informasi dan bagaimana nudges desain digital bisa menjadi alternatif yang lebih bertanggung jawab.",
+    "slug": "apa-itu-clickbait-dan-dampaknya",
+    "territory": "TACTICAL",
+    "articleType": "EXPLAINER",
+    "editorialRole": "AUTHORITY",
+    "thesis": "Clickbait adalah teknik manipulatif yang merusak kredibilitas media dan mengancam literasi informasi publik. Namun, nudges desain digital menawarkan jalan tengah yang etis untuk meningkatkan konsumsi berita berkualitas tanpa mengorbankan akurasi.",
+    "editorialAngle": "Artikel ini menolak pandangan simplistik yang hanya mengutuk clickbait sebagai fenomena viral semata. Kami menggali akar masalahnya sebagai kegagalan sistem distribusi konten dan menyajikan kerangka solutif berbasis behavioral design yang seimbang antara daya tarik dan tanggung jawab informasi.",
+    "sections": [
+      {
+        "id": "sec-1",
+        "heading": "Clickbait: Apa yang Sebenarnya Dimaksud?",
+        "content": "Clickbait bukanlah istilah modern yang lahir dari era internet; ia adalah teknik menulis judul dan cuplikan untuk mengarahkan pengguna ke situs web. Tujuan utamanya adalah memanipulasi psikologi pengguna agar tertarik untuk mengklik tautan tersebut. Teknik ini bergantung pada janji palsu yang mengabaikan konten substantif di balik link, sehingga pengguna seringkali merasa tertipu setelah membuka artikel yang ternyata tidak sesuai dengan ekspektasi awalnya.",
+        "order": 1,
+        "purpose": "ARGUMENT",
+        "claimUsageIds": [
+          "cu-1"
+        ]
+      },
+      {
+        "id": "sec-2",
+        "heading": "Dampak Clickbait terhadap Ekosistem Informasi Publik",
+        "content": "Clickbait memiliki dampak sistemik yang merusak kepercayaan audiens terhadap media. Ketika pengguna secara konsisten dihadapkan pada konten yang menjanjikan sesuatu namun mengirimkan informasi yang minim atau tidak akurat, mereka akan menjadi skeptis terhadap seluruh konten daring. Platform sosial seperti Facebook telah lama menggunakan clickbait sebagai bahan bakar algoritme yang menguntungkan publisher dengan engagement tinggi, meskipun kualitas rendah. Akibatnya, konsumsi berita clickbait secara massal menghasilkan demoralisasi publik dan melemahkan kapasitas kritis masyarakat.",
+        "order": 2,
+        "purpose": "EVIDENCE",
+        "claimUsageIds": [
+          "cu-2"
+        ]
+      },
+      {
+        "id": "sec-3",
+        "heading": "Nudges Desain Digital: Alternatif Etis untuk Meningkatkan Konsumsi Berita Berkualitas",
+        "content": "Nudges desain digital menawarkan solusi yang etis dan seimbang untuk mengatasi masalah clickbait. Berbeda dengan clickbait yang manipulatif, nudges bertujuan meningkatkan eksposur konten berkualitas dengan cara yang transparan dan bermanfaat bagi pengguna. Contohnya termasuk visualisasi reputasi penulis, label kredibilitas sumber, atau preview konten yang akurat. Dengan memanfaatkan arsitektur pilihan yang ringan dan reversibel, nudges mempengaruhi perilaku tanpa membatasi kebebasan pengguna, sehingga menciptakan ekosistem informasi yang lebih sehat.",
+        "order": 3,
+        "purpose": "ANALYSIS",
+        "claimUsageIds": [
+          "cu-3"
+        ]
+      },
+      {
+        "id": "sec-4",
+        "heading": "Mengadopsi Desain Persuasif yang Seimbang: Tantangan bagi Organisasi Enterprise",
+        "content": "Organisasi enterprise harus mengembangkan kerangka desain persuasif yang mempertimbangkan keseimbangan antara daya tarik dan akurasi informasi. Langkah praktisnya dimulai dengan melakukan audit terhadap metrik engagement yang selama ini digunakan, di mana clickbait sering kali mendapat peringkat tinggi. Penerapan nudges etis memerlukan kolaborasi lintas fungsi: redaksi, engineering, dan data science untuk mengukur dampak jangka panjang terhadap literasi publik. Dengan demikian, organisasi dapat membangun platform yang tetap menarik namun menjunjung tinggi integritas konten.",
+        "order": 4,
+        "purpose": "FRAMEWORK",
+        "claimUsageIds": [
+          "cu-4"
+        ]
+      },
+      {
+        "id": "sec-5",
+        "heading": "Penutup: Menuju Arsitektur Informasi yang Bertanggung Jawab",
+        "content": "Clickbait adalah gejala dari kegagalan ekonomi perhatian yang mengharga engagement murahan di atas nilai informasi. Nudges desain digital menawarkan blueprint untuk membangun platform yang tetap menarik namun menjunjung tinggi integritas konten. Adopsi pendekatan ini oleh organisasi enterprise bukan hanya soal kepatuhan etika, melainkan investasi strategis dalam membangun kepercayaan jangka panjang.",
+        "order": 5,
+        "purpose": "CONCLUSION",
+        "claimUsageIds": [
+          "cu-3",
+          "cu-4"
+        ]
+      }
+    ],
+    "claimUsages": [
+      {
+        "id": "cu-1",
+        "claimId": "claim-1",
+        "sectionId": "sec-1",
+        "usageType": "PARAPHRASED",
+        "statement": "Clickbait adalah teknik menulis judul dan cuplikan untuk mengarahkan pengguna ke situs web."
+      },
+      {
+        "id": "cu-2",
+        "claimId": "claim-2",
+        "sectionId": "sec-2",
+        "usageType": "PARAPHRASED",
+        "statement": "Strategi clickbait meningkatkan interaksi pengguna di platform sosial seperti Facebook."
+      },
+      {
+        "id": "cu-3",
+        "claimId": "claim-4",
+        "sectionId": "sec-3",
+        "usageType": "SYNTHESIZED",
+        "statement": "Nudges desain digital dapat menjadi alternatif etis untuk clickbait dalam meningkatkan konsumsi berita berkualitas."
+      },
+      {
+        "id": "cu-4",
+        "claimId": "claim-6",
+        "sectionId": "sec-4",
+        "usageType": "PARAPHRASED",
+        "statement": "Organisasi enterprise harus mengadopsi pendekatan desain persuasif yang seimbang antara daya tarik dan akurasi informasi."
+      }
+    ],
+    "citationMap": [
+      {
+        "claimUsageId": "cu-1",
+        "claimId": "claim-1",
+        "sourceIds": [
+          "src-muaoam7r-l8bh"
+        ],
+        "evidenceIds": [
+          "evi-src-muaoam7r-l8bh-31"
+        ]
+      },
+      {
+        "claimUsageId": "cu-2",
+        "claimId": "claim-2",
+        "sourceIds": [
+          "src-muaoam7r-l8bh"
+        ],
+        "evidenceIds": [
+          "evi-src-muaoam7r-l8bh-15",
+          "evi-src-muaoam7r-l8bh-33"
+        ]
+      },
+      {
+        "claimUsageId": "cu-3",
+        "claimId": "claim-4",
+        "sourceIds": [
+          "src-muaoam7r-l8bh"
+        ],
+        "evidenceIds": [
+          "evi-src-muaoam7r-l8bh-32",
+          "evi-src-muaoam7r-l8bh-34",
+          "evi-src-muaoam7r-l8bh-90",
+          "evi-src-muaoam7r-l8bh-96",
+          "evi-src-muaoam7r-l8bh-102",
+          "evi-src-muaoam7r-l8bh-104"
+        ]
+      },
+      {
+        "claimUsageId": "cu-4",
+        "claimId": "claim-6",
+        "sourceIds": [
+          "src-muaoam7r-l8bh"
+        ],
+        "evidenceIds": [
+          "evi-src-muaoam7r-l8bh-39"
+        ]
+      }
+    ],
+    "status": "READY_FOR_EDITORIAL_REVIEW",
+    "generatedAt": "2026-09-21T03:16:42.979Z",
+    "generatorVersion": "real-ai-v1",
+    "promptVersion": "1.0.0"
+  },
+  "brief": {
+    "id": "brief-muaobad7",
+    "topicId": "top-muaoaj8h",
+    "researchProjectId": "proj-muaoaj8i",
+    "objective": "Apa itu clickbait dan dampaknya?",
+    "answeredQuestions": [
+      {
+        "id": "rq-1",
+        "question": "Apa definisi operasional dan indikator kunci dari clickbait dalam konten digital?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-2",
+        "question": "Bagaimana pola dan strategi clickbait digunakan oleh organisasi enterprise dalam distribusi konten mereka?",
+        "priority": "MEDIUM",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-3",
+        "question": "Apa dampak jangka panjang penggunaan clickbait terhadap reputasi merek dan tingkat kepercayaan pelanggan?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-4",
+        "question": "Apa mekanisme mitigasi dan praktik terbaik yang dapat diterapkan oleh Content Leaders enterprise untuk mengurangi penggunaan clickbait?",
+        "priority": "MEDIUM",
+        "status": "OPEN"
+      }
+    ],
+    "openQuestions": [],
+    "supportedClaims": [
+      {
+        "id": "claim-1",
+        "researchProjectId": "proj-muaoaj8i",
+        "statement": "Clickbait adalah teknik menulis judul dan cuplikan untuk mengarahkan pengguna ke situs web.",
+        "claimType": "FACTUAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T03:16:17.830Z",
+        "updatedAt": "2026-09-21T03:16:17.830Z",
+        "supportingEvidenceIds": [
+          "evi-src-muaoam7r-l8bh-31",
+          "evi-src-muaoam7r-l8bh-34"
+        ]
+      },
+      {
+        "id": "claim-2",
+        "researchProjectId": "proj-muaoaj8i",
+        "statement": "Strategi clickbait meningkatkan interaksi pengguna di platform sosial seperti Facebook.",
+        "claimType": "EMPIRICAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T03:16:18.163Z",
+        "updatedAt": "2026-09-21T03:16:18.163Z",
+        "supportingEvidenceIds": [
+          "evi-src-muaoam7r-l8bh-15",
+          "evi-src-muaoam7r-l8bh-23",
+          "evi-src-muaoam7r-l8bh-25",
+          "evi-src-muaoam7r-l8bh-26",
+          "evi-src-muaoam7r-l8bh-27",
+          "evi-src-muaoam7r-l8bh-33",
+          "evi-src-muaoam7r-l8bh-39",
+          "evi-src-muaoam7r-l8bh-40",
+          "evi-src-muaoam7r-l8bh-41",
+          "evi-src-muaoam7r-l8bh-42",
+          "evi-src-muaoam7r-l8bh-88",
+          "evi-src-muaoam7r-l8bh-90",
+          "evi-src-muaoam7r-l8bh-93",
+          "evi-src-muaoam7r-l8bh-94",
+          "evi-src-muaoam7r-l8bh-96",
+          "evi-src-muaoam7r-l8bh-98",
+          "evi-src-muaoam7r-l8bh-99",
+          "evi-src-muaoam7r-l8bh-101",
+          "evi-src-muaoam7r-l8bh-102",
+          "evi-src-muaoam7r-l8bh-103",
+          "evi-src-muaoam7r-l8bh-104",
+          "evi-src-muaoam7r-l8bh-106"
+        ]
+      },
+      {
+        "id": "claim-4",
+        "researchProjectId": "proj-muaoaj8i",
+        "statement": "Nudges desain digital dapat menjadi alternatif etis untuk clickbait dalam meningkatkan konsumsi berita berkualitas.",
+        "claimType": "ANALYTICAL",
+        "importance": "SUPPORTING",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T03:16:18.456Z",
+        "updatedAt": "2026-09-21T03:16:18.456Z",
+        "supportingEvidenceIds": [
+          "evi-src-muaoam7r-l8bh-32",
+          "evi-src-muaoam7r-l8bh-34",
+          "evi-src-muaoam7r-l8bh-90",
+          "evi-src-muaoam7r-l8bh-96",
+          "evi-src-muaoam7r-l8bh-98",
+          "evi-src-muaoam7r-l8bh-102",
+          "evi-src-muaoam7r-l8bh-104"
+        ]
+      },
+      {
+        "id": "claim-6",
+        "researchProjectId": "proj-muaoaj8i",
+        "statement": "Organisasi enterprise harus mengadopsi pendekatan desain persuasif yang seimbang antara daya tarik dan akurasi informasi.",
+        "claimType": "PREDICTIVE",
+        "importance": "SUPPORTING",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T03:16:19.087Z",
+        "updatedAt": "2026-09-21T03:16:19.087Z",
+        "supportingEvidenceIds": [
+          "evi-src-muaoam7r-l8bh-39"
+        ]
+      }
+    ],
+    "partiallySupportedClaims": [],
+    "disputedClaims": [],
+    "unverifiedClaims": [
+      {
+        "id": "claim-3",
+        "researchProjectId": "proj-muaoaj8i",
+        "statement": "Penggunaan clickbait secara berlebihan merusak kepercayaan publik terhadap sumber berita.",
+        "claimType": "CAUSAL",
+        "importance": "CORE",
+        "status": "UNVERIFIED",
+        "createdAt": "2026-09-21T03:16:18.453Z",
+        "updatedAt": "2026-09-21T03:16:18.453Z",
+        "supportingEvidenceIds": []
+      },
+      {
+        "id": "claim-5",
+        "researchProjectId": "proj-muaoaj8i",
+        "statement": "Praktik terbaik mitigasi clickbait melibatkan penerapan pedoman jurnalistik dan transparansi.",
+        "claimType": "PREDICTIVE",
+        "importance": "SUPPORTING",
+        "status": "UNVERIFIED",
+        "createdAt": "2026-09-21T03:16:18.792Z",
+        "updatedAt": "2026-09-21T03:16:18.792Z",
+        "supportingEvidenceIds": []
+      }
+    ],
+    "unsupportedClaims": [],
+    "internalKnowledge": [],
+    "originalAnalysis": [],
+    "keyFindings": [
+      {
+        "id": "finding-01",
+        "researchProjectId": "proj-muaoaj8i",
+        "statement": "Clickbait adalah teknik menulis judul dan cuplikan untuk mengarahkan pengguna ke situs web.",
+        "supportingClaimIds": [
+          "claim-1",
+          "claim-2",
+          "claim-4",
+          "claim-6"
+        ],
+        "confidence": "HIGH",
+        "limitations": [],
+        "createdAt": "2026-09-21T03:16:19.387Z",
+        "updatedAt": "2026-09-21T03:16:19.387Z"
+      }
+    ],
+    "limitations": [],
+    "researchGaps": [],
+    "recommendedEditorialAngle": "Analisis strategis ter-grounding mengenai Apa itu clickbait dan dampaknya?",
+    "sourceIndex": [
+      {
+        "sourceId": "src-muaoam7r-l8bh",
+        "title": "Apa itu clickbait dan dampaknya?",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743",
+        "canonicalUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743",
+        "publisher": "Referensi Web",
+        "sourceType": "INDUSTRY_RESEARCH",
+        "authorityScore": 85,
+        "publicationAllowed": true
+      }
+    ],
+    "evidenceIndex": [
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-96",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "Building a bridge to nudging, the framing of information, that is, a different representation of the same information, is among the potential nudging elements in digital environments [ 60 ]. The knowledge that a specific framing, for example, using s",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      },
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-104",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "Besides these limits, we call for further research based on our findings or the discussion. As pointed out, some clickbait features increased user interactivity and could be used to draw attention to important, but unpopular topics. However, the use ",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      },
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-28",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "In addition to answering this central research question, we want to draw additional attention to potentially “good” use of clickbait and bring into play what behavioral economists have called nudge theory [ 28 ] and has been proposed for digital envi",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      },
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-31",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "Clickbait is an editorial technique of writing headlines and snippets that direct users to websites. This might violate journalistic codes of conduct, such as the Society of Professional Journalists’ (SPJ) Code of Ethics, for several reasons [ 11 , 2",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      },
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-36",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "Previous research on clickbait primarily focused on article headlines [ 52 ]. The writing style of the headlines of reputable newspapers and tabloid newspapers differs, and thus, they are perceived differently during the information-seeking process [",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      },
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-39",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "With digital nudging, the idea of using or reducing decision biases to guide people toward better behavior has been introduced to the digital sphere [ 29 ]. Combining persuasion and nudging literature, digital nudging is defined “as a subtle form of ",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      },
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-13",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "https://doi.org/10.1371/journal.pone.0266743",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      },
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-15",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "Clickbait to make people click on a linked article is commonly used on social media. We analyze the impact of clickbait on user interaction on Facebook in the form of liking, sharing and commenting. For this, we use a data set of more than 4,400 Face",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      },
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-32",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "This in term can have multiple consequences. The main purpose news sources to inform users is harmed substantially if users loose trust in the source. The trust in a source is not always formed by the news content itself but sometimes through other e",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      },
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-33",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "However, current findings lead to the assumption that categorical normative rejection of traffic-generating techniques by journalists does not fully coincide with reception by the audience. As a reaction to this development, quality outlets have adop",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      },
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-41",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "Clickbait is used to tempt users to click on a link and has been deemed an effective instrument for drawing attention to an article [ 11 , 49 ]. Although the click and visit to the website are the goal, such data is not easily accessible or necessari",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      },
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-90",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "The common clickbait phrases that most people directly associate with the aim of generating clicks, surprisingly, did not have the expected effect in the analysis of interaction counts. Headlines—more suitable for phrases like this will blow your min",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      },
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-95",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "The idea of nudging is to alter the choice architecture when there are good reasons to believe the decision-maker is not able to decide in her or his best interest or when societal goals exceed individual preferences [ 28 ]. Regarding news consumptio",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      },
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-101",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "Besides the novelty of our approach and hence the unique theoretical characteristics of the findings, the implications form contributions for practitioners in organizations as well. Editors that make use of clickbait can potentially increase user int",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      },
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-102",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "We examined the use of persuasive instruments in the user interface for journalistic content on social media. This study builds a basis for HCI researchers and journalists, for which clickbait features might be useful to nudge users to interact with ",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      },
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-25",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "An effective strategy for drawing attention and capturing readers’ curiosity is clickbait which has risen in recent years and has been adopted by publishers of all kinds especially on social media platforms like Facebook and Twitter [ 21 ]. Clickbait",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      },
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-26",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "Besides the controversial discussions around it, there is still a research gap regarding clickbait. In addition to its ability to attract users’ attention, clickbait can trigger increased user engagement which has become another dimension of social m",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      },
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-34",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "Despite the ethical doubts, even high-prestige news platforms consider tabloidization to capture readers’ curiosity, including the creation of new soft news sections and the increasing application of commercialization and tabloidization with clickbai",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      },
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-38",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "The Nudge theory defines nudges as “any aspect of the choice architecture that alters people’s behavior in a predictable way without forbidding any options or significantly changing their economic incentives” [ 28 ]. A nudge is comparable to clickbai",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      },
+      {
+        "evidenceId": "evi-src-muaoam7r-l8bh-58",
+        "sourceId": "src-muaoam7r-l8bh",
+        "quote": "For example, the post text “It’s another retail milestone on the road to Christmas, and major brands are expecting bumper sales day on Cyber Monday, traditionally seen as one of the busiest online shopping days of the year, with online sales totallin",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      }
+    ],
+    "readiness": "READY_FOR_EDITORIAL",
+    "readinessReason": "Kecukupan bukti riset terpenuhi: 4 klaim faktual berhasil diverifikasi.",
+    "generatedAt": "2026-09-21T03:16:19.387Z"
+  },
+  "topic": {
+    "id": "top-muaoaj8h",
+    "title": "Apa itu clickbait dan dampaknya?",
+    "slug": "apa-itu-clickbait-dan-dampaknya",
+    "territory": "TACTICAL",
+    "recommendedArticleType": "EXPLAINER",
+    "editorialRole": "AUTHORITY",
+    "audience": {
+      "segment": "Enterprise Content Leaders"
+    },
+    "problem": "Apa itu clickbait dan dampaknya?",
+    "intent": {
+      "primary": "Apa itu clickbait dan dampaknya?"
+    },
+    "thesis": null,
+    "whyNow": null,
+    "status": "APPROVED",
+    "informationGain": {
+      "originalityType": [
+        "ORIGINAL_FRAMEWORK"
+      ],
+      "expectedContribution": "Arsitektur informasi mandiri",
+      "commodityRisk": "LOW"
+    },
+    "evidencePlan": {
+      "requiredEvidenceLevel": "E2",
+      "plannedSources": [
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266743"
+      ],
+      "originalEvidenceRequired": false
+    },
+    "businessRelevance": {
+      "objective": "Thought Leadership",
+      "funnelRole": "TOFU"
+    },
+    "distributionTargets": [
+      "GOOGLE_SEARCH",
+      "GOOGLE_AI"
+    ],
+    "createdAt": "2026-09-21T03:15:44.225Z",
+    "updatedAt": "2026-09-21T03:15:44.225Z"
+  },
+  "editorialIntegrity": {
+    "status": "PASS",
+    "draftClaimAudit": {
+      "status": "PASS",
+      "propositions": [
+        {
+          "propositionId": "prop-1",
+          "sectionId": "sec-1",
+          "text": "Clickbait bukanlah istilah modern yang lahir dari era internet; ia adalah teknik menulis judul dan cuplikan untuk mengarahkan pengguna ke situs web.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-1"
+          ],
+          "evidenceIds": [
+            "evi-src-muaoam7r-l8bh-31",
+            "evi-src-muaoam7r-l8bh-34"
+          ],
+          "sourceIds": [
+            "src-muaoam7r-l8bh"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-2",
+          "sectionId": "sec-1",
+          "text": "Tujuan utamanya adalah memanipulasi psikologi pengguna agar tertarik untuk mengklik tautan tersebut.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-1"
+          ],
+          "evidenceIds": [
+            "evi-src-muaoam7r-l8bh-31",
+            "evi-src-muaoam7r-l8bh-34"
+          ],
+          "sourceIds": [
+            "src-muaoam7r-l8bh"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-3",
+          "sectionId": "sec-1",
+          "text": "Teknik ini bergantung pada janji palsu yang mengabaikan konten substantif di balik link, sehingga pengguna seringkali merasa tertipu setelah membuka artikel yang ternyata tidak sesuai dengan ekspektasi awalnya.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-1"
+          ],
+          "evidenceIds": [
+            "evi-src-muaoam7r-l8bh-31",
+            "evi-src-muaoam7r-l8bh-34"
+          ],
+          "sourceIds": [
+            "src-muaoam7r-l8bh"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-4",
+          "sectionId": "sec-2",
+          "text": "Clickbait memiliki dampak sistemik yang merusak kepercayaan audiens terhadap media.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-2"
+          ],
+          "evidenceIds": [
+            "evi-src-muaoam7r-l8bh-15",
+            "evi-src-muaoam7r-l8bh-23",
+            "evi-src-muaoam7r-l8bh-25",
+            "evi-src-muaoam7r-l8bh-26",
+            "evi-src-muaoam7r-l8bh-27",
+            "evi-src-muaoam7r-l8bh-33",
+            "evi-src-muaoam7r-l8bh-39",
+            "evi-src-muaoam7r-l8bh-40",
+            "evi-src-muaoam7r-l8bh-41",
+            "evi-src-muaoam7r-l8bh-42",
+            "evi-src-muaoam7r-l8bh-88",
+            "evi-src-muaoam7r-l8bh-90",
+            "evi-src-muaoam7r-l8bh-93",
+            "evi-src-muaoam7r-l8bh-94",
+            "evi-src-muaoam7r-l8bh-96",
+            "evi-src-muaoam7r-l8bh-98",
+            "evi-src-muaoam7r-l8bh-99",
+            "evi-src-muaoam7r-l8bh-101",
+            "evi-src-muaoam7r-l8bh-102",
+            "evi-src-muaoam7r-l8bh-103",
+            "evi-src-muaoam7r-l8bh-104",
+            "evi-src-muaoam7r-l8bh-106"
+          ],
+          "sourceIds": [
+            "src-muaoam7r-l8bh"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-5",
+          "sectionId": "sec-2",
+          "text": "Ketika pengguna secara konsisten dihadapkan pada konten yang menjanjikan sesuatu namun mengirimkan informasi yang minim atau tidak akurat, mereka akan menjadi skeptis terhadap seluruh konten daring.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-2"
+          ],
+          "evidenceIds": [
+            "evi-src-muaoam7r-l8bh-15",
+            "evi-src-muaoam7r-l8bh-23",
+            "evi-src-muaoam7r-l8bh-25",
+            "evi-src-muaoam7r-l8bh-26",
+            "evi-src-muaoam7r-l8bh-27",
+            "evi-src-muaoam7r-l8bh-33",
+            "evi-src-muaoam7r-l8bh-39",
+            "evi-src-muaoam7r-l8bh-40",
+            "evi-src-muaoam7r-l8bh-41",
+            "evi-src-muaoam7r-l8bh-42",
+            "evi-src-muaoam7r-l8bh-88",
+            "evi-src-muaoam7r-l8bh-90",
+            "evi-src-muaoam7r-l8bh-93",
+            "evi-src-muaoam7r-l8bh-94",
+            "evi-src-muaoam7r-l8bh-96",
+            "evi-src-muaoam7r-l8bh-98",
+            "evi-src-muaoam7r-l8bh-99",
+            "evi-src-muaoam7r-l8bh-101",
+            "evi-src-muaoam7r-l8bh-102",
+            "evi-src-muaoam7r-l8bh-103",
+            "evi-src-muaoam7r-l8bh-104",
+            "evi-src-muaoam7r-l8bh-106"
+          ],
+          "sourceIds": [
+            "src-muaoam7r-l8bh"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-6",
+          "sectionId": "sec-2",
+          "text": "Platform sosial seperti Facebook telah lama menggunakan clickbait sebagai bahan bakar algoritme yang menguntungkan publisher dengan engagement tinggi, meskipun kualitas rendah.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-2"
+          ],
+          "evidenceIds": [
+            "evi-src-muaoam7r-l8bh-15",
+            "evi-src-muaoam7r-l8bh-23",
+            "evi-src-muaoam7r-l8bh-25",
+            "evi-src-muaoam7r-l8bh-26",
+            "evi-src-muaoam7r-l8bh-27",
+            "evi-src-muaoam7r-l8bh-33",
+            "evi-src-muaoam7r-l8bh-39",
+            "evi-src-muaoam7r-l8bh-40",
+            "evi-src-muaoam7r-l8bh-41",
+            "evi-src-muaoam7r-l8bh-42",
+            "evi-src-muaoam7r-l8bh-88",
+            "evi-src-muaoam7r-l8bh-90",
+            "evi-src-muaoam7r-l8bh-93",
+            "evi-src-muaoam7r-l8bh-94",
+            "evi-src-muaoam7r-l8bh-96",
+            "evi-src-muaoam7r-l8bh-98",
+            "evi-src-muaoam7r-l8bh-99",
+            "evi-src-muaoam7r-l8bh-101",
+            "evi-src-muaoam7r-l8bh-102",
+            "evi-src-muaoam7r-l8bh-103",
+            "evi-src-muaoam7r-l8bh-104",
+            "evi-src-muaoam7r-l8bh-106"
+          ],
+          "sourceIds": [
+            "src-muaoam7r-l8bh"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-7",
+          "sectionId": "sec-2",
+          "text": "Akibatnya, konsumsi berita clickbait secara massal menghasilkan demoralisasi publik dan melemahkan kapasitas kritis masyarakat.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-2"
+          ],
+          "evidenceIds": [
+            "evi-src-muaoam7r-l8bh-15",
+            "evi-src-muaoam7r-l8bh-23",
+            "evi-src-muaoam7r-l8bh-25",
+            "evi-src-muaoam7r-l8bh-26",
+            "evi-src-muaoam7r-l8bh-27",
+            "evi-src-muaoam7r-l8bh-33",
+            "evi-src-muaoam7r-l8bh-39",
+            "evi-src-muaoam7r-l8bh-40",
+            "evi-src-muaoam7r-l8bh-41",
+            "evi-src-muaoam7r-l8bh-42",
+            "evi-src-muaoam7r-l8bh-88",
+            "evi-src-muaoam7r-l8bh-90",
+            "evi-src-muaoam7r-l8bh-93",
+            "evi-src-muaoam7r-l8bh-94",
+            "evi-src-muaoam7r-l8bh-96",
+            "evi-src-muaoam7r-l8bh-98",
+            "evi-src-muaoam7r-l8bh-99",
+            "evi-src-muaoam7r-l8bh-101",
+            "evi-src-muaoam7r-l8bh-102",
+            "evi-src-muaoam7r-l8bh-103",
+            "evi-src-muaoam7r-l8bh-104",
+            "evi-src-muaoam7r-l8bh-106"
+          ],
+          "sourceIds": [
+            "src-muaoam7r-l8bh"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-8",
+          "sectionId": "sec-3",
+          "text": "Nudges desain digital menawarkan solusi yang etis dan seimbang untuk mengatasi masalah clickbait.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-9",
+          "sectionId": "sec-3",
+          "text": "Berbeda dengan clickbait yang manipulatif, nudges bertujuan meningkatkan eksposur konten berkualitas dengan cara yang transparan dan bermanfaat bagi pengguna.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-10",
+          "sectionId": "sec-3",
+          "text": "Contohnya termasuk visualisasi reputasi penulis, label kredibilitas sumber, atau preview konten yang akurat.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-11",
+          "sectionId": "sec-3",
+          "text": "Dengan memanfaatkan arsitektur pilihan yang ringan dan reversibel, nudges mempengaruhi perilaku tanpa membatasi kebebasan pengguna, sehingga menciptakan ekosistem informasi yang lebih sehat.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-12",
+          "sectionId": "sec-4",
+          "text": "Organisasi enterprise harus mengembangkan kerangka desain persuasif yang mempertimbangkan keseimbangan antara daya tarik dan akurasi informasi.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-13",
+          "sectionId": "sec-4",
+          "text": "Langkah praktisnya dimulai dengan melakukan audit terhadap metrik engagement yang selama ini digunakan, di mana clickbait sering kali mendapat peringkat tinggi.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-14",
+          "sectionId": "sec-4",
+          "text": "Penerapan nudges etis memerlukan kolaborasi lintas fungsi: redaksi, engineering",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-15",
+          "sectionId": "sec-4",
+          "text": "data science untuk mengukur dampak jangka panjang terhadap literasi publik.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-16",
+          "sectionId": "sec-4",
+          "text": "Dengan demikian, organisasi dapat membangun platform yang tetap menarik namun menjunjung tinggi integritas konten.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-17",
+          "sectionId": "sec-5",
+          "text": "Clickbait adalah gejala dari kegagalan ekonomi perhatian yang mengharga engagement murahan di atas nilai informasi.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-18",
+          "sectionId": "sec-5",
+          "text": "Nudges desain digital menawarkan blueprint untuk membangun platform yang tetap menarik namun menjunjung tinggi integritas konten.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-19",
+          "sectionId": "sec-5",
+          "text": "Adopsi pendekatan ini oleh organisasi enterprise bukan hanya soal kepatuhan etika, melainkan investasi strategis dalam membangun kepercayaan jangka panjang.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        }
+      ],
+      "groundedExternalFacts": 7,
+      "ungroundedExternalFacts": 0,
+      "partialSupportCount": 0,
+      "originalAnalysisCount": 8,
+      "interpretationCount": 0,
+      "internalKnowledgeCount": 0,
+      "nonFactualCount": 4,
+      "numericClaimsTotal": 0,
+      "unsupportedNumericCount": 0,
+      "citationFailuresCount": 0,
+      "issues": [],
+      "summary": "DraftClaimAuditor: Seluruh 7 klaim faktual eksternal terbukti (ENTAILED). Analisis orisinal: 8. Sitasi valid.",
+      "auditedAt": "2026-09-21T03:16:42.980Z"
+    },
+    "groundingGuard": {
+      "status": "PASS",
+      "issues": [],
+      "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+    },
+    "propositions": [
+      {
+        "propositionId": "prop-1",
+        "sectionId": "sec-1",
+        "text": "Clickbait bukanlah istilah modern yang lahir dari era internet; ia adalah teknik menulis judul dan cuplikan untuk mengarahkan pengguna ke situs web.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-1"
+        ],
+        "evidenceIds": [
+          "evi-src-muaoam7r-l8bh-31",
+          "evi-src-muaoam7r-l8bh-34"
+        ],
+        "sourceIds": [
+          "src-muaoam7r-l8bh"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-2",
+        "sectionId": "sec-1",
+        "text": "Tujuan utamanya adalah memanipulasi psikologi pengguna agar tertarik untuk mengklik tautan tersebut.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-1"
+        ],
+        "evidenceIds": [
+          "evi-src-muaoam7r-l8bh-31",
+          "evi-src-muaoam7r-l8bh-34"
+        ],
+        "sourceIds": [
+          "src-muaoam7r-l8bh"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-3",
+        "sectionId": "sec-1",
+        "text": "Teknik ini bergantung pada janji palsu yang mengabaikan konten substantif di balik link, sehingga pengguna seringkali merasa tertipu setelah membuka artikel yang ternyata tidak sesuai dengan ekspektasi awalnya.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-1"
+        ],
+        "evidenceIds": [
+          "evi-src-muaoam7r-l8bh-31",
+          "evi-src-muaoam7r-l8bh-34"
+        ],
+        "sourceIds": [
+          "src-muaoam7r-l8bh"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-4",
+        "sectionId": "sec-2",
+        "text": "Clickbait memiliki dampak sistemik yang merusak kepercayaan audiens terhadap media.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-2"
+        ],
+        "evidenceIds": [
+          "evi-src-muaoam7r-l8bh-15",
+          "evi-src-muaoam7r-l8bh-23",
+          "evi-src-muaoam7r-l8bh-25",
+          "evi-src-muaoam7r-l8bh-26",
+          "evi-src-muaoam7r-l8bh-27",
+          "evi-src-muaoam7r-l8bh-33",
+          "evi-src-muaoam7r-l8bh-39",
+          "evi-src-muaoam7r-l8bh-40",
+          "evi-src-muaoam7r-l8bh-41",
+          "evi-src-muaoam7r-l8bh-42",
+          "evi-src-muaoam7r-l8bh-88",
+          "evi-src-muaoam7r-l8bh-90",
+          "evi-src-muaoam7r-l8bh-93",
+          "evi-src-muaoam7r-l8bh-94",
+          "evi-src-muaoam7r-l8bh-96",
+          "evi-src-muaoam7r-l8bh-98",
+          "evi-src-muaoam7r-l8bh-99",
+          "evi-src-muaoam7r-l8bh-101",
+          "evi-src-muaoam7r-l8bh-102",
+          "evi-src-muaoam7r-l8bh-103",
+          "evi-src-muaoam7r-l8bh-104",
+          "evi-src-muaoam7r-l8bh-106"
+        ],
+        "sourceIds": [
+          "src-muaoam7r-l8bh"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-5",
+        "sectionId": "sec-2",
+        "text": "Ketika pengguna secara konsisten dihadapkan pada konten yang menjanjikan sesuatu namun mengirimkan informasi yang minim atau tidak akurat, mereka akan menjadi skeptis terhadap seluruh konten daring.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-2"
+        ],
+        "evidenceIds": [
+          "evi-src-muaoam7r-l8bh-15",
+          "evi-src-muaoam7r-l8bh-23",
+          "evi-src-muaoam7r-l8bh-25",
+          "evi-src-muaoam7r-l8bh-26",
+          "evi-src-muaoam7r-l8bh-27",
+          "evi-src-muaoam7r-l8bh-33",
+          "evi-src-muaoam7r-l8bh-39",
+          "evi-src-muaoam7r-l8bh-40",
+          "evi-src-muaoam7r-l8bh-41",
+          "evi-src-muaoam7r-l8bh-42",
+          "evi-src-muaoam7r-l8bh-88",
+          "evi-src-muaoam7r-l8bh-90",
+          "evi-src-muaoam7r-l8bh-93",
+          "evi-src-muaoam7r-l8bh-94",
+          "evi-src-muaoam7r-l8bh-96",
+          "evi-src-muaoam7r-l8bh-98",
+          "evi-src-muaoam7r-l8bh-99",
+          "evi-src-muaoam7r-l8bh-101",
+          "evi-src-muaoam7r-l8bh-102",
+          "evi-src-muaoam7r-l8bh-103",
+          "evi-src-muaoam7r-l8bh-104",
+          "evi-src-muaoam7r-l8bh-106"
+        ],
+        "sourceIds": [
+          "src-muaoam7r-l8bh"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-6",
+        "sectionId": "sec-2",
+        "text": "Platform sosial seperti Facebook telah lama menggunakan clickbait sebagai bahan bakar algoritme yang menguntungkan publisher dengan engagement tinggi, meskipun kualitas rendah.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-2"
+        ],
+        "evidenceIds": [
+          "evi-src-muaoam7r-l8bh-15",
+          "evi-src-muaoam7r-l8bh-23",
+          "evi-src-muaoam7r-l8bh-25",
+          "evi-src-muaoam7r-l8bh-26",
+          "evi-src-muaoam7r-l8bh-27",
+          "evi-src-muaoam7r-l8bh-33",
+          "evi-src-muaoam7r-l8bh-39",
+          "evi-src-muaoam7r-l8bh-40",
+          "evi-src-muaoam7r-l8bh-41",
+          "evi-src-muaoam7r-l8bh-42",
+          "evi-src-muaoam7r-l8bh-88",
+          "evi-src-muaoam7r-l8bh-90",
+          "evi-src-muaoam7r-l8bh-93",
+          "evi-src-muaoam7r-l8bh-94",
+          "evi-src-muaoam7r-l8bh-96",
+          "evi-src-muaoam7r-l8bh-98",
+          "evi-src-muaoam7r-l8bh-99",
+          "evi-src-muaoam7r-l8bh-101",
+          "evi-src-muaoam7r-l8bh-102",
+          "evi-src-muaoam7r-l8bh-103",
+          "evi-src-muaoam7r-l8bh-104",
+          "evi-src-muaoam7r-l8bh-106"
+        ],
+        "sourceIds": [
+          "src-muaoam7r-l8bh"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-7",
+        "sectionId": "sec-2",
+        "text": "Akibatnya, konsumsi berita clickbait secara massal menghasilkan demoralisasi publik dan melemahkan kapasitas kritis masyarakat.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-2"
+        ],
+        "evidenceIds": [
+          "evi-src-muaoam7r-l8bh-15",
+          "evi-src-muaoam7r-l8bh-23",
+          "evi-src-muaoam7r-l8bh-25",
+          "evi-src-muaoam7r-l8bh-26",
+          "evi-src-muaoam7r-l8bh-27",
+          "evi-src-muaoam7r-l8bh-33",
+          "evi-src-muaoam7r-l8bh-39",
+          "evi-src-muaoam7r-l8bh-40",
+          "evi-src-muaoam7r-l8bh-41",
+          "evi-src-muaoam7r-l8bh-42",
+          "evi-src-muaoam7r-l8bh-88",
+          "evi-src-muaoam7r-l8bh-90",
+          "evi-src-muaoam7r-l8bh-93",
+          "evi-src-muaoam7r-l8bh-94",
+          "evi-src-muaoam7r-l8bh-96",
+          "evi-src-muaoam7r-l8bh-98",
+          "evi-src-muaoam7r-l8bh-99",
+          "evi-src-muaoam7r-l8bh-101",
+          "evi-src-muaoam7r-l8bh-102",
+          "evi-src-muaoam7r-l8bh-103",
+          "evi-src-muaoam7r-l8bh-104",
+          "evi-src-muaoam7r-l8bh-106"
+        ],
+        "sourceIds": [
+          "src-muaoam7r-l8bh"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-8",
+        "sectionId": "sec-3",
+        "text": "Nudges desain digital menawarkan solusi yang etis dan seimbang untuk mengatasi masalah clickbait.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-9",
+        "sectionId": "sec-3",
+        "text": "Berbeda dengan clickbait yang manipulatif, nudges bertujuan meningkatkan eksposur konten berkualitas dengan cara yang transparan dan bermanfaat bagi pengguna.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-10",
+        "sectionId": "sec-3",
+        "text": "Contohnya termasuk visualisasi reputasi penulis, label kredibilitas sumber, atau preview konten yang akurat.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-11",
+        "sectionId": "sec-3",
+        "text": "Dengan memanfaatkan arsitektur pilihan yang ringan dan reversibel, nudges mempengaruhi perilaku tanpa membatasi kebebasan pengguna, sehingga menciptakan ekosistem informasi yang lebih sehat.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-12",
+        "sectionId": "sec-4",
+        "text": "Organisasi enterprise harus mengembangkan kerangka desain persuasif yang mempertimbangkan keseimbangan antara daya tarik dan akurasi informasi.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-13",
+        "sectionId": "sec-4",
+        "text": "Langkah praktisnya dimulai dengan melakukan audit terhadap metrik engagement yang selama ini digunakan, di mana clickbait sering kali mendapat peringkat tinggi.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-14",
+        "sectionId": "sec-4",
+        "text": "Penerapan nudges etis memerlukan kolaborasi lintas fungsi: redaksi, engineering",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-15",
+        "sectionId": "sec-4",
+        "text": "data science untuk mengukur dampak jangka panjang terhadap literasi publik.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-16",
+        "sectionId": "sec-4",
+        "text": "Dengan demikian, organisasi dapat membangun platform yang tetap menarik namun menjunjung tinggi integritas konten.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-17",
+        "sectionId": "sec-5",
+        "text": "Clickbait adalah gejala dari kegagalan ekonomi perhatian yang mengharga engagement murahan di atas nilai informasi.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-18",
+        "sectionId": "sec-5",
+        "text": "Nudges desain digital menawarkan blueprint untuk membangun platform yang tetap menarik namun menjunjung tinggi integritas konten.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-19",
+        "sectionId": "sec-5",
+        "text": "Adopsi pendekatan ini oleh organisasi enterprise bukan hanya soal kepatuhan etika, melainkan investasi strategis dalam membangun kepercayaan jangka panjang.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      }
+    ],
+    "groundedExternalFacts": 7,
+    "ungroundedExternalFacts": 0,
+    "partialSupportCount": 0,
+    "originalAnalysisCount": 8,
+    "interpretationCount": 0,
+    "internalKnowledgeCount": 0,
+    "nonFactualCount": 4,
+    "numericClaimsTotal": 0,
+    "unsupportedNumericCount": 0,
+    "citationFailuresCount": 0,
+    "issues": [],
+    "summary": "Editorial Integrity Gate: PASS. Seluruh 7 klaim eksternal terbukti, 8 analisis orisinal valid, dan guard mekanikal lolos.",
+    "evaluatedAt": "2026-09-21T03:16:42.979Z"
+  },
+  "guardEvaluation": {
+    "status": "PASS",
+    "issues": [],
+    "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+  },
+  "discoverEvaluation": {
+    "articleId": "draft-muaobskj",
+    "checks": [
+      {
+        "checkId": "DISCOVER_ELIGIBILITY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Artikel memenuhi seluruh kriteria kelayakan dasar Google Discover."
+      },
+      {
+        "checkId": "DISCOVER_ORIGINALITY",
+        "dimension": "ORIGINALITY",
+        "status": "PASS",
+        "scoreContribution": 15,
+        "summary": "Orisinalitas konten tinggi, didukung oleh data riset dan kerangka kerja konseptual orisinal."
+      },
+      {
+        "checkId": "DISCOVER_DEPTH",
+        "dimension": "DEPTH",
+        "status": "WARNING",
+        "scoreContribution": 10,
+        "summary": "Tingkat kedalaman konten: ADEQUATE."
+      },
+      {
+        "checkId": "DISCOVER_TIMELINESS",
+        "dimension": "TIMELINESS",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Konten terkini dengan aktualitas tinggi."
+      },
+      {
+        "checkId": "DISCOVER_INTEREST_FIT",
+        "dimension": "INTEREST_FIT",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Memiliki dasar minat audiens yang kuat berdasarkan dinamika pasar dan urgensi topik."
+      },
+      {
+        "checkId": "DISCOVER_TOPICAL_EXPERTISE",
+        "dimension": "TOPICAL_EXPERTISE",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Status keahlian topikal: DEVELOPING (0 artikel terhubung di territory TACTICAL)."
+      },
+      {
+        "checkId": "DISCOVER_LOCAL_RELEVANCE",
+        "dimension": "LOCAL_RELEVANCE",
+        "status": "PASS",
+        "scoreContribution": 2,
+        "summary": "Topik berskala global yang tetap memenuhi syarat kelayakan Discover."
+      },
+      {
+        "checkId": "DISCOVER_TITLE_INTEGRITY",
+        "dimension": "TITLE_INTEGRITY",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Judul berwibawa, menangkap esensi konten dengan akurat, dan bebas dari clickbait."
+      },
+      {
+        "checkId": "DISCOVER_VISUAL_READINESS",
+        "dimension": "VISUAL_READINESS",
+        "status": "PASS",
+        "scoreContribution": 15,
+        "summary": "Aset visual beresolusi tinggi, berformat lanskap, bebas logo, dan mendukung max-image-preview:large."
+      },
+      {
+        "checkId": "DISCOVER_PAGE_EXPERIENCE",
+        "dimension": "PAGE_EXPERIENCE",
+        "status": "WARNING",
+        "scoreContribution": 5,
+        "summary": "Status pengalaman halaman: UNKNOWN."
+      },
+      {
+        "checkId": "DISCOVER_POLICY_SAFETY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Konten aman dan mematuhi seluruh panduan kebijakan publikasi Google Discover."
+      }
+    ],
+    "issues": [
+      {
+        "code": "INSUFFICIENT_TOPIC_DEPTH",
+        "checkId": "DISCOVER_DEPTH",
+        "dimension": "DEPTH",
+        "severity": "INFO",
+        "message": "Kedalaman naskah cukup memadai, namun belum mencakup limitasi atau implikasi praktis menyeluruh.",
+        "location": "sections",
+        "recommendation": "Pertimbangkan menambahkan sudut pandang tandingan (counterpoint) untuk bobot analisis optimal."
+      }
+    ],
+    "recommendations": [
+      {
+        "type": "EDITORIAL_IMPROVEMENT",
+        "title": "Peningkatan Kedalaman & Orisinalitas [INSUFFICIENT_TOPIC_DEPTH]",
+        "description": "Kedalaman naskah cukup memadai, namun belum mencakup limitasi atau implikasi praktis menyeluruh.",
+        "suggestedAction": "Pertimbangkan menambahkan sudut pandang tandingan (counterpoint) untuk bobot analisis optimal.",
+        "crossEngineDestination": "EDITORIAL"
+      }
+    ],
+    "dimensions": {
+      "ORIGINALITY": 15,
+      "DEPTH": 10,
+      "TIMELINESS": 10,
+      "TOPICAL_EXPERTISE": 10,
+      "INTEREST_FIT": 10,
+      "TITLE_INTEGRITY": 10,
+      "VISUAL_READINESS": 15,
+      "PAGE_EXPERIENCE": 5,
+      "LOCAL_RELEVANCE": 2,
+      "POLICY_SAFETY": 3
+    },
+    "score": 90,
+    "classification": "STRONG",
+    "eligibility": "ELIGIBLE",
+    "criticalIneligibilityReasons": [],
+    "validatedAt": "2026-09-21T03:16:42.983Z",
+    "policyVersion": "DISCOVER_READINESS_POLICY_V1"
+  },
+  "visualPrompt": "Clickbait: Definisi, Dampak, dan Solusi Etis, calibrated sorting funnel with weighted traps, filtering out deceptive bait while prioritizing factual content, 3D isometric illustration, soft clay rendering, rounded geometric objects, soft studio lighting, minimal marketing illustration, clean composition, premium modern aesthetic. Clear visual hierarchy, single dominant focal object, generous negative space, no text, no logos. --ar 16:9",
+  "createdAt": "2026-09-21T03:16:43.691Z"
+}

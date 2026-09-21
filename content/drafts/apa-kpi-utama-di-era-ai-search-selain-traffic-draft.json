@@ -1,0 +1,1266 @@
+{
+  "draft": {
+    "id": "draft-muaoa36x",
+    "topicId": "top-muao9cnk",
+    "researchProjectId": "proj-muao9co2",
+    "title": "Beyond Clicks: Mengukur Keberhasilan Situs di Era AI Search",
+    "dek": "Artikel ini membongkar mitos bahwa traffic organik masih menjadi satu-satunya KPI yang relevan di era AI Search. Pemilik situs harus mengadopsi metrik yang lebih holistik, seperti keterlibatan pengguna, validasi konten, dan kontrol inventaris, untuk memastikan nilai jangka panjang.",
+    "slug": "apa-kpi-utama-di-era-ai-search-selain-traffic",
+    "territory": "STRATEGY",
+    "articleType": "ANALYSIS",
+    "editorialRole": "AUTHORITY",
+    "thesis": "Di era AI Search, traffic tidak lagi menjadi satu-satunya indikator kesuksesan; pemilik situs harus mengadopsi KPI yang lebih holistik, seperti keterlibatan pengguna, validasi konten, dan kontrol inventaris, untuk memastikan relevansi dan nilai jangka panjang.",
+    "editorialAngle": "Menolak mitos bahwa konten komoditas dan optimisasi klik masih cukup untuk bertahan di pasar digital yang dipersonalisasi oleh AI. Artikel ini menyajikan argumen bahwa keberhasilan sesungguhnya diukur dari kemampuan situs untuk membangun hubungan yang bermakna dengan audiens dan mengelola aset digital secara strategis.",
+    "sections": [
+      {
+        "id": "sec-1",
+        "heading": "Memahami Limitasi Traffic di Era AI",
+        "content": "Di era digital modern, traffic organik sering dianggap sebagai indikator kesuksesan utama bagi pemilik situs. Namun, dengan hadirnya teknologi AI Search, paradigma ini mulai bergeser. Algoritma AI seperti Google Gemini dan OpenAI's Bing Search mampu menghasilkan snippet kaya yang secara langsung menjawab pertanyaan pengguna, menghilangkan kebutuhan untuk mengklik halaman web asli. Akibatnya, traffic menjadi komoditas yang mudah direplikasi dan rentan hilang jika pengguna tidak lagi mengunjungi halaman kita. Oleh karena itu, pemilik situs perlu memahami batasan traffic tradisional agar dapat mengembangkan strategi yang lebih tahan masa depan.",
+        "order": 1,
+        "purpose": "CONTEXT",
+        "claimUsageIds": []
+      },
+      {
+        "id": "sec-2",
+        "heading": "KPI Utama Selain Traffic: Membangun Nilai Jangka Panjang",
+        "content": "Untuk mengukur keberhasilan di era AI Search, pemilik situs harus mengadopsi KPI yang lebih holistik. Pertama, keterlibatan pengguna (user engagement) menjadi sangat penting. Ini melampaui metrik klik sederhana, dengan mengukur kedalaman interaksi seperti waktu tinggal di halaman, scroll depth, dan berbagai interaksi mikro lainnya. Kedua, validasi konten (content validation) menekankan produksi konten unik dan non-komoditas yang benar-benar memenuhi kebutuhan spesifik pengguna, bukan sekadar mengoptimalkan untuk mesin telusur. Ketiga, kontrol inventaris (inventory control) memanfaatkan tag meta seperti noindex untuk mengelola bagaimana konten tampil di hasil Penelusuran AI, sehingga pemilik situs tetap memiliki kendali atas eksposur dan distribusi aset digital mereka.",
+        "order": 2,
+        "purpose": "ARGUMENT",
+        "claimUsageIds": [
+          "claim-2",
+          "claim-3"
+        ]
+      },
+      {
+        "id": "sec-3",
+        "heading": "Langkah Praktis untuk Mengukur KPI Baru",
+        "content": "Untuk mengimplementasikan KPI alternatif ini, pemilik situs perlu mengintegrasikan data dari platform analitik canggih yang dirancang untuk melacak perilaku pengguna di luar klik tradisional. Selain itu, penggunaan A/B testing sangat dianjurkan untuk menguji format konten yang meningkatkan keterlibatan dan konversi. Langkah praktis lainnya adalah menerapkan strategi metadata yang konsisten, seperti tag noindex, untuk memberikan sinyal yang jelas kepada algoritma AI tentang tujuan dan struktur konten, sehingga hasil penelusuran tetap selaras dengan strategi bisnis jangka panjang.",
+        "order": 3,
+        "purpose": "PRACTICAL_APPLICATION",
+        "claimUsageIds": []
+      },
+      {
+        "id": "sec-4",
+        "heading": "Implikasi Strategis bagi Pemilik Situs",
+        "content": "Adopsi KPI baru ini memiliki implikasi strategis yang signifikan. Organisasi harus mengalokasikan sumber daya untuk memproduksi dan mengelola konten non-komoditas yang bernilai tinggi. Tim pemasaran dan SEO perlu berkolaborasi erat untuk menyusun KPI yang selaras dengan tujuan bisnis jangka panjang, bukan hanya fokus pada volume traffic harian. Pemantauan KPI alternatif akan menjadi indikator kunci kesehatan situs dan keberlanjutan model bisnis digital di tengah transformasi teknologi AI.",
+        "order": 4,
+        "purpose": "IMPLICATION",
+        "claimUsageIds": [
+          "claim-2"
+        ]
+      },
+      {
+        "id": "sec-5",
+        "heading": "Penutup: Menuju Metrik yang Lebih Bermakna",
+        "content": "Dalam kesimpulan, pemilik situs harus bergerak dari mindset 'mendapat klik' menuju 'memiliki audiens'. KPI baru ini bukan sekadar pelengkap, melainkan investasi dalam reputasi, loyalitas, dan kontrol atas aset digital. Keberhasilan di era AI Search diukur oleh kemampuan adaptasi dan inovasi, bukan hanya oleh volume traffic. Dengan mengadopsi metrik yang lebih bermakna, situs dapat memastikan relevansi dan nilai jangka panjang di pasar digital yang semakin kompleks.",
+        "order": 5,
+        "purpose": "CONCLUSION",
+        "claimUsageIds": []
+      }
+    ],
+    "claimUsages": [
+      {
+        "id": "cu-1",
+        "claimId": "claim-2",
+        "usageType": "PARAPHRASED",
+        "statement": "Pemilik situs harus fokus pada konten unik dan non-komoditas untuk memenuhi kebutuhan pengguna di era AI Search."
+      },
+      {
+        "id": "cu-2",
+        "claimId": "claim-3",
+        "usageType": "PARAPHRASED",
+        "statement": "Gunakan tag meta seperti noindex untuk mengontrol tampilan konten di listingan Penelusuran AI."
+      },
+      {
+        "id": "cu-3",
+        "claimId": "claim-2",
+        "usageType": "PARAPHRASED",
+        "statement": "Pemilik situs harus fokus pada konten unik dan non-komoditas untuk memenuhi kebutuhan pengguna di era AI Search."
+      }
+    ],
+    "citationMap": [
+      {
+        "claimUsageId": "cu-1",
+        "claimId": "claim-2",
+        "sourceIds": [
+          "src-muao9f2q-6b3n"
+        ],
+        "evidenceIds": [
+          "evi-src-muao9f2q-6b3n-3",
+          "evi-src-muao9f2q-6b3n-4",
+          "evi-src-muao9f2q-6b3n-12"
+        ]
+      },
+      {
+        "claimUsageId": "cu-2",
+        "claimId": "claim-3",
+        "sourceIds": [
+          "src-muao9f2q-6b3n"
+        ],
+        "evidenceIds": [
+          "evi-src-muao9f2q-6b3n-7",
+          "evi-src-muao9f2q-6b3n-11"
+        ]
+      },
+      {
+        "claimUsageId": "cu-3",
+        "claimId": "claim-2",
+        "sourceIds": [
+          "src-muao9f2q-6b3n"
+        ],
+        "evidenceIds": [
+          "evi-src-muao9f2q-6b3n-3",
+          "evi-src-muao9f2q-6b3n-4",
+          "evi-src-muao9f2q-6b3n-12"
+        ]
+      }
+    ],
+    "status": "READY_FOR_EDITORIAL_REVIEW",
+    "generatedAt": "2026-09-21T03:15:23.433Z",
+    "generatorVersion": "real-ai-v1",
+    "promptVersion": "1.0.0"
+  },
+  "brief": {
+    "id": "brief-muao9lpd",
+    "topicId": "top-muao9cnk",
+    "researchProjectId": "proj-muao9co2",
+    "objective": "Apa KPI utama di era AI search selain traffic?",
+    "answeredQuestions": [
+      {
+        "id": "rq-1",
+        "question": "Apa saja KPI non-traffic yang secara konsisten menunjukkan korelasi positif dengan konversi bisnis nyata (leads, revenue) di era AI Search?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-2",
+        "question": "Bagaimana cara mengukur engagement user yang berkualitas tinggi (misalnya: time on page, interaction depth) secara efektif menggunakan tools AI analytics?",
+        "priority": "MEDIUM",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-3",
+        "question": "Apa peran brand awareness dan brand trust dalam mendukung performa jangka panjang di bawah algoritma AI Search?",
+        "priority": "LOW",
+        "status": "OPEN"
+      }
+    ],
+    "openQuestions": [],
+    "supportedClaims": [
+      {
+        "id": "claim-2",
+        "researchProjectId": "proj-muao9co2",
+        "statement": "Pemilik situs harus fokus pada konten unik dan non-komoditas untuk memenuhi kebutuhan pengguna di era AI Search.",
+        "claimType": "FACTUAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T03:14:59.849Z",
+        "updatedAt": "2026-09-21T03:14:59.849Z",
+        "supportingEvidenceIds": [
+          "evi-src-muao9f2q-6b3n-3",
+          "evi-src-muao9f2q-6b3n-4",
+          "evi-src-muao9f2q-6b3n-12",
+          "evi-src-muao9f2q-6b3n-5",
+          "evi-src-muao9f2q-6b3n-10"
+        ]
+      },
+      {
+        "id": "claim-3",
+        "researchProjectId": "proj-muao9co2",
+        "statement": "Gunakan tag meta seperti noindex untuk mengontrol tampilan konten di listingan Penelusuran AI.",
+        "claimType": "FACTUAL",
+        "importance": "SUPPORTING",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T03:15:00.183Z",
+        "updatedAt": "2026-09-21T03:15:00.183Z",
+        "supportingEvidenceIds": [
+          "evi-src-muao9f2q-6b3n-7",
+          "evi-src-muao9f2q-6b3n-11"
+        ]
+      }
+    ],
+    "partiallySupportedClaims": [],
+    "disputedClaims": [],
+    "unverifiedClaims": [],
+    "unsupportedClaims": [
+      {
+        "id": "claim-1",
+        "researchProjectId": "proj-muao9co2",
+        "statement": "Ringkasan AI dan Mode AI meningkatkan kualitas klik, dengan durasi kunjungan pengguna yang lebih lama di situs.",
+        "claimType": "EMPIRICAL",
+        "importance": "CORE",
+        "status": "DISPUTED",
+        "createdAt": "2026-09-21T03:14:59.545Z",
+        "updatedAt": "2026-09-21T03:14:59.545Z",
+        "supportingEvidenceIds": []
+      },
+      {
+        "id": "claim-4",
+        "researchProjectId": "proj-muao9co2",
+        "statement": "Perkembangan Penelusuran tidak pernah berhenti untuk memenuhi kebutuhan pengguna yang terus berkembang.",
+        "claimType": "FACTUAL",
+        "importance": "PERIPHERAL",
+        "status": "DISPUTED",
+        "createdAt": "2026-09-21T03:15:00.477Z",
+        "updatedAt": "2026-09-21T03:15:00.477Z",
+        "supportingEvidenceIds": []
+      }
+    ],
+    "internalKnowledge": [],
+    "originalAnalysis": [],
+    "keyFindings": [
+      {
+        "id": "finding-01",
+        "researchProjectId": "proj-muao9co2",
+        "statement": "Pemilik situs harus fokus pada konten unik dan non-komoditas untuk memenuhi kebutuhan pengguna di era AI Search.",
+        "supportingClaimIds": [
+          "claim-2",
+          "claim-3"
+        ],
+        "confidence": "HIGH",
+        "limitations": [],
+        "createdAt": "2026-09-21T03:15:00.769Z",
+        "updatedAt": "2026-09-21T03:15:00.769Z"
+      }
+    ],
+    "limitations": [],
+    "researchGaps": [],
+    "recommendedEditorialAngle": "Analisis strategis ter-grounding mengenai Apa KPI utama di era AI search selain traffic?",
+    "sourceIndex": [
+      {
+        "sourceId": "src-muao9f2q-6b3n",
+        "title": "Apa KPI utama di era AI search selain traffic?",
+        "url": "https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search?authuser=01&utm_source=chatgpt.com&hl=id",
+        "canonicalUrl": "https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search?authuser=01&utm_source=chatgpt.com&hl=id",
+        "publisher": "Referensi Web",
+        "sourceType": "INDUSTRY_RESEARCH",
+        "authorityScore": 85,
+        "publicationAllowed": true
+      }
+    ],
+    "evidenceIndex": [
+      {
+        "evidenceId": "evi-src-muao9f2q-6b3n-9",
+        "sourceId": "src-muao9f2q-6b3n",
+        "quote": "Melalui kecanggihan teknologi AI kami, pengguna dapat melakukan penelusuran multimodal dengan mengambil foto atau mengupload gambar, mengajukan pertanyaan tentangnya, serta mendapatkan respons yang komprehensif dan informatif beserta link untuk melak",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search?authuser=01&utm_source=chatgpt.com&hl=id"
+      },
+      {
+        "evidenceId": "evi-src-muao9f2q-6b3n-3",
+        "sourceId": "src-muao9f2q-6b3n",
+        "quote": "Sebagai pemilik situs, penayang, atau kreator, Anda mungkin ingin tahu cara terbaik untuk meraih kesuksesan dalam pengalaman penelusuran AI kami, seperti Ringkasan AI dan Mode AI baru kami . Dasar-dasar yang selama ini Google sarankan tetap relevan u",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search?authuser=01&utm_source=chatgpt.com&hl=id"
+      },
+      {
+        "evidenceId": "evi-src-muao9f2q-6b3n-4",
+        "sourceId": "src-muao9f2q-6b3n",
+        "quote": "Sering kali orang bertanya tentang cara membuat konten yang \"diinginkan Google\". Jawaban kami adalah Google ingin menampilkan konten yang memenuhi kebutuhan pengguna. Berfokuslah membuat konten unik dan non-komoditas yang akan berguna dan memuaskan b",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search?authuser=01&utm_source=chatgpt.com&hl=id"
+      },
+      {
+        "evidenceId": "evi-src-muao9f2q-6b3n-10",
+        "sourceId": "src-muao9f2q-6b3n",
+        "quote": "Kami memperhatikan bahwa saat pengguna mengklik situs dari halaman hasil penelusuran yang dilengkapi Ringkasan AI, klik tersebut kualitasnya lebih tinggi, yang berarti durasi kunjungan pengguna di situs cenderung lebih lama. Mengapa demikian? Hasil A",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search?authuser=01&utm_source=chatgpt.com&hl=id"
+      },
+      {
+        "evidenceId": "evi-src-muao9f2q-6b3n-5",
+        "sourceId": "src-muao9f2q-6b3n",
+        "quote": "Konten terbaik sekalipun dapat mengecewakan pengguna jika halaman yang mereka kunjungi berantakan, sulit dijelajahi, atau mempersulit pencarian informasi penting yang mereka butuhkan. Pastikan Anda memberikan pengalaman halaman yang baik bagi penggun",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search?authuser=01&utm_source=chatgpt.com&hl=id"
+      },
+      {
+        "evidenceId": "evi-src-muao9f2q-6b3n-12",
+        "sourceId": "src-muao9f2q-6b3n",
+        "quote": "Pengalaman AI kami merupakan perkembangan terbaru dalam Penelusuran, sehingga kami dapat terus memenuhi kebutuhan pengguna yang terus berubah dengan sebaik mungkin. Perkembangan ini juga menghadirkan peluang baru bagi pemilik situs. Dengan Ringkasan ",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search?authuser=01&utm_source=chatgpt.com&hl=id"
+      },
+      {
+        "evidenceId": "evi-src-muao9f2q-6b3n-7",
+        "sourceId": "src-muao9f2q-6b3n",
+        "quote": "Penelusuran memungkinkan pemilik situs mengontrol konten yang muncul di listingan kami, termasuk dalam format AI. Gunakan nosnippet , data-nosnippet , max-snippet , atau noindex untuk menetapkan preferensi tampilan Anda. Izin yang lebih terbatas akan",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search?authuser=01&utm_source=chatgpt.com&hl=id"
+      },
+      {
+        "evidenceId": "evi-src-muao9f2q-6b3n-13",
+        "sourceId": "src-muao9f2q-6b3n",
+        "quote": "Kami harap tips ini dapat membantu Anda meraih kesuksesan dengan menyajikan konten yang berkualitas di hasil penelusuran klasik dan AI kami. Untuk mempelajari lebih lanjut, lihat halaman bantuan baru kami: Fitur AI dan situs Anda dan panduan Google P",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search?authuser=01&utm_source=chatgpt.com&hl=id"
+      },
+      {
+        "evidenceId": "evi-src-muao9f2q-6b3n-1",
+        "sourceId": "src-muao9f2q-6b3n",
+        "quote": "Google Search Central Blog",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search?authuser=01&utm_source=chatgpt.com&hl=id"
+      },
+      {
+        "evidenceId": "evi-src-muao9f2q-6b3n-2",
+        "sourceId": "src-muao9f2q-6b3n",
+        "quote": "Rabu, 21 Mei 2025",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search?authuser=01&utm_source=chatgpt.com&hl=id"
+      },
+      {
+        "evidenceId": "evi-src-muao9f2q-6b3n-11",
+        "sourceId": "src-muao9f2q-6b3n",
+        "quote": "Satu hal yang pasti terkait Penelusuran adalah perkembangannya yang tidak pernah berhenti karena kebutuhan pengguna yang selalu berkembang. Format \"sepuluh link biru\" klasik diubah untuk memenuhi kebutuhan pengguna yang mencari konten visual, video, ",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search?authuser=01&utm_source=chatgpt.com&hl=id"
+      }
+    ],
+    "readiness": "READY_FOR_EDITORIAL",
+    "readinessReason": "Kecukupan bukti riset terpenuhi: 2 klaim faktual berhasil diverifikasi.",
+    "generatedAt": "2026-09-21T03:15:00.769Z"
+  },
+  "topic": {
+    "id": "top-muao9cnk",
+    "title": "Apa KPI utama di era AI search selain traffic?",
+    "slug": "apa-kpi-utama-di-era-ai-search-selain-traffic",
+    "territory": "STRATEGY",
+    "recommendedArticleType": "ANALYSIS",
+    "editorialRole": "AUTHORITY",
+    "audience": {
+      "segment": "Enterprise Content Leaders"
+    },
+    "problem": "Apa KPI utama di era AI search selain traffic?",
+    "intent": {
+      "primary": "Apa KPI utama di era AI search selain traffic?"
+    },
+    "thesis": null,
+    "whyNow": null,
+    "status": "APPROVED",
+    "informationGain": {
+      "originalityType": [
+        "ORIGINAL_FRAMEWORK"
+      ],
+      "expectedContribution": "Arsitektur informasi mandiri",
+      "commodityRisk": "LOW"
+    },
+    "evidencePlan": {
+      "requiredEvidenceLevel": "E2",
+      "plannedSources": [
+        "https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search?authuser=01&utm_source=chatgpt.com&hl=id"
+      ],
+      "originalEvidenceRequired": false
+    },
+    "businessRelevance": {
+      "objective": "Thought Leadership",
+      "funnelRole": "TOFU"
+    },
+    "distributionTargets": [
+      "GOOGLE_SEARCH",
+      "GOOGLE_AI"
+    ],
+    "createdAt": "2026-09-21T03:14:49.041Z",
+    "updatedAt": "2026-09-21T03:14:49.057Z"
+  },
+  "editorialIntegrity": {
+    "status": "FAIL",
+    "draftClaimAudit": {
+      "status": "FAIL",
+      "propositions": [
+        {
+          "propositionId": "prop-1",
+          "sectionId": "sec-1",
+          "text": "Di era digital modern, traffic organik sering dianggap sebagai indikator kesuksesan utama bagi pemilik situs.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-2",
+          "sectionId": "sec-1",
+          "text": "Namun, dengan hadirnya teknologi AI Search, paradigma ini mulai bergeser.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-3",
+          "sectionId": "sec-1",
+          "text": "Algoritma AI seperti Google Gemini dan OpenAI's Bing Search mampu menghasilkan snippet kaya yang secara langsung menjawab pertanyaan pengguna, menghilangkan kebutuhan untuk mengklik halaman web asli.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-4",
+          "sectionId": "sec-1",
+          "text": "Akibatnya, traffic menjadi komoditas yang mudah direplikasi dan rentan hilang jika pengguna tidak lagi mengunjungi halaman kita.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-5",
+          "sectionId": "sec-1",
+          "text": "Oleh karena itu, pemilik situs perlu memahami batasan traffic tradisional agar dapat mengembangkan strategi yang lebih tahan masa depan.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-6",
+          "sectionId": "sec-2",
+          "text": "Untuk mengukur keberhasilan di era AI Search, pemilik situs harus mengadopsi KPI yang lebih holistik.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-2"
+          ],
+          "evidenceIds": [
+            "evi-src-muao9f2q-6b3n-3",
+            "evi-src-muao9f2q-6b3n-4",
+            "evi-src-muao9f2q-6b3n-12",
+            "evi-src-muao9f2q-6b3n-5",
+            "evi-src-muao9f2q-6b3n-10"
+          ],
+          "sourceIds": [
+            "src-muao9f2q-6b3n"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-7",
+          "sectionId": "sec-2",
+          "text": "Pertama, keterlibatan pengguna (user engagement) menjadi sangat penting.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-2"
+          ],
+          "evidenceIds": [
+            "evi-src-muao9f2q-6b3n-3",
+            "evi-src-muao9f2q-6b3n-4",
+            "evi-src-muao9f2q-6b3n-12",
+            "evi-src-muao9f2q-6b3n-5",
+            "evi-src-muao9f2q-6b3n-10"
+          ],
+          "sourceIds": [
+            "src-muao9f2q-6b3n"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-8",
+          "sectionId": "sec-2",
+          "text": "Ini melampaui metrik klik sederhana, dengan mengukur kedalaman interaksi seperti waktu tinggal di halaman, scroll depth",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-2"
+          ],
+          "evidenceIds": [
+            "evi-src-muao9f2q-6b3n-3",
+            "evi-src-muao9f2q-6b3n-4",
+            "evi-src-muao9f2q-6b3n-12",
+            "evi-src-muao9f2q-6b3n-5",
+            "evi-src-muao9f2q-6b3n-10"
+          ],
+          "sourceIds": [
+            "src-muao9f2q-6b3n"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-9",
+          "sectionId": "sec-2",
+          "text": "berbagai interaksi mikro lainnya.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "UNSUPPORTED",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Tidak ditemukan klaim riset dengan kesesuaian semantik yang mencukupi.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-10",
+          "sectionId": "sec-2",
+          "text": "Kedua, validasi konten (content validation) menekankan produksi konten unik dan non-komoditas yang benar-benar memenuhi kebutuhan spesifik pengguna, bukan sekadar mengoptimalkan untuk mesin telusur.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-2"
+          ],
+          "evidenceIds": [
+            "evi-src-muao9f2q-6b3n-3",
+            "evi-src-muao9f2q-6b3n-4",
+            "evi-src-muao9f2q-6b3n-12",
+            "evi-src-muao9f2q-6b3n-5",
+            "evi-src-muao9f2q-6b3n-10"
+          ],
+          "sourceIds": [
+            "src-muao9f2q-6b3n"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-11",
+          "sectionId": "sec-2",
+          "text": "Ketiga, kontrol inventaris (inventory control) memanfaatkan tag meta seperti noindex untuk mengelola bagaimana konten tampil di hasil Penelusuran AI, sehingga pemilik situs tetap memiliki kendali atas eksposur dan distribusi aset digital mereka.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-3"
+          ],
+          "evidenceIds": [
+            "evi-src-muao9f2q-6b3n-7",
+            "evi-src-muao9f2q-6b3n-11"
+          ],
+          "sourceIds": [
+            "src-muao9f2q-6b3n"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-3 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-12",
+          "sectionId": "sec-3",
+          "text": "Untuk mengimplementasikan KPI alternatif ini, pemilik situs perlu mengintegrasikan data dari platform analitik canggih yang dirancang untuk melacak perilaku pengguna di luar klik tradisional.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-13",
+          "sectionId": "sec-3",
+          "text": "Selain itu, penggunaan A/B testing sangat dianjurkan untuk menguji format konten yang meningkatkan keterlibatan dan konversi.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-14",
+          "sectionId": "sec-3",
+          "text": "Langkah praktis lainnya adalah menerapkan strategi metadata yang konsisten, seperti tag noindex, untuk memberikan sinyal yang jelas kepada algoritma AI tentang tujuan dan struktur konten, sehingga hasil penelusuran tetap selaras dengan strategi bisnis jangka panjang.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-15",
+          "sectionId": "sec-4",
+          "text": "Adopsi KPI baru ini memiliki implikasi strategis yang signifikan.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-16",
+          "sectionId": "sec-4",
+          "text": "Organisasi harus mengalokasikan sumber daya untuk memproduksi dan mengelola konten non-komoditas yang bernilai tinggi.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-17",
+          "sectionId": "sec-4",
+          "text": "Tim pemasaran dan SEO perlu berkolaborasi erat untuk menyusun KPI yang selaras dengan tujuan bisnis jangka panjang, bukan hanya fokus pada volume traffic harian.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-18",
+          "sectionId": "sec-4",
+          "text": "Pemantauan KPI alternatif akan menjadi indikator kunci kesehatan situs dan keberlanjutan model bisnis digital di tengah transformasi teknologi AI.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-19",
+          "sectionId": "sec-5",
+          "text": "Dalam kesimpulan, pemilik situs harus bergerak dari mindset 'mendapat klik' menuju 'memiliki audiens'.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-20",
+          "sectionId": "sec-5",
+          "text": "KPI baru ini bukan sekadar pelengkap, melainkan investasi dalam reputasi, loyalitas",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-21",
+          "sectionId": "sec-5",
+          "text": "kontrol atas aset digital.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-22",
+          "sectionId": "sec-5",
+          "text": "Keberhasilan di era AI Search diukur oleh kemampuan adaptasi dan inovasi, bukan hanya oleh volume traffic.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-23",
+          "sectionId": "sec-5",
+          "text": "Dengan mengadopsi metrik yang lebih bermakna, situs dapat memastikan relevansi dan nilai jangka panjang di pasar digital yang semakin kompleks.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        }
+      ],
+      "groundedExternalFacts": 5,
+      "ungroundedExternalFacts": 1,
+      "partialSupportCount": 0,
+      "originalAnalysisCount": 7,
+      "interpretationCount": 0,
+      "internalKnowledgeCount": 0,
+      "nonFactualCount": 10,
+      "numericClaimsTotal": 0,
+      "unsupportedNumericCount": 0,
+      "citationFailuresCount": 0,
+      "issues": [
+        {
+          "code": "UNGROUNDED_EXTERNAL_FACT",
+          "severity": "CRITICAL",
+          "message": "Proposisi faktual eksternal 'prop-9' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"berbagai interaksi mikro lainnya.\"",
+          "propositionId": "prop-9",
+          "sectionId": "sec-2",
+          "snippet": "berbagai interaksi mikro lainnya."
+        }
+      ],
+      "summary": "DraftClaimAuditor: GAGAL. Terdeteksi 1 klaim eksternal tak berdasar / perluasan semantik dan 1 isu integritas.",
+      "auditedAt": "2026-09-21T03:15:23.438Z"
+    },
+    "groundingGuard": {
+      "status": "PASS",
+      "issues": [],
+      "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+    },
+    "propositions": [
+      {
+        "propositionId": "prop-1",
+        "sectionId": "sec-1",
+        "text": "Di era digital modern, traffic organik sering dianggap sebagai indikator kesuksesan utama bagi pemilik situs.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-2",
+        "sectionId": "sec-1",
+        "text": "Namun, dengan hadirnya teknologi AI Search, paradigma ini mulai bergeser.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-3",
+        "sectionId": "sec-1",
+        "text": "Algoritma AI seperti Google Gemini dan OpenAI's Bing Search mampu menghasilkan snippet kaya yang secara langsung menjawab pertanyaan pengguna, menghilangkan kebutuhan untuk mengklik halaman web asli.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-4",
+        "sectionId": "sec-1",
+        "text": "Akibatnya, traffic menjadi komoditas yang mudah direplikasi dan rentan hilang jika pengguna tidak lagi mengunjungi halaman kita.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-5",
+        "sectionId": "sec-1",
+        "text": "Oleh karena itu, pemilik situs perlu memahami batasan traffic tradisional agar dapat mengembangkan strategi yang lebih tahan masa depan.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-6",
+        "sectionId": "sec-2",
+        "text": "Untuk mengukur keberhasilan di era AI Search, pemilik situs harus mengadopsi KPI yang lebih holistik.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-2"
+        ],
+        "evidenceIds": [
+          "evi-src-muao9f2q-6b3n-3",
+          "evi-src-muao9f2q-6b3n-4",
+          "evi-src-muao9f2q-6b3n-12",
+          "evi-src-muao9f2q-6b3n-5",
+          "evi-src-muao9f2q-6b3n-10"
+        ],
+        "sourceIds": [
+          "src-muao9f2q-6b3n"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-7",
+        "sectionId": "sec-2",
+        "text": "Pertama, keterlibatan pengguna (user engagement) menjadi sangat penting.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-2"
+        ],
+        "evidenceIds": [
+          "evi-src-muao9f2q-6b3n-3",
+          "evi-src-muao9f2q-6b3n-4",
+          "evi-src-muao9f2q-6b3n-12",
+          "evi-src-muao9f2q-6b3n-5",
+          "evi-src-muao9f2q-6b3n-10"
+        ],
+        "sourceIds": [
+          "src-muao9f2q-6b3n"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-8",
+        "sectionId": "sec-2",
+        "text": "Ini melampaui metrik klik sederhana, dengan mengukur kedalaman interaksi seperti waktu tinggal di halaman, scroll depth",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-2"
+        ],
+        "evidenceIds": [
+          "evi-src-muao9f2q-6b3n-3",
+          "evi-src-muao9f2q-6b3n-4",
+          "evi-src-muao9f2q-6b3n-12",
+          "evi-src-muao9f2q-6b3n-5",
+          "evi-src-muao9f2q-6b3n-10"
+        ],
+        "sourceIds": [
+          "src-muao9f2q-6b3n"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-9",
+        "sectionId": "sec-2",
+        "text": "berbagai interaksi mikro lainnya.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "UNSUPPORTED",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Tidak ditemukan klaim riset dengan kesesuaian semantik yang mencukupi.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-10",
+        "sectionId": "sec-2",
+        "text": "Kedua, validasi konten (content validation) menekankan produksi konten unik dan non-komoditas yang benar-benar memenuhi kebutuhan spesifik pengguna, bukan sekadar mengoptimalkan untuk mesin telusur.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-2"
+        ],
+        "evidenceIds": [
+          "evi-src-muao9f2q-6b3n-3",
+          "evi-src-muao9f2q-6b3n-4",
+          "evi-src-muao9f2q-6b3n-12",
+          "evi-src-muao9f2q-6b3n-5",
+          "evi-src-muao9f2q-6b3n-10"
+        ],
+        "sourceIds": [
+          "src-muao9f2q-6b3n"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-11",
+        "sectionId": "sec-2",
+        "text": "Ketiga, kontrol inventaris (inventory control) memanfaatkan tag meta seperti noindex untuk mengelola bagaimana konten tampil di hasil Penelusuran AI, sehingga pemilik situs tetap memiliki kendali atas eksposur dan distribusi aset digital mereka.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-3"
+        ],
+        "evidenceIds": [
+          "evi-src-muao9f2q-6b3n-7",
+          "evi-src-muao9f2q-6b3n-11"
+        ],
+        "sourceIds": [
+          "src-muao9f2q-6b3n"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-3 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-12",
+        "sectionId": "sec-3",
+        "text": "Untuk mengimplementasikan KPI alternatif ini, pemilik situs perlu mengintegrasikan data dari platform analitik canggih yang dirancang untuk melacak perilaku pengguna di luar klik tradisional.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-13",
+        "sectionId": "sec-3",
+        "text": "Selain itu, penggunaan A/B testing sangat dianjurkan untuk menguji format konten yang meningkatkan keterlibatan dan konversi.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-14",
+        "sectionId": "sec-3",
+        "text": "Langkah praktis lainnya adalah menerapkan strategi metadata yang konsisten, seperti tag noindex, untuk memberikan sinyal yang jelas kepada algoritma AI tentang tujuan dan struktur konten, sehingga hasil penelusuran tetap selaras dengan strategi bisnis jangka panjang.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-15",
+        "sectionId": "sec-4",
+        "text": "Adopsi KPI baru ini memiliki implikasi strategis yang signifikan.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-16",
+        "sectionId": "sec-4",
+        "text": "Organisasi harus mengalokasikan sumber daya untuk memproduksi dan mengelola konten non-komoditas yang bernilai tinggi.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-17",
+        "sectionId": "sec-4",
+        "text": "Tim pemasaran dan SEO perlu berkolaborasi erat untuk menyusun KPI yang selaras dengan tujuan bisnis jangka panjang, bukan hanya fokus pada volume traffic harian.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-18",
+        "sectionId": "sec-4",
+        "text": "Pemantauan KPI alternatif akan menjadi indikator kunci kesehatan situs dan keberlanjutan model bisnis digital di tengah transformasi teknologi AI.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-19",
+        "sectionId": "sec-5",
+        "text": "Dalam kesimpulan, pemilik situs harus bergerak dari mindset 'mendapat klik' menuju 'memiliki audiens'.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-20",
+        "sectionId": "sec-5",
+        "text": "KPI baru ini bukan sekadar pelengkap, melainkan investasi dalam reputasi, loyalitas",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-21",
+        "sectionId": "sec-5",
+        "text": "kontrol atas aset digital.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-22",
+        "sectionId": "sec-5",
+        "text": "Keberhasilan di era AI Search diukur oleh kemampuan adaptasi dan inovasi, bukan hanya oleh volume traffic.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-23",
+        "sectionId": "sec-5",
+        "text": "Dengan mengadopsi metrik yang lebih bermakna, situs dapat memastikan relevansi dan nilai jangka panjang di pasar digital yang semakin kompleks.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      }
+    ],
+    "groundedExternalFacts": 5,
+    "ungroundedExternalFacts": 1,
+    "partialSupportCount": 0,
+    "originalAnalysisCount": 7,
+    "interpretationCount": 0,
+    "internalKnowledgeCount": 0,
+    "nonFactualCount": 10,
+    "numericClaimsTotal": 0,
+    "unsupportedNumericCount": 0,
+    "citationFailuresCount": 0,
+    "issues": [
+      {
+        "code": "UNGROUNDED_EXTERNAL_FACT",
+        "severity": "CRITICAL",
+        "message": "Proposisi faktual eksternal 'prop-9' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"berbagai interaksi mikro lainnya.\"",
+        "propositionId": "prop-9",
+        "sectionId": "sec-2",
+        "snippet": "berbagai interaksi mikro lainnya."
+      }
+    ],
+    "summary": "Editorial Integrity Gate: FAIL. Ditemukan 1 klaim faktual tak ter-grounding dan 1 catatan kritis. Publikasi diblokir.",
+    "evaluatedAt": "2026-09-21T03:15:23.433Z"
+  },
+  "guardEvaluation": {
+    "status": "PASS",
+    "issues": [],
+    "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+  },
+  "discoverEvaluation": {
+    "articleId": "draft-muaoa36x",
+    "checks": [
+      {
+        "checkId": "DISCOVER_ELIGIBILITY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Artikel memenuhi seluruh kriteria kelayakan dasar Google Discover."
+      },
+      {
+        "checkId": "DISCOVER_ORIGINALITY",
+        "dimension": "ORIGINALITY",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Orisinalitas konten tinggi, didukung oleh data riset dan kerangka kerja konseptual orisinal."
+      },
+      {
+        "checkId": "DISCOVER_DEPTH",
+        "dimension": "DEPTH",
+        "status": "WARNING",
+        "scoreContribution": 10,
+        "summary": "Tingkat kedalaman konten: ADEQUATE."
+      },
+      {
+        "checkId": "DISCOVER_TIMELINESS",
+        "dimension": "TIMELINESS",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Konten terkini dengan aktualitas tinggi."
+      },
+      {
+        "checkId": "DISCOVER_INTEREST_FIT",
+        "dimension": "INTEREST_FIT",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Memiliki dasar minat audiens yang kuat berdasarkan dinamika pasar dan urgensi topik."
+      },
+      {
+        "checkId": "DISCOVER_TOPICAL_EXPERTISE",
+        "dimension": "TOPICAL_EXPERTISE",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Status keahlian topikal: DEVELOPING (0 artikel terhubung di territory STRATEGY)."
+      },
+      {
+        "checkId": "DISCOVER_LOCAL_RELEVANCE",
+        "dimension": "LOCAL_RELEVANCE",
+        "status": "PASS",
+        "scoreContribution": 2,
+        "summary": "Topik berskala global yang tetap memenuhi syarat kelayakan Discover."
+      },
+      {
+        "checkId": "DISCOVER_TITLE_INTEGRITY",
+        "dimension": "TITLE_INTEGRITY",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Judul berwibawa, menangkap esensi konten dengan akurat, dan bebas dari clickbait."
+      },
+      {
+        "checkId": "DISCOVER_VISUAL_READINESS",
+        "dimension": "VISUAL_READINESS",
+        "status": "PASS",
+        "scoreContribution": 15,
+        "summary": "Aset visual beresolusi tinggi, berformat lanskap, bebas logo, dan mendukung max-image-preview:large."
+      },
+      {
+        "checkId": "DISCOVER_PAGE_EXPERIENCE",
+        "dimension": "PAGE_EXPERIENCE",
+        "status": "WARNING",
+        "scoreContribution": 5,
+        "summary": "Status pengalaman halaman: UNKNOWN."
+      },
+      {
+        "checkId": "DISCOVER_POLICY_SAFETY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Konten aman dan mematuhi seluruh panduan kebijakan publikasi Google Discover."
+      }
+    ],
+    "issues": [
+      {
+        "code": "INSUFFICIENT_TOPIC_DEPTH",
+        "checkId": "DISCOVER_DEPTH",
+        "dimension": "DEPTH",
+        "severity": "INFO",
+        "message": "Kedalaman naskah cukup memadai, namun belum mencakup limitasi atau implikasi praktis menyeluruh.",
+        "location": "sections",
+        "recommendation": "Pertimbangkan menambahkan sudut pandang tandingan (counterpoint) untuk bobot analisis optimal."
+      }
+    ],
+    "recommendations": [
+      {
+        "type": "EDITORIAL_IMPROVEMENT",
+        "title": "Peningkatan Kedalaman & Orisinalitas [INSUFFICIENT_TOPIC_DEPTH]",
+        "description": "Kedalaman naskah cukup memadai, namun belum mencakup limitasi atau implikasi praktis menyeluruh.",
+        "suggestedAction": "Pertimbangkan menambahkan sudut pandang tandingan (counterpoint) untuk bobot analisis optimal.",
+        "crossEngineDestination": "EDITORIAL"
+      }
+    ],
+    "dimensions": {
+      "ORIGINALITY": 10,
+      "DEPTH": 10,
+      "TIMELINESS": 10,
+      "TOPICAL_EXPERTISE": 10,
+      "INTEREST_FIT": 10,
+      "TITLE_INTEGRITY": 10,
+      "VISUAL_READINESS": 15,
+      "PAGE_EXPERIENCE": 5,
+      "LOCAL_RELEVANCE": 2,
+      "POLICY_SAFETY": 3
+    },
+    "score": 85,
+    "classification": "READY",
+    "eligibility": "ELIGIBLE",
+    "criticalIneligibilityReasons": [],
+    "validatedAt": "2026-09-21T03:15:23.442Z",
+    "policyVersion": "DISCOVER_READINESS_POLICY_V1"
+  },
+  "visualPrompt": "Measuring Site Success Beyond Clicks, calibrated soil excavation digger extracting layered geological strata from beneath a stepped foundation block, 3D isometric illustration, soft clay rendering, rounded geometric objects, soft studio lighting, minimal marketing illustration, clean composition, premium modern aesthetic. Clear visual hierarchy, single dominant focal object, generous negative space, no text, no logos. --ar 16:9",
+  "createdAt": "2026-09-21T03:15:24.025Z"
+}
