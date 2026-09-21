@@ -209,12 +209,19 @@ export class CanonicalResearchPipeline {
     } else {
       // 2b. Autonomous Discovery via ResearchSearchProvider (Tavily)
       const searchProvider = this.searchProvider || ResearchSearchProviderFactory.getSearchProvider(this.searchProviderType);
-      const queryText = questions[0].question;
+      
+      // Bersihkan kalimat tanya panjang menjadi query pencarian yang lebih efektif
+      const rawQuestion = questions[0]?.question || input.topic.title;
+      const cleanQuestion = rawQuestion
+        .replace(/^(apa saja|apa itu|bagaimana cara|bagaimana|mengapa|apakah|mengenal|jelaskan)\s+/i, '')
+        .replace(/[?.,]$/, '')
+        .trim();
+      const primaryQuery = cleanQuestion.length >= 3 ? cleanQuestion : input.topic.title;
 
       searchRequestsCount++;
       let searchResults;
       try {
-        searchResults = await searchProvider.search(queryText, {
+        searchResults = await searchProvider.search(primaryQuery, {
           maxResults: maxDiscoveryResults,
           timeoutMs: 20000
         });
@@ -227,12 +234,34 @@ export class CanonicalResearchPipeline {
         );
       }
 
+      // Fallback query pencarian jika query pertama tidak menghasilkan apa-apa
+      if ((!searchResults || searchResults.length === 0) && input.topic.title) {
+        const topicClean = input.topic.title
+          .replace(/^(mengenal|apa itu|panduan)\s+/i, '')
+          .replace(/[?.,]$/, '')
+          .trim();
+        if (topicClean && topicClean.toLowerCase() !== primaryQuery.toLowerCase()) {
+          try {
+            searchRequestsCount++;
+            const fallbackResults = await searchProvider.search(topicClean, {
+              maxResults: maxDiscoveryResults,
+              timeoutMs: 20000
+            });
+            if (fallbackResults && fallbackResults.length > 0) {
+              searchResults = fallbackResults;
+            }
+          } catch {
+            // Abaikan kegagalan fallback search
+          }
+        }
+      }
+
       // Hard Invariant Check: Jika 0 hasil, GAGALKAN secara jujur (NO SOURCE FOUND)
       if (!searchResults || searchResults.length === 0) {
         return err(
           createResearchDomainError(
             'NO_SOURCE_FOUND',
-            `Tidak ditemukan kandidat sumber di web untuk pertanyaan: "${queryText}". Dilarang membuat fallback sintetis.`
+            `Tidak ditemukan kandidat sumber di web untuk pertanyaan: "${primaryQuery}". Dilarang membuat fallback sintetis.`
           )
         );
       }

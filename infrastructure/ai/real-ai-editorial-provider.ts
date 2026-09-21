@@ -150,7 +150,15 @@ ${JSON.stringify(plan.sectionPlan, null, 2)}
 
 DATA RISET RESMI YANG WAJIB DIKUTIP:
 Klaim Terbukti (Supported Claims):
-${JSON.stringify(brief.supportedClaims.map((c) => ({ id: c.id, statement: c.statement })), null, 2)}
+${JSON.stringify(
+  brief.supportedClaims.map((c) => ({
+    id: c.id,
+    statement: c.statement,
+    supportingEvidenceIds: c.supportingEvidenceIds || (c as any).evidenceIds || []
+  })),
+  null,
+  2
+)}
 Temuan Kunci (Key Findings):
 ${JSON.stringify((brief.keyFindings || []).map((f) => ({ id: f.id, statement: f.statement })), null, 2)}
 Indeks Bukti:
@@ -162,7 +170,7 @@ INSTRUKSI INTEGRITAS & ANTI-HALUSINASI (SANGAT PENTING):
 1. FOKUS TOPIK (ANTI-SCOPE DRIFT): Tulis naskah HANYA seputar topik "${request.topic.title}" dan bukti riset di atas. DILARANG menambahkan topik baru yang tidak ada di riset (seperti privasi data, kepatuhan legal, enkripsi, dll).
 2. KLAIM FAKTUAL EKSTERNAL: Setiap kali Anda menulis fakta mengenai kondisi pasar, kapabilitas AI, kinerja tool, atau temuan industri, Anda WAJIB mengambil substansinya dari 'Klaim Terbukti' di atas dan mencatat claimId-nya di claimUsages dan citationMap. DILARANG membuat klaim fakta eksternal baru tanpa dasar bukti!
 3. REKOMENDASI & TAKTIK NEXAMOS: Untuk bagian langkah praktis, kerangka kerja, atau alur kerja NexaMOS, letakkan dalam seksi dengan purpose 'ANALYSIS', 'FRAMEWORK', atau 'PRACTICAL_APPLICATION' dan gunakan frasa analisis orisinal (misal: "Rekomendasi taktis bagi tim editorial adalah...", "Bagi praktisi konten, implikasinya...", "Dalam perspektif strategis NexaMOS...", "Oleh karena itu, langkah praktis...").
-4. INTEGRITAS ID SITASI: Dilarang membuat claimId, sourceId, atau evidenceId palsu! Seluruh ID dalam claimUsages dan citationMap WAJIB bersumber dari data di atas.
+4. INTEGRITAS ID SITASI: Dilarang membuat claimId, sourceId, atau evidenceId palsu! Seluruh ID dalam claimUsages dan citationMap WAJIB bersumber dari data di atas. Gunakan supportingEvidenceIds resmi dari Klaim Terbukti di atas saat mengisi evidenceIds pada citationMap.
 
 FORMAT JSON YANG WAJIB DIHASILKAN:
 {
@@ -175,7 +183,7 @@ FORMAT JSON YANG WAJIB DIHASILKAN:
     {
       "id": "sec-1",
       "heading": "Judul Seksi",
-      "purpose": "HOOK | CONTEXT | ARGUMENT | EVIDENCE | FRAMEWORK | ANALYSIS | COUNTERPOINT | IMPLICATION | PRACTICAL_APPLICATION | CONCLUSION",
+      "purpose": "Pilih SALAH SATU: HOOK | CONTEXT | ARGUMENT | EVIDENCE | FRAMEWORK | ANALYSIS | COUNTERPOINT | IMPLICATION | PRACTICAL_APPLICATION | CONCLUSION (DILARANG menggabungkan dengan tanda '|', gunakan satu yang paling dominan)",
       "content": "Isi lengkap naskah artikel per seksi...",
       "order": 1,
       "claimUsageIds": ["cu-1"]
@@ -210,6 +218,30 @@ FORMAT JSON YANG WAJIB DIHASILKAN:
     });
 
     const parsed = StructuredOutputValidator.parseJson(response.content);
+
+    // Normalisasi section.purpose jika LLM menghasilkan pipe '|' atau variasi format
+    if (parsed && Array.isArray(parsed.sections)) {
+      const priority = [
+        'PRACTICAL_APPLICATION',
+        'FRAMEWORK',
+        'IMPLICATION',
+        'ANALYSIS',
+        'COUNTERPOINT',
+        'EVIDENCE',
+        'ARGUMENT',
+        'CONTEXT',
+        'HOOK',
+        'CONCLUSION'
+      ];
+
+      for (const sec of parsed.sections) {
+        if (sec && typeof sec.purpose === 'string' && sec.purpose.includes('|')) {
+          const parts = sec.purpose.split('|').map((p: string) => p.trim().toUpperCase());
+          const chosen = priority.find((p) => parts.includes(p)) || parts[0];
+          sec.purpose = chosen;
+        }
+      }
+    }
 
     // Normalisasi variasi minor casing/format claimId jika secara deterministik merujuk ID yang sama
     if (parsed && Array.isArray(parsed.claimUsages) && allowedClaimIds.size > 0) {
@@ -262,7 +294,7 @@ FORMAT JSON YANG WAJIB DIHASILKAN:
           cm.sourceIds = Array.from(new Set(cm.sourceIds));
         }
 
-        // 3. Normalisasi format evidenceIds HANYA jika merujuk ke ID yang sama persis (tanpa substitusi validEvidenceList[0])
+        // 3. Normalisasi format evidenceIds: Coba match persis / variasi casing, atau fallback ke supportingEvidenceIds resmi dari claimId jika sah
         if (Array.isArray(cm.evidenceIds)) {
           cm.evidenceIds = cm.evidenceIds.map((eId: string) => {
             if (allowedEvidenceIds.has(eId)) return eId;
@@ -273,10 +305,32 @@ FORMAT JSON YANG WAJIB DIHASILKAN:
             );
             if (match) return match;
 
-            // Jangan gantikan ke validEvidenceList[0]! Biarkan ID apa adanya agar downstream validator mendeteksi kesalahan.
+            // Jika evidenceId tidak terdaftar, tetapi claimId sah dan memiliki bukti resmi di brief:
+            if (cm.claimId && allowedClaimIds.has(cm.claimId)) {
+              const matchedClaim = brief.supportedClaims.find((c) => c.id === cm.claimId);
+              const officialEvidence = matchedClaim?.supportingEvidenceIds || (matchedClaim as any)?.evidenceIds;
+              if (Array.isArray(officialEvidence) && officialEvidence.length > 0) {
+                const validOfficial = officialEvidence.find((oId: string) => allowedEvidenceIds.has(oId));
+                if (validOfficial) {
+                  return validOfficial;
+                }
+              }
+            }
+
+            // Jangan buat ID sintetis baru! Biarkan ID apa adanya agar downstream validator mendeteksi kesalahan jika memang klaim tidak berdasar.
             return eId;
           });
           cm.evidenceIds = Array.from(new Set(cm.evidenceIds));
+        } else if (cm.claimId && allowedClaimIds.has(cm.claimId)) {
+          // Jika LLM lupa menyertakan evidenceIds, tautkan ke bukti resmi klaim
+          const matchedClaim = brief.supportedClaims.find((c) => c.id === cm.claimId);
+          const officialEvidence = matchedClaim?.supportingEvidenceIds || (matchedClaim as any)?.evidenceIds;
+          if (Array.isArray(officialEvidence) && officialEvidence.length > 0) {
+            const validOfficial = officialEvidence.find((oId: string) => allowedEvidenceIds.has(oId));
+            if (validOfficial) {
+              cm.evidenceIds = [validOfficial];
+            }
+          }
         }
       }
     }

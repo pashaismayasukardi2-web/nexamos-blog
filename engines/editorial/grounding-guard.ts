@@ -336,9 +336,10 @@ export class GroundingGuard {
   private checkInformationGain(draft: ArticleDraft, issues: GroundingIssue[]): void {
     // Artikel Flagship atau Authority wajib memiliki kerangka orisinal atau aplikasi praktis
     if (draft.editorialRole === 'FLAGSHIP' || draft.editorialRole === 'AUTHORITY') {
-      const hasOriginalFrameworkOrApplication = draft.sections.some(
-        (s) => s.purpose === 'FRAMEWORK' || s.purpose === 'PRACTICAL_APPLICATION' || s.purpose === 'IMPLICATION'
-      );
+      const hasOriginalFrameworkOrApplication = draft.sections.some((s) => {
+        const p = (s.purpose || '').toUpperCase();
+        return p.includes('FRAMEWORK') || p.includes('PRACTICAL_APPLICATION') || p.includes('IMPLICATION');
+      });
 
       if (!hasOriginalFrameworkOrApplication) {
         issues.push({

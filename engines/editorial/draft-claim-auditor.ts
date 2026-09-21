@@ -436,7 +436,14 @@ export class DraftClaimAuditor {
       'dalam lanskap pencarian saat ini',
       'argumen utama kami adalah',
       'tentu terdapat limitasi',
-      'oleh karena itu, batasan metodologi'
+      'oleh karena itu, batasan metodologi',
+      'dengan demikian',
+      'konsekuensinya',
+      'secara keseluruhan',
+      'pada akhirnya',
+      'oleh sebab itu',
+      'artinya',
+      'secara ringkas'
     ];
     if (nonFactualMarkers.some((m) => textLower.startsWith(m) || textLower.includes(m))) {
       // Jika memuat angka atau kutipan, tetap uji sebagai EXTERNAL_FACT
@@ -478,20 +485,26 @@ export class DraftClaimAuditor {
       'pendekatan taktis terbaik',
       'pendekatan strategis terbaik',
       'rekomendasi praktis',
-      'rekomendasi taktis'
+      'rekomendasi taktis',
+      'dengan demikian, praktik',
+      'dengan demikian, langkah',
+      'dengan demikian, strategi',
+      'dengan demikian, pendekatan',
+      'hal ini membuktikan bahwa'
     ];
     if (originalAnalysisMarkers.some((m) => textLower.includes(m))) {
       return 'ORIGINAL_ANALYSIS';
     }
 
-    // 4. Jika berada di seksi analisis/framework/sintesis dan tidak memuat angka/kutipan
+    const purpose = (section?.purpose || '').toUpperCase();
+
+    // 4. Jika berada di seksi analisis/framework/sintesis/aplikasi praktis dan tidak memuat angka/kutipan
     if (
-      section &&
-      (section.purpose === 'ANALYSIS' ||
-        (section.purpose as string) === 'FRAMEWORK' ||
-        (section.purpose as string) === 'IMPLICATION' ||
-        (section.purpose as string) === 'PRACTICAL_APPLICATION' ||
-        (section.purpose as string) === 'SYNTHESIS')
+      purpose.includes('ANALYSIS') ||
+      purpose.includes('FRAMEWORK') ||
+      purpose.includes('IMPLICATION') ||
+      purpose.includes('PRACTICAL_APPLICATION') ||
+      purpose.includes('SYNTHESIS')
     ) {
       if (!/\b\d+(\.\d+)?%/.test(text) && !/["“]([^"”]{5,})["”]/.test(text)) {
         return 'ORIGINAL_ANALYSIS';
@@ -500,11 +513,10 @@ export class DraftClaimAuditor {
 
     // 5. Jika berada di seksi HOOK / CONTEXT / COUNTERPOINT / CONCLUSION dan berupa pengantar umum tanpa angka/kutipan
     if (
-      section &&
-      (section.purpose === 'HOOK' ||
-        section.purpose === 'CONTEXT' ||
-        section.purpose === 'COUNTERPOINT' ||
-        section.purpose === 'CONCLUSION')
+      purpose.includes('HOOK') ||
+      purpose.includes('CONTEXT') ||
+      purpose.includes('COUNTERPOINT') ||
+      purpose.includes('CONCLUSION')
     ) {
       if (!/\b\d+(\.\d+)?%/.test(text) && !/["“]([^"”]{5,})["”]/.test(text)) {
         return 'NON_FACTUAL_EDITORIAL';
