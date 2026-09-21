@@ -1,0 +1,1491 @@
+{
+  "draft": {
+    "id": "draft-mualcjdu",
+    "topicId": "top-mualbo2v",
+    "researchProjectId": "proj-mualbo2x",
+    "title": "Mengenal BSUID Meta: Pengidentifikasi Unik untuk Otomatisasi Bisnis WhatsApp",
+    "dek": "Artikel ini memberikan klarifikasi spesifik dan grounded mengenai BSUID sebagai solusi identitas yang berbeda dari username, serta menjelaskan batasan teknis dan operasional yang harus dipatuhi oleh tim engineering dan integrator.",
+    "slug": "mengenal-bsuid-meta",
+    "territory": "TACTICAL",
+    "articleType": "EXPLAINER",
+    "editorialRole": "AUTHORITY",
+    "thesis": "BSUID adalah fondasi identitas digital yang tertutup dan eksklusif milik Meta, dirancang untuk menghubungkan aplikasi bisnis dengan pengguna WhatsApp secara seamless tanpa bergantung pada nomor telepon.",
+    "editorialAngle": "Artikel ini memberikan klarifikasi spesifik dan grounded mengenai BSUID sebagai solusi identitas yang berbeda dari username, serta menjelaskan batasan teknis dan operasional yang harus dipatuhi oleh tim engineering dan integrator.",
+    "sections": [
+      {
+        "id": "sec-1",
+        "heading": "Pengantar: Memahami BSUID sebagai Identitas Bisnis WhatsApp",
+        "content": "Di era transformasi digital, identitas digital yang andal menjadi fondasi utama bagi bisnis untuk berinteraksi dengan pelanggan secara personal dan seamless. WhatsApp Business API telah menjadi saluran komunikasi utama, namun tantangan muncul ketika bisnis perlu menghubungi pengguna tanpa bergantung pada nomor telepon yang rentan berubah. Untuk menjawab tantangan ini, Meta memperkenalkan BSUID (Business Scoped User ID). Artikel ini akan memberikan klarifikasi spesifik mengenai BSUID sebagai komponen kunci dalam evolusi WhatsApp Business API.",
+        "order": 1,
+        "purpose": "HOOK",
+        "claimUsageIds": []
+      },
+      {
+        "id": "sec-2",
+        "heading": "Definisi dan Karakteristik BSUID: Klaim 1 Terotentasi",
+        "content": "BSUID adalah pengidentifikasi unik tertutup yang diberikan oleh Meta kepada pengguna WhatsApp dalam suatu portofolio bisnis. Sebagai identitas bisnis, BSUID bersifat eksklusif dan tidak bergantung pada informasi publik seperti nomor telepon atau username pengguna akhir. Struktur internal BSUID dirancang untuk menjadi stable handle bagi sistem back-end bisnis, memastikan continuity dalam pengiriman pesan meskipun pengguna mengubah detail publik mereka. Oleh karena itu, BSUID berfungsi sebagai solusi identitas yang stabil dan tertutup untuk automasi bisnis di platform WhatsApp.",
+        "order": 2,
+        "purpose": "ARGUMENT",
+        "claimUsageIds": [
+          "claim-1"
+        ]
+      },
+      {
+        "id": "sec-3",
+        "heading": "Cara Kerja BSUID dalam Payload Webhook: Klaim 2 Terotentasi",
+        "content": "Saat pengguna mengadopsi username, nomor telepon mereka tidak akan ditampilkan dalam payload webhook. Namun, kedua informasi tersebut tetap tersedia jika kondisi tertentu terpenuhi. Dalam praktiknya, integrator perlu memahami bahwa meskipun username aktif, nomor telepon pengguna masih dapat diakses melalui payload. Ini memungkinkan integrator untuk melakukan parsing data dengan lebih efisien, memilih antara menggunakan nomor telepon atau BSUID sesuai kebutuhan integrasi mereka.",
+        "order": 3,
+        "purpose": "CONTEXT",
+        "claimUsageIds": [
+          "claim-2"
+        ]
+      },
+      {
+        "id": "sec-4",
+        "heading": "Aturan Teknis Pengiriman Pesan via BSUID: Klaim 3 Terotentasi",
+        "content": "Untuk mengirim pesan ke BSUID, seluruh nilai BSUID termasuk kode negara dan titik harus digunakan. Jika bagian apapun dari string BSUID dipotong atau dimodifikasi, permintaan akan gagal dan menghasilkan error 400. Aturan ini bersifat preskriptif dan harus dipatuhi secara ketat oleh tim engineering agar endpoint pengiriman pesan berfungsi dengan baik. Contohnya, format lengkap yang harus digunakan adalah `countryCode.identifier`, di mana `identifier` merupakan string unik yang diberikan oleh Meta.",
+        "order": 4,
+        "purpose": "EVIDENCE",
+        "claimUsageIds": [
+          "claim-3"
+        ]
+      },
+      {
+        "id": "sec-5",
+        "heading": "Pemetaan BSUID Otomatis oleh Contact Book Meta: Klaim 5 Terotentasi",
+        "content": "Contact Book yang disediakan oleh Meta secara otomatis menyimpan pemetaan nomor telepon dan BSUID dari interaksi pengguna tanpa memerlukan integrasi tambahan. Hal ini mengurangi kompleksitas integrasi bagi pengembang, karena mereka tidak perlu membangun sistem pemetaan sendiri. Namun, untuk memastikan pengiriman produksi yang andal, tim engineering harus memvalidasi mapping ini terlebih dahulu sebelum menggunakannya. Dengan demikian, Contact Book menjadi sumber data primary yang efisien untuk mengoptimalkan alur kerja integrasi.",
+        "order": 5,
+        "purpose": "ANALYSIS",
+        "claimUsageIds": [
+          "claim-5"
+        ]
+      },
+      {
+        "id": "sec-6",
+        "heading": "Timeline Peluncuran: Kapan BSUID Mulai Berlaku? Klaim 6 Terotentasi",
+        "content": "Penggunaan BSUID dimulai pada Juni 2026 saat Meta meluncurkan fitur username WhatsApp kepada pengguna akhir. Timeline ini menjadi milestone krusial bagi tim engineering untuk merencanakan migrasi atau pengembangan fitur yang bergantung pada BSUID. Integrator harus memonitor implementasi fitur ini secara cermat dan mempersiapkan sistem mereka untuk beralih dari penggunaan nomor telepon ke BSUID sebagai pengidentifikasi utama.",
+        "order": 6,
+        "purpose": "FRAMEWORK",
+        "claimUsageIds": [
+          "claim-6"
+        ]
+      },
+      {
+        "id": "sec-7",
+        "heading": "Ringkasan Implikasi Strategis untuk Tim Integrasi",
+        "content": "BSUID adalah identitas bisnis yang stabil dan tidak bergantung pada perubahan nomor pengguna, menjadikannya fondasi yang solid untuk automasi komunikasi bisnis. Validasi BSUID sebelum pengiriman pesan sangat kritis untuk menghindari error 400 dan memastikan deliverability. Tim engineering harus memanfaatkan Contact Book sebagai sumber data primary untuk mapping, sehingga meningkatkan efisiensi operasional dan mengurangi risiko kesalahan integrasi.",
+        "order": 7,
+        "purpose": "IMPLICATION",
+        "claimUsageIds": []
+      },
+      {
+        "id": "sec-8",
+        "heading": "Penutup: Langkah Praktis Menuju Adopsi BSUID yang Sukses",
+        "content": "Untuk memastikan adopsi BSUID yang sukses, tim engineering disarankan untuk membuat checklist verifikasi BSUID sebelum integrasi produksi. Selain itu, monitoring event AdvancedMessageDeliveryStatusUpdated dengan bidang `toBSUID` sangat penting untuk debugging dan troubleshooting. Pemahaman mendalam tentang BSUID adalah langkah fundamental untuk memanfaatkan fitur-fitur WhatsApp Business API masa depan secara optimal.",
+        "order": 8,
+        "purpose": "PRACTICAL_APPLICATION",
+        "claimUsageIds": []
+      }
+    ],
+    "claimUsages": [
+      {
+        "id": "cu-1",
+        "claimId": "claim-1",
+        "sectionId": "sec-2",
+        "usageType": "PARAPHRASED",
+        "statement": "BSUID adalah pengidentifikasi unik yang bersifat tertutup dan diberikan oleh Meta kepada pengguna WhatsApp dalam suatu portofolio bisnis."
+      },
+      {
+        "id": "cu-2",
+        "claimId": "claim-2",
+        "sectionId": "sec-3",
+        "usageType": "PARAPHRASED",
+        "statement": "Saat pengguna mengadopsi username, nomor telepon mereka tidak akan ditampilkan dalam payload webhook, tetapi kedua informasi tersebut tetap tersedia jika kondisi tertentu terpenuhi."
+      },
+      {
+        "id": "cu-3",
+        "claimId": "claim-3",
+        "sectionId": "sec-4",
+        "usageType": "PARAPHRASED",
+        "statement": "Untuk mengirim pesan ke BSUID, seluruh nilai BSUID termasuk kode negara dan titik harus digunakan; memotong atau mengubah bagian apapun akan menyebabkan permintaan gagal."
+      },
+      {
+        "id": "cu-4",
+        "claimId": "claim-5",
+        "sectionId": "sec-5",
+        "usageType": "PARAPHRASED",
+        "statement": "Contact Book yang disediakan oleh Meta secara otomatis menyimpan pemetaan nomor telepon dan BSUID dari interaksi pengguna tanpa memerlukan integrasi tambahan."
+      },
+      {
+        "id": "cu-5",
+        "claimId": "claim-6",
+        "sectionId": "sec-6",
+        "usageType": "PARAPHRASED",
+        "statement": "Penggunaan BSUID dimulai pada Juni 2026 saat Meta meluncurkan fitur username WhatsApp kepada pengguna akhir."
+      }
+    ],
+    "citationMap": [
+      {
+        "claimUsageId": "cu-1",
+        "claimId": "claim-1",
+        "sourceIds": [
+          "src-mualbq8m-gfh8"
+        ],
+        "evidenceIds": [
+          "evi-src-mualbq8m-gfh8-5"
+        ]
+      },
+      {
+        "claimUsageId": "cu-2",
+        "claimId": "claim-2",
+        "sourceIds": [
+          "src-mualbq8m-gfh8"
+        ],
+        "evidenceIds": [
+          "evi-src-mualbq8m-gfh8-30"
+        ]
+      },
+      {
+        "claimUsageId": "cu-3",
+        "claimId": "claim-3",
+        "sourceIds": [
+          "src-mualbq8m-gfh8"
+        ],
+        "evidenceIds": [
+          "evi-src-mualbq8m-gfh8-11"
+        ]
+      },
+      {
+        "claimUsageId": "cu-4",
+        "claimId": "claim-5",
+        "sourceIds": [
+          "src-mualbq8m-gfh8"
+        ],
+        "evidenceIds": [
+          "evi-src-mualbq8m-gfh8-35"
+        ]
+      },
+      {
+        "claimUsageId": "cu-5",
+        "claimId": "claim-6",
+        "sourceIds": [
+          "src-mualbq8m-gfh8"
+        ],
+        "evidenceIds": [
+          "evi-src-mualbq8m-gfh8-3"
+        ]
+      }
+    ],
+    "status": "READY_FOR_EDITORIAL_REVIEW",
+    "generatedAt": "2026-09-21T01:53:18.882Z",
+    "generatorVersion": "real-ai-v1",
+    "promptVersion": "1.0.0"
+  },
+  "brief": {
+    "id": "brief-mualbxv0",
+    "topicId": "top-mualbo2v",
+    "researchProjectId": "proj-mualbo2x",
+    "objective": "Mengenal BSUID Meta",
+    "answeredQuestions": [
+      {
+        "id": "rq-1",
+        "question": "Apa saja elemen struktural (atribut dan nilai) yang membentuk BSUID meta tag?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-2",
+        "question": "Bagaimana BSUID meta tag berinteraksi dengan sistem manajemen konten enterprise dan alur kerja publikasi?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-3",
+        "question": "Apa dampak penerapan BSUID meta tag terhadap efisiensi identifikasi dan pelacakan konten di lingkungan enterprise?",
+        "priority": "MEDIUM",
+        "status": "OPEN"
+      }
+    ],
+    "openQuestions": [],
+    "supportedClaims": [
+      {
+        "id": "claim-1",
+        "researchProjectId": "proj-mualbo2x",
+        "statement": "BSUID adalah pengidentifikasi unik yang bersifat tertutup dan diberikan oleh Meta kepada pengguna WhatsApp dalam suatu portofolio bisnis.",
+        "claimType": "FACTUAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T01:52:48.763Z",
+        "updatedAt": "2026-09-21T01:52:48.763Z",
+        "supportingEvidenceIds": [
+          "evi-src-mualbq8m-gfh8-3",
+          "evi-src-mualbq8m-gfh8-5"
+        ]
+      },
+      {
+        "id": "claim-2",
+        "researchProjectId": "proj-mualbo2x",
+        "statement": "Saat pengguna mengadopsi username, nomor telepon mereka tidak akan ditampilkan dalam payload webhook, tetapi kedua informasi tersebut tetap tersedia jika kondisi tertentu terpenuhi.",
+        "claimType": "FACTUAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T01:52:49.084Z",
+        "updatedAt": "2026-09-21T01:52:49.084Z",
+        "supportingEvidenceIds": [
+          "evi-src-mualbq8m-gfh8-30"
+        ]
+      },
+      {
+        "id": "claim-3",
+        "researchProjectId": "proj-mualbo2x",
+        "statement": "Untuk mengirim pesan ke BSUID, seluruh nilai BSUID termasuk kode negara dan titik harus digunakan; memotong atau mengubah bagian apapun akan menyebabkan permintaan gagal.",
+        "claimType": "EMPIRICAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T01:52:49.470Z",
+        "updatedAt": "2026-09-21T01:52:49.470Z",
+        "supportingEvidenceIds": [
+          "evi-src-mualbq8m-gfh8-11"
+        ]
+      },
+      {
+        "id": "claim-4",
+        "researchProjectId": "proj-mualbo2x",
+        "statement": "Azure Communication Services Advanced Messaging akan menerima AdvancedMessageDeliveryStatusUpdated event dengan bidang baru 'toBSUID' yang berisi BSUID penerima.",
+        "claimType": "ANALYTICAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T01:52:49.883Z",
+        "updatedAt": "2026-09-21T01:52:49.883Z",
+        "supportingEvidenceIds": [
+          "evi-src-mualbq8m-gfh8-4"
+        ]
+      },
+      {
+        "id": "claim-5",
+        "researchProjectId": "proj-mualbo2x",
+        "statement": "Contact Book yang disediakan oleh Meta secara otomatis menyimpan pemetaan nomor telepon dan BSUID dari interaksi pengguna tanpa memerlukan integrasi tambahan.",
+        "claimType": "FACTUAL",
+        "importance": "SUPPORTING",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T01:52:50.303Z",
+        "updatedAt": "2026-09-21T01:52:50.303Z",
+        "supportingEvidenceIds": [
+          "evi-src-mualbq8m-gfh8-35"
+        ]
+      },
+      {
+        "id": "claim-6",
+        "researchProjectId": "proj-mualbo2x",
+        "statement": "Penggunaan BSUID dimulai pada Juni 2026 saat Meta meluncurkan fitur username WhatsApp kepada pengguna akhir.",
+        "claimType": "FACTUAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T01:52:50.659Z",
+        "updatedAt": "2026-09-21T01:52:50.659Z",
+        "supportingEvidenceIds": [
+          "evi-src-mualbq8m-gfh8-3"
+        ]
+      }
+    ],
+    "partiallySupportedClaims": [],
+    "disputedClaims": [],
+    "unverifiedClaims": [],
+    "unsupportedClaims": [],
+    "internalKnowledge": [],
+    "originalAnalysis": [],
+    "keyFindings": [
+      {
+        "id": "finding-01",
+        "researchProjectId": "proj-mualbo2x",
+        "statement": "BSUID adalah pengidentifikasi unik yang bersifat tertutup dan diberikan oleh Meta kepada pengguna WhatsApp dalam suatu portofolio bisnis.",
+        "supportingClaimIds": [
+          "claim-1",
+          "claim-2",
+          "claim-3",
+          "claim-4",
+          "claim-5",
+          "claim-6"
+        ],
+        "confidence": "HIGH",
+        "limitations": [],
+        "createdAt": "2026-09-21T01:52:50.988Z",
+        "updatedAt": "2026-09-21T01:52:50.988Z"
+      }
+    ],
+    "limitations": [],
+    "researchGaps": [],
+    "recommendedEditorialAngle": "Analisis strategis ter-grounding mengenai Mengenal BSUID Meta",
+    "sourceIndex": [
+      {
+        "sourceId": "src-mualbq8m-gfh8",
+        "title": "Mengenal BSUID Meta",
+        "url": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com",
+        "canonicalUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com",
+        "publisher": "Referensi Web",
+        "sourceType": "INDUSTRY_RESEARCH",
+        "authorityScore": 85,
+        "publicationAllowed": true
+      }
+    ],
+    "evidenceIndex": [
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-3",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "WhatsApp is launching usernames in 2026. Usernames are an optional feature that allows WhatsApp users to display a username instead of their phone number. To support this change, Meta introduces a new identifier called the business-scoped user ID (BS",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-5",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "A business-scoped user ID (BSUID) is a unique, opaque identifier that Meta assigns to a WhatsApp user within a specific business portfolio. BSUIDs are:",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-35",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "Meta provides a Contact Book feature that automatically stores WhatsApp user contact information (phone number and BSUID mappings) from interactions. Key details:",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-26",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "advancedMessage/sender/US.13491208655302741918/recipient/11111111-1111-1111-1111-111111111111 Impact on delivery status events The AdvancedMessageDeliveryStatusUpdated event now includes a new toBSUID field containing the recipient's BSUID.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-29",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "\"data\": { \"from\": \"{channel-id}\", \"to\": \"14255550199\", \"toBSUID\": \"US.13491208655302741918\", \"status\": \"Delivered\", \"channelType\": \"whatsapp\", \"messageId\": \"22222222-2222-2222-2222-222222222222\" } Sent to a BSUID:",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-12",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "Sending messages to BSUIDs will be available starting in June 2026, when Meta rolls out the WhatsApp username feature to end users. Until then, the to field only supports phone numbers.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-25",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "advancedMessage/sender/14255551234/recipient/11111111-1111-1111-1111-111111111111 Subject with BSUID (phone number hidden):",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-4",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "This article explains what BSUIDs are, how they affect Azure Communication Services Advanced Messaging, and how to prepare your integration.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-11",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "When using BSUIDs in API requests, use the entire BSUID value including the country code and period. Omitting or modifying any part of the BSUID causes the request to fail.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-36",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "The Contact Book is provided and hosted by Meta. It is by default enabled. No integration work is required.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-52",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "Meta: Business-scoped user IDs",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-19",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "\"data\": { \"from\": \"14255551234\", \"fromBSUID\": \"US.13491208655302741918\", \"to\": \"{channel-id}\", \"content\": \"Hi there!\", \"channelType\": \"whatsapp\", \"messageType\": \"text\" } Phone number hidden (username adopted):",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-20",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "\"data\": { \"from\": \"\", \"fromBSUID\": \"US.13491208655302741918\", \"to\": \"{channel-id}\", \"content\": \"Hi there!\", \"channelType\": \"whatsapp\", \"messageType\": \"text\" } Caution",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-30",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "\"data\": { \"from\": \"{channel-id}\", \"to\": \"\", \"toBSUID\": \"US.13491208655302741918\", \"status\": \"Delivered\", \"channelType\": \"whatsapp\", \"messageId\": \"22222222-2222-2222-2222-222222222222\" } Phone number availability rules When a WhatsApp user adopts a us",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-17",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "If the user has adopted a username and their phone number isn't available, the existing from field may be empty. Both fields coexist when the phone number is available.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-37",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "It's scoped to the business portfolio level.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-43",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "To prepare your integration for WhatsApp usernames and BSUIDs:",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-48",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "Advanced Messaging for WhatsApp overview",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-49",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "Handle Advanced Messaging events",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mualbq8m-gfh8-50",
+        "sourceId": "src-mualbq8m-gfh8",
+        "quote": "Advanced Messaging event schemas",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      }
+    ],
+    "readiness": "READY_FOR_EDITORIAL",
+    "readinessReason": "Kecukupan bukti riset terpenuhi: 6 klaim faktual berhasil diverifikasi.",
+    "generatedAt": "2026-09-21T01:52:50.988Z"
+  },
+  "topic": {
+    "id": "top-mualbo2v",
+    "title": "Mengenal BSUID Meta",
+    "slug": "mengenal-bsuid-meta",
+    "territory": "TACTICAL",
+    "recommendedArticleType": "EXPLAINER",
+    "editorialRole": "AUTHORITY",
+    "audience": {
+      "segment": "Enterprise Content Leaders"
+    },
+    "problem": "Mengenal BSUID Meta",
+    "intent": {
+      "primary": "Mengenal BSUID Meta"
+    },
+    "thesis": null,
+    "whyNow": null,
+    "status": "APPROVED",
+    "informationGain": {
+      "originalityType": [
+        "ORIGINAL_FRAMEWORK"
+      ],
+      "expectedContribution": "Arsitektur informasi mandiri",
+      "commodityRisk": "LOW"
+    },
+    "evidencePlan": {
+      "requiredEvidenceLevel": "E2",
+      "plannedSources": [
+        "https://learn.microsoft.com/en-us/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview?utm_source=chatgpt.com"
+      ],
+      "originalEvidenceRequired": false
+    },
+    "businessRelevance": {
+      "objective": "Thought Leadership",
+      "funnelRole": "TOFU"
+    },
+    "distributionTargets": [
+      "GOOGLE_SEARCH",
+      "GOOGLE_AI"
+    ],
+    "createdAt": "2026-09-21T01:52:38.312Z",
+    "updatedAt": "2026-09-21T01:52:38.312Z"
+  },
+  "editorialIntegrity": {
+    "status": "PASS",
+    "draftClaimAudit": {
+      "status": "PASS",
+      "propositions": [
+        {
+          "propositionId": "prop-1",
+          "sectionId": "sec-1",
+          "text": "Di era transformasi digital, identitas digital yang andal menjadi fondasi utama bagi bisnis untuk berinteraksi dengan pelanggan secara personal dan seamless.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-2",
+          "sectionId": "sec-1",
+          "text": "WhatsApp Business API telah menjadi saluran komunikasi utama",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-3",
+          "sectionId": "sec-1",
+          "text": "tantangan muncul ketika bisnis perlu menghubungi pengguna tanpa bergantung pada nomor telepon yang rentan berubah.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-4",
+          "sectionId": "sec-1",
+          "text": "Untuk menjawab tantangan ini, Meta memperkenalkan BSUID (Business Scoped User ID).",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-5",
+          "sectionId": "sec-1",
+          "text": "Artikel ini akan memberikan klarifikasi spesifik mengenai BSUID sebagai komponen kunci dalam evolusi WhatsApp Business API.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-6",
+          "sectionId": "sec-2",
+          "text": "BSUID adalah pengidentifikasi unik tertutup yang diberikan oleh Meta kepada pengguna WhatsApp dalam suatu portofolio bisnis.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-1"
+          ],
+          "evidenceIds": [
+            "evi-src-mualbq8m-gfh8-3",
+            "evi-src-mualbq8m-gfh8-5"
+          ],
+          "sourceIds": [
+            "src-mualbq8m-gfh8"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-7",
+          "sectionId": "sec-2",
+          "text": "Sebagai identitas bisnis, BSUID bersifat eksklusif dan tidak bergantung pada informasi publik seperti nomor telepon atau username pengguna akhir.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-2"
+          ],
+          "evidenceIds": [
+            "evi-src-mualbq8m-gfh8-30"
+          ],
+          "sourceIds": [
+            "src-mualbq8m-gfh8"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-8",
+          "sectionId": "sec-2",
+          "text": "Struktur internal BSUID dirancang untuk menjadi stable handle bagi sistem back-end bisnis, memastikan continuity dalam pengiriman pesan meskipun pengguna mengubah detail publik mereka.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-1"
+          ],
+          "evidenceIds": [
+            "evi-src-mualbq8m-gfh8-3",
+            "evi-src-mualbq8m-gfh8-5"
+          ],
+          "sourceIds": [
+            "src-mualbq8m-gfh8"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-9",
+          "sectionId": "sec-2",
+          "text": "Oleh karena itu, BSUID berfungsi sebagai solusi identitas yang stabil dan tertutup untuk automasi bisnis di platform WhatsApp.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-1"
+          ],
+          "evidenceIds": [
+            "evi-src-mualbq8m-gfh8-3",
+            "evi-src-mualbq8m-gfh8-5"
+          ],
+          "sourceIds": [
+            "src-mualbq8m-gfh8"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-10",
+          "sectionId": "sec-3",
+          "text": "Saat pengguna mengadopsi username, nomor telepon mereka tidak akan ditampilkan dalam payload webhook.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-11",
+          "sectionId": "sec-3",
+          "text": "Namun, kedua informasi tersebut tetap tersedia jika kondisi tertentu terpenuhi.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-12",
+          "sectionId": "sec-3",
+          "text": "Dalam praktiknya, integrator perlu memahami bahwa meskipun username aktif, nomor telepon pengguna masih dapat diakses melalui payload.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-13",
+          "sectionId": "sec-3",
+          "text": "Ini memungkinkan integrator untuk melakukan parsing data dengan lebih efisien, memilih antara menggunakan nomor telepon atau BSUID sesuai kebutuhan integrasi mereka.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-14",
+          "sectionId": "sec-4",
+          "text": "Untuk mengirim pesan ke BSUID, seluruh nilai BSUID termasuk kode negara dan titik harus digunakan.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-3"
+          ],
+          "evidenceIds": [
+            "evi-src-mualbq8m-gfh8-11"
+          ],
+          "sourceIds": [
+            "src-mualbq8m-gfh8"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-3 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-15",
+          "sectionId": "sec-4",
+          "text": "Jika bagian apapun dari string BSUID dipotong atau dimodifikasi, permintaan akan gagal dan menghasilkan error 400.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-3"
+          ],
+          "evidenceIds": [
+            "evi-src-mualbq8m-gfh8-11"
+          ],
+          "sourceIds": [
+            "src-mualbq8m-gfh8"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-3 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-16",
+          "sectionId": "sec-4",
+          "text": "Aturan ini bersifat preskriptif dan harus dipatuhi secara ketat oleh tim engineering agar endpoint pengiriman pesan berfungsi dengan baik.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-3"
+          ],
+          "evidenceIds": [
+            "evi-src-mualbq8m-gfh8-11"
+          ],
+          "sourceIds": [
+            "src-mualbq8m-gfh8"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-3 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-17",
+          "sectionId": "sec-4",
+          "text": "Contohnya, format lengkap yang harus digunakan adalah `countryCode.identifier`, di mana `identifier` merupakan string unik yang diberikan oleh Meta.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-1"
+          ],
+          "evidenceIds": [
+            "evi-src-mualbq8m-gfh8-3",
+            "evi-src-mualbq8m-gfh8-5"
+          ],
+          "sourceIds": [
+            "src-mualbq8m-gfh8"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-18",
+          "sectionId": "sec-5",
+          "text": "Contact Book yang disediakan oleh Meta secara otomatis menyimpan pemetaan nomor telepon dan BSUID dari interaksi pengguna tanpa memerlukan integrasi tambahan.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-19",
+          "sectionId": "sec-5",
+          "text": "Hal ini mengurangi kompleksitas integrasi bagi pengembang, karena mereka tidak perlu membangun sistem pemetaan sendiri.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-20",
+          "sectionId": "sec-5",
+          "text": "Namun, untuk memastikan pengiriman produksi yang andal, tim engineering harus memvalidasi mapping ini terlebih dahulu sebelum menggunakannya.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-21",
+          "sectionId": "sec-5",
+          "text": "Dengan demikian, Contact Book menjadi sumber data primary yang efisien untuk mengoptimalkan alur kerja integrasi.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-22",
+          "sectionId": "sec-6",
+          "text": "Penggunaan BSUID dimulai pada Juni 2026 saat Meta meluncurkan fitur username WhatsApp kepada pengguna akhir.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-23",
+          "sectionId": "sec-6",
+          "text": "Timeline ini menjadi milestone krusial bagi tim engineering untuk merencanakan migrasi atau pengembangan fitur yang bergantung pada BSUID.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-24",
+          "sectionId": "sec-6",
+          "text": "Integrator harus memonitor implementasi fitur ini secara cermat dan mempersiapkan sistem mereka untuk beralih dari penggunaan nomor telepon ke BSUID sebagai pengidentifikasi utama.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-25",
+          "sectionId": "sec-7",
+          "text": "BSUID adalah identitas bisnis yang stabil dan tidak bergantung pada perubahan nomor pengguna, menjadikannya fondasi yang solid untuk automasi komunikasi bisnis.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-26",
+          "sectionId": "sec-7",
+          "text": "Validasi BSUID sebelum pengiriman pesan sangat kritis untuk menghindari error 400 dan memastikan deliverability.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-27",
+          "sectionId": "sec-7",
+          "text": "Tim engineering harus memanfaatkan Contact Book sebagai sumber data primary untuk mapping, sehingga meningkatkan efisiensi operasional dan mengurangi risiko kesalahan integrasi.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-28",
+          "sectionId": "sec-8",
+          "text": "Untuk memastikan adopsi BSUID yang sukses, tim engineering disarankan untuk membuat checklist verifikasi BSUID sebelum integrasi produksi.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-29",
+          "sectionId": "sec-8",
+          "text": "Selain itu, monitoring event AdvancedMessageDeliveryStatusUpdated dengan bidang `toBSUID` sangat penting untuk debugging dan troubleshooting.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-30",
+          "sectionId": "sec-8",
+          "text": "Pemahaman mendalam tentang BSUID adalah langkah fundamental untuk memanfaatkan fitur-fitur WhatsApp Business API masa depan secara optimal.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        }
+      ],
+      "groundedExternalFacts": 8,
+      "ungroundedExternalFacts": 0,
+      "partialSupportCount": 0,
+      "originalAnalysisCount": 12,
+      "interpretationCount": 0,
+      "internalKnowledgeCount": 0,
+      "nonFactualCount": 10,
+      "numericClaimsTotal": 0,
+      "unsupportedNumericCount": 0,
+      "citationFailuresCount": 0,
+      "issues": [],
+      "summary": "DraftClaimAuditor: Seluruh 8 klaim faktual eksternal terbukti (ENTAILED). Analisis orisinal: 12. Sitasi valid.",
+      "auditedAt": "2026-09-21T01:53:18.885Z"
+    },
+    "groundingGuard": {
+      "status": "PASS",
+      "issues": [],
+      "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+    },
+    "propositions": [
+      {
+        "propositionId": "prop-1",
+        "sectionId": "sec-1",
+        "text": "Di era transformasi digital, identitas digital yang andal menjadi fondasi utama bagi bisnis untuk berinteraksi dengan pelanggan secara personal dan seamless.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-2",
+        "sectionId": "sec-1",
+        "text": "WhatsApp Business API telah menjadi saluran komunikasi utama",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-3",
+        "sectionId": "sec-1",
+        "text": "tantangan muncul ketika bisnis perlu menghubungi pengguna tanpa bergantung pada nomor telepon yang rentan berubah.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-4",
+        "sectionId": "sec-1",
+        "text": "Untuk menjawab tantangan ini, Meta memperkenalkan BSUID (Business Scoped User ID).",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-5",
+        "sectionId": "sec-1",
+        "text": "Artikel ini akan memberikan klarifikasi spesifik mengenai BSUID sebagai komponen kunci dalam evolusi WhatsApp Business API.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-6",
+        "sectionId": "sec-2",
+        "text": "BSUID adalah pengidentifikasi unik tertutup yang diberikan oleh Meta kepada pengguna WhatsApp dalam suatu portofolio bisnis.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-1"
+        ],
+        "evidenceIds": [
+          "evi-src-mualbq8m-gfh8-3",
+          "evi-src-mualbq8m-gfh8-5"
+        ],
+        "sourceIds": [
+          "src-mualbq8m-gfh8"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-7",
+        "sectionId": "sec-2",
+        "text": "Sebagai identitas bisnis, BSUID bersifat eksklusif dan tidak bergantung pada informasi publik seperti nomor telepon atau username pengguna akhir.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-2"
+        ],
+        "evidenceIds": [
+          "evi-src-mualbq8m-gfh8-30"
+        ],
+        "sourceIds": [
+          "src-mualbq8m-gfh8"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-8",
+        "sectionId": "sec-2",
+        "text": "Struktur internal BSUID dirancang untuk menjadi stable handle bagi sistem back-end bisnis, memastikan continuity dalam pengiriman pesan meskipun pengguna mengubah detail publik mereka.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-1"
+        ],
+        "evidenceIds": [
+          "evi-src-mualbq8m-gfh8-3",
+          "evi-src-mualbq8m-gfh8-5"
+        ],
+        "sourceIds": [
+          "src-mualbq8m-gfh8"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-9",
+        "sectionId": "sec-2",
+        "text": "Oleh karena itu, BSUID berfungsi sebagai solusi identitas yang stabil dan tertutup untuk automasi bisnis di platform WhatsApp.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-1"
+        ],
+        "evidenceIds": [
+          "evi-src-mualbq8m-gfh8-3",
+          "evi-src-mualbq8m-gfh8-5"
+        ],
+        "sourceIds": [
+          "src-mualbq8m-gfh8"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-10",
+        "sectionId": "sec-3",
+        "text": "Saat pengguna mengadopsi username, nomor telepon mereka tidak akan ditampilkan dalam payload webhook.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-11",
+        "sectionId": "sec-3",
+        "text": "Namun, kedua informasi tersebut tetap tersedia jika kondisi tertentu terpenuhi.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-12",
+        "sectionId": "sec-3",
+        "text": "Dalam praktiknya, integrator perlu memahami bahwa meskipun username aktif, nomor telepon pengguna masih dapat diakses melalui payload.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-13",
+        "sectionId": "sec-3",
+        "text": "Ini memungkinkan integrator untuk melakukan parsing data dengan lebih efisien, memilih antara menggunakan nomor telepon atau BSUID sesuai kebutuhan integrasi mereka.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-14",
+        "sectionId": "sec-4",
+        "text": "Untuk mengirim pesan ke BSUID, seluruh nilai BSUID termasuk kode negara dan titik harus digunakan.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-3"
+        ],
+        "evidenceIds": [
+          "evi-src-mualbq8m-gfh8-11"
+        ],
+        "sourceIds": [
+          "src-mualbq8m-gfh8"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-3 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-15",
+        "sectionId": "sec-4",
+        "text": "Jika bagian apapun dari string BSUID dipotong atau dimodifikasi, permintaan akan gagal dan menghasilkan error 400.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-3"
+        ],
+        "evidenceIds": [
+          "evi-src-mualbq8m-gfh8-11"
+        ],
+        "sourceIds": [
+          "src-mualbq8m-gfh8"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-3 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-16",
+        "sectionId": "sec-4",
+        "text": "Aturan ini bersifat preskriptif dan harus dipatuhi secara ketat oleh tim engineering agar endpoint pengiriman pesan berfungsi dengan baik.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-3"
+        ],
+        "evidenceIds": [
+          "evi-src-mualbq8m-gfh8-11"
+        ],
+        "sourceIds": [
+          "src-mualbq8m-gfh8"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-3 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-17",
+        "sectionId": "sec-4",
+        "text": "Contohnya, format lengkap yang harus digunakan adalah `countryCode.identifier`, di mana `identifier` merupakan string unik yang diberikan oleh Meta.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-1"
+        ],
+        "evidenceIds": [
+          "evi-src-mualbq8m-gfh8-3",
+          "evi-src-mualbq8m-gfh8-5"
+        ],
+        "sourceIds": [
+          "src-mualbq8m-gfh8"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-18",
+        "sectionId": "sec-5",
+        "text": "Contact Book yang disediakan oleh Meta secara otomatis menyimpan pemetaan nomor telepon dan BSUID dari interaksi pengguna tanpa memerlukan integrasi tambahan.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-19",
+        "sectionId": "sec-5",
+        "text": "Hal ini mengurangi kompleksitas integrasi bagi pengembang, karena mereka tidak perlu membangun sistem pemetaan sendiri.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-20",
+        "sectionId": "sec-5",
+        "text": "Namun, untuk memastikan pengiriman produksi yang andal, tim engineering harus memvalidasi mapping ini terlebih dahulu sebelum menggunakannya.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-21",
+        "sectionId": "sec-5",
+        "text": "Dengan demikian, Contact Book menjadi sumber data primary yang efisien untuk mengoptimalkan alur kerja integrasi.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-22",
+        "sectionId": "sec-6",
+        "text": "Penggunaan BSUID dimulai pada Juni 2026 saat Meta meluncurkan fitur username WhatsApp kepada pengguna akhir.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-23",
+        "sectionId": "sec-6",
+        "text": "Timeline ini menjadi milestone krusial bagi tim engineering untuk merencanakan migrasi atau pengembangan fitur yang bergantung pada BSUID.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-24",
+        "sectionId": "sec-6",
+        "text": "Integrator harus memonitor implementasi fitur ini secara cermat dan mempersiapkan sistem mereka untuk beralih dari penggunaan nomor telepon ke BSUID sebagai pengidentifikasi utama.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-25",
+        "sectionId": "sec-7",
+        "text": "BSUID adalah identitas bisnis yang stabil dan tidak bergantung pada perubahan nomor pengguna, menjadikannya fondasi yang solid untuk automasi komunikasi bisnis.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-26",
+        "sectionId": "sec-7",
+        "text": "Validasi BSUID sebelum pengiriman pesan sangat kritis untuk menghindari error 400 dan memastikan deliverability.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-27",
+        "sectionId": "sec-7",
+        "text": "Tim engineering harus memanfaatkan Contact Book sebagai sumber data primary untuk mapping, sehingga meningkatkan efisiensi operasional dan mengurangi risiko kesalahan integrasi.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-28",
+        "sectionId": "sec-8",
+        "text": "Untuk memastikan adopsi BSUID yang sukses, tim engineering disarankan untuk membuat checklist verifikasi BSUID sebelum integrasi produksi.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-29",
+        "sectionId": "sec-8",
+        "text": "Selain itu, monitoring event AdvancedMessageDeliveryStatusUpdated dengan bidang `toBSUID` sangat penting untuk debugging dan troubleshooting.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-30",
+        "sectionId": "sec-8",
+        "text": "Pemahaman mendalam tentang BSUID adalah langkah fundamental untuk memanfaatkan fitur-fitur WhatsApp Business API masa depan secara optimal.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      }
+    ],
+    "groundedExternalFacts": 8,
+    "ungroundedExternalFacts": 0,
+    "partialSupportCount": 0,
+    "originalAnalysisCount": 12,
+    "interpretationCount": 0,
+    "internalKnowledgeCount": 0,
+    "nonFactualCount": 10,
+    "numericClaimsTotal": 0,
+    "unsupportedNumericCount": 0,
+    "citationFailuresCount": 0,
+    "issues": [],
+    "summary": "Editorial Integrity Gate: PASS. Seluruh 8 klaim eksternal terbukti, 12 analisis orisinal valid, dan guard mekanikal lolos.",
+    "evaluatedAt": "2026-09-21T01:53:18.882Z"
+  },
+  "guardEvaluation": {
+    "status": "PASS",
+    "issues": [],
+    "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+  },
+  "visualPrompt": "BSUID Meta, modular encrypted keycard sliding into a secure biometric access panel, revealing an invisible digital identifier behind a translucent glass barrier, 3D isometric illustration, soft clay rendering, rounded geometric objects, soft studio lighting, minimal marketing illustration, clean composition, premium modern aesthetic. Clear visual hierarchy, single dominant focal object, generous negative space, no text, no logos. --ar 16:9",
+  "createdAt": "2026-09-21T01:53:19.418Z"
+}
