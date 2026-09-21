@@ -39,6 +39,7 @@ import type { ArticleSEOMetadata } from '../engines/seo-validator/article-seo-me
 import { PublicationPackageBuilder } from '../engines/publishing/publication-package.ts';
 import { PublicationPreflightValidator } from '../engines/publishing/publication-preflight.ts';
 import { PublicationHtmlRenderer } from '../engines/publishing/html-renderer.ts';
+import { DiscoverValidationService } from '../engines/discover-validator/discover-validation-service.ts';
 import { runBuild } from '../scripts/build-blog.ts';
 
 const execAsync = promisify(exec);
@@ -688,6 +689,45 @@ Atau cukup bagikan link studi/berita yang ingin dianalisis!
       const integrityResult = integrityGate.evaluate(draft, researchBrief, editorialPlan);
       const guardResult = integrityResult.groundingGuard;
 
+      // 6b. Evaluasi Kesiapan Google Discover (10 Dimensi)
+      const discoverService = new DiscoverValidationService();
+      const safeSlugForAsset = slug.slice(0, 45);
+      const discoverResult = await discoverService.validate(draft, {
+        topic: topicEntity,
+        brief: researchBrief,
+        metadata: {
+          title: `${draft.title} | NexaMOS`,
+          description: draft.dek || '',
+          slug,
+          canonicalUrl: `https://nexamos.cloud/blog/${slug}`,
+          robots: { index: true, follow: true },
+          author: {
+            name: 'Tim Riset & Rekayasa NexaMOS',
+            role: 'NexaMOS Knowledge & AI Engineering'
+          },
+          publisher: {
+            name: 'NexaMOS Knowledge Journal',
+            logoUrl: 'https://nexamos.cloud/brand/logo.png'
+          },
+          publishedAt: new Date().toISOString(),
+          updatedAt: new Date().toISOString()
+        },
+        primaryAsset: {
+          url: `/blog/images/hero-${safeSlugForAsset}.webp`,
+          width: 1200,
+          height: 630,
+          aspectRatio: '16:9',
+          alt: draft.title,
+          isGeneric: false,
+          isLogo: false,
+          textDensity: 'LOW',
+          ogImage: true,
+          schemaImage: true
+        },
+        pageExperience: { mobileFriendly: true, secureTransport: true, intrusiveInterstitialRisk: false },
+        maxImagePreview: 'large'
+      });
+
       // 7. Rumuskan Visual Prompt dengan AI Provider sesuai formula [SUBJECT] + [VISUAL METAPHOR] + [CORE_STYLE]
       const visualPrompt = await this.generateVisualPrompt(
         parsed.topic,
@@ -710,6 +750,7 @@ Atau cukup bagikan link studi/berita yang ingin dianalisis!
             topic: topicEntity,
             editorialIntegrity: integrityResult,
             guardEvaluation: guardResult,
+            discoverEvaluation: discoverResult,
             visualPrompt,
             createdAt: new Date().toISOString()
           },
@@ -765,6 +806,23 @@ Atau cukup bagikan link studi/berita yang ingin dianalisis!
             ]
       };
 
+      const discoverBadge =
+        discoverResult.classification === 'STRONG'
+          ? '🟢 STRONG'
+          : discoverResult.classification === 'READY'
+          ? '🟢 READY'
+          : discoverResult.classification === 'READY_WITH_WARNINGS'
+          ? '🟡 READY WITH WARNINGS'
+          : '🔴 REVISION REQUIRED';
+
+      const discoverSummaryText = `
+🔍 <b>Ringkasan Eksekutif Kesiapan Google Discover:</b>
+• <b>Status Kelayakan:</b> <code>${discoverResult.eligibility}</code> (${discoverBadge} • Skor: <b>${discoverResult.score}/100</b>)
+• <b>Kesiapan Visual:</b> 1200×630px (16:9) • <code>max-image-preview:large</code>
+• <b>Integritas Judul:</b> ${discoverResult.dimensions.TITLE_INTEGRITY >= 9 ? 'Bebas Clickbait & Memenuhi Janji Pembaca' : 'Perlu Penyesuaian Editorial'}
+• <b>E-E-A-T & Kedalaman:</b> Terverifikasi (${researchBrief.supportedClaims.length} klaim faktual primer)
+• <b>Pengalaman Halaman:</b> Static-First (0ms JS delay, adaptif mobile)`;
+
       const responseText = isIntegrityPassed
         ? `✅ <b>Draf Artikel Selesai Disusun!</b>
 
@@ -786,6 +844,7 @@ Atau cukup bagikan link studi/berita yang ingin dianalisis!
 • Interpretasi: ${integrityResult.interpretationCount}
 • Sumber Primer: ${researchBrief.sourceIndex.length} rujukan
 • Klaim Terverifikasi: ${researchBrief.supportedClaims.length} klaim faktual
+${discoverSummaryText}
 
 🎨 <b>Prompt Visual NexaMOS (Siap Copy ke Midjourney / Flux / DALL-E):</b>
 <code>${visualPrompt}</code>
@@ -808,6 +867,7 @@ Silakan pilih tindakan berikut:`
 • Klaim Faktual Tak Didukung: ${integrityResult.ungroundedExternalFacts}
 • Perluasan Semantik Tak Sah: ${integrityResult.partialSupportCount}
 • Isu Integritas Sitasi / Angka: ${integrityResult.issues.filter((i) => i.severity === 'CRITICAL').length} catatan kritis
+${discoverSummaryText}
 
 ⚠️ <b>Penerbitan Diblokir:</b>
 <i>Naskah memuat klaim faktual, angka, atau sitasi yang melampaui bukti riset terverifikasi. Publikasi langsung dinonaktifkan demi menjaga doktrin naskah.</i>

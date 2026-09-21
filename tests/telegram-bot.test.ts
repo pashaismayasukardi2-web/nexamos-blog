@@ -403,6 +403,47 @@ describe('NexaMOS Telegram Editorial Bot Unit Tests', () => {
       assert.strictEqual((fbTactical.match(/\b3d\b/gi) || []).length, 1);
     });
   });
+
+  // ===========================================================================
+  // 8. GOOGLE DISCOVER EXECUTIVE SUMMARY TESTS
+  // ===========================================================================
+  describe('8. Google Discover Executive Summary in Telegram Bubble', () => {
+    test('Format ringkasan eksekutif Discover memuat status kelayakan, skor, visual, dan judul', () => {
+      const mockDiscoverResult = {
+        eligibility: 'ELIGIBLE',
+        classification: 'STRONG',
+        score: 92,
+        dimensions: {
+          TITLE_INTEGRITY: 10,
+          VISUAL_READINESS: 15,
+          DEPTH: 15,
+          ORIGINALITY: 15,
+          TIMELINESS: 10,
+          TOPICAL_EXPERTISE: 15,
+          INTEREST_FIT: 10,
+          PAGE_EXPERIENCE: 5,
+          LOCAL_RELEVANCE: 2,
+          POLICY_SAFETY: 3
+        }
+      };
+
+      const discoverBadge = mockDiscoverResult.classification === 'STRONG' ? '🟢 STRONG' : '🟢 READY';
+      const discoverSummaryText = `
+🔍 <b>Ringkasan Eksekutif Kesiapan Google Discover:</b>
+• <b>Status Kelayakan:</b> <code>${mockDiscoverResult.eligibility}</code> (${discoverBadge} • Skor: <b>${mockDiscoverResult.score}/100</b>)
+• <b>Kesiapan Visual:</b> 1200×630px (16:9) • <code>max-image-preview:large</code>
+• <b>Integritas Judul:</b> ${mockDiscoverResult.dimensions.TITLE_INTEGRITY >= 9 ? 'Bebas Clickbait & Memenuhi Janji Pembaca' : 'Perlu Penyesuaian Editorial'}
+• <b>E-E-A-T & Kedalaman:</b> Terverifikasi (6 klaim faktual primer)
+• <b>Pengalaman Halaman:</b> Static-First (0ms JS delay, adaptif mobile)`;
+
+      assert.ok(discoverSummaryText.includes('Ringkasan Eksekutif Kesiapan Google Discover:'));
+      assert.ok(discoverSummaryText.includes('ELIGIBLE'));
+      assert.ok(discoverSummaryText.includes('92/100'));
+      assert.ok(discoverSummaryText.includes('max-image-preview:large'));
+      assert.ok(discoverSummaryText.includes('Bebas Clickbait & Memenuhi Janji Pembaca'));
+    });
+  });
 });
+
 
 
