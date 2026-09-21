@@ -29,6 +29,7 @@ const VALID_TEST_CONFIG: AIProviderConfig = {
   provider: 'gemini',
   apiKey: 'test-valid-key-gemini',
   model: 'gemini-3.8-flash',
+  baseUrl: 'https://generativelanguage.googleapis.com/v1beta/openai/',
   timeoutMs: 5000,
   maxRetries: 1
 };
@@ -54,7 +55,7 @@ function createBaseBrief(overrides: Partial<ResearchBrief> = {}): ResearchBrief 
         researchProjectId: 'proj-test-001',
         statement: 'CRM systems store customer interaction data.',
         claimType: 'FACTUAL',
-        importance: 'CORE',
+        importance: 'CRITICAL',
         status: 'SUPPORTED',
         evidenceIds: ['ev-01'],
         createdAt: '2026-03-01T00:00:00Z',
@@ -197,7 +198,7 @@ describe('NexaMOS Editorial Grounding & Draft Claim Integrity Suite', () => {
           researchProjectId: 'proj-test-001',
           statement: 'Lead magnets collect contact information in exchange for valuable content.',
           claimType: 'FACTUAL',
-          importance: 'CORE',
+          importance: 'CRITICAL',
           status: 'SUPPORTED',
           evidenceIds: ['ev-01'],
           createdAt: '',
@@ -230,7 +231,7 @@ describe('NexaMOS Editorial Grounding & Draft Claim Integrity Suite', () => {
           researchProjectId: 'proj-test-001',
           statement: 'Lead magnets exchange valuable content for contact information.',
           claimType: 'FACTUAL',
-          importance: 'CORE',
+          importance: 'CRITICAL',
           status: 'SUPPORTED',
           evidenceIds: ['ev-01'],
           createdAt: '',
@@ -292,8 +293,8 @@ describe('NexaMOS Editorial Grounding & Draft Claim Integrity Suite', () => {
           id: 'claim-01',
           researchProjectId: 'proj-test-001',
           statement: '73% of businesses use lead magnets to collect contact information.',
-          claimType: 'EMPIRICAL',
-          importance: 'CORE',
+          claimType: 'FACTUAL',
+          importance: 'CRITICAL',
           status: 'SUPPORTED',
           evidenceIds: ['ev-01'],
           createdAt: '',
@@ -333,8 +334,8 @@ describe('NexaMOS Editorial Grounding & Draft Claim Integrity Suite', () => {
           id: 'claim-01',
           researchProjectId: 'proj-test-001',
           statement: 'A study on 4,000 news posts from Facebook pages indicates that unusual punctuation increases reactions.',
-          claimType: 'EMPIRICAL',
-          importance: 'CORE',
+          claimType: 'FACTUAL',
+          importance: 'CRITICAL',
           status: 'SUPPORTED',
           evidenceIds: ['ev-01'],
           createdAt: '',
@@ -376,8 +377,8 @@ describe('NexaMOS Editorial Grounding & Draft Claim Integrity Suite', () => {
           id: 'claim-01',
           researchProjectId: 'proj-test-001',
           statement: '73.5% of surveyed publishers report higher initial clickthrough rates.',
-          claimType: 'EMPIRICAL',
-          importance: 'CORE',
+          claimType: 'FACTUAL',
+          importance: 'CRITICAL',
           status: 'SUPPORTED',
           evidenceIds: ['ev-01'],
           createdAt: '',
@@ -418,8 +419,8 @@ describe('NexaMOS Editorial Grounding & Draft Claim Integrity Suite', () => {
           id: 'claim-01',
           researchProjectId: 'proj-test-001',
           statement: 'Sensational headlines significantly amplify user engagement across social networks.',
-          claimType: 'EMPIRICAL',
-          importance: 'CORE',
+          claimType: 'FACTUAL',
+          importance: 'CRITICAL',
           status: 'SUPPORTED',
           evidenceIds: ['ev-01'],
           createdAt: '',
@@ -450,6 +451,24 @@ describe('NexaMOS Editorial Grounding & Draft Claim Integrity Suite', () => {
     assert.strictEqual(result.ungroundedExternalFacts, 0);
     assert.strictEqual(result.propositions[0].supportLevel, 'ENTAILED');
     assert.ok(result.propositions[0].evidenceIds.includes('ev-01'));
+  });
+
+  // =========================================================================
+  // Test 6E — Serial List & Normative Recommendation Protection
+  // =========================================================================
+  test('Test 6E — Serial List & Normative Recommendation: Kalimat rekomendasi dengan daftar serial tidak terpotong menjadi fragmen buntu', () => {
+    const brief = createBaseBrief();
+    const draft = createBaseDraft(
+      'Pemilik situs harus mengadopsi metrik yang lebih holistik, seperti keterlibatan pengguna, validasi konten, serta berbagai interaksi mikro lainnya.'
+    );
+
+    const result = auditor.audit(draft, brief);
+
+    assert.strictEqual(result.status, 'PASS');
+    assert.strictEqual(result.ungroundedExternalFacts, 0);
+    assert.strictEqual(result.propositions.length, 1, 'Kalimat tidak boleh dipotong menjadi fragmen terpisah');
+    assert.strictEqual(result.propositions[0].classification, 'ORIGINAL_ANALYSIS');
+    assert.strictEqual(result.propositions[0].supportLevel, 'NOT_APPLICABLE');
   });
 
   // =========================================================================
@@ -528,12 +547,24 @@ describe('NexaMOS Editorial Grounding & Draft Claim Integrity Suite', () => {
       evidenceIndex: [],
       sourceIndex: [],
       readiness: 'NOT_READY',
-      builtAt: '',
-      briefVersion: '1.0.0'
+      generatedAt: '2026-03-01T00:00:00Z'
     };
 
     const request: EditorialGenerationRequest = {
-      topic: { id: 'top-1', title: 'Topik', slug: 'topik', territory: 'TACTICAL', articleType: 'ANALYSIS', editorialRole: 'AUTHORITY', status: 'APPROVED', intent: {}, informationGain: { originalityType: [], expectedContribution: '', commodityRisk: 'LOW' }, evidencePlan: { requiredEvidenceLevel: 'E2', plannedSources: [], originalEvidenceRequired: false }, createdAt: '', updatedAt: '' },
+      topic: {
+        id: 'top-1',
+        title: 'Topik',
+        slug: 'topik',
+        territory: 'TACTICAL',
+        articleType: 'ANALYSIS',
+        editorialRole: 'AUTHORITY',
+        status: 'APPROVED',
+        intent: { primary: 'Informational' },
+        informationGain: { originalityType: [], expectedContribution: '', commodityRisk: 'LOW' },
+        evidencePlan: { requiredEvidenceLevel: 'E2', plannedSources: [], originalEvidenceRequired: false },
+        createdAt: '',
+        updatedAt: ''
+      },
       researchBrief: emptyBrief,
       articleType: 'ANALYSIS',
       editorialRole: 'AUTHORITY'
@@ -690,7 +721,7 @@ describe('NexaMOS Editorial Grounding & Draft Claim Integrity Suite', () => {
           researchProjectId: 'proj-telegram',
           statement: 'Lead magnet adalah aset digital yang mengumpulkan informasi kontak melalui pertukaran konten bernilai tambah.',
           claimType: 'FACTUAL',
-          importance: 'CORE',
+          importance: 'CRITICAL',
           status: 'SUPPORTED',
           evidenceIds: ['ev-01'],
           createdAt: '',

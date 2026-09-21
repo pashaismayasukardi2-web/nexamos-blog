@@ -221,17 +221,24 @@ export class DraftClaimAuditor {
   }
 
   /**
-   * Membelah kalimat majemuk menjadi proposisi terpisah jika masing-masing memiliki klaim independen
+   * Membelah kalimat majemuk menjadi proposisi terpisah jika masing-masing memiliki klaim independen.
+   * DILARANG membelah pada konjungsi enumerasi (, dan / , serta) yang memotong frasa atau daftar serial.
    */
   private splitCompoundSentence(sentence: string): string[] {
-    // Deteksi pemisahan yang wajar tanpa merusak frasa khusus
-    if (sentence.length < 50) return [sentence];
+    // 1. Jangan belah jika kalimat memuat enumerasi/daftar contoh
+    if (/seperti|misalnya|antara lain|contohnya|termasuk|such as|including/i.test(sentence)) {
+      return [sentence];
+    }
 
-    // Belah pada pola koordinatif yang jelas memuat dua klaim terpisah:
-    // e.g. "X melakukan A, dan Y melakukan B" atau "X melakukan A serta menurunkan B"
-    const splitRegex = /,\s*(?:dan|serta|sementara|namun|sedangkan|and|while)\s+/i;
+    // 2. Kalimat di bawah 80 karakter tidak perlu dibelah
+    if (sentence.length < 80) return [sentence];
+
+    // 3. Hanya belah jika ada konjungsi antarklausa kontras panjang (sementara / sedangkan / while)
+    // dan bagian kedua memiliki subjek serta predikat sendiri.
+    // DILARANG membelah pada ", dan" atau ", serta" karena mayoritas kasus adalah daftar serial (A, B, dan C).
+    const splitRegex = /,\s*(?:sementara|sedangkan|while)\s+(?=[a-z]{3,}\s+(?:harus|perlu|telah|akan|dapat|bisa|menunjukkan|menggunakan|melakukan|adalah|merupakan))/i;
     if (splitRegex.test(sentence)) {
-      const parts = sentence.split(splitRegex).map((p) => p.trim()).filter((p) => p.length > 15);
+      const parts = sentence.split(splitRegex).map((p) => p.trim()).filter((p) => p.length > 25);
       if (parts.length > 1) {
         return parts;
       }
@@ -506,11 +513,50 @@ export class DraftClaimAuditor {
       'pendekatan strategis terbaik',
       'rekomendasi praktis',
       'rekomendasi taktis',
+      'rekomendasi strategis',
+      'rekomendasi editorial',
       'dengan demikian, praktik',
       'dengan demikian, langkah',
       'dengan demikian, strategi',
       'dengan demikian, pendekatan',
-      'hal ini membuktikan bahwa'
+      'hal ini membuktikan bahwa',
+      // Rekomendasi Normatif & Preskriptif (Deontic Modality / Arahan Strategis)
+      'harus mengadopsi',
+      'harus mempertimbangkan',
+      'harus fokus',
+      'harus beralih',
+      'harus mulai',
+      'harus memastikan',
+      'perlu mengadopsi',
+      'perlu mempertimbangkan',
+      'perlu fokus',
+      'perlu beralih',
+      'perlu memastikan',
+      'perlu dibangun',
+      'perlu dipahami',
+      'perlu dicatat',
+      'pemilik situs harus',
+      'pemilik situs perlu',
+      'praktisi harus',
+      'praktisi perlu',
+      'penerbit harus',
+      'penerbit perlu',
+      'organisasi harus',
+      'organisasi perlu',
+      'sebaiknya ',
+      'seyogianya ',
+      'hendaknya ',
+      'patut ',
+      'prioritas utama',
+      'fokus utama',
+      'kunci keberhasilan',
+      'langkah strategis',
+      'langkah taktis',
+      'arah strategis',
+      'alih-alih hanya',
+      'alih-alih sekadar',
+      'bukan sekadar',
+      'bukan hanya'
     ];
     if (originalAnalysisMarkers.some((m) => textLower.includes(m))) {
       return 'ORIGINAL_ANALYSIS';
@@ -539,7 +585,11 @@ export class DraftClaimAuditor {
       purpose.includes('CONCLUSION')
     ) {
       if (!/\b\d+(\.\d+)?%/.test(text) && !/["“]([^"”]{5,})["”]/.test(text)) {
-        return 'NON_FACTUAL_EDITORIAL';
+        // Jangan beri toleransi non-faktual jika memuat klaim efisiensi/dampak operasional tanpa bukti
+        const hasImpactFluff = /\b(?:meningkatkan efisiensi|meminimalkan intervensi|menghemat|memangkas biaya|mengurangi beban|meningkatkan pendapatan)\b/i.test(text);
+        if (!hasImpactFluff) {
+          return 'NON_FACTUAL_EDITORIAL';
+        }
       }
     }
 
