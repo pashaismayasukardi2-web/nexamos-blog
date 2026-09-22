@@ -1,0 +1,1184 @@
+{
+  "draft": {
+    "id": "draft-mub3fnv8",
+    "topicId": "top-mub3ekw9",
+    "researchProjectId": "proj-mub3ekw9",
+    "title": "WhatsApp Bisnis API: Cara Kerja yang Harus Diketahui Tim Editorial",
+    "dek": "Analisis grounded mengenai mekanisme operasional WhatsApp Business API sebagai solusi komunikasi bisnis, dengan fokus pada identifikasi pengguna, proses onboarding, dan batasan kapasitas.",
+    "slug": "whatsapp-bisnis-api-cara-kerja-nya",
+    "territory": "TACTICAL",
+    "articleType": "HOW_TO",
+    "editorialRole": "AUTHORITY",
+    "thesis": "WhatsApp Business API menyediakan infrastruktur khusus untuk bisnis skala besar mengelola interaksi pelanggan melalui nomor telepon dan format pesan standar, namun implementasinya memerlukan koordinasi teknis dengan mitra resmi.",
+    "editorialAngle": "Analisis grounded mengenai mekanisme operasional WhatsApp Business API sebagai solusi komunikasi bisnis, dengan fokus pada identifikasi pengguna, proses onboarding, dan batasan kapasitas yang membedakannya dari platform konsumen biasa.",
+    "sections": [
+      {
+        "id": "sec-1",
+        "heading": "Memahami Identifikasi Pengguna dan Format Pesan API",
+        "content": "WhatsApp Business API memerlukan nomor telepon sebagai identifier pengguna dan menggunakan format alamat tertentu untuk mengirim pesan dua arah. Ini berarti bahwa setiap interaksi bisnis-pelanggan dimulai dan diakhiri dengan nomor telepon pelanggan. Pesan dikirim dalam struktur JSON yang memastikan interoperabilitas antara sistem backend bisnis dan aplikasi WhatsApp. Perbedaan fundamental dari WhatsApp reguler terletak pada otomatisasi aliran pesan yang mensyaratkan integrasi API, sehingga menghilangkan keterlibatan manual pengguna akhir.",
+        "order": 1,
+        "purpose": "CONTEXT",
+        "claimUsageIds": [
+          "cu-1"
+        ]
+      },
+      {
+        "id": "sec-2",
+        "heading": "Proses Onboarding: Langkah-langkah Teknis untuk Mendapatkan Akses",
+        "content": "Untuk mengirim pesan transaksional secara otomatis melalui WhatsApp, bisnis harus mendaftarkan nomor mereka melalui Self-Signup Guide atau program Tech Provider. Proses ini dimulai dengan pendaftaran nomor bisnis, di mana teknologi backend bisnis harus terhubung ke endpoint WhatsApp melalui HTTPS untuk mengirim payload pesan sesuai spesifikasi API. Implementasi ini mensyaratkan investasi sumber daya teknis dan pemilihan mitra distribusi yang telah terverifikasi oleh Meta untuk memastikan kelancaran integrasi.",
+        "order": 2,
+        "purpose": "ARGUMENT",
+        "claimUsageIds": [
+          "cu-2"
+        ]
+      },
+      {
+        "id": "sec-3",
+        "heading": "Batas Kapasitas: Mengelola 20 Hingga 50 Nomor Per Akun WABA",
+        "content": "Akun WhatsApp Business Account (WABA) dasar dibatasi hingga 20 nomor terverifikasi. Batas ini dapat ditingkatkan hingga 50 nomor dengan mengajukan permintaan dukungan tambahan kepada Meta, namun memerlukan verifikasi bisnis yang lebih mendalam. Pembaca harus menyadari bahwa penambahan jumlah nomor memerlukan evaluasi ulang kapabilitas infrastruktur dan kepatutan bisnis agar tetap memenuhi standar yang ditetapkan oleh platform.",
+        "order": 3,
+        "purpose": "EVIDENCE",
+        "claimUsageIds": [
+          "cu-3"
+        ]
+      },
+      {
+        "id": "sec-4",
+        "heading": "Jendela Layanan 24 Jam: Mempertahankan Interaksi Pelanggan Secara Efektif",
+        "content": "Setelah pelanggan mengirim pesanan pertama, bisnis memiliki jangka waktu 24 jam untuk merespons dengan pesan bebas tanpa harus mematuhi batasan pesan terproteksi. Setelah periode ini, balasan hanya dapat dilakukan jika bisnis telah mengirim pesan terakhir atau jika pelanggan mengirim pesan ulang untuk memulai jendela baru. Oleh karena itu, strategi manajemen respons harus dirancang untuk memaksimalkan efisiensi dalam batasan waktu yang ketat ini, memastikan bahwa pelanggan tidak kehilangan akses komunikasi dengan bisnis.",
+        "order": 4,
+        "purpose": "ANALYSIS",
+        "claimUsageIds": [
+          "cu-4"
+        ]
+      },
+      {
+        "id": "sec-5",
+        "heading": "Implikasi Praktis bagi Tim Editorial dan Operasional Bisnis",
+        "content": "Tim editorial harus bekerja sama erat dengan tim teknis untuk menyusun payload pesan otomatis yang sesuai dengan struktur JSON API. Pemilihan Tech Provider yang tepat akan mempengaruhi kecepatan implementasi, skalabilitas, dan dukungan teknis jangka panjang. Pembaca harus mempertimbangkan biaya operasional dan kompleksitas integrasi sebelum mengadopsi WhatsApp Business API sebagai saluran utama, karena investasi awal dan pemeliharaan teknis cukup signifikan.",
+        "order": 5,
+        "purpose": "IMPLICATION",
+        "claimUsageIds": []
+      }
+    ],
+    "claimUsages": [
+      {
+        "id": "cu-1",
+        "claimId": "claim-1",
+        "sectionId": "sec-1",
+        "usageType": "DIRECT",
+        "statement": "WhatsApp Business API memerlukan nomor telepon sebagai identifier pengguna dan menggunakan format alamat tertentu untuk mengirim pesan dua arah."
+      },
+      {
+        "id": "cu-2",
+        "claimId": "claim-2",
+        "sectionId": "sec-2",
+        "usageType": "DIRECT",
+        "statement": "Untuk mengirim pesan transaksional secara otomatis melalui WhatsApp, bisnis harus mendaftarkan nomor mereka melalui Self-Signup Guide atau program Tech Provider."
+      },
+      {
+        "id": "cu-3",
+        "claimId": "claim-3",
+        "sectionId": "sec-3",
+        "usageType": "DIRECT",
+        "statement": "Batas maksimal 20 nomor per akun WABA dapat ditingkatkan menjadi 50 nomor dengan permintaan dukungan tambahan."
+      },
+      {
+        "id": "cu-4",
+        "claimId": "claim-4",
+        "sectionId": "sec-4",
+        "usageType": "DIRECT",
+        "statement": "Pesanan pesan masuk dari pelanggan memulai jendela layanan 24 jam di mana bisnis dapat merespons dengan pesan bebas."
+      }
+    ],
+    "citationMap": [
+      {
+        "claimUsageId": "cu-1",
+        "claimId": "claim-1",
+        "sourceIds": [
+          "src-mub3en3y-21v7"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3en3y-21v7-10"
+        ]
+      },
+      {
+        "claimUsageId": "cu-2",
+        "claimId": "claim-2",
+        "sourceIds": [
+          "src-mub3en3y-21v7"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3en3y-21v7-17",
+          "evi-src-mub3en3y-21v7-13"
+        ]
+      },
+      {
+        "claimUsageId": "cu-3",
+        "claimId": "claim-3",
+        "sourceIds": [
+          "src-mub3en3y-21v7"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3en3y-21v7-20"
+        ]
+      },
+      {
+        "claimUsageId": "cu-4",
+        "claimId": "claim-4",
+        "sourceIds": [
+          "src-mub3en3y-21v7"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3en3y-21v7-31"
+        ]
+      }
+    ],
+    "status": "READY_FOR_EDITORIAL_REVIEW",
+    "generatedAt": "2026-09-21T10:19:37.748Z",
+    "generatorVersion": "real-ai-v1",
+    "promptVersion": "1.0.0"
+  },
+  "brief": {
+    "id": "brief-mub3f2nz",
+    "topicId": "top-mub3ekw9",
+    "researchProjectId": "proj-mub3ekw9",
+    "objective": "WhatsApp bisnis API, Cara kerja nya",
+    "answeredQuestions": [
+      {
+        "id": "rq-1",
+        "question": "Bagaimana arsitektur endpoint dan protokol enkripsi WhatsApp Business API memfasilitasi otomatisasi pengiriman pesan transaksional?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-2",
+        "question": "Apa saja parameter performa (SLA) yang harus dipantau untuk menjamin ketersediaan dan kecepatan delivery pesan bisnis?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-3",
+        "question": "Bagaimana proses onboarding dan verifikasi akun WhatsApp Business API memastikan keamanan identitas bisnis?",
+        "priority": "MEDIUM",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-4",
+        "question": "Apa perbandingan efisiensi biaya antara WhatsApp Business API dengan solusi SMS massal tradisional untuk skala enterprise?",
+        "priority": "LOW",
+        "status": "OPEN"
+      }
+    ],
+    "openQuestions": [],
+    "supportedClaims": [
+      {
+        "id": "claim-1",
+        "researchProjectId": "proj-mub3ekw9",
+        "statement": "WhatsApp Business API memerlukan nomor telepon sebagai identifier pengguna dan menggunakan format alamat tertentu untuk mengirim pesan dua arah.",
+        "claimType": "FACTUAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T10:19:08.173Z",
+        "updatedAt": "2026-09-21T10:19:08.173Z",
+        "supportingEvidenceIds": [
+          "evi-src-mub3en3y-21v7-10"
+        ]
+      },
+      {
+        "id": "claim-2",
+        "researchProjectId": "proj-mub3ekw9",
+        "statement": "Untuk mengirim pesan transaksional secara otomatis melalui WhatsApp, bisnis harus mendaftarkan nomor mereka melalui Self-Signup Guide atau program Tech Provider.",
+        "claimType": "FACTUAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T10:19:08.534Z",
+        "updatedAt": "2026-09-21T10:19:08.534Z",
+        "supportingEvidenceIds": [
+          "evi-src-mub3en3y-21v7-13",
+          "evi-src-mub3en3y-21v7-17"
+        ]
+      },
+      {
+        "id": "claim-3",
+        "researchProjectId": "proj-mub3ekw9",
+        "statement": "Batas maksimal 20 nomor per akun WABA dapat ditingkatkan menjadi 50 nomor dengan permintaan dukungan tambahan.",
+        "claimType": "FACTUAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T10:19:08.926Z",
+        "updatedAt": "2026-09-21T10:19:08.926Z",
+        "supportingEvidenceIds": [
+          "evi-src-mub3en3y-21v7-20"
+        ]
+      },
+      {
+        "id": "claim-4",
+        "researchProjectId": "proj-mub3ekw9",
+        "statement": "Pesanan pesan masuk dari pelanggan memulai jendela layanan 24 jam di mana bisnis dapat merespons dengan pesan bebas.",
+        "claimType": "FACTUAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T10:19:09.291Z",
+        "updatedAt": "2026-09-21T10:19:09.291Z",
+        "supportingEvidenceIds": [
+          "evi-src-mub3en3y-21v7-31"
+        ]
+      }
+    ],
+    "partiallySupportedClaims": [],
+    "disputedClaims": [],
+    "unverifiedClaims": [
+      {
+        "id": "claim-5",
+        "researchProjectId": "proj-mub3ekw9",
+        "statement": "Status Callback URL dapat dikonfigurasi untuk memantau performa delivery pesan transaksial di platform WhatsApp.",
+        "claimType": "FACTUAL",
+        "importance": "SUPPORTING",
+        "status": "PARTIALLY_SUPPORTED",
+        "createdAt": "2026-09-21T10:19:09.643Z",
+        "updatedAt": "2026-09-21T10:19:09.643Z",
+        "supportingEvidenceIds": []
+      },
+      {
+        "id": "claim-6",
+        "researchProjectId": "proj-mub3ekw9",
+        "statement": "Enkripsi ujung-ke-ujung WhatsApp Business API memastikan keamanan komunikasi bisnis-pelanggan.",
+        "claimType": "FACTUAL",
+        "importance": "SUPPORTING",
+        "status": "PARTIALLY_SUPPORTED",
+        "createdAt": "2026-09-21T10:19:09.984Z",
+        "updatedAt": "2026-09-21T10:19:09.984Z",
+        "supportingEvidenceIds": []
+      }
+    ],
+    "unsupportedClaims": [],
+    "internalKnowledge": [],
+    "originalAnalysis": [],
+    "keyFindings": [
+      {
+        "id": "finding-01",
+        "researchProjectId": "proj-mub3ekw9",
+        "statement": "WhatsApp Business API memerlukan nomor telepon sebagai identifier pengguna dan menggunakan format alamat tertentu untuk mengirim pesan dua arah.",
+        "supportingClaimIds": [
+          "claim-1",
+          "claim-2",
+          "claim-3",
+          "claim-4"
+        ],
+        "confidence": "HIGH",
+        "limitations": [],
+        "createdAt": "2026-09-21T10:19:10.271Z",
+        "updatedAt": "2026-09-21T10:19:10.271Z"
+      }
+    ],
+    "limitations": [],
+    "researchGaps": [],
+    "recommendedEditorialAngle": "Analisis strategis ter-grounding mengenai WhatsApp bisnis API, Cara kerja nya",
+    "sourceIndex": [
+      {
+        "sourceId": "src-mub3en3y-21v7",
+        "title": "WhatsApp bisnis API, Cara kerja nya",
+        "url": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com",
+        "canonicalUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com",
+        "publisher": "Referensi Web",
+        "sourceType": "INDUSTRY_RESEARCH",
+        "authorityScore": 85,
+        "publicationAllowed": true
+      }
+    ],
+    "evidenceIndex": [
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-6",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "WhatsApp Business Platform, previously known as the WhatsApp Business API",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-7",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "Twilio offers access to the WhatsApp Business Platform. Developers can use WhatsApp with all of Twilio&#x27;s products, including the Programmable Messaging API, Conversations API, Twilio Flex and Studio. For more information, see WhatsApp Business A",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-10",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "On WhatsApp, users message each other using their phone numbers as identifiers. To send and receive WhatsApp messages using the Twilio Programmable Messaging API, you&#x27;ll need a phone number as well. The Twilio API addresses WhatsApp users and yo",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-42",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "Within a WhatsApp session, you can send freeform messages using the Programmable Messaging API. Freeform messages may include text, media and certain rich messages created with Content Templates .",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-20",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "Businesses with a verified Meta Business Manager account can have up to 20 phone numbers. An exception for up to 50 phone numbers can be requested by opening a support ticket. Higher limits may be made available with a second appeal and a valid use c",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-30",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "To have 2-way conversations with end users, you need to be able to receive messages from them. Users can send your business messages either directly or in response to a templated notification.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-17",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "You can register new numbers for WhatsApp directly in the Twilio Console by following our Self-Signup Guide for WhatsApp . If you are an ISV following the WhatsApp Tech Provider Program , you&#x27;ll need to request to have WhatsApp numbers registere",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-2",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "WhatsApp is the most popular messaging app in many parts of the world. With the WhatsApp Business Platform with Twilio , you can send notifications , have two-way conversations , and build chatbots. If you&#x27;re trying to reach and better converse ",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-3",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "WhatsApp has three messaging products:",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-4",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "WhatsApp Consumer app, with users around the globe",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-9",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "Sending messages to end users without an opt-in may result in users blocking your business and may ultimately lead to the suspension of your WhatsApp Business account.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-15",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "WhatsApp uses your Meta Business Manager account to identify your business and associate your WhatsApp Business Account (WABA) with it. To scale with WhatsApp, you will also need to verify your Meta Business Manager account. You can create or connect",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-24",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "Once your number has been enabled for WhatsApp, it can be used as a WhatsApp Sender. Clicking on a specific Sender takes you to its specific Configuration page. This includes the Endpoint configuration section, where you can specify what action Twili",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-41",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "WhatsApp incoming messages are fully supported by TwiML, allowing you to seamlessly use your existing SMS app with WhatsApp. For more information, check out Documentation on How to Use TwiML .",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-45",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "You can set the Status Callback URL in the Console, or when you send an individual outbound message, by including the StatusCallback parameter. You can set the status callback URL in different parts of the Twilio Console depending on your messaging s",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-23",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "Businesses that onboarded before January 2023, and those that already had higher limits, are exempt from these limitations. WhatsApp reserves the right to restrict the numbers and WABAs on an account at its discretion, including if it sees evidence o",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-31",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "A customer service window begins when a user sends a message to your app. Customer service windows are valid for 24 hours after the most recently received message, during which you can communicate with customers using free-form messages. To send a me",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-13",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "To use WhatsApp messaging in production apps, you must enable WhatsApp on your Twilio number. For a step-by-step walkthrough of the process, visit our Self-Signup Guide for WhatsApp . If you&#x27;re registering for WhatsApp on behalf of a third party",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-14",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "For information about using a non-Twilio number with WhatsApp, check out our Support guide Can I activate my own phone number for WhatsApp on Twilio?",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3en3y-21v7-26",
+        "sourceId": "src-mub3en3y-21v7",
+        "quote": "WhatsApp requires that business-initiated notifications sent by your application be templated and pre-registered, with the exception of messages sent as a reply to a user-initiated message. (See Conversational Messaging on WhatsApp for more details).",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      }
+    ],
+    "readiness": "READY_FOR_EDITORIAL",
+    "readinessReason": "Kecukupan bukti riset terpenuhi: 4 klaim faktual berhasil diverifikasi.",
+    "generatedAt": "2026-09-21T10:19:10.271Z"
+  },
+  "topic": {
+    "id": "top-mub3ekw9",
+    "title": "WhatsApp bisnis API, Cara kerja nya",
+    "slug": "whatsapp-bisnis-api-cara-kerja-nya",
+    "territory": "TACTICAL",
+    "recommendedArticleType": "HOW_TO",
+    "editorialRole": "AUTHORITY",
+    "audience": {
+      "segment": "Enterprise Content Leaders"
+    },
+    "problem": "WhatsApp bisnis API, Cara kerja nya",
+    "intent": {
+      "primary": "WhatsApp bisnis API, Cara kerja nya"
+    },
+    "thesis": null,
+    "whyNow": null,
+    "status": "APPROVED",
+    "informationGain": {
+      "originalityType": [
+        "ORIGINAL_FRAMEWORK"
+      ],
+      "expectedContribution": "Arsitektur informasi mandiri",
+      "commodityRisk": "LOW"
+    },
+    "evidencePlan": {
+      "requiredEvidenceLevel": "E2",
+      "plannedSources": [
+        "https://www.twilio.com/docs/whatsapp/api?utm_source=chatgpt.com"
+      ],
+      "originalEvidenceRequired": false
+    },
+    "businessRelevance": {
+      "objective": "Thought Leadership",
+      "funnelRole": "TOFU"
+    },
+    "distributionTargets": [
+      "GOOGLE_SEARCH",
+      "GOOGLE_AI"
+    ],
+    "createdAt": "2026-09-21T10:18:47.241Z",
+    "updatedAt": "2026-09-21T10:18:47.241Z"
+  },
+  "editorialIntegrity": {
+    "status": "FAIL",
+    "draftClaimAudit": {
+      "status": "FAIL",
+      "propositions": [
+        {
+          "propositionId": "prop-1",
+          "sectionId": "sec-1",
+          "text": "WhatsApp Business API memerlukan nomor telepon sebagai identifier pengguna dan menggunakan format alamat tertentu untuk mengirim pesan dua arah.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-2",
+          "sectionId": "sec-1",
+          "text": "Ini berarti bahwa setiap interaksi bisnis-pelanggan dimulai dan diakhiri dengan nomor telepon pelanggan.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-3",
+          "sectionId": "sec-1",
+          "text": "Pesan dikirim dalam struktur JSON yang memastikan interoperabilitas antara sistem backend bisnis dan aplikasi WhatsApp.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-4",
+          "sectionId": "sec-1",
+          "text": "Perbedaan fundamental dari WhatsApp reguler terletak pada otomatisasi aliran pesan yang mensyaratkan integrasi API, sehingga menghilangkan keterlibatan manual pengguna akhir.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-5",
+          "sectionId": "sec-2",
+          "text": "Untuk mengirim pesan transaksional secara otomatis melalui WhatsApp, bisnis harus mendaftarkan nomor mereka melalui Self-Signup Guide atau program Tech Provider.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-2"
+          ],
+          "evidenceIds": [
+            "evi-src-mub3en3y-21v7-13",
+            "evi-src-mub3en3y-21v7-17"
+          ],
+          "sourceIds": [
+            "src-mub3en3y-21v7"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-6",
+          "sectionId": "sec-2",
+          "text": "Proses ini dimulai dengan pendaftaran nomor bisnis, di mana teknologi backend bisnis harus terhubung ke endpoint WhatsApp melalui HTTPS untuk mengirim payload pesan sesuai spesifikasi API.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-2"
+          ],
+          "evidenceIds": [
+            "evi-src-mub3en3y-21v7-13",
+            "evi-src-mub3en3y-21v7-17"
+          ],
+          "sourceIds": [
+            "src-mub3en3y-21v7"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-7",
+          "sectionId": "sec-2",
+          "text": "Implementasi ini mensyaratkan investasi sumber daya teknis dan pemilihan mitra distribusi yang telah terverifikasi oleh Meta untuk memastikan kelancaran integrasi.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "UNSUPPORTED",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Tidak ditemukan klaim riset dengan kesesuaian semantik yang mencukupi.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-8",
+          "sectionId": "sec-3",
+          "text": "Akun WhatsApp Business Account (WABA) dasar dibatasi hingga 20 nomor terverifikasi.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-3"
+          ],
+          "evidenceIds": [
+            "evi-src-mub3en3y-21v7-20"
+          ],
+          "sourceIds": [
+            "src-mub3en3y-21v7"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-3 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-9",
+          "sectionId": "sec-3",
+          "text": "Batas ini dapat ditingkatkan hingga 50 nomor dengan mengajukan permintaan dukungan tambahan kepada Meta, namun memerlukan verifikasi bisnis yang lebih mendalam.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-3"
+          ],
+          "evidenceIds": [
+            "evi-src-mub3en3y-21v7-20"
+          ],
+          "sourceIds": [
+            "src-mub3en3y-21v7"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-3 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-10",
+          "sectionId": "sec-3",
+          "text": "Pembaca harus menyadari bahwa penambahan jumlah nomor memerlukan evaluasi ulang kapabilitas infrastruktur dan kepatutan bisnis agar tetap memenuhi standar yang ditetapkan oleh platform.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-3"
+          ],
+          "evidenceIds": [
+            "evi-src-mub3en3y-21v7-20"
+          ],
+          "sourceIds": [
+            "src-mub3en3y-21v7"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-3 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-11",
+          "sectionId": "sec-4",
+          "text": "Setelah pelanggan mengirim pesanan pertama, bisnis memiliki jangka waktu 24 jam untuk merespons dengan pesan bebas tanpa harus mematuhi batasan pesan terproteksi.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-12",
+          "sectionId": "sec-4",
+          "text": "Setelah periode ini, balasan hanya dapat dilakukan jika bisnis telah mengirim pesan terakhir atau jika pelanggan mengirim pesan ulang untuk memulai jendela baru.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-13",
+          "sectionId": "sec-4",
+          "text": "Oleh karena itu, strategi manajemen respons harus dirancang untuk memaksimalkan efisiensi dalam batasan waktu yang ketat ini, memastikan bahwa pelanggan tidak kehilangan akses komunikasi dengan bisnis.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-14",
+          "sectionId": "sec-5",
+          "text": "Tim editorial harus bekerja sama erat dengan tim teknis untuk menyusun payload pesan otomatis yang sesuai dengan struktur JSON API.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-15",
+          "sectionId": "sec-5",
+          "text": "Pemilihan Tech Provider yang tepat akan mempengaruhi kecepatan implementasi, skalabilitas, dan dukungan teknis jangka panjang.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-16",
+          "sectionId": "sec-5",
+          "text": "Pembaca harus mempertimbangkan biaya operasional dan kompleksitas integrasi sebelum mengadopsi WhatsApp Business API sebagai saluran utama, karena investasi awal dan pemeliharaan teknis cukup signifikan.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        }
+      ],
+      "groundedExternalFacts": 5,
+      "ungroundedExternalFacts": 1,
+      "partialSupportCount": 0,
+      "originalAnalysisCount": 6,
+      "interpretationCount": 0,
+      "internalKnowledgeCount": 0,
+      "nonFactualCount": 4,
+      "numericClaimsTotal": 0,
+      "unsupportedNumericCount": 0,
+      "citationFailuresCount": 0,
+      "issues": [
+        {
+          "code": "UNGROUNDED_EXTERNAL_FACT",
+          "severity": "CRITICAL",
+          "message": "Proposisi faktual eksternal 'prop-7' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"Implementasi ini mensyaratkan investasi sumber daya teknis dan pemilihan mitra distribusi yang telah terverifikasi oleh Meta untuk memastikan kelancaran integrasi.\"",
+          "propositionId": "prop-7",
+          "sectionId": "sec-2",
+          "snippet": "Implementasi ini mensyaratkan investasi sumber daya teknis dan pemilihan mitra distribusi yang telah terverifikasi oleh Meta untuk memastikan kelancaran integrasi."
+        }
+      ],
+      "summary": "DraftClaimAuditor: GAGAL. Terdeteksi 1 klaim eksternal tak berdasar / perluasan semantik dan 1 isu integritas.",
+      "auditedAt": "2026-09-21T10:19:37.753Z"
+    },
+    "groundingGuard": {
+      "status": "PASS",
+      "issues": [],
+      "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+    },
+    "propositions": [
+      {
+        "propositionId": "prop-1",
+        "sectionId": "sec-1",
+        "text": "WhatsApp Business API memerlukan nomor telepon sebagai identifier pengguna dan menggunakan format alamat tertentu untuk mengirim pesan dua arah.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-2",
+        "sectionId": "sec-1",
+        "text": "Ini berarti bahwa setiap interaksi bisnis-pelanggan dimulai dan diakhiri dengan nomor telepon pelanggan.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-3",
+        "sectionId": "sec-1",
+        "text": "Pesan dikirim dalam struktur JSON yang memastikan interoperabilitas antara sistem backend bisnis dan aplikasi WhatsApp.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-4",
+        "sectionId": "sec-1",
+        "text": "Perbedaan fundamental dari WhatsApp reguler terletak pada otomatisasi aliran pesan yang mensyaratkan integrasi API, sehingga menghilangkan keterlibatan manual pengguna akhir.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-5",
+        "sectionId": "sec-2",
+        "text": "Untuk mengirim pesan transaksional secara otomatis melalui WhatsApp, bisnis harus mendaftarkan nomor mereka melalui Self-Signup Guide atau program Tech Provider.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-2"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3en3y-21v7-13",
+          "evi-src-mub3en3y-21v7-17"
+        ],
+        "sourceIds": [
+          "src-mub3en3y-21v7"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-6",
+        "sectionId": "sec-2",
+        "text": "Proses ini dimulai dengan pendaftaran nomor bisnis, di mana teknologi backend bisnis harus terhubung ke endpoint WhatsApp melalui HTTPS untuk mengirim payload pesan sesuai spesifikasi API.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-2"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3en3y-21v7-13",
+          "evi-src-mub3en3y-21v7-17"
+        ],
+        "sourceIds": [
+          "src-mub3en3y-21v7"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-7",
+        "sectionId": "sec-2",
+        "text": "Implementasi ini mensyaratkan investasi sumber daya teknis dan pemilihan mitra distribusi yang telah terverifikasi oleh Meta untuk memastikan kelancaran integrasi.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "UNSUPPORTED",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Tidak ditemukan klaim riset dengan kesesuaian semantik yang mencukupi.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-8",
+        "sectionId": "sec-3",
+        "text": "Akun WhatsApp Business Account (WABA) dasar dibatasi hingga 20 nomor terverifikasi.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-3"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3en3y-21v7-20"
+        ],
+        "sourceIds": [
+          "src-mub3en3y-21v7"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-3 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-9",
+        "sectionId": "sec-3",
+        "text": "Batas ini dapat ditingkatkan hingga 50 nomor dengan mengajukan permintaan dukungan tambahan kepada Meta, namun memerlukan verifikasi bisnis yang lebih mendalam.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-3"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3en3y-21v7-20"
+        ],
+        "sourceIds": [
+          "src-mub3en3y-21v7"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-3 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-10",
+        "sectionId": "sec-3",
+        "text": "Pembaca harus menyadari bahwa penambahan jumlah nomor memerlukan evaluasi ulang kapabilitas infrastruktur dan kepatutan bisnis agar tetap memenuhi standar yang ditetapkan oleh platform.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-3"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3en3y-21v7-20"
+        ],
+        "sourceIds": [
+          "src-mub3en3y-21v7"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-3 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-11",
+        "sectionId": "sec-4",
+        "text": "Setelah pelanggan mengirim pesanan pertama, bisnis memiliki jangka waktu 24 jam untuk merespons dengan pesan bebas tanpa harus mematuhi batasan pesan terproteksi.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-12",
+        "sectionId": "sec-4",
+        "text": "Setelah periode ini, balasan hanya dapat dilakukan jika bisnis telah mengirim pesan terakhir atau jika pelanggan mengirim pesan ulang untuk memulai jendela baru.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-13",
+        "sectionId": "sec-4",
+        "text": "Oleh karena itu, strategi manajemen respons harus dirancang untuk memaksimalkan efisiensi dalam batasan waktu yang ketat ini, memastikan bahwa pelanggan tidak kehilangan akses komunikasi dengan bisnis.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-14",
+        "sectionId": "sec-5",
+        "text": "Tim editorial harus bekerja sama erat dengan tim teknis untuk menyusun payload pesan otomatis yang sesuai dengan struktur JSON API.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-15",
+        "sectionId": "sec-5",
+        "text": "Pemilihan Tech Provider yang tepat akan mempengaruhi kecepatan implementasi, skalabilitas, dan dukungan teknis jangka panjang.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-16",
+        "sectionId": "sec-5",
+        "text": "Pembaca harus mempertimbangkan biaya operasional dan kompleksitas integrasi sebelum mengadopsi WhatsApp Business API sebagai saluran utama, karena investasi awal dan pemeliharaan teknis cukup signifikan.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      }
+    ],
+    "groundedExternalFacts": 5,
+    "ungroundedExternalFacts": 1,
+    "partialSupportCount": 0,
+    "originalAnalysisCount": 6,
+    "interpretationCount": 0,
+    "internalKnowledgeCount": 0,
+    "nonFactualCount": 4,
+    "numericClaimsTotal": 0,
+    "unsupportedNumericCount": 0,
+    "citationFailuresCount": 0,
+    "issues": [
+      {
+        "code": "UNGROUNDED_EXTERNAL_FACT",
+        "severity": "CRITICAL",
+        "message": "Proposisi faktual eksternal 'prop-7' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"Implementasi ini mensyaratkan investasi sumber daya teknis dan pemilihan mitra distribusi yang telah terverifikasi oleh Meta untuk memastikan kelancaran integrasi.\"",
+        "propositionId": "prop-7",
+        "sectionId": "sec-2",
+        "snippet": "Implementasi ini mensyaratkan investasi sumber daya teknis dan pemilihan mitra distribusi yang telah terverifikasi oleh Meta untuk memastikan kelancaran integrasi."
+      }
+    ],
+    "summary": "Editorial Integrity Gate: FAIL. Ditemukan 1 klaim faktual tak ter-grounding dan 1 catatan kritis. Publikasi diblokir.",
+    "evaluatedAt": "2026-09-21T10:19:37.748Z"
+  },
+  "guardEvaluation": {
+    "status": "PASS",
+    "issues": [],
+    "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+  },
+  "discoverEvaluation": {
+    "articleId": "draft-mub3fnv8",
+    "checks": [
+      {
+        "checkId": "DISCOVER_ELIGIBILITY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Artikel memenuhi seluruh kriteria kelayakan dasar Google Discover."
+      },
+      {
+        "checkId": "DISCOVER_ORIGINALITY",
+        "dimension": "ORIGINALITY",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Orisinalitas konten tinggi, didukung oleh data riset dan kerangka kerja konseptual orisinal."
+      },
+      {
+        "checkId": "DISCOVER_DEPTH",
+        "dimension": "DEPTH",
+        "status": "WARNING",
+        "scoreContribution": 10,
+        "summary": "Tingkat kedalaman konten: ADEQUATE."
+      },
+      {
+        "checkId": "DISCOVER_TIMELINESS",
+        "dimension": "TIMELINESS",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Konten terkini dengan aktualitas tinggi."
+      },
+      {
+        "checkId": "DISCOVER_INTEREST_FIT",
+        "dimension": "INTEREST_FIT",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Memiliki dasar minat audiens yang kuat berdasarkan dinamika pasar dan urgensi topik."
+      },
+      {
+        "checkId": "DISCOVER_TOPICAL_EXPERTISE",
+        "dimension": "TOPICAL_EXPERTISE",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Status keahlian topikal: DEVELOPING (0 artikel terhubung di territory TACTICAL)."
+      },
+      {
+        "checkId": "DISCOVER_LOCAL_RELEVANCE",
+        "dimension": "LOCAL_RELEVANCE",
+        "status": "PASS",
+        "scoreContribution": 2,
+        "summary": "Topik berskala global yang tetap memenuhi syarat kelayakan Discover."
+      },
+      {
+        "checkId": "DISCOVER_TITLE_INTEGRITY",
+        "dimension": "TITLE_INTEGRITY",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Judul berwibawa, menangkap esensi konten dengan akurat, dan bebas dari clickbait."
+      },
+      {
+        "checkId": "DISCOVER_VISUAL_READINESS",
+        "dimension": "VISUAL_READINESS",
+        "status": "PASS",
+        "scoreContribution": 15,
+        "summary": "Aset visual beresolusi tinggi, berformat lanskap, bebas logo, dan mendukung max-image-preview:large."
+      },
+      {
+        "checkId": "DISCOVER_PAGE_EXPERIENCE",
+        "dimension": "PAGE_EXPERIENCE",
+        "status": "WARNING",
+        "scoreContribution": 5,
+        "summary": "Status pengalaman halaman: UNKNOWN."
+      },
+      {
+        "checkId": "DISCOVER_POLICY_SAFETY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Konten aman dan mematuhi seluruh panduan kebijakan publikasi Google Discover."
+      }
+    ],
+    "issues": [
+      {
+        "code": "INSUFFICIENT_TOPIC_DEPTH",
+        "checkId": "DISCOVER_DEPTH",
+        "dimension": "DEPTH",
+        "severity": "INFO",
+        "message": "Kedalaman naskah cukup memadai, namun belum mencakup limitasi atau implikasi praktis menyeluruh.",
+        "location": "sections",
+        "recommendation": "Pertimbangkan menambahkan sudut pandang tandingan (counterpoint) untuk bobot analisis optimal."
+      }
+    ],
+    "recommendations": [
+      {
+        "type": "EDITORIAL_IMPROVEMENT",
+        "title": "Peningkatan Kedalaman & Orisinalitas [INSUFFICIENT_TOPIC_DEPTH]",
+        "description": "Kedalaman naskah cukup memadai, namun belum mencakup limitasi atau implikasi praktis menyeluruh.",
+        "suggestedAction": "Pertimbangkan menambahkan sudut pandang tandingan (counterpoint) untuk bobot analisis optimal.",
+        "crossEngineDestination": "EDITORIAL"
+      }
+    ],
+    "dimensions": {
+      "ORIGINALITY": 10,
+      "DEPTH": 10,
+      "TIMELINESS": 10,
+      "TOPICAL_EXPERTISE": 10,
+      "INTEREST_FIT": 10,
+      "TITLE_INTEGRITY": 10,
+      "VISUAL_READINESS": 15,
+      "PAGE_EXPERIENCE": 5,
+      "LOCAL_RELEVANCE": 2,
+      "POLICY_SAFETY": 3
+    },
+    "score": 85,
+    "classification": "READY",
+    "eligibility": "ELIGIBLE",
+    "criticalIneligibilityReasons": [],
+    "validatedAt": "2026-09-21T10:19:37.757Z",
+    "policyVersion": "DISCOVER_READINESS_POLICY_V1"
+  },
+  "visualPrompt": "WhatsApp Business API, rotating cylindrical relay tower containing upturned brass communication channels that sort incoming user requests into distinct vertical pathways based on their verified status, 3D isometric illustration, soft clay rendering, rounded geometric objects, soft studio lighting, minimal marketing illustration, clean composition, premium modern aesthetic. Clear visual hierarchy, single dominant focal object, generous negative space, no text, no logos. --ar 16:9",
+  "createdAt": "2026-09-21T10:19:38.368Z"
+}

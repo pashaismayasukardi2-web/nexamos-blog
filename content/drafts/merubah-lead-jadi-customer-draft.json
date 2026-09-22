@@ -1,0 +1,1203 @@
+{
+  "draft": {
+    "id": "draft-mucgmhwo",
+    "topicId": "top-mucglfb6",
+    "researchProjectId": "proj-mucglfb7",
+    "title": "Merubah Lead Jadi Customer: Strategi Kolaboratif Pemasaran-Penjualan yang Terbukti",
+    "dek": "Proses konversi lead menjadi customer bukanlah transaksi tunggal, melainkan sebuah journey kolaboratif yang mensyaratkan nurturing granular dan personalisasi otomatis untuk mengubah MQL menjadi SQL, serta mengoptimalki rasio konversi per channel.",
+    "slug": "merubah-lead-jadi-customer",
+    "territory": "TACTICAL",
+    "articleType": "ANALYSIS",
+    "editorialRole": "AUTHORITY",
+    "thesis": "Proses konversi lead menjadi customer bukanlah transaksi tunggal, melainkan sebuah journey kolaboratif yang mensyaratkan nurturing granular dan personalisasi otomatis untuk mengubah MQL menjadi SQL, serta mengoptimalkan rasio konversi per channel.",
+    "editorialAngle": "Menolak pendekatan 'lead-to-customer' yang statis dan komoditas dengan menguraikan arsitektur kolaboratif pemasaran-penjualan, menyajikan framework nurturing berbasis perilaku, dan memperkenalkan metrik LCR granular sebagai radar strategis.",
+    "sections": [
+      {
+        "id": "sec-1",
+        "heading": "Konversi Lead: Bukan Transaksi, Melainkan Journey Kolaboratif",
+        "content": "Lead conversion adalah proses berkelanjutan yang mensyaratkan koordinasi erat antara tim pemasaran (lead generation) dan tim penjualan (lead nurturing). Tanpa nurturing yang sistematis di setiap tahapan, leads berpotensi hilang atau masuk ke fase 'dead zone'. Oleh karena itu, praktisi harus membuang pandangan statis bahwa konversi adalah event tunggal dan mengadopsi pendekatan journey kolaboratif.",
+        "order": 1,
+        "purpose": "CONTEXT",
+        "claimUsageIds": [
+          "cu-1"
+        ]
+      },
+      {
+        "id": "sec-2",
+        "heading": "Nurturing Granular: Mengubah MQL Menjadi SQL Secara Otomatis",
+        "content": "Tim pemasaran harus merancang nurturing cadence yang sesuai dengan tahapan maturity leads (MQL). Trigger-based automation (misalnya: download content, klik demo request) digunakan untuk scoring dan qualifying leads menjadi SQL. Framework nurturing harus mencakup personalisasi konten berdasarkan industry, size company, dan pain points spesifik agar nurturing lebih relevan dan efektif.",
+        "order": 2,
+        "purpose": "FRAMEWORK",
+        "claimUsageIds": [
+          "cu-2",
+          "cu-3"
+        ]
+      },
+      {
+        "id": "sec-3",
+        "heading": "Personalisasi dan Email Nurture Campaign: Senjata Utama Konversi",
+        "content": "Email nurture campaign yang dipicu oleh behavioral triggers (abandon cart, low engagement) jauh lebih efektif daripada blast email massal. Personalisasi dinamis (dynamic content blocks, smart CTAs) meningkatkan click-through rate dan mengidentifikasi leads dengan intent tinggi. Analisis performance nurture campaign (open rate, click rate, conversion rate) memberikan feedback loop untuk refining nurturing playbook.",
+        "order": 3,
+        "purpose": "ANALYSIS",
+        "claimUsageIds": [
+          "cu-4"
+        ]
+      },
+      {
+        "id": "sec-4",
+        "heading": "Optimalkan LCR: Granular Analysis Per Channel dan Tahap",
+        "content": "Menghitung LCR secara keseluruhan sering menyesatkan; praktisi harus breakdown rasio ini per channel (SEO, SEM, social ads, event) dan per tahap funnel. Identifikasi channel dan tahap dengan LCR tertinggi untuk mengalokasikan budget dan resources secara optimal. Gunakan dashboard granular untuk tracking LCR secara real-time dan melakukan pivot strategi jika performa salah satu channel menurun.",
+        "order": 4,
+        "purpose": "PRACTICAL_APPLICATION",
+        "claimUsageIds": [
+          "cu-5"
+        ]
+      },
+      {
+        "id": "sec-5",
+        "heading": "Kolaborasi Sales-Pemasaran: Kunci Akhir Konversi",
+        "content": "Sales team harus menggunakan SQL qualification criteria yang konsisten agar nurturing pemasaran tepat sasaran. Implementasi shared CRM platform (misalnya Salesforce, HubSpot) memfasilitasi visibility end-to-end journey dan accountability kolaboratif. Regular alignment meeting antara sales dan marketing (lead review meetings) memastikan nurturing playbook selalu relevan dengan buyer persona aktual.",
+        "order": 5,
+        "purpose": "IMPLICATION",
+        "claimUsageIds": [
+          "cu-6"
+        ]
+      },
+      {
+        "id": "sec-6",
+        "heading": "Kesimpulan: Merancang Customer Acquisition Engine yang Berkelanjutan",
+        "content": "Merubah lead menjadi customer mensyaratkan arsitektur yang terintegrasi: pemasaran menghasilkan awareness, nurturing mengembangkan interest, dan sales menutup deal. Optimalisasi engine ini dimulai dari understanding bahwa konversi adalah journey, bukan event. Praktisi harus mengadopsi kombinasi personalisasi otomatis, nurturing pipeline yang granular, dan analisis LCR per channel untuk menciptakan growth engine yang predictable.",
+        "order": 6,
+        "purpose": "CONCLUSION",
+        "claimUsageIds": []
+      }
+    ],
+    "claimUsages": [
+      {
+        "id": "cu-1",
+        "claimId": "claim-1",
+        "sectionId": "sec-1",
+        "usageType": "PARAPHRASED",
+        "statement": "Lead conversion adalah proses kolaboratif antara pemasaran dan penjualan untuk mengubah calon pelanggan menjadi pelanggan melalui strategi nurturing."
+      },
+      {
+        "id": "cu-2",
+        "claimId": "claim-2",
+        "sectionId": "sec-2",
+        "usageType": "PARAPHRASED",
+        "statement": "Calon pelanggan melewati tahapan MQL dan SQL sebelum menjadi pelanggan, sehingga dibutuhkan nurturing di setiap tahap."
+      },
+      {
+        "id": "cu-3",
+        "claimId": "claim-1",
+        "sectionId": "sec-2",
+        "usageType": "PARAPHRASED",
+        "statement": "Lead conversion adalah proses kolaboratif antara pemasaran dan penjualan untuk mengubah calon pelanggan menjadi pelanggan melalui strategi nurturing."
+      },
+      {
+        "id": "cu-4",
+        "claimId": "claim-3",
+        "sectionId": "sec-3",
+        "usageType": "PARAPHRASED",
+        "statement": "Personalisasi dan nurturing email otomatis meningkatkan konversi dengan mengidentifikasi perilaku calon pelanggan yang memiliki niat tinggi."
+      },
+      {
+        "id": "cu-5",
+        "claimId": "claim-5",
+        "sectionId": "sec-4",
+        "usageType": "PARAPHRASED",
+        "statement": "Menghitung LCR secara keseluruhan kurang informatif; analisis lebih granular per channel dan tahap lebih akurat."
+      },
+      {
+        "id": "cu-6",
+        "claimId": "claim-1",
+        "sectionId": "sec-5",
+        "usageType": "PARAPHRASED",
+        "statement": "Lead conversion adalah proses kolaboratif antara pemasaran dan penjualan untuk mengubah calon pelanggan menjadi pelanggan melalui strategi nurturing."
+      }
+    ],
+    "citationMap": [
+      {
+        "claimUsageId": "cu-1",
+        "claimId": "claim-1",
+        "sourceIds": [
+          "src-mucglh6h-2bd2"
+        ],
+        "evidenceIds": [
+          "evi-src-mucglh6h-2bd2-24",
+          "evi-src-mucglh6h-2bd2-7",
+          "evi-src-mucglh6h-2bd2-8"
+        ]
+      },
+      {
+        "claimUsageId": "cu-2",
+        "claimId": "claim-2",
+        "sourceIds": [
+          "src-mucglh6h-2bd2"
+        ],
+        "evidenceIds": [
+          "evi-src-mucglh6h-2bd2-8"
+        ]
+      },
+      {
+        "claimUsageId": "cu-3",
+        "claimId": "claim-1",
+        "sourceIds": [
+          "src-mucglh6h-2bd2"
+        ],
+        "evidenceIds": [
+          "evi-src-mucglh6h-2bd2-24",
+          "evi-src-mucglh6h-2bd2-7",
+          "evi-src-mucglh6h-2bd2-8"
+        ]
+      },
+      {
+        "claimUsageId": "cu-4",
+        "claimId": "claim-3",
+        "sourceIds": [
+          "src-mucglh6h-2bd2"
+        ],
+        "evidenceIds": [
+          "evi-src-mucglh6h-2bd2-7",
+          "evi-src-mucglh6h-2bd2-28"
+        ]
+      },
+      {
+        "claimUsageId": "cu-5",
+        "claimId": "claim-5",
+        "sourceIds": [
+          "src-mucglh6h-2bd2"
+        ],
+        "evidenceIds": [
+          "evi-src-mucglh6h-2bd2-34"
+        ]
+      },
+      {
+        "claimUsageId": "cu-6",
+        "claimId": "claim-1",
+        "sourceIds": [
+          "src-mucglh6h-2bd2"
+        ],
+        "evidenceIds": [
+          "evi-src-mucglh6h-2bd2-24",
+          "evi-src-mucglh6h-2bd2-7",
+          "evi-src-mucglh6h-2bd2-8"
+        ]
+      }
+    ],
+    "status": "READY_FOR_EDITORIAL_REVIEW",
+    "generatedAt": "2026-09-22T09:16:37.800Z",
+    "generatorVersion": "real-ai-v1",
+    "promptVersion": "1.0.0"
+  },
+  "brief": {
+    "id": "brief-mucgly0h",
+    "topicId": "top-mucglfb6",
+    "researchProjectId": "proj-mucglfb7",
+    "objective": "Merubah lead jadi customer",
+    "answeredQuestions": [
+      {
+        "id": "rq-1",
+        "question": "Apa faktor-faktor kunci yang mempengaruhi keputusan pembelian enterprise content leaders saat mengonversi dari lead menjadi customer?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-2",
+        "question": "Bagaimana efektivitas campaign personalisasi dan nurturing email dalam meningkatkan konversi lead enterprise content leaders?",
+        "priority": "MEDIUM",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-3",
+        "question": "Apa peran proof of concept (POC) dan trial period dalam membangun kepercayaan dan mendorong pembelian final oleh enterprise content leaders?",
+        "priority": "MEDIUM",
+        "status": "OPEN"
+      }
+    ],
+    "openQuestions": [],
+    "supportedClaims": [
+      {
+        "id": "claim-1",
+        "researchProjectId": "proj-mucglfb7",
+        "statement": "Lead conversion adalah proses kolaboratif antara pemasaran dan penjualan untuk mengubah calon pelanggan menjadi pelanggan melalui strategi nurturing.",
+        "claimType": "FACTUAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-22T09:16:10.009Z",
+        "updatedAt": "2026-09-22T09:16:10.009Z",
+        "supportingEvidenceIds": [
+          "evi-src-mucglh6h-2bd2-5",
+          "evi-src-mucglh6h-2bd2-7",
+          "evi-src-mucglh6h-2bd2-8",
+          "evi-src-mucglh6h-2bd2-24",
+          "evi-src-mucglh6h-2bd2-80"
+        ]
+      },
+      {
+        "id": "claim-2",
+        "researchProjectId": "proj-mucglfb7",
+        "statement": "Calon pelanggan melewati tahapan MQL dan SQL sebelum menjadi pelanggan, sehingga dibutuhkan nurturing di setiap tahap.",
+        "claimType": "FACTUAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-22T09:16:10.345Z",
+        "updatedAt": "2026-09-22T09:16:10.345Z",
+        "supportingEvidenceIds": [
+          "evi-src-mucglh6h-2bd2-8"
+        ]
+      },
+      {
+        "id": "claim-3",
+        "researchProjectId": "proj-mucglfb7",
+        "statement": "Personalisasi dan nurturing email otomatis meningkatkan konversi dengan mengidentifikasi perilaku calon pelanggan yang memiliki niat tinggi.",
+        "claimType": "EMPIRICAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-22T09:16:10.734Z",
+        "updatedAt": "2026-09-22T09:16:10.734Z",
+        "supportingEvidenceIds": [
+          "evi-src-mucglh6h-2bd2-7",
+          "evi-src-mucglh6h-2bd2-28"
+        ]
+      },
+      {
+        "id": "claim-5",
+        "researchProjectId": "proj-mucglfb7",
+        "statement": "Menghitung LCR secara keseluruhan kurang informatif; analisis lebih granular per channel dan tahap lebih akurat.",
+        "claimType": "ANALYTICAL",
+        "importance": "SUPPORTING",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-22T09:16:11.369Z",
+        "updatedAt": "2026-09-22T09:16:11.369Z",
+        "supportingEvidenceIds": [
+          "evi-src-mucglh6h-2bd2-34"
+        ]
+      }
+    ],
+    "partiallySupportedClaims": [],
+    "disputedClaims": [],
+    "unverifiedClaims": [
+      {
+        "id": "claim-4",
+        "researchProjectId": "proj-mucglfb7",
+        "statement": "Proof of concept (POC) dan trial period sangat efektif untuk membangun kepercayaan dan mendorong pembelian final dari enterprise content leaders.",
+        "claimType": "CAUSAL",
+        "importance": "SUPPORTING",
+        "status": "UNVERIFIED",
+        "createdAt": "2026-09-22T09:16:11.052Z",
+        "updatedAt": "2026-09-22T09:16:11.052Z",
+        "supportingEvidenceIds": []
+      },
+      {
+        "id": "claim-6",
+        "researchProjectId": "proj-mucglfb7",
+        "statement": "SLA antara tim pemasaran dan penjualan meningkatkan koordinasi dan kecepatan respons terhadap lead yang masuk.",
+        "claimType": "FACTUAL",
+        "importance": "PERIPHERAL",
+        "status": "PARTIALLY_SUPPORTED",
+        "createdAt": "2026-09-22T09:16:11.709Z",
+        "updatedAt": "2026-09-22T09:16:11.709Z",
+        "supportingEvidenceIds": []
+      }
+    ],
+    "unsupportedClaims": [],
+    "internalKnowledge": [],
+    "originalAnalysis": [],
+    "keyFindings": [
+      {
+        "id": "finding-01",
+        "researchProjectId": "proj-mucglfb7",
+        "statement": "Lead conversion adalah proses kolaboratif antara pemasaran dan penjualan untuk mengubah calon pelanggan menjadi pelanggan melalui strategi nurturing.",
+        "supportingClaimIds": [
+          "claim-1",
+          "claim-2",
+          "claim-3",
+          "claim-5"
+        ],
+        "confidence": "HIGH",
+        "limitations": [],
+        "createdAt": "2026-09-22T09:16:12.017Z",
+        "updatedAt": "2026-09-22T09:16:12.018Z"
+      }
+    ],
+    "limitations": [],
+    "researchGaps": [],
+    "recommendedEditorialAngle": "Analisis strategis ter-grounding mengenai Merubah lead jadi customer",
+    "sourceIndex": [
+      {
+        "sourceId": "src-mucglh6h-2bd2",
+        "title": "Merubah lead jadi customer",
+        "url": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com",
+        "canonicalUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com",
+        "publisher": "Referensi Web",
+        "sourceType": "INDUSTRY_RESEARCH",
+        "authorityScore": 85,
+        "publicationAllowed": true
+      }
+    ],
+    "evidenceIndex": [
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-24",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "It's typically used to outline an agreement between a business and a customer. However, it's also used internally between sales and marketing teams to better align their lead conversion strategy.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-7",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "Lead conversion is a joint marketing and sales process that involves converting leads into customers through nurturing tactics like behavior automation, retargeting, and email nurturing. It's not to be confused with lead generation, which focuses on ",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-18",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "\"Understand why these leads are coming to your website in the first place. What is the underlying problem they are trying to solve?\" says Pritikin. \"If you can create email nurturing to help them solve that challenge, you're much more likely to conne",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-36",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "Let's say a lead is sifting through testimonials on your website. That may indicate an interest in your product. With this in mind, why not automate a follow-up email that could bring the lead one step closer to a purchase? This could be a free trial",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-8",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "A lead goes through several stages before becoming a customer. They start as a lead, then grow into a marketing-qualified lead (MQL), and then become a sales-qualified lead (SQL). This means brands have to nurture their leads at every stage and creat",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-28",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "Both teams have also identified high-intent behaviors that will trigger automated emails and have implemented a lead scoring system. For instance, when a lead reaches a score of 95, this will automatically trigger an email sequence inviting the lead ",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-31",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "Calculating your lead conversion rate is simple: Take your total number of conversions, divide that by your total number of leads, and multiply by 100. That final number is your LCR.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-84",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "3 easy growth hacks to get ahead in an AI-saturated landscape",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-88",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "How I do content research: Steps to follow (with examples)",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-92",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "How I use content mapping to deliver the right message at the right time",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-93",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "From third-party cookies to zero-party data: The new rules of email engagement",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-27",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "Let's use Zion, a fictional UK SaaS company, as an example. Zion's sales and marketing teams have collaborated on an SLA, which includes the following: Marketing commits to sending 100 qualified leads to the sales team every month and the sales team ",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-32",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "Example time: Let's say from January to February, you generated 105 qualified leads. From those leads, 20 became customers. The formula will look like this: 20/105 x 100. This means the lead conversion rate for that month was 19.04%.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-29",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "On the back end, that sales rep will receive a notification containing information on the lead, their activity, and a follow-up timeline. If the lead does not take action within a certain time frame, an automated, personalized email will be sent to t",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-34",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "Your brand would benefit more from looking at conversion rates at a more granular level, such as by channel (i.e., email conversion versus landing page conversion) and/or by stage (i.e., MQL-to-SQL rate).",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-65",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "Automate lead nurturing workflows.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-3",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "So, you've designed a lead generation strategy and it's working. Your website visitors are coming to your website, filling out your forms, and boom, you've got leads. Now what?",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-6",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "Let's dive into how to build your brand's lead conversion strategy and how to improve your current conversion rate.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-20",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "How do you know when a lead is ready to make a purchase? What behaviors will the lead exhibit? Having these answers is key to differentiating between leads who are ready to make a purchase and those who aren't.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mucglh6h-2bd2-21",
+        "sourceId": "src-mucglh6h-2bd2",
+        "quote": "A lead who only reads your brand's blog posts is likely not at the same purchase readiness as a lead who visits your pricing page. So, if you send an unqualified lead to the sales team, they will likely have a much harder time closing a sale.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      }
+    ],
+    "readiness": "READY_FOR_EDITORIAL",
+    "readinessReason": "Kecukupan bukti riset terpenuhi: 4 klaim faktual berhasil diverifikasi.",
+    "generatedAt": "2026-09-22T09:16:12.018Z"
+  },
+  "topic": {
+    "id": "top-mucglfb6",
+    "title": "Merubah lead jadi customer",
+    "slug": "merubah-lead-jadi-customer",
+    "territory": "TACTICAL",
+    "recommendedArticleType": "ANALYSIS",
+    "editorialRole": "AUTHORITY",
+    "audience": {
+      "segment": "Enterprise Content Leaders"
+    },
+    "problem": "Merubah lead jadi customer",
+    "intent": {
+      "primary": "Merubah lead jadi customer"
+    },
+    "thesis": null,
+    "whyNow": null,
+    "status": "APPROVED",
+    "informationGain": {
+      "originalityType": [
+        "ORIGINAL_FRAMEWORK"
+      ],
+      "expectedContribution": "Arsitektur informasi mandiri",
+      "commodityRisk": "LOW"
+    },
+    "evidencePlan": {
+      "requiredEvidenceLevel": "E2",
+      "plannedSources": [
+        "https://blog.hubspot.com/marketing/top-cro-experts-questions?utm_source=chatgpt.com"
+      ],
+      "originalEvidenceRequired": false
+    },
+    "businessRelevance": {
+      "objective": "Thought Leadership",
+      "funnelRole": "TOFU"
+    },
+    "distributionTargets": [
+      "GOOGLE_SEARCH",
+      "GOOGLE_AI"
+    ],
+    "createdAt": "2026-09-22T09:15:47.778Z",
+    "updatedAt": "2026-09-22T09:15:47.778Z"
+  },
+  "editorialIntegrity": {
+    "status": "PASS",
+    "draftClaimAudit": {
+      "status": "PASS",
+      "propositions": [
+        {
+          "propositionId": "prop-1",
+          "sectionId": "sec-1",
+          "text": "Lead conversion adalah proses berkelanjutan yang mensyaratkan koordinasi erat antara tim pemasaran (lead generation) dan tim penjualan (lead nurturing).",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-2",
+          "sectionId": "sec-1",
+          "text": "Tanpa nurturing yang sistematis di setiap tahapan, leads berpotensi hilang atau masuk ke fase 'dead zone'.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-3",
+          "sectionId": "sec-1",
+          "text": "Oleh karena itu, praktisi harus membuang pandangan statis bahwa konversi adalah event tunggal dan mengadopsi pendekatan journey kolaboratif.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-4",
+          "sectionId": "sec-2",
+          "text": "Tim pemasaran harus merancang nurturing cadence yang sesuai dengan tahapan maturity leads (MQL).",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-5",
+          "sectionId": "sec-2",
+          "text": "Trigger-based automation (misalnya: download content, klik demo request) digunakan untuk scoring dan qualifying leads menjadi SQL.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-6",
+          "sectionId": "sec-2",
+          "text": "Framework nurturing harus mencakup personalisasi konten berdasarkan industry, size company, dan pain points spesifik agar nurturing lebih relevan dan efektif.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-7",
+          "sectionId": "sec-3",
+          "text": "Email nurture campaign yang dipicu oleh behavioral triggers (abandon cart, low engagement) jauh lebih efektif daripada blast email massal.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-8",
+          "sectionId": "sec-3",
+          "text": "Personalisasi dinamis (dynamic content blocks, smart CTAs) meningkatkan click-through rate dan mengidentifikasi leads dengan intent tinggi.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-9",
+          "sectionId": "sec-3",
+          "text": "Analisis performance nurture campaign (open rate, click rate, conversion rate) memberikan feedback loop untuk refining nurturing playbook.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-10",
+          "sectionId": "sec-4",
+          "text": "Menghitung LCR secara keseluruhan sering menyesatkan; praktisi harus breakdown rasio ini per channel (SEO, SEM, social ads, event) dan per tahap funnel.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-11",
+          "sectionId": "sec-4",
+          "text": "Identifikasi channel dan tahap dengan LCR tertinggi untuk mengalokasikan budget dan resources secara optimal.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-12",
+          "sectionId": "sec-4",
+          "text": "Gunakan dashboard granular untuk tracking LCR secara real-time dan melakukan pivot strategi jika performa salah satu channel menurun.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-13",
+          "sectionId": "sec-5",
+          "text": "Sales team harus menggunakan SQL qualification criteria yang konsisten agar nurturing pemasaran tepat sasaran.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-14",
+          "sectionId": "sec-5",
+          "text": "Implementasi shared CRM platform (misalnya Salesforce, HubSpot) memfasilitasi visibility end-to-end journey dan accountability kolaboratif.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-15",
+          "sectionId": "sec-5",
+          "text": "Regular alignment meeting antara sales dan marketing (lead review meetings) memastikan nurturing playbook selalu relevan dengan buyer persona aktual.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-16",
+          "sectionId": "sec-6",
+          "text": "Merubah lead menjadi customer mensyaratkan arsitektur yang terintegrasi: pemasaran menghasilkan awareness, nurturing mengembangkan interest, dan sales menutup deal.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-17",
+          "sectionId": "sec-6",
+          "text": "Optimalisasi engine ini dimulai dari understanding bahwa konversi adalah journey, bukan event.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-18",
+          "sectionId": "sec-6",
+          "text": "Praktisi harus mengadopsi kombinasi personalisasi otomatis, nurturing pipeline yang granular, dan analisis LCR per channel untuk menciptakan growth engine yang predictable.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        }
+      ],
+      "groundedExternalFacts": 0,
+      "ungroundedExternalFacts": 0,
+      "partialSupportCount": 0,
+      "originalAnalysisCount": 13,
+      "interpretationCount": 0,
+      "internalKnowledgeCount": 0,
+      "nonFactualCount": 5,
+      "numericClaimsTotal": 0,
+      "unsupportedNumericCount": 0,
+      "citationFailuresCount": 0,
+      "issues": [],
+      "summary": "DraftClaimAuditor: Seluruh 0 klaim faktual eksternal terbukti (ENTAILED). Analisis orisinal: 13. Sitasi valid.",
+      "auditedAt": "2026-09-22T09:16:37.801Z"
+    },
+    "groundingGuard": {
+      "status": "PASS",
+      "issues": [],
+      "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+    },
+    "propositions": [
+      {
+        "propositionId": "prop-1",
+        "sectionId": "sec-1",
+        "text": "Lead conversion adalah proses berkelanjutan yang mensyaratkan koordinasi erat antara tim pemasaran (lead generation) dan tim penjualan (lead nurturing).",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-2",
+        "sectionId": "sec-1",
+        "text": "Tanpa nurturing yang sistematis di setiap tahapan, leads berpotensi hilang atau masuk ke fase 'dead zone'.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-3",
+        "sectionId": "sec-1",
+        "text": "Oleh karena itu, praktisi harus membuang pandangan statis bahwa konversi adalah event tunggal dan mengadopsi pendekatan journey kolaboratif.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-4",
+        "sectionId": "sec-2",
+        "text": "Tim pemasaran harus merancang nurturing cadence yang sesuai dengan tahapan maturity leads (MQL).",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-5",
+        "sectionId": "sec-2",
+        "text": "Trigger-based automation (misalnya: download content, klik demo request) digunakan untuk scoring dan qualifying leads menjadi SQL.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-6",
+        "sectionId": "sec-2",
+        "text": "Framework nurturing harus mencakup personalisasi konten berdasarkan industry, size company, dan pain points spesifik agar nurturing lebih relevan dan efektif.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-7",
+        "sectionId": "sec-3",
+        "text": "Email nurture campaign yang dipicu oleh behavioral triggers (abandon cart, low engagement) jauh lebih efektif daripada blast email massal.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-8",
+        "sectionId": "sec-3",
+        "text": "Personalisasi dinamis (dynamic content blocks, smart CTAs) meningkatkan click-through rate dan mengidentifikasi leads dengan intent tinggi.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-9",
+        "sectionId": "sec-3",
+        "text": "Analisis performance nurture campaign (open rate, click rate, conversion rate) memberikan feedback loop untuk refining nurturing playbook.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-10",
+        "sectionId": "sec-4",
+        "text": "Menghitung LCR secara keseluruhan sering menyesatkan; praktisi harus breakdown rasio ini per channel (SEO, SEM, social ads, event) dan per tahap funnel.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-11",
+        "sectionId": "sec-4",
+        "text": "Identifikasi channel dan tahap dengan LCR tertinggi untuk mengalokasikan budget dan resources secara optimal.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-12",
+        "sectionId": "sec-4",
+        "text": "Gunakan dashboard granular untuk tracking LCR secara real-time dan melakukan pivot strategi jika performa salah satu channel menurun.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-13",
+        "sectionId": "sec-5",
+        "text": "Sales team harus menggunakan SQL qualification criteria yang konsisten agar nurturing pemasaran tepat sasaran.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-14",
+        "sectionId": "sec-5",
+        "text": "Implementasi shared CRM platform (misalnya Salesforce, HubSpot) memfasilitasi visibility end-to-end journey dan accountability kolaboratif.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-15",
+        "sectionId": "sec-5",
+        "text": "Regular alignment meeting antara sales dan marketing (lead review meetings) memastikan nurturing playbook selalu relevan dengan buyer persona aktual.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-16",
+        "sectionId": "sec-6",
+        "text": "Merubah lead menjadi customer mensyaratkan arsitektur yang terintegrasi: pemasaran menghasilkan awareness, nurturing mengembangkan interest, dan sales menutup deal.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-17",
+        "sectionId": "sec-6",
+        "text": "Optimalisasi engine ini dimulai dari understanding bahwa konversi adalah journey, bukan event.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-18",
+        "sectionId": "sec-6",
+        "text": "Praktisi harus mengadopsi kombinasi personalisasi otomatis, nurturing pipeline yang granular, dan analisis LCR per channel untuk menciptakan growth engine yang predictable.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      }
+    ],
+    "groundedExternalFacts": 0,
+    "ungroundedExternalFacts": 0,
+    "partialSupportCount": 0,
+    "originalAnalysisCount": 13,
+    "interpretationCount": 0,
+    "internalKnowledgeCount": 0,
+    "nonFactualCount": 5,
+    "numericClaimsTotal": 0,
+    "unsupportedNumericCount": 0,
+    "citationFailuresCount": 0,
+    "issues": [],
+    "summary": "Editorial Integrity Gate: PASS. Seluruh 0 klaim eksternal terbukti, 13 analisis orisinal valid, dan guard mekanikal lolos.",
+    "evaluatedAt": "2026-09-22T09:16:37.800Z"
+  },
+  "guardEvaluation": {
+    "status": "PASS",
+    "issues": [],
+    "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+  },
+  "discoverEvaluation": {
+    "articleId": "draft-mucgmhwo",
+    "checks": [
+      {
+        "checkId": "DISCOVER_ELIGIBILITY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Artikel memenuhi seluruh kriteria kelayakan dasar Google Discover."
+      },
+      {
+        "checkId": "DISCOVER_ORIGINALITY",
+        "dimension": "ORIGINALITY",
+        "status": "PASS",
+        "scoreContribution": 15,
+        "summary": "Orisinalitas konten tinggi, didukung oleh data riset dan kerangka kerja konseptual orisinal."
+      },
+      {
+        "checkId": "DISCOVER_DEPTH",
+        "dimension": "DEPTH",
+        "status": "WARNING",
+        "scoreContribution": 10,
+        "summary": "Tingkat kedalaman konten: ADEQUATE."
+      },
+      {
+        "checkId": "DISCOVER_TIMELINESS",
+        "dimension": "TIMELINESS",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Konten terkini dengan aktualitas tinggi."
+      },
+      {
+        "checkId": "DISCOVER_INTEREST_FIT",
+        "dimension": "INTEREST_FIT",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Memiliki dasar minat audiens yang kuat berdasarkan dinamika pasar dan urgensi topik."
+      },
+      {
+        "checkId": "DISCOVER_TOPICAL_EXPERTISE",
+        "dimension": "TOPICAL_EXPERTISE",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Status keahlian topikal: DEVELOPING (0 artikel terhubung di territory TACTICAL)."
+      },
+      {
+        "checkId": "DISCOVER_LOCAL_RELEVANCE",
+        "dimension": "LOCAL_RELEVANCE",
+        "status": "PASS",
+        "scoreContribution": 2,
+        "summary": "Topik berskala global yang tetap memenuhi syarat kelayakan Discover."
+      },
+      {
+        "checkId": "DISCOVER_TITLE_INTEGRITY",
+        "dimension": "TITLE_INTEGRITY",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Judul berwibawa, menangkap esensi konten dengan akurat, dan bebas dari clickbait."
+      },
+      {
+        "checkId": "DISCOVER_VISUAL_READINESS",
+        "dimension": "VISUAL_READINESS",
+        "status": "PASS",
+        "scoreContribution": 15,
+        "summary": "Aset visual beresolusi tinggi, berformat lanskap, bebas logo, dan mendukung max-image-preview:large."
+      },
+      {
+        "checkId": "DISCOVER_PAGE_EXPERIENCE",
+        "dimension": "PAGE_EXPERIENCE",
+        "status": "WARNING",
+        "scoreContribution": 5,
+        "summary": "Status pengalaman halaman: UNKNOWN."
+      },
+      {
+        "checkId": "DISCOVER_POLICY_SAFETY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Konten aman dan mematuhi seluruh panduan kebijakan publikasi Google Discover."
+      }
+    ],
+    "issues": [
+      {
+        "code": "INSUFFICIENT_TOPIC_DEPTH",
+        "checkId": "DISCOVER_DEPTH",
+        "dimension": "DEPTH",
+        "severity": "INFO",
+        "message": "Kedalaman naskah cukup memadai, namun belum mencakup limitasi atau implikasi praktis menyeluruh.",
+        "location": "sections",
+        "recommendation": "Pertimbangkan menambahkan sudut pandang tandingan (counterpoint) untuk bobot analisis optimal."
+      }
+    ],
+    "recommendations": [
+      {
+        "type": "EDITORIAL_IMPROVEMENT",
+        "title": "Peningkatan Kedalaman & Orisinalitas [INSUFFICIENT_TOPIC_DEPTH]",
+        "description": "Kedalaman naskah cukup memadai, namun belum mencakup limitasi atau implikasi praktis menyeluruh.",
+        "suggestedAction": "Pertimbangkan menambahkan sudut pandang tandingan (counterpoint) untuk bobot analisis optimal.",
+        "crossEngineDestination": "EDITORIAL"
+      }
+    ],
+    "dimensions": {
+      "ORIGINALITY": 15,
+      "DEPTH": 10,
+      "TIMELINESS": 10,
+      "TOPICAL_EXPERTISE": 10,
+      "INTEREST_FIT": 10,
+      "TITLE_INTEGRITY": 10,
+      "VISUAL_READINESS": 15,
+      "PAGE_EXPERIENCE": 5,
+      "LOCAL_RELEVANCE": 2,
+      "POLICY_SAFETY": 3
+    },
+    "score": 90,
+    "classification": "STRONG",
+    "eligibility": "ELIGIBLE",
+    "criticalIneligibilityReasons": [],
+    "validatedAt": "2026-09-22T09:16:37.805Z",
+    "policyVersion": "DISCOVER_READINESS_POLICY_V1"
+  },
+  "visualPrompt": "Lead-to-Customer Conversion, stepped sorting funnel rotating around a central axis, filtering individual lead pellets through automated trigger gates that release personalized nurturing sequences, 3D isometric illustration, soft clay rendering, rounded geometric objects, soft studio lighting, minimal marketing illustration, clean composition, premium modern aesthetic. Clear visual hierarchy, single dominant focal object, generous negative space, no text, no logos. --ar 16:9",
+  "createdAt": "2026-09-22T09:16:38.394Z"
+}

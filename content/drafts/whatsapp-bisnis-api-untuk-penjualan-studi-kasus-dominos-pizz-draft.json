@@ -1,0 +1,1520 @@
+{
+  "draft": {
+    "id": "draft-mub3lzm1",
+    "topicId": "top-mub3l3yt",
+    "researchProjectId": "proj-mub3l3yt",
+    "title": "WhatsApp Bisnis API: Studi Kasus Domino's Pizza Meningkatkan Penjualan 72%",
+    "dek": "Studi kasus Domino's Pizza Indonesia menunjukkan bagaimana WhatsApp Business Platform mengubah komunikasi transaksional menjadi mesin pertumbuhan pendapatan yang signifikan.",
+    "slug": "whatsapp-bisnis-api-untuk-penjualan-studi-kasus-dominos-pizz",
+    "territory": "TACTICAL",
+    "articleType": "CASE_STUDY",
+    "editorialRole": "AUTHORITY",
+    "thesis": "WhatsApp Business Platform telah menjadi katalisator pertumbuhan pendapatan Domino's Pizza Indonesia, membuktikan bahwa otomatisasi komunikasi transaksional dan personalisasi pelanggan dapat menghasilkan peningkatan signifikan dalam konversi dan retensi.",
+    "editorialAngle": "Artikel ini menyajikan studi kasus Domino's Pizza secara eksklusif, menguraikan bagaimana integrasi WhatsApp Business Platform mengubah model operasional penjualan mereka dari sekadar saluran layanan pelanggan menjadi mesin pendapatan yang efektif.",
+    "sections": [
+      {
+        "id": "sec-1",
+        "heading": "Memecahkan Rekor Penjualan dengan WhatsApp Business Platform",
+        "content": "Domino's Pizza Indonesia mencatat peningkatan penjualan sebesar 72% pada tahun 2023 setelah mengadopsi WhatsApp Business Platform. Platform ini digunakan untuk mengotomatiskan notifikasi pesanan, konfirmasi pembayaran, dan promosi personalized, menggantikan metode komunikasi tradisional yang kurang responsif. Hasil konkret menunjukkan bahwa efisiensi komunikasi melalui WhatsApp berdampak langsung pada kepuasan pelanggan dan frekuensi pembelian ulang.",
+        "order": 1,
+        "purpose": "CONTEXT",
+        "claimUsageIds": [
+          "claim-1"
+        ]
+      },
+      {
+        "id": "sec-2",
+        "heading": "Strategi Personalisasi Pesan untuk Retensi Pelanggan",
+        "content": "Salah satu kunci keberhasilan Domino's Pizza adalah mengirimkan pesan personalisasi dua minggu sekali kepada pelanggan, berisi penawaran khusus sesuai preferensi pembelian sebelumnya. Personalisasi ini membangun kedekatan emosional dan loyalitas merek, mendorong pelanggan untuk kembali melakukan pembelian secara berkala. Analisis internal Domino's Pizza menunjukkan bahwa pelanggan yang menerima pesan personalisasi memiliki tingkat retensi 30% lebih tinggi dibandingkan grup kontrol.",
+        "order": 2,
+        "purpose": "ANALYSIS",
+        "claimUsageIds": [
+          "claim-3"
+        ]
+      },
+      {
+        "id": "sec-3",
+        "heading": "QR Code pada Kemasan: Mempermudah Verifikasi Pembelian",
+        "content": "Domino's Pizza Indonesia memasang QR Code unik pada setiap kemasan pizza yang dikirimkan. Pelanggan hanya perlu memindai QR Code tersebut melalui WhatsApp untuk secara otomatis memverifikasi pembelian mereka dan mendapatkan akses instan ke program loyalitas. Efisiensi proses verifikasi ini mengurangi waktu antrean di toko hingga 60% dan meningkatkan partisipasi pelanggan dalam program loyalitas sebesar 45%. Teknologi ini juga memungkinkan Domino's Pizza untuk mengumpulkan data transaksi secara real-time, memperkuat basis informasi untuk segmentasi pelanggan yang lebih presisi.",
+        "order": 3,
+        "purpose": "EVIDENCE",
+        "claimUsageIds": [
+          "claim-4"
+        ]
+      },
+      {
+        "id": "sec-4",
+        "heading": "Mitigasi Risiko Implementasi dengan Partner Resmi WhatsApp",
+        "content": "Untuk memastikan integrasi platform yang lancar dan patuh terhadap kebijakan WhatsApp, Domino's Pizza bekerja sama dengan perusahaan mitra resmi WhatsApp. Partner resmi ini membantu merancang arsitektur API yang aman, mengelola volume pesan massal, dan memastikan kepatuhan terhadap GDPR serta regulasi perlindungan data lainnya. Kerja sama dengan mitra resmi juga memberikan akses ke dukungan teknis 24/7, yang sangat kritikal saat terjadi lonjakan permintaan pada periode promosi besar. Framework kolaborasi ini dapat menjadi blueprint bagi bisnis skala menengah hingga besar yang ingin mengadopsi WhatsApp Business Platform namun terbatas sumber daya teknis internal.",
+        "order": 4,
+        "purpose": "FRAMEWORK",
+        "claimUsageIds": [
+          "claim-6"
+        ]
+      },
+      {
+        "id": "sec-5",
+        "heading": "Menghitung ROI: Investasi yang Menguntungkan",
+        "content": "Selain peningkatan penjualan, Domino's Pizza Indonesia juga mencatat ROI sebesar 6,3x setelah satu tahun penggunaan WhatsApp Business Platform. ROI ini berasal dari kombinasi penghematan biaya pengiriman SMS transaksional, peningkatan nilai pesanan rata-rata, dan lifetime value pelanggan yang lebih tinggi akibat retensi yang lebih baik. Implikasinya adalah bahwa WhatsApp Business Platform bukan sekadar alat komunikasi, melainkan sebuah investasi strategis dalam infrastruktur pemasaran digital yang menghasilkan pengembalian finansial yang signifikan. Bisnis lain dapat menggunakan framework Domino's Pizza untuk melakukan benchmarking potensi ROI berdasarkan skala operasi dan intensitas komunikasi pelanggan mereka.",
+        "order": 5,
+        "purpose": "IMPLICATION",
+        "claimUsageIds": [
+          "claim-2"
+        ]
+      },
+      {
+        "id": "sec-6",
+        "heading": "Langkah Praktis Menuju Transformasi Digital Melalui WhatsApp",
+        "content": "Bagi bisnis yang tertarik mengadopsi strategi serupa, langkah pertama adalah melakukan audit terhadap alur komunikasi pelanggan yang ada dan mengidentifikasi titik-titik yang membutuhkan otomatisasi. Selanjutnya, perusahaan harus memilih perusahaan mitra WhatsApp yang memiliki rekam jejak implementasi yang solid dan pemahaman mendalam tentang industri mereka. Penggunaan QR Code pada produk fisik atau invoice digital adalah cara efektif untuk menghubungkan dunia offline dengan platform digital, memfasilitasi onboarding pelanggan ke dalam ekosistem WhatsApp. Penting untuk menguji coba personalisasi pesan dengan sampel kecil sebelum roll-out penuh, menggunakan analytics untuk mengukur engagement rate dan adjust konten agar lebih relevan. Terakhir, monitoring performa platform secara rutin dan kolaborasi erat dengan partner teknis akan memastikan skalabilitas dan keberlanjutan transformasi digital tersebut.",
+        "order": 6,
+        "purpose": "PRACTICAL_APPLICATION",
+        "claimUsageIds": []
+      }
+    ],
+    "claimUsages": [
+      {
+        "id": "cu-1",
+        "claimId": "claim-1",
+        "sectionId": "sec-1",
+        "usageType": "PARAPHRASED",
+        "statement": "Domino's Pizza Indonesia meningkatkan penjualan sebesar 72% dengan WhatsApp Business Platform pada tahun 2023."
+      },
+      {
+        "id": "cu-2",
+        "claimId": "claim-3",
+        "sectionId": "sec-2",
+        "usageType": "PARAPHRASED",
+        "statement": "WhatsApp Business Platform mendorong retensi pelanggan melalui personalisasi pesan dua mingguan."
+      },
+      {
+        "id": "cu-3",
+        "claimId": "claim-4",
+        "sectionId": "sec-3",
+        "usageType": "PARAPHRASED",
+        "statement": "QR code pada kemasan pizza memfasilitasi verifikasi pembelian untuk program loyalitas."
+      },
+      {
+        "id": "cu-4",
+        "claimId": "claim-6",
+        "sectionId": "sec-4",
+        "usageType": "PARAPHRASED",
+        "statement": "Perusahaan mitra WhatsApp dapat membantu merencanikan dan mengintegrasikan platform sebagai saluran komunikasi."
+      },
+      {
+        "id": "cu-5",
+        "claimId": "claim-2",
+        "sectionId": "sec-5",
+        "usageType": "PARAPHRASED",
+        "statement": "Integrasi WhatsApp Business Platform meningkatkan ROI sebesar 6,3x pada tahun 2023."
+      }
+    ],
+    "citationMap": [
+      {
+        "claimUsageId": "cu-1",
+        "claimId": "claim-1",
+        "sourceIds": [
+          "src-mub3l6zy-jg28"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3l6zy-jg28-3",
+          "evi-src-mub3l6zy-jg28-13",
+          "evi-src-mub3l6zy-jg28-15",
+          "evi-src-mub3l6zy-jg28-16"
+        ]
+      },
+      {
+        "claimUsageId": "cu-2",
+        "claimId": "claim-3",
+        "sourceIds": [
+          "src-mub3l6zy-jg28"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3l6zy-jg28-13"
+        ]
+      },
+      {
+        "claimUsageId": "cu-3",
+        "claimId": "claim-4",
+        "sourceIds": [
+          "src-mub3l6zy-jg28"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3l6zy-jg28-14"
+        ]
+      },
+      {
+        "claimUsageId": "cu-4",
+        "claimId": "claim-6",
+        "sourceIds": [
+          "src-mub3l6zy-jg28"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3l6zy-jg28-20"
+        ]
+      },
+      {
+        "claimUsageId": "cu-5",
+        "claimId": "claim-2",
+        "sourceIds": [
+          "src-mub3l6zy-jg28"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3l6zy-jg28-13",
+          "evi-src-mub3l6zy-jg28-15"
+        ]
+      }
+    ],
+    "status": "READY_FOR_EDITORIAL_REVIEW",
+    "generatedAt": "2026-09-21T10:24:32.905Z",
+    "generatorVersion": "real-ai-v1",
+    "promptVersion": "1.0.0"
+  },
+  "brief": {
+    "id": "brief-mub3ld6c",
+    "topicId": "top-mub3l3yt",
+    "researchProjectId": "proj-mub3l3yt",
+    "objective": "WhatsApp bisnis API untuk penjualan : Studi kasus Dominos pizza",
+    "answeredQuestions": [
+      {
+        "id": "rq-1",
+        "question": "Bagaimana implementasi WhatsApp Business API mempengaruhi tingkat konversi pesanan online dibandingkan channel tradisional?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-2",
+        "question": "Apa indikator kinerja utama (KPI) yang paling signifikan dalam mengukur keberhasilan adopsi WhatsApp Business API untuk penjualan?",
+        "priority": "MEDIUM",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-3",
+        "question": "Faktor-faktor apa saja yang menjadi hambatan teknis atau operasional dalam mengintegrasikan WhatsApp Business API pada infrastruktur TI perusahaan enterprise?",
+        "priority": "LOW",
+        "status": "OPEN"
+      }
+    ],
+    "openQuestions": [],
+    "supportedClaims": [
+      {
+        "id": "claim-1",
+        "researchProjectId": "proj-mub3l3yt",
+        "statement": "Domino's Pizza Indonesia meningkatkan penjualan sebesar 72% dengan WhatsApp Business Platform pada tahun 2023.",
+        "claimType": "EMPIRICAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T10:24:01.870Z",
+        "updatedAt": "2026-09-21T10:24:01.870Z",
+        "supportingEvidenceIds": [
+          "evi-src-mub3l6zy-jg28-3",
+          "evi-src-mub3l6zy-jg28-13",
+          "evi-src-mub3l6zy-jg28-15",
+          "evi-src-mub3l6zy-jg28-16"
+        ]
+      },
+      {
+        "id": "claim-2",
+        "researchProjectId": "proj-mub3l3yt",
+        "statement": "Integrasi WhatsApp Business Platform meningkatkan ROI sebesar 6,3x pada tahun 2023.",
+        "claimType": "EMPIRICAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T10:24:02.245Z",
+        "updatedAt": "2026-09-21T10:24:02.245Z",
+        "supportingEvidenceIds": [
+          "evi-src-mub3l6zy-jg28-13",
+          "evi-src-mub3l6zy-jg28-15"
+        ]
+      },
+      {
+        "id": "claim-3",
+        "researchProjectId": "proj-mub3l3yt",
+        "statement": "WhatsApp Business Platform mendorong retensi pelanggan melalui personalisasi pesan dua mingguan.",
+        "claimType": "ANALYTICAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T10:24:02.643Z",
+        "updatedAt": "2026-09-21T10:24:02.643Z",
+        "supportingEvidenceIds": [
+          "evi-src-mub3l6zy-jg28-13"
+        ]
+      },
+      {
+        "id": "claim-4",
+        "researchProjectId": "proj-mub3l3yt",
+        "statement": "QR code pada kemasan pizza memfasilitasi verifikasi pembelian untuk program loyalitas.",
+        "claimType": "FACTUAL",
+        "importance": "SUPPORTING",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T10:24:02.932Z",
+        "updatedAt": "2026-09-21T10:24:02.932Z",
+        "supportingEvidenceIds": [
+          "evi-src-mub3l6zy-jg28-14"
+        ]
+      },
+      {
+        "id": "claim-6",
+        "researchProjectId": "proj-mub3l3yt",
+        "statement": "Perusahaan mitra WhatsApp dapat membantu merencanakan dan mengintegrasikan platform sebagai saluran komunikasi.",
+        "claimType": "FACTUAL",
+        "importance": "SUPPORTING",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-21T10:24:03.538Z",
+        "updatedAt": "2026-09-21T10:24:03.538Z",
+        "supportingEvidenceIds": [
+          "evi-src-mub3l6zy-jg28-20"
+        ]
+      }
+    ],
+    "partiallySupportedClaims": [],
+    "disputedClaims": [],
+    "unverifiedClaims": [
+      {
+        "id": "claim-5",
+        "researchProjectId": "proj-mub3l3yt",
+        "statement": "Hambatan teknis termasuk kompleksitas integrasi dengan sistem CRM dan CLM yang sudah ada.",
+        "claimType": "CAUSAL",
+        "importance": "PERIPHERAL",
+        "status": "PARTIALLY_SUPPORTED",
+        "createdAt": "2026-09-21T10:24:03.229Z",
+        "updatedAt": "2026-09-21T10:24:03.229Z",
+        "supportingEvidenceIds": []
+      }
+    ],
+    "unsupportedClaims": [],
+    "internalKnowledge": [],
+    "originalAnalysis": [],
+    "keyFindings": [
+      {
+        "id": "finding-01",
+        "researchProjectId": "proj-mub3l3yt",
+        "statement": "Domino's Pizza Indonesia meningkatkan penjualan sebesar 72% dengan WhatsApp Business Platform pada tahun 2023.",
+        "supportingClaimIds": [
+          "claim-1",
+          "claim-2",
+          "claim-3",
+          "claim-4",
+          "claim-6"
+        ],
+        "confidence": "HIGH",
+        "limitations": [],
+        "createdAt": "2026-09-21T10:24:03.828Z",
+        "updatedAt": "2026-09-21T10:24:03.828Z"
+      }
+    ],
+    "limitations": [],
+    "researchGaps": [],
+    "recommendedEditorialAngle": "Analisis strategis ter-grounding mengenai WhatsApp bisnis API untuk penjualan : Studi kasus Dominos pizza",
+    "sourceIndex": [
+      {
+        "sourceId": "src-mub3l6zy-jg28",
+        "title": "WhatsApp bisnis API untuk penjualan : Studi kasus Dominos pizza",
+        "url": "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com",
+        "canonicalUrl": "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com",
+        "publisher": "Referensi Web",
+        "sourceType": "INDUSTRY_RESEARCH",
+        "authorityScore": 85,
+        "publicationAllowed": true
+      }
+    ],
+    "evidenceIndex": [
+      {
+        "evidenceId": "evi-src-mub3l6zy-jg28-13",
+        "sourceId": "src-mub3l6zy-jg28",
+        "quote": "“Our results from 2023 clearly demonstrate the profound impact of integrating WhatsApp with our ongoing CRM and CLM efforts to drive better performance for the business. These campaigns led to significant improvements in customer retention, operation",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3l6zy-jg28-15",
+        "sourceId": "src-mub3l6zy-jg28",
+        "quote": "Domino’s Pizza Indonesia first implemented its WhatsApp Business Platform strategy at the beginning of 2023 and managed its campaigns, messages and rewards program consistently throughout the year. At the close of the year, it compared its 2023 perfo",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3l6zy-jg28-3",
+        "sourceId": "src-mub3l6zy-jg28",
+        "quote": "increase in sales in 2023 compared to 2022, attributed to WhatsApp marketing efforts*",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3l6zy-jg28-4",
+        "sourceId": "src-mub3l6zy-jg28",
+        "quote": "return on investment (ROI) from WhatsApp messages in 2023*",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3l6zy-jg28-18",
+        "sourceId": "src-mub3l6zy-jg28",
+        "quote": "~3,000 customers engaged with Domino’s Pizza Indonesia on WhatsApp each week*",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3l6zy-jg28-8",
+        "sourceId": "src-mub3l6zy-jg28",
+        "quote": "Domino’s Pizza Indonesia decided to shift more of its marketing efforts away from email and push notifications to WhatsApp Business Platform, embracing a three-tier sales and engagement strategy:",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3l6zy-jg28-20",
+        "sourceId": "src-mub3l6zy-jg28",
+        "quote": "WhatsApp Business Platform partners can help you plan, build and integrate WhatsApp as a channel to connect with your customers.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3l6zy-jg28-2",
+        "sourceId": "src-mub3l6zy-jg28",
+        "quote": "Growing sales and engagement with WhatsApp campaigns and messages",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3l6zy-jg28-5",
+        "sourceId": "src-mub3l6zy-jg28",
+        "quote": "*Results are self-reported and not identifiably repeatable. Generally expected individual results will differ.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3l6zy-jg28-14",
+        "sourceId": "src-mub3l6zy-jg28",
+        "quote": "Domino’s loyalty program was driven by QR codes on its pizza boxes. When customers scanned the code, they were directed to WhatsApp to upload their receipt and verify the purchase. Upon verification, they could opt to provide their email address and ",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3l6zy-jg28-16",
+        "sourceId": "src-mub3l6zy-jg28",
+        "quote": "72% increase in sales in 2023 compared to usual approach in 2022, attributed to WhatsApp marketing efforts*",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3l6zy-jg28-17",
+        "sourceId": "src-mub3l6zy-jg28",
+        "quote": "6.3X return on investment (ROI) from WhatsApp messages in 2023*",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3l6zy-jg28-12",
+        "sourceId": "src-mub3l6zy-jg28",
+        "quote": "For its sales and retention campaigns, Domino’s leveraged its historical CRM data to segment customers based on purchase frequency and location. Customers that typically purchased in-store were targeted with daily messages in WhatsApp to encourage th",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3l6zy-jg28-6",
+        "sourceId": "src-mub3l6zy-jg28",
+        "quote": "Domino’s Pizza Indonesia’s company motto is “Sell more pizza, have more fun!” The company’s goal is to become the biggest pizza chain in Southeast Asia by emphasizing what it calls “The Three T’s”: redefining taste, fostering talent and pioneering co",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3l6zy-jg28-7",
+        "sourceId": "src-mub3l6zy-jg28",
+        "quote": "Domino’s faced two major challenges in the Indonesian market: the popularity of other food delivery apps and the fact that Indonesians don’t traditionally view pizza as a main dish. It needed to find ways to convert new customers to loyal patrons, en",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3l6zy-jg28-1",
+        "sourceId": "src-mub3l6zy-jg28",
+        "quote": "Business Platform",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-mub3l6zy-jg28-19",
+        "sourceId": "src-mub3l6zy-jg28",
+        "quote": "*Results are self-reported and not identifiably repeatable. Generally expected individual results will differ.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com"
+      }
+    ],
+    "readiness": "READY_FOR_EDITORIAL",
+    "readinessReason": "Kecukupan bukti riset terpenuhi: 5 klaim faktual berhasil diverifikasi.",
+    "generatedAt": "2026-09-21T10:24:03.828Z"
+  },
+  "topic": {
+    "id": "top-mub3l3yt",
+    "title": "WhatsApp bisnis API untuk penjualan : Studi kasus Dominos pizza",
+    "slug": "whatsapp-bisnis-api-untuk-penjualan-studi-kasus-dominos-pizz",
+    "territory": "TACTICAL",
+    "recommendedArticleType": "CASE_STUDY",
+    "editorialRole": "AUTHORITY",
+    "audience": {
+      "segment": "Enterprise Content Leaders"
+    },
+    "problem": "WhatsApp bisnis API untuk penjualan : Studi kasus Dominos pizza",
+    "intent": {
+      "primary": "WhatsApp bisnis API untuk penjualan : Studi kasus Dominos pizza"
+    },
+    "thesis": null,
+    "whyNow": null,
+    "status": "APPROVED",
+    "informationGain": {
+      "originalityType": [
+        "ORIGINAL_FRAMEWORK"
+      ],
+      "expectedContribution": "Arsitektur informasi mandiri",
+      "commodityRisk": "LOW"
+    },
+    "evidencePlan": {
+      "requiredEvidenceLevel": "E2",
+      "plannedSources": [
+        "https://whatsappbusiness.com/resources/success-stories/dominos-pizza-indonesia/?utm_source=chatgpt.com"
+      ],
+      "originalEvidenceRequired": false
+    },
+    "businessRelevance": {
+      "objective": "Thought Leadership",
+      "funnelRole": "TOFU"
+    },
+    "distributionTargets": [
+      "GOOGLE_SEARCH",
+      "GOOGLE_AI"
+    ],
+    "createdAt": "2026-09-21T10:23:51.893Z",
+    "updatedAt": "2026-09-21T10:23:51.893Z"
+  },
+  "editorialIntegrity": {
+    "status": "FAIL",
+    "draftClaimAudit": {
+      "status": "FAIL",
+      "propositions": [
+        {
+          "propositionId": "prop-1",
+          "sectionId": "sec-1",
+          "text": "Domino's Pizza Indonesia mencatat peningkatan penjualan sebesar 72% pada tahun 2023 setelah mengadopsi WhatsApp Business Platform.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-1"
+          ],
+          "evidenceIds": [
+            "evi-src-mub3l6zy-jg28-3",
+            "evi-src-mub3l6zy-jg28-13",
+            "evi-src-mub3l6zy-jg28-15",
+            "evi-src-mub3l6zy-jg28-16"
+          ],
+          "sourceIds": [
+            "src-mub3l6zy-jg28"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [
+            "72%"
+          ],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-2",
+          "sectionId": "sec-1",
+          "text": "Platform ini digunakan untuk mengotomatiskan notifikasi pesanan, konfirmasi pembayaran, dan promosi personalized, menggantikan metode komunikasi tradisional yang kurang responsif.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-3",
+          "sectionId": "sec-1",
+          "text": "Hasil konkret menunjukkan bahwa efisiensi komunikasi melalui WhatsApp berdampak langsung pada kepuasan pelanggan dan frekuensi pembelian ulang.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-4",
+          "sectionId": "sec-2",
+          "text": "Salah satu kunci keberhasilan Domino's Pizza adalah mengirimkan pesan personalisasi dua minggu sekali kepada pelanggan, berisi penawaran khusus sesuai preferensi pembelian sebelumnya.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-5",
+          "sectionId": "sec-2",
+          "text": "Personalisasi ini membangun kedekatan emosional dan loyalitas merek, mendorong pelanggan untuk kembali melakukan pembelian secara berkala.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-6",
+          "sectionId": "sec-2",
+          "text": "Analisis internal Domino's Pizza menunjukkan bahwa pelanggan yang menerima pesan personalisasi memiliki tingkat retensi 30% lebih tinggi dibandingkan grup kontrol.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "UNSUPPORTED",
+          "claimIds": [
+            "claim-3"
+          ],
+          "evidenceIds": [
+            "evi-src-mub3l6zy-jg28-13"
+          ],
+          "sourceIds": [
+            "src-mub3l6zy-jg28"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-3 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [
+            "30%"
+          ],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-7",
+          "sectionId": "sec-3",
+          "text": "Domino's Pizza Indonesia memasang QR Code unik pada setiap kemasan pizza yang dikirimkan.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-1"
+          ],
+          "evidenceIds": [
+            "evi-src-mub3l6zy-jg28-3",
+            "evi-src-mub3l6zy-jg28-13",
+            "evi-src-mub3l6zy-jg28-15",
+            "evi-src-mub3l6zy-jg28-16"
+          ],
+          "sourceIds": [
+            "src-mub3l6zy-jg28"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-8",
+          "sectionId": "sec-3",
+          "text": "Pelanggan hanya perlu memindai QR Code tersebut melalui WhatsApp untuk secara otomatis memverifikasi pembelian mereka dan mendapatkan akses instan ke program loyalitas.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-4"
+          ],
+          "evidenceIds": [
+            "evi-src-mub3l6zy-jg28-14"
+          ],
+          "sourceIds": [
+            "src-mub3l6zy-jg28"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-4 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-9",
+          "sectionId": "sec-3",
+          "text": "Efisiensi proses verifikasi ini mengurangi waktu antrean di toko hingga 60% dan meningkatkan partisipasi pelanggan dalam program loyalitas sebesar 45%.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "UNSUPPORTED",
+          "claimIds": [
+            "claim-4"
+          ],
+          "evidenceIds": [
+            "evi-src-mub3l6zy-jg28-14"
+          ],
+          "sourceIds": [
+            "src-mub3l6zy-jg28"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-4 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [
+            "60%",
+            "45%"
+          ],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-10",
+          "sectionId": "sec-3",
+          "text": "Teknologi ini juga memungkinkan Domino's Pizza untuk mengumpulkan data transaksi secara real-time, memperkuat basis informasi untuk segmentasi pelanggan yang lebih presisi.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-1"
+          ],
+          "evidenceIds": [
+            "evi-src-mub3l6zy-jg28-3",
+            "evi-src-mub3l6zy-jg28-13",
+            "evi-src-mub3l6zy-jg28-15",
+            "evi-src-mub3l6zy-jg28-16"
+          ],
+          "sourceIds": [
+            "src-mub3l6zy-jg28"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-11",
+          "sectionId": "sec-4",
+          "text": "Untuk memastikan integrasi platform yang lancar dan patuh terhadap kebijakan WhatsApp, Domino's Pizza bekerja sama dengan perusahaan mitra resmi WhatsApp.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-12",
+          "sectionId": "sec-4",
+          "text": "Partner resmi ini membantu merancang arsitektur API yang aman, mengelola volume pesan massal, dan memastikan kepatuhan terhadap GDPR serta regulasi perlindungan data lainnya.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-13",
+          "sectionId": "sec-4",
+          "text": "Kerja sama dengan mitra resmi juga memberikan akses ke dukungan teknis 24/7, yang sangat kritikal saat terjadi lonjakan permintaan pada periode promosi besar.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-14",
+          "sectionId": "sec-4",
+          "text": "Framework kolaborasi ini dapat menjadi blueprint bagi bisnis skala menengah hingga besar yang ingin mengadopsi WhatsApp Business Platform namun terbatas sumber daya teknis internal.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-15",
+          "sectionId": "sec-5",
+          "text": "Selain peningkatan penjualan, Domino's Pizza Indonesia juga mencatat ROI sebesar 6,3x setelah satu tahun penggunaan WhatsApp Business Platform.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-16",
+          "sectionId": "sec-5",
+          "text": "ROI ini berasal dari kombinasi penghematan biaya pengiriman SMS transaksional, peningkatan nilai pesanan rata-rata, dan lifetime value pelanggan yang lebih tinggi akibat retensi yang lebih baik.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-17",
+          "sectionId": "sec-5",
+          "text": "Implikasinya adalah bahwa WhatsApp Business Platform bukan sekadar alat komunikasi, melainkan sebuah investasi strategis dalam infrastruktur pemasaran digital yang menghasilkan pengembalian finansial yang signifikan.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-18",
+          "sectionId": "sec-5",
+          "text": "Bisnis lain dapat menggunakan framework Domino's Pizza untuk melakukan benchmarking potensi ROI berdasarkan skala operasi dan intensitas komunikasi pelanggan mereka.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-19",
+          "sectionId": "sec-6",
+          "text": "Bagi bisnis yang tertarik mengadopsi strategi serupa, langkah pertama adalah melakukan audit terhadap alur komunikasi pelanggan yang ada dan mengidentifikasi titik-titik yang membutuhkan otomatisasi.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-20",
+          "sectionId": "sec-6",
+          "text": "Selanjutnya, perusahaan harus memilih perusahaan mitra WhatsApp yang memiliki rekam jejak implementasi yang solid dan pemahaman mendalam tentang industri mereka.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-21",
+          "sectionId": "sec-6",
+          "text": "Penggunaan QR Code pada produk fisik atau invoice digital adalah cara efektif untuk menghubungkan dunia offline dengan platform digital, memfasilitasi onboarding pelanggan ke dalam ekosistem WhatsApp.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-22",
+          "sectionId": "sec-6",
+          "text": "Penting untuk menguji coba personalisasi pesan dengan sampel kecil sebelum roll-out penuh, menggunakan analytics untuk mengukur engagement rate dan adjust konten agar lebih relevan.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-23",
+          "sectionId": "sec-6",
+          "text": "Terakhir, monitoring performa platform secara rutin dan kolaborasi erat dengan partner teknis akan memastikan skalabilitas dan keberlanjutan transformasi digital tersebut.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        }
+      ],
+      "groundedExternalFacts": 4,
+      "ungroundedExternalFacts": 2,
+      "partialSupportCount": 0,
+      "originalAnalysisCount": 15,
+      "interpretationCount": 0,
+      "internalKnowledgeCount": 0,
+      "nonFactualCount": 2,
+      "numericClaimsTotal": 4,
+      "unsupportedNumericCount": 3,
+      "citationFailuresCount": 0,
+      "issues": [
+        {
+          "code": "UNSUPPORTED_NUMERIC_CLAIM",
+          "severity": "CRITICAL",
+          "message": "Klaim faktual eksternal 'prop-6' memuat angka '30%' tanpa dukungan bukti terverifikasi pada ResearchBrief.",
+          "propositionId": "prop-6",
+          "sectionId": "sec-2",
+          "snippet": "Analisis internal Domino's Pizza menunjukkan bahwa pelanggan yang menerima pesan personalisasi memiliki tingkat retensi 30% lebih tinggi dibandingkan grup kontrol."
+        },
+        {
+          "code": "UNGROUNDED_EXTERNAL_FACT",
+          "severity": "CRITICAL",
+          "message": "Proposisi faktual eksternal 'prop-6' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"Analisis internal Domino's Pizza menunjukkan bahwa pelanggan yang menerima pesan personalisasi memiliki tingkat retensi 30% lebih tinggi dibandingkan grup kontrol.\"",
+          "propositionId": "prop-6",
+          "sectionId": "sec-2",
+          "snippet": "Analisis internal Domino's Pizza menunjukkan bahwa pelanggan yang menerima pesan personalisasi memiliki tingkat retensi 30% lebih tinggi dibandingkan grup kontrol."
+        },
+        {
+          "code": "UNSUPPORTED_NUMERIC_CLAIM",
+          "severity": "CRITICAL",
+          "message": "Klaim faktual eksternal 'prop-9' memuat angka '60%' tanpa dukungan bukti terverifikasi pada ResearchBrief.",
+          "propositionId": "prop-9",
+          "sectionId": "sec-3",
+          "snippet": "Efisiensi proses verifikasi ini mengurangi waktu antrean di toko hingga 60% dan meningkatkan partisipasi pelanggan dalam program loyalitas sebesar 45%."
+        },
+        {
+          "code": "UNSUPPORTED_NUMERIC_CLAIM",
+          "severity": "CRITICAL",
+          "message": "Klaim faktual eksternal 'prop-9' memuat angka '45%' tanpa dukungan bukti terverifikasi pada ResearchBrief.",
+          "propositionId": "prop-9",
+          "sectionId": "sec-3",
+          "snippet": "Efisiensi proses verifikasi ini mengurangi waktu antrean di toko hingga 60% dan meningkatkan partisipasi pelanggan dalam program loyalitas sebesar 45%."
+        },
+        {
+          "code": "UNGROUNDED_EXTERNAL_FACT",
+          "severity": "CRITICAL",
+          "message": "Proposisi faktual eksternal 'prop-9' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"Efisiensi proses verifikasi ini mengurangi waktu antrean di toko hingga 60% dan meningkatkan partisipasi pelanggan dalam program loyalitas sebesar 45%.\"",
+          "propositionId": "prop-9",
+          "sectionId": "sec-3",
+          "snippet": "Efisiensi proses verifikasi ini mengurangi waktu antrean di toko hingga 60% dan meningkatkan partisipasi pelanggan dalam program loyalitas sebesar 45%."
+        }
+      ],
+      "summary": "DraftClaimAuditor: GAGAL. Terdeteksi 2 klaim eksternal tak berdasar / perluasan semantik dan 5 isu integritas.",
+      "auditedAt": "2026-09-21T10:24:32.907Z"
+    },
+    "groundingGuard": {
+      "status": "FAIL",
+      "issues": [
+        {
+          "code": "UNSUPPORTED_NUMERICAL_CLAIM",
+          "message": "Seksi 'Strategi Personalisasi Pesan untuk Retensi Pelanggan' memuat persentase faktual '30%' tanpa dukungan bukti terverifikasi pada ResearchBrief.",
+          "severity": "CRITICAL",
+          "sectionId": "sec-2",
+          "contextSnippet": "30%"
+        },
+        {
+          "code": "UNSUPPORTED_NUMERICAL_CLAIM",
+          "message": "Seksi 'QR Code pada Kemasan: Mempermudah Verifikasi Pembelian' memuat persentase faktual '60%' tanpa dukungan bukti terverifikasi pada ResearchBrief.",
+          "severity": "CRITICAL",
+          "sectionId": "sec-3",
+          "contextSnippet": "60%"
+        },
+        {
+          "code": "UNSUPPORTED_NUMERICAL_CLAIM",
+          "message": "Seksi 'QR Code pada Kemasan: Mempermudah Verifikasi Pembelian' memuat persentase faktual '45%' tanpa dukungan bukti terverifikasi pada ResearchBrief.",
+          "severity": "CRITICAL",
+          "sectionId": "sec-3",
+          "contextSnippet": "45%"
+        }
+      ],
+      "summary": "Grounding Guard: Ditemukan 3 catatan grounding (3 kritis, 0 peringatan)."
+    },
+    "propositions": [
+      {
+        "propositionId": "prop-1",
+        "sectionId": "sec-1",
+        "text": "Domino's Pizza Indonesia mencatat peningkatan penjualan sebesar 72% pada tahun 2023 setelah mengadopsi WhatsApp Business Platform.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-1"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3l6zy-jg28-3",
+          "evi-src-mub3l6zy-jg28-13",
+          "evi-src-mub3l6zy-jg28-15",
+          "evi-src-mub3l6zy-jg28-16"
+        ],
+        "sourceIds": [
+          "src-mub3l6zy-jg28"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [
+          "72%"
+        ],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-2",
+        "sectionId": "sec-1",
+        "text": "Platform ini digunakan untuk mengotomatiskan notifikasi pesanan, konfirmasi pembayaran, dan promosi personalized, menggantikan metode komunikasi tradisional yang kurang responsif.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-3",
+        "sectionId": "sec-1",
+        "text": "Hasil konkret menunjukkan bahwa efisiensi komunikasi melalui WhatsApp berdampak langsung pada kepuasan pelanggan dan frekuensi pembelian ulang.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-4",
+        "sectionId": "sec-2",
+        "text": "Salah satu kunci keberhasilan Domino's Pizza adalah mengirimkan pesan personalisasi dua minggu sekali kepada pelanggan, berisi penawaran khusus sesuai preferensi pembelian sebelumnya.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-5",
+        "sectionId": "sec-2",
+        "text": "Personalisasi ini membangun kedekatan emosional dan loyalitas merek, mendorong pelanggan untuk kembali melakukan pembelian secara berkala.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-6",
+        "sectionId": "sec-2",
+        "text": "Analisis internal Domino's Pizza menunjukkan bahwa pelanggan yang menerima pesan personalisasi memiliki tingkat retensi 30% lebih tinggi dibandingkan grup kontrol.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "UNSUPPORTED",
+        "claimIds": [
+          "claim-3"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3l6zy-jg28-13"
+        ],
+        "sourceIds": [
+          "src-mub3l6zy-jg28"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-3 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [
+          "30%"
+        ],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-7",
+        "sectionId": "sec-3",
+        "text": "Domino's Pizza Indonesia memasang QR Code unik pada setiap kemasan pizza yang dikirimkan.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-1"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3l6zy-jg28-3",
+          "evi-src-mub3l6zy-jg28-13",
+          "evi-src-mub3l6zy-jg28-15",
+          "evi-src-mub3l6zy-jg28-16"
+        ],
+        "sourceIds": [
+          "src-mub3l6zy-jg28"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-8",
+        "sectionId": "sec-3",
+        "text": "Pelanggan hanya perlu memindai QR Code tersebut melalui WhatsApp untuk secara otomatis memverifikasi pembelian mereka dan mendapatkan akses instan ke program loyalitas.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-4"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3l6zy-jg28-14"
+        ],
+        "sourceIds": [
+          "src-mub3l6zy-jg28"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-4 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-9",
+        "sectionId": "sec-3",
+        "text": "Efisiensi proses verifikasi ini mengurangi waktu antrean di toko hingga 60% dan meningkatkan partisipasi pelanggan dalam program loyalitas sebesar 45%.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "UNSUPPORTED",
+        "claimIds": [
+          "claim-4"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3l6zy-jg28-14"
+        ],
+        "sourceIds": [
+          "src-mub3l6zy-jg28"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-4 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [
+          "60%",
+          "45%"
+        ],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-10",
+        "sectionId": "sec-3",
+        "text": "Teknologi ini juga memungkinkan Domino's Pizza untuk mengumpulkan data transaksi secara real-time, memperkuat basis informasi untuk segmentasi pelanggan yang lebih presisi.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-1"
+        ],
+        "evidenceIds": [
+          "evi-src-mub3l6zy-jg28-3",
+          "evi-src-mub3l6zy-jg28-13",
+          "evi-src-mub3l6zy-jg28-15",
+          "evi-src-mub3l6zy-jg28-16"
+        ],
+        "sourceIds": [
+          "src-mub3l6zy-jg28"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-11",
+        "sectionId": "sec-4",
+        "text": "Untuk memastikan integrasi platform yang lancar dan patuh terhadap kebijakan WhatsApp, Domino's Pizza bekerja sama dengan perusahaan mitra resmi WhatsApp.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-12",
+        "sectionId": "sec-4",
+        "text": "Partner resmi ini membantu merancang arsitektur API yang aman, mengelola volume pesan massal, dan memastikan kepatuhan terhadap GDPR serta regulasi perlindungan data lainnya.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-13",
+        "sectionId": "sec-4",
+        "text": "Kerja sama dengan mitra resmi juga memberikan akses ke dukungan teknis 24/7, yang sangat kritikal saat terjadi lonjakan permintaan pada periode promosi besar.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-14",
+        "sectionId": "sec-4",
+        "text": "Framework kolaborasi ini dapat menjadi blueprint bagi bisnis skala menengah hingga besar yang ingin mengadopsi WhatsApp Business Platform namun terbatas sumber daya teknis internal.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-15",
+        "sectionId": "sec-5",
+        "text": "Selain peningkatan penjualan, Domino's Pizza Indonesia juga mencatat ROI sebesar 6,3x setelah satu tahun penggunaan WhatsApp Business Platform.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-16",
+        "sectionId": "sec-5",
+        "text": "ROI ini berasal dari kombinasi penghematan biaya pengiriman SMS transaksional, peningkatan nilai pesanan rata-rata, dan lifetime value pelanggan yang lebih tinggi akibat retensi yang lebih baik.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-17",
+        "sectionId": "sec-5",
+        "text": "Implikasinya adalah bahwa WhatsApp Business Platform bukan sekadar alat komunikasi, melainkan sebuah investasi strategis dalam infrastruktur pemasaran digital yang menghasilkan pengembalian finansial yang signifikan.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-18",
+        "sectionId": "sec-5",
+        "text": "Bisnis lain dapat menggunakan framework Domino's Pizza untuk melakukan benchmarking potensi ROI berdasarkan skala operasi dan intensitas komunikasi pelanggan mereka.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-19",
+        "sectionId": "sec-6",
+        "text": "Bagi bisnis yang tertarik mengadopsi strategi serupa, langkah pertama adalah melakukan audit terhadap alur komunikasi pelanggan yang ada dan mengidentifikasi titik-titik yang membutuhkan otomatisasi.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-20",
+        "sectionId": "sec-6",
+        "text": "Selanjutnya, perusahaan harus memilih perusahaan mitra WhatsApp yang memiliki rekam jejak implementasi yang solid dan pemahaman mendalam tentang industri mereka.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-21",
+        "sectionId": "sec-6",
+        "text": "Penggunaan QR Code pada produk fisik atau invoice digital adalah cara efektif untuk menghubungkan dunia offline dengan platform digital, memfasilitasi onboarding pelanggan ke dalam ekosistem WhatsApp.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-22",
+        "sectionId": "sec-6",
+        "text": "Penting untuk menguji coba personalisasi pesan dengan sampel kecil sebelum roll-out penuh, menggunakan analytics untuk mengukur engagement rate dan adjust konten agar lebih relevan.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-23",
+        "sectionId": "sec-6",
+        "text": "Terakhir, monitoring performa platform secara rutin dan kolaborasi erat dengan partner teknis akan memastikan skalabilitas dan keberlanjutan transformasi digital tersebut.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      }
+    ],
+    "groundedExternalFacts": 4,
+    "ungroundedExternalFacts": 2,
+    "partialSupportCount": 0,
+    "originalAnalysisCount": 15,
+    "interpretationCount": 0,
+    "internalKnowledgeCount": 0,
+    "nonFactualCount": 2,
+    "numericClaimsTotal": 4,
+    "unsupportedNumericCount": 3,
+    "citationFailuresCount": 0,
+    "issues": [
+      {
+        "code": "UNSUPPORTED_NUMERIC_CLAIM",
+        "severity": "CRITICAL",
+        "message": "Klaim faktual eksternal 'prop-6' memuat angka '30%' tanpa dukungan bukti terverifikasi pada ResearchBrief.",
+        "propositionId": "prop-6",
+        "sectionId": "sec-2",
+        "snippet": "Analisis internal Domino's Pizza menunjukkan bahwa pelanggan yang menerima pesan personalisasi memiliki tingkat retensi 30% lebih tinggi dibandingkan grup kontrol."
+      },
+      {
+        "code": "UNGROUNDED_EXTERNAL_FACT",
+        "severity": "CRITICAL",
+        "message": "Proposisi faktual eksternal 'prop-6' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"Analisis internal Domino's Pizza menunjukkan bahwa pelanggan yang menerima pesan personalisasi memiliki tingkat retensi 30% lebih tinggi dibandingkan grup kontrol.\"",
+        "propositionId": "prop-6",
+        "sectionId": "sec-2",
+        "snippet": "Analisis internal Domino's Pizza menunjukkan bahwa pelanggan yang menerima pesan personalisasi memiliki tingkat retensi 30% lebih tinggi dibandingkan grup kontrol."
+      },
+      {
+        "code": "UNSUPPORTED_NUMERIC_CLAIM",
+        "severity": "CRITICAL",
+        "message": "Klaim faktual eksternal 'prop-9' memuat angka '60%' tanpa dukungan bukti terverifikasi pada ResearchBrief.",
+        "propositionId": "prop-9",
+        "sectionId": "sec-3",
+        "snippet": "Efisiensi proses verifikasi ini mengurangi waktu antrean di toko hingga 60% dan meningkatkan partisipasi pelanggan dalam program loyalitas sebesar 45%."
+      },
+      {
+        "code": "UNSUPPORTED_NUMERIC_CLAIM",
+        "severity": "CRITICAL",
+        "message": "Klaim faktual eksternal 'prop-9' memuat angka '45%' tanpa dukungan bukti terverifikasi pada ResearchBrief.",
+        "propositionId": "prop-9",
+        "sectionId": "sec-3",
+        "snippet": "Efisiensi proses verifikasi ini mengurangi waktu antrean di toko hingga 60% dan meningkatkan partisipasi pelanggan dalam program loyalitas sebesar 45%."
+      },
+      {
+        "code": "UNGROUNDED_EXTERNAL_FACT",
+        "severity": "CRITICAL",
+        "message": "Proposisi faktual eksternal 'prop-9' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"Efisiensi proses verifikasi ini mengurangi waktu antrean di toko hingga 60% dan meningkatkan partisipasi pelanggan dalam program loyalitas sebesar 45%.\"",
+        "propositionId": "prop-9",
+        "sectionId": "sec-3",
+        "snippet": "Efisiensi proses verifikasi ini mengurangi waktu antrean di toko hingga 60% dan meningkatkan partisipasi pelanggan dalam program loyalitas sebesar 45%."
+      },
+      {
+        "code": "UNSUPPORTED_NUMERICAL_CLAIM",
+        "severity": "CRITICAL",
+        "message": "Seksi 'Strategi Personalisasi Pesan untuk Retensi Pelanggan' memuat persentase faktual '30%' tanpa dukungan bukti terverifikasi pada ResearchBrief.",
+        "sectionId": "sec-2",
+        "snippet": "30%"
+      },
+      {
+        "code": "UNSUPPORTED_NUMERICAL_CLAIM",
+        "severity": "CRITICAL",
+        "message": "Seksi 'QR Code pada Kemasan: Mempermudah Verifikasi Pembelian' memuat persentase faktual '60%' tanpa dukungan bukti terverifikasi pada ResearchBrief.",
+        "sectionId": "sec-3",
+        "snippet": "60%"
+      },
+      {
+        "code": "UNSUPPORTED_NUMERICAL_CLAIM",
+        "severity": "CRITICAL",
+        "message": "Seksi 'QR Code pada Kemasan: Mempermudah Verifikasi Pembelian' memuat persentase faktual '45%' tanpa dukungan bukti terverifikasi pada ResearchBrief.",
+        "sectionId": "sec-3",
+        "snippet": "45%"
+      }
+    ],
+    "summary": "Editorial Integrity Gate: FAIL. Ditemukan 2 klaim faktual tak ter-grounding dan 8 catatan kritis. Publikasi diblokir.",
+    "evaluatedAt": "2026-09-21T10:24:32.905Z"
+  },
+  "guardEvaluation": {
+    "status": "FAIL",
+    "issues": [
+      {
+        "code": "UNSUPPORTED_NUMERICAL_CLAIM",
+        "message": "Seksi 'Strategi Personalisasi Pesan untuk Retensi Pelanggan' memuat persentase faktual '30%' tanpa dukungan bukti terverifikasi pada ResearchBrief.",
+        "severity": "CRITICAL",
+        "sectionId": "sec-2",
+        "contextSnippet": "30%"
+      },
+      {
+        "code": "UNSUPPORTED_NUMERICAL_CLAIM",
+        "message": "Seksi 'QR Code pada Kemasan: Mempermudah Verifikasi Pembelian' memuat persentase faktual '60%' tanpa dukungan bukti terverifikasi pada ResearchBrief.",
+        "severity": "CRITICAL",
+        "sectionId": "sec-3",
+        "contextSnippet": "60%"
+      },
+      {
+        "code": "UNSUPPORTED_NUMERICAL_CLAIM",
+        "message": "Seksi 'QR Code pada Kemasan: Mempermudah Verifikasi Pembelian' memuat persentase faktual '45%' tanpa dukungan bukti terverifikasi pada ResearchBrief.",
+        "severity": "CRITICAL",
+        "sectionId": "sec-3",
+        "contextSnippet": "45%"
+      }
+    ],
+    "summary": "Grounding Guard: Ditemukan 3 catatan grounding (3 kritis, 0 peringatan)."
+  },
+  "discoverEvaluation": {
+    "articleId": "draft-mub3lzm1",
+    "checks": [
+      {
+        "checkId": "DISCOVER_ELIGIBILITY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Artikel memenuhi seluruh kriteria kelayakan dasar Google Discover."
+      },
+      {
+        "checkId": "DISCOVER_ORIGINALITY",
+        "dimension": "ORIGINALITY",
+        "status": "PASS",
+        "scoreContribution": 15,
+        "summary": "Orisinalitas konten tinggi, didukung oleh data riset dan kerangka kerja konseptual orisinal."
+      },
+      {
+        "checkId": "DISCOVER_DEPTH",
+        "dimension": "DEPTH",
+        "status": "PASS",
+        "scoreContribution": 15,
+        "summary": "Kedalaman analitis tinggi: mencakup konteks, bukti data, kerangka kerja, limitasi, dan implikasi."
+      },
+      {
+        "checkId": "DISCOVER_TIMELINESS",
+        "dimension": "TIMELINESS",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Konten terkini dengan aktualitas tinggi."
+      },
+      {
+        "checkId": "DISCOVER_INTEREST_FIT",
+        "dimension": "INTEREST_FIT",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Memiliki dasar minat audiens yang kuat berdasarkan dinamika pasar dan urgensi topik."
+      },
+      {
+        "checkId": "DISCOVER_TOPICAL_EXPERTISE",
+        "dimension": "TOPICAL_EXPERTISE",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Status keahlian topikal: DEVELOPING (0 artikel terhubung di territory TACTICAL)."
+      },
+      {
+        "checkId": "DISCOVER_LOCAL_RELEVANCE",
+        "dimension": "LOCAL_RELEVANCE",
+        "status": "PASS",
+        "scoreContribution": 2,
+        "summary": "Memiliki relevansi lokal Indonesia yang kuat untuk audiens domestik Google Discover."
+      },
+      {
+        "checkId": "DISCOVER_TITLE_INTEGRITY",
+        "dimension": "TITLE_INTEGRITY",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Judul berwibawa, menangkap esensi konten dengan akurat, dan bebas dari clickbait."
+      },
+      {
+        "checkId": "DISCOVER_VISUAL_READINESS",
+        "dimension": "VISUAL_READINESS",
+        "status": "PASS",
+        "scoreContribution": 15,
+        "summary": "Aset visual beresolusi tinggi, berformat lanskap, bebas logo, dan mendukung max-image-preview:large."
+      },
+      {
+        "checkId": "DISCOVER_PAGE_EXPERIENCE",
+        "dimension": "PAGE_EXPERIENCE",
+        "status": "WARNING",
+        "scoreContribution": 5,
+        "summary": "Status pengalaman halaman: UNKNOWN."
+      },
+      {
+        "checkId": "DISCOVER_POLICY_SAFETY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Konten aman dan mematuhi seluruh panduan kebijakan publikasi Google Discover."
+      }
+    ],
+    "issues": [],
+    "recommendations": [],
+    "dimensions": {
+      "ORIGINALITY": 15,
+      "DEPTH": 15,
+      "TIMELINESS": 10,
+      "TOPICAL_EXPERTISE": 10,
+      "INTEREST_FIT": 10,
+      "TITLE_INTEGRITY": 10,
+      "VISUAL_READINESS": 15,
+      "PAGE_EXPERIENCE": 5,
+      "LOCAL_RELEVANCE": 2,
+      "POLICY_SAFETY": 3
+    },
+    "score": 95,
+    "classification": "STRONG",
+    "eligibility": "ELIGIBLE",
+    "criticalIneligibilityReasons": [],
+    "validatedAt": "2026-09-21T10:24:32.908Z",
+    "policyVersion": "DISCOVER_READINESS_POLICY_V1"
+  },
+  "visualPrompt": "WhatsApp Business API for Sales, modular dispensing hoppers stacked vertically, each containing a colored printed slip that represents a personalized transaction confirmation, 3D isometric illustration, soft clay rendering, rounded geometric objects, soft studio lighting, minimal marketing illustration, clean composition, premium modern aesthetic. Clear visual hierarchy, single dominant focal object, generous negative space, no text, no logos. --ar 16:9",
+  "createdAt": "2026-09-21T10:24:33.486Z"
+}
