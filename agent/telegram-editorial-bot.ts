@@ -1227,8 +1227,9 @@ Silakan tinjau ringkasan draf atau batalkan:`;
       );
     }
 
+    const githubRepo = process.env.GITHUB_REPOSITORY?.trim() || 'pashaismayasukardi2-web/nexamos-blog';
     const authenticatedRemoteUrl = githubToken
-      ? `https://${githubToken}@github.com/wishnuyasa2020-dotcom/nexamos-blog.git`
+      ? `https://${githubToken}@github.com/${githubRepo}.git`
       : 'origin';
 
     // 2. Safe directory fix untuk container Linux / Docker
