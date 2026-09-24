@@ -239,13 +239,17 @@ export class TelegramEditorialBot {
 
     console.log('Menunggu pesan masuk dari Telegram...\n');
 
+    let consecutiveNetworkErrors = 0;
+
     while (this.isRunning) {
       try {
         const updates = await this.client.getUpdates(
           this.lastUpdateId ? this.lastUpdateId + 1 : undefined,
-          30,
+          20,
           this.abortController.signal
         );
+
+        consecutiveNetworkErrors = 0;
 
         for (const update of updates) {
           this.lastUpdateId = Math.max(this.lastUpdateId, update.update_id);
@@ -257,6 +261,7 @@ export class TelegramEditorialBot {
         }
         const isConflict = err?.message?.includes('409') || err?.message?.includes('Conflict');
         if (isConflict) {
+          consecutiveNetworkErrors = 0;
           // Jika 409 disebabkan oleh webhook yang aktif, bersihkan webhook dan lanjutkan polling
           if (/webhook/i.test(err?.message || '')) {
             console.warn('[WARN] Terdeteksi webhook aktif memblokir getUpdates. Menghapus webhook...');
@@ -276,12 +281,47 @@ export class TelegramEditorialBot {
             `[WARN] Polling update conflict 409: Terdeteksi instance bot lain yang aktif. Mengalah dan menunggu ${Math.round(backoff / 1000)} detik...`
           );
           await new Promise((r) => setTimeout(r, backoff));
+        } else if (this.isTransientNetworkError(err)) {
+          consecutiveNetworkErrors++;
+          const delay = Math.min(consecutiveNetworkErrors * 2000, 10000);
+          if (consecutiveNetworkErrors >= 3) {
+            console.warn(
+              `[WARN] Gangguan koneksi polling beruntun (#${consecutiveNetworkErrors}): ${err.message}. Mencoba lagi dalam ${delay / 1000} detik...`
+            );
+          } else {
+            console.log(
+              `[POLLING] Reconnect otomatis (#${consecutiveNetworkErrors}): koneksi idle ditutup server/proxy (${err.message}). Menghubungkan ulang dalam ${delay / 1000} detik...`
+            );
+          }
+          await new Promise((r) => setTimeout(r, delay));
         } else {
+          consecutiveNetworkErrors = 0;
           console.warn(`[WARN] Polling update error: ${err.message}. Mencoba lagi dalam 3 detik...`);
           await new Promise((r) => setTimeout(r, 3000));
         }
       }
     }
+  }
+
+  /**
+   * Deteksi apakah error adalah gangguan jaringan sementara (socket hangup, idle timeout, connection reset)
+   */
+  private isTransientNetworkError(err: any): boolean {
+    const msg = String(err?.message || '').toLowerCase();
+    const cause = String(err?.cause?.message || err?.cause?.code || err?.cause || '').toLowerCase();
+    return (
+      msg.includes('fetch failed') ||
+      msg.includes('network') ||
+      msg.includes('econnreset') ||
+      msg.includes('etimedout') ||
+      msg.includes('und_err') ||
+      msg.includes('socket') ||
+      msg.includes('timeout') ||
+      cause.includes('econnreset') ||
+      cause.includes('closed') ||
+      cause.includes('timeout') ||
+      cause.includes('reset')
+    );
   }
 
   /**

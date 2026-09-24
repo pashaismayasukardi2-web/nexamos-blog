@@ -95,25 +95,50 @@ export class TelegramClient {
   /**
    * Helper internal untuk memanggil endpoint Telegram API
    */
-  private async callApi<T>(method: string, body?: Record<string, any>, signal?: AbortSignal): Promise<T> {
+  private async callApi<T>(
+    method: string,
+    body?: Record<string, any>,
+    signal?: AbortSignal,
+    timeoutMs: number = 30000
+  ): Promise<T> {
     if (!this.botToken) {
       throw new Error('TELEGRAM_CLIENT_ERROR: Bot token belum disetel.');
     }
 
     const url = `${this.baseUrl}/${method}`;
+    const controller = new AbortController();
+    const timer = setTimeout(() => {
+      controller.abort(new Error(`TELEGRAM_TIMEOUT: Panggilan ${method} melebihi batas waktu ${timeoutMs}ms`));
+    }, timeoutMs);
+
+    const activeSignal = signal ? AbortSignal.any([signal, controller.signal]) : controller.signal;
+
     const options: RequestInit = {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      signal
+      signal: activeSignal
     };
 
     if (body) {
       options.body = JSON.stringify(body);
     }
 
-    const response = await fetch(url, options);
+    let response: Awaited<ReturnType<typeof fetch>>;
+    try {
+      response = await fetch(url, options);
+    } catch (fetchErr: any) {
+      clearTimeout(timer);
+      if (signal?.aborted) {
+        throw fetchErr;
+      }
+      const cause = fetchErr.cause ? ` (Penyebab: ${fetchErr.cause.message || fetchErr.cause.code || fetchErr.cause})` : '';
+      throw new Error(`TELEGRAM_NETWORK_ERROR: ${fetchErr.message}${cause}`);
+    } finally {
+      clearTimeout(timer);
+    }
+
     const rawText = await response.text();
     let data: any;
     try {
@@ -216,8 +241,9 @@ export class TelegramClient {
 
   /**
    * Ambil pembaruan pesan (Long Polling)
+   * Menggunakan timeout 20 detik secara default untuk mencegah pemutusan koneksi sepihak oleh reverse proxy cloud
    */
-  public async getUpdates(offset?: number, timeout: number = 30, signal?: AbortSignal): Promise<TelegramUpdate[]> {
+  public async getUpdates(offset?: number, timeout: number = 20, signal?: AbortSignal): Promise<TelegramUpdate[]> {
     return this.callApi<TelegramUpdate[]>(
       'getUpdates',
       {
@@ -225,7 +251,8 @@ export class TelegramClient {
         timeout,
         allowed_updates: ['message', 'callback_query']
       },
-      signal
+      signal,
+      (timeout + 15) * 1000
     );
   }
 
