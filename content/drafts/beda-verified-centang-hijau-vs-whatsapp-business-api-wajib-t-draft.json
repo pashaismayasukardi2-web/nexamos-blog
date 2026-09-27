@@ -1,0 +1,1172 @@
+{
+  "draft": {
+    "id": "draft-mujptqpy",
+    "topicId": "top-mujpt0dy",
+    "researchProjectId": "proj-mujpt0e0",
+    "title": "Memahami Perbedaan Centang Hijau dan WhatsApp Business API: Panduan Praktis untuk Bisnis",
+    "dek": "Banyak pebisnis masih salah mengira bahwa centang hijau dan WhatsApp Business API adalah satu hal yang sama. Artikel ini akan menguraikan perbedaan fundamental antara keduanya agar bisnis bisa membuat keputusan teknologi yang lebih cerdas.",
+    "slug": "beda-verified-centang-hijau-vs-whatsapp-business-api-wajib-t",
+    "territory": "TACTICAL",
+    "articleType": "EXPLAINER",
+    "editorialRole": "AUTHORITY",
+    "thesis": "Pemilik bisnis perlu memahami bahwa centang hijau dan WhatsApp Business API adalah dua konsep berbeda namun saling melengkifique; centang hijau adalah status verifikasi visual, sedangkan API adalah infrastruktur teknis untuk integración.",
+    "editorialAngle": "Artikel ini menolak kesalahpahaman umum bahwa centang hijau dan WhatsApp Business API adalah satu entitas yang sama, dengan memberikan klarifikasi definisi, fungsi, dan implikasi praktis yang tepat agar bisnis bisa membuat keputusan teknologi yang lebih cerdas.",
+    "sections": [
+      {
+        "id": "sec-1",
+        "heading": "Centang Hijau: Identitas Visual yang Meningkatkan Kepercayaan Pelanggan",
+        "content": "Centang hijau adalah badge verifikasi visual yang ditampilkan di profil akun WhatsApp Business. Badge ini menunjukkan bahwa akun telah diverifikasi oleh Meta dan identitas bisnisnya telah dikonfirmasi. Verifikasi ini bertujuan untuk membangun kepercayaan pelanggan dan mengurangi potensi penipuan. Dengan adanya centang hijau, pelanggan dapat yakin bahwa mereka berinteraksi dengan bisnis asli dan bukan akun palsu.",
+        "order": 1,
+        "purpose": "CONTEXT",
+        "claimUsageIds": [
+          "cu-1"
+        ]
+      },
+      {
+        "id": "sec-2",
+        "heading": "WhatsApp Business API: Infrastruktur Teknis untuk Integrasi Skala Enterprise",
+        "content": "WhatsApp Business API adalah seperangkat protokol dan tools yang memungkinkan bisnis menghubungkan aplikasi internal mereka (seperti CRM, ERP, atau sistem ticketing) dengan platform WhatsApp. Melalui API ini, bisnis dapat mengirimkan pesan transaksional otomatis, mengotomatiskan respons, dan menskalakan komunikasi dengan ribuan pelanggan sekaligus. API ini dirancang khusus untuk kebutuhan operasional enterprise yang kompleks dan volume pesan tinggi.",
+        "order": 2,
+        "purpose": "ARGUMENT",
+        "claimUsageIds": [
+          "cu-2"
+        ]
+      },
+      {
+        "id": "sec-3",
+        "heading": "Mengapa Bisnis Memerlukan Keduanya?",
+        "content": "Centang hijau dan WhatsApp Business API memiliki tujuan yang berbeda namun saling melengkifique. Centang hijau memastikan pelanggan percaya bahwa mereka berinteraksi dengan bisnis asli, sementara WhatsApp Business API memastikan bisnis dapat mengelola komunikasi dengan efisien dan andal. Tanpa centang hijau, pesan bisnis mungkin dianggap spam oleh pelanggan; tanpa API, bisnis tidak dapat menskalakan operasional komunikasi mereka.",
+        "order": 3,
+        "purpose": "ANALYSIS",
+        "claimUsageIds": [
+          "cu-1",
+          "cu-2"
+        ]
+      },
+      {
+        "id": "sec-4",
+        "heading": "Langkah Implementasi bagi Bisnis yang Ingin Mengadopsi Keduanya",
+        "content": "Langkah pertama: Daftarkan akun WhatsApp Business dan ajukan verifikasi centang hijau melalui proses yang ditentukan Meta. Langkah kedua: Setelah centang hijau berhasil didapat, bisnis dapat mulai menjalin kemitraan dengan mitra resmi Meta (Meta's WhatsApp Business Solution Providers) untuk mengakses WhatsApp Business API. Langkah ketiga: Integrasikan API ke sistem internal bisnis untuk mengotomatiskan alur kerja komunikasi dengan pelanggan.",
+        "order": 4,
+        "purpose": "PRACTICAL_APPLICATION",
+        "claimUsageIds": [
+          "cu-3"
+        ]
+      },
+      {
+        "id": "sec-5",
+        "heading": "Implikasi Strategis: Membedakan Antara Centang Hijau dan WhatsApp Business API Adalah Kunci Keberhasilan Komunikasi Bisnis Digital",
+        "content": "Salah mengartikan kedua konsep ini dapat menyebabkan kegagalan implementasi dan kerugian bisnis, misalnya mengira bahwa hanya mendaftar API sudah cukup untuk mendapat kepercayaan pelanggan. Pemahaman yang benar memungkinkan bisnis untuk merencanakan adopsi teknologi dengan lebih matang, mengalokasikan budget yang tepat, dan memilih mitra teknologi yang sesuai dengan kebutuhan spesifik mereka. Oleh karena itu, bisnis harus memastikan bahwa mereka membeli centang hijau dari sumber yang resmi dan menggunakan WhatsApp Business API melalui solusi provider yang terverificado.",
+        "order": 5,
+        "purpose": "IMPLICATION",
+        "claimUsageIds": [
+          "cu-1",
+          "cu-2"
+        ]
+      }
+    ],
+    "claimUsages": [
+      {
+        "id": "cu-1",
+        "claimId": "claim-1",
+        "sectionId": "sec-1",
+        "usageType": "PARAPHRASED",
+        "statement": "Akun WhatsApp Business dengan centang hijau meningkatkan kepercayaan pelanggan dan visibilitas bisnis."
+      },
+      {
+        "id": "cu-2",
+        "claimId": "claim-6",
+        "sectionId": "sec-2",
+        "usageType": "PARAPHRASED",
+        "statement": "WhatsApp Business Verified menyediakan fitur tambahan seperti pesan otomatis untuk pelanggan baru."
+      },
+      {
+        "id": "cu-3",
+        "claimId": "claim-4",
+        "sectionId": "sec-4",
+        "usageType": "PARAPHRASED",
+        "statement": "Proses verifikasi akun WhatsApp Business melibatkan pendaftaran nomor telepon dan validasi dokumen bisnis."
+      }
+    ],
+    "citationMap": [
+      {
+        "claimUsageId": "cu-1",
+        "claimId": "claim-1",
+        "sourceIds": [
+          "src-mujpt307-72vk"
+        ],
+        "evidenceIds": [
+          "evi-src-mujpt307-72vk-2",
+          "evi-src-mujpt307-72vk-4",
+          "evi-src-mujpt307-72vk-5",
+          "evi-src-mujpt307-72vk-8",
+          "evi-src-mujpt307-72vk-11",
+          "evi-src-mujpt307-72vk-13",
+          "evi-src-mujpt307-72vk-17",
+          "evi-src-mujpt307-72vk-19"
+        ]
+      },
+      {
+        "claimUsageId": "cu-2",
+        "claimId": "claim-6",
+        "sourceIds": [
+          "src-mujpt307-72vk"
+        ],
+        "evidenceIds": [
+          "evi-src-mujpt307-72vk-3",
+          "evi-src-mujpt307-72vk-4",
+          "evi-src-mujpt307-72vk-8",
+          "evi-src-mujpt307-72vk-14",
+          "evi-src-mujpt307-72vk-17",
+          "evi-src-mujpt307-72vk-19"
+        ]
+      },
+      {
+        "claimUsageId": "cu-3",
+        "claimId": "claim-4",
+        "sourceIds": [
+          "src-mujpt307-72vk"
+        ],
+        "evidenceIds": [
+          "evi-src-mujpt307-72vk-4",
+          "evi-src-mujpt307-72vk-19"
+        ]
+      }
+    ],
+    "status": "READY_FOR_EDITORIAL_REVIEW",
+    "generatedAt": "2026-09-27T11:08:35.590Z",
+    "generatorVersion": "real-ai-v1",
+    "promptVersion": "1.0.0"
+  },
+  "brief": {
+    "id": "brief-mujpt8dg",
+    "topicId": "top-mujpt0dy",
+    "researchProjectId": "proj-mujpt0e0",
+    "objective": "Beda verified centang hijau vs WhatsApp Business API, wajib tahu!",
+    "answeredQuestions": [
+      {
+        "id": "rq-1",
+        "question": "Apa perbedaan utama antara WhatsApp Business API dan akun centang hijau reguler dalam hal kapasitas pengiriman pesan?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-2",
+        "question": "Bagaimana mekanisme verifikasi dan autentikasi pengguna pada kedua platform tersebut?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-3",
+        "question": "Apa implikasi keamanan dari penggunaan WhatsApp Business API dibandingkan akun centang hijau reguler bagi enterprise?",
+        "priority": "MEDIUM",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-4",
+        "question": "Bagaimana performa kedua platform dalam hal uptime, throughput, dan latensi pengiriman pesan?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-5",
+        "question": "Apa saja biaya operasional dan total cost of ownership (TCO) yang harus diperhitungkan oleh enterprise saat memilih salah satu platform?",
+        "priority": "MEDIUM",
+        "status": "OPEN"
+      }
+    ],
+    "openQuestions": [],
+    "supportedClaims": [
+      {
+        "id": "claim-1",
+        "researchProjectId": "proj-mujpt0e0",
+        "statement": "Akun WhatsApp Business dengan centang hijau meningkatkan kepercayaan pelanggan dan visibilitas bisnis.",
+        "claimType": "FACTUAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-27T11:08:10.087Z",
+        "updatedAt": "2026-09-27T11:08:10.087Z",
+        "supportingEvidenceIds": [
+          "evi-src-mujpt307-72vk-2",
+          "evi-src-mujpt307-72vk-4",
+          "evi-src-mujpt307-72vk-5",
+          "evi-src-mujpt307-72vk-8",
+          "evi-src-mujpt307-72vk-11",
+          "evi-src-mujpt307-72vk-13",
+          "evi-src-mujpt307-72vk-17",
+          "evi-src-mujpt307-72vk-19"
+        ]
+      },
+      {
+        "id": "claim-2",
+        "researchProjectId": "proj-mujpt0e0",
+        "statement": "WhatsApp Business membantu bisnis berkomunikasi dengan pelanggan secara cepat dan mudah.",
+        "claimType": "FACTUAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-27T11:08:10.390Z",
+        "updatedAt": "2026-09-27T11:08:10.390Z",
+        "supportingEvidenceIds": [
+          "evi-src-mujpt307-72vk-2",
+          "evi-src-mujpt307-72vk-3",
+          "evi-src-mujpt307-72vk-4",
+          "evi-src-mujpt307-72vk-5",
+          "evi-src-mujpt307-72vk-8",
+          "evi-src-mujpt307-72vk-11",
+          "evi-src-mujpt307-72vk-13",
+          "evi-src-mujpt307-72vk-17"
+        ]
+      },
+      {
+        "id": "claim-3",
+        "researchProjectId": "proj-mujpt0e0",
+        "statement": "Fitur-fitur WhatsApp Business memudahkan bisnis mengelola operasional, termasuk pesanan dan dukungan pelanggan.",
+        "claimType": "FACTUAL",
+        "importance": "SUPPORTING",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-27T11:08:10.671Z",
+        "updatedAt": "2026-09-27T11:08:10.671Z",
+        "supportingEvidenceIds": [
+          "evi-src-mujpt307-72vk-3",
+          "evi-src-mujpt307-72vk-4",
+          "evi-src-mujpt307-72vk-5",
+          "evi-src-mujpt307-72vk-8",
+          "evi-src-mujpt307-72vk-11",
+          "evi-src-mujpt307-72vk-13",
+          "evi-src-mujpt307-72vk-19"
+        ]
+      },
+      {
+        "id": "claim-4",
+        "researchProjectId": "proj-mujpt0e0",
+        "statement": "Proses verifikasi akun WhatsApp Business melibatkan pendaftaran nomor telepon dan validasi dokumen bisnis.",
+        "claimType": "FACTUAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-27T11:08:10.941Z",
+        "updatedAt": "2026-09-27T11:08:10.941Z",
+        "supportingEvidenceIds": [
+          "evi-src-mujpt307-72vk-4",
+          "evi-src-mujpt307-72vk-19"
+        ]
+      },
+      {
+        "id": "claim-5",
+        "researchProjectId": "proj-mujpt0e0",
+        "statement": "Centang hijau pada WhatsApp Business memungkinkan analisis data interaksi pelanggan untuk meningkatkan layanan.",
+        "claimType": "FACTUAL",
+        "importance": "SUPPORTING",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-27T11:08:11.211Z",
+        "updatedAt": "2026-09-27T11:08:11.211Z",
+        "supportingEvidenceIds": [
+          "evi-src-mujpt307-72vk-4",
+          "evi-src-mujpt307-72vk-8",
+          "evi-src-mujpt307-72vk-11",
+          "evi-src-mujpt307-72vk-13",
+          "evi-src-mujpt307-72vk-17"
+        ]
+      },
+      {
+        "id": "claim-6",
+        "researchProjectId": "proj-mujpt0e0",
+        "statement": "WhatsApp Business Verified menyediakan fitur tambahan seperti pesan otomatis untuk pelanggan baru.",
+        "claimType": "FACTUAL",
+        "importance": "SUPPORTING",
+        "status": "SUPPORTED",
+        "createdAt": "2026-09-27T11:08:11.555Z",
+        "updatedAt": "2026-09-27T11:08:11.555Z",
+        "supportingEvidenceIds": [
+          "evi-src-mujpt307-72vk-3",
+          "evi-src-mujpt307-72vk-4",
+          "evi-src-mujpt307-72vk-8",
+          "evi-src-mujpt307-72vk-14",
+          "evi-src-mujpt307-72vk-17",
+          "evi-src-mujpt307-72vk-19"
+        ]
+      }
+    ],
+    "partiallySupportedClaims": [],
+    "disputedClaims": [],
+    "unverifiedClaims": [],
+    "unsupportedClaims": [],
+    "internalKnowledge": [],
+    "originalAnalysis": [],
+    "keyFindings": [
+      {
+        "id": "finding-01",
+        "researchProjectId": "proj-mujpt0e0",
+        "statement": "Akun WhatsApp Business dengan centang hijau meningkatkan kepercayaan pelanggan dan visibilitas bisnis.",
+        "supportingClaimIds": [
+          "claim-1",
+          "claim-2",
+          "claim-3",
+          "claim-4",
+          "claim-5",
+          "claim-6"
+        ],
+        "confidence": "HIGH",
+        "limitations": [],
+        "createdAt": "2026-09-27T11:08:11.812Z",
+        "updatedAt": "2026-09-27T11:08:11.812Z"
+      }
+    ],
+    "limitations": [],
+    "researchGaps": [],
+    "recommendedEditorialAngle": "Analisis strategis ter-grounding mengenai Beda verified centang hijau vs WhatsApp Business API, wajib tahu!",
+    "sourceIndex": [
+      {
+        "sourceId": "src-mujpt307-72vk",
+        "title": "Beda verified centang hijau vs WhatsApp Business API, wajib tahu!",
+        "url": "https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp",
+        "canonicalUrl": "https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp",
+        "publisher": "Referensi Web",
+        "sourceType": "INDUSTRY_RESEARCH",
+        "authorityScore": 85,
+        "publicationAllowed": true
+      }
+    ],
+    "evidenceIndex": [
+      {
+        "evidenceId": "evi-src-mujpt307-72vk-19",
+        "sourceId": "src-mujpt307-72vk",
+        "quote": "Untuk memverifikasi akun WhatsApp Business, bisnis harus mendaftarkan nomor telepon mereka ke aplikasi WhatsApp Business dan mengikuti proses verifikasi yang ditentukan oleh WhatsApp. Proses ini mungkin memerlukan verifikasi dokumen yang mencantumkan",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp"
+      },
+      {
+        "evidenceId": "evi-src-mujpt307-72vk-17",
+        "sourceId": "src-mujpt307-72vk",
+        "quote": "Menariknya lagi, jika kamu punya centang hijau pada WhatsApp Business-mu, bisa dipastikan kamu lebih mudah menganalisis data penting. WhatsApp Business Verified dapat mengumpulkan data tentang interaksi pelanggan, yang dapat digunakan untuk menganali",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp"
+      },
+      {
+        "evidenceId": "evi-src-mujpt307-72vk-11",
+        "sourceId": "src-mujpt307-72vk",
+        "quote": "Dengan centang hijaunya yang menunjukkan kredibilitas tinggi, tentunya verifikasi WhatsApp Business dapat bekerja untuk membantu bisnismu dalam hal membangun kepercayaan dengan pelanggan dengan menunjukkan bahwa mereka adalah bisnis yang terpercaya d",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp"
+      },
+      {
+        "evidenceId": "evi-src-mujpt307-72vk-8",
+        "sourceId": "src-mujpt307-72vk",
+        "quote": "Verifikasi WhatsApp Business dapat membantu bisnis untuk membangun kepercayaan dengan pelanggan dan meningkatkan visibilitas mereka di aplikasi. Bisnis yang terverifikasi juga akan memiliki akses ke fitur tambahan di aplikasi, seperti kemampuan untuk",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp"
+      },
+      {
+        "evidenceId": "evi-src-mujpt307-72vk-14",
+        "sourceId": "src-mujpt307-72vk",
+        "quote": "Bukan cuma dua hal di atas, keunggulan lain juga bisa dirasakan dari fitur tambahan. Bisnis yang terverifikasi akan memiliki akses ke fitur tambahan di aplikasi, seperti kemampuan untuk mengirim pesan otomatis kepada pelanggan yang baru saja membeli ",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp"
+      },
+      {
+        "evidenceId": "evi-src-mujpt307-72vk-13",
+        "sourceId": "src-mujpt307-72vk",
+        "quote": "Selain membangun kepercayaan pelanggan, ikon centang biru yang muncul di profil WhatsApp Business terverifikasi dapat membantu meningkatkan visibilitas bisnis di aplikasi dan membuat mereka lebih mudah ditemukan oleh pelanggan.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp"
+      },
+      {
+        "evidenceId": "evi-src-mujpt307-72vk-2",
+        "sourceId": "src-mujpt307-72vk",
+        "quote": "Banyak bisnis membutuhkan WhatsApp karena aplikasi tersebut dapat membantu mereka berkomunikasi dengan pelanggan dengan cepat dan mudah. Dengan menggunakan WhatsApp, bisnis dapat mengirim pesan teks, gambar, video, dan file lainnya kepada pelanggan s",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp"
+      },
+      {
+        "evidenceId": "evi-src-mujpt307-72vk-4",
+        "sourceId": "src-mujpt307-72vk",
+        "quote": "Tidak hanya itu, WhatsApp juga memiliki berbagai fitur berguna yang memang bisa memudahkan bisnis. Salah satunya adalah WhatsApp juga menyediakan fitur WhatsApp Business Verified yang memungkinkan bisnis untuk memverifikasi kepemilikan nomor telepon ",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp"
+      },
+      {
+        "evidenceId": "evi-src-mujpt307-72vk-5",
+        "sourceId": "src-mujpt307-72vk",
+        "quote": "Secara keseluruhan, WhatsApp dapat menjadi alat yang berguna bagi bisnis yang ingin meningkatkan kepuasan pelanggan, mempertahankan hubungan yang baik dengan pelanggan, dan mengelola operasinya dengan lebih efisien. Tentunya sudah bukan hal aneh lagi",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp"
+      },
+      {
+        "evidenceId": "evi-src-mujpt307-72vk-1",
+        "sourceId": "src-mujpt307-72vk",
+        "quote": "Ket. foto: Ilustrasi - WhatsApp Business. Shutterstock.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp"
+      },
+      {
+        "evidenceId": "evi-src-mujpt307-72vk-3",
+        "sourceId": "src-mujpt307-72vk",
+        "quote": "Selain itu, WhatsApp juga dapat digunakan oleh bisnis untuk mengelola pesanan atau pembayaran pelanggan, mengelola tiket dukungan, atau menyediakan layanan self-service seperti mengecek saldo atau mengelola rekening. Dengan demikian, WhatsApp dapat m",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp"
+      },
+      {
+        "evidenceId": "evi-src-mujpt307-72vk-6",
+        "sourceId": "src-mujpt307-72vk",
+        "quote": "Pada artikel ini kamu akan mempelajari hal-hal penting terkait WhatsApp Business Verified mulai dari pengertian, keunggulan dan cara mendapatkannya! Simak artikelnya sampai selesai kalau kamu tidak mau ketinggalan informasi pentingnya!",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp"
+      },
+      {
+        "evidenceId": "evi-src-mujpt307-72vk-9",
+        "sourceId": "src-mujpt307-72vk",
+        "quote": "Ada beberapa keunggulan yang dapat diperoleh dari menggunakan WhatsApp Business Verified , di antaranya:",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp"
+      },
+      {
+        "evidenceId": "evi-src-mujpt307-72vk-10",
+        "sourceId": "src-mujpt307-72vk",
+        "quote": "Membangun kepercayaan dengan pelanggan",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp"
+      },
+      {
+        "evidenceId": "evi-src-mujpt307-72vk-15",
+        "sourceId": "src-mujpt307-72vk",
+        "quote": "Kemudahan berkomunikas dengan pelanggan",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp"
+      },
+      {
+        "evidenceId": "evi-src-mujpt307-72vk-12",
+        "sourceId": "src-mujpt307-72vk",
+        "quote": "Meningkatkan visibilitas",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp"
+      }
+    ],
+    "readiness": "READY_FOR_EDITORIAL",
+    "readinessReason": "Kecukupan bukti riset terpenuhi: 6 klaim faktual berhasil diverifikasi.",
+    "generatedAt": "2026-09-27T11:08:11.812Z"
+  },
+  "topic": {
+    "id": "top-mujpt0dy",
+    "title": "Beda verified centang hijau vs WhatsApp Business API, wajib tahu!",
+    "slug": "beda-verified-centang-hijau-vs-whatsapp-business-api-wajib-t",
+    "territory": "TACTICAL",
+    "recommendedArticleType": "EXPLAINER",
+    "editorialRole": "AUTHORITY",
+    "audience": {
+      "segment": "Enterprise Content Leaders"
+    },
+    "problem": "Beda verified centang hijau vs WhatsApp Business API, wajib tahu!",
+    "intent": {
+      "primary": "Beda verified centang hijau vs WhatsApp Business API, wajib tahu!"
+    },
+    "thesis": null,
+    "whyNow": null,
+    "status": "APPROVED",
+    "informationGain": {
+      "originalityType": [
+        "ORIGINAL_FRAMEWORK"
+      ],
+      "expectedContribution": "Arsitektur informasi mandiri",
+      "commodityRisk": "LOW"
+    },
+    "evidencePlan": {
+      "requiredEvidenceLevel": "E2",
+      "plannedSources": [
+        "https://koran-jakarta.com/2022-10-31/apa-itu-whatsapp-business-api-fungsi-dan-cara-mendapatkannya/amp",
+        "https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp"
+      ],
+      "originalEvidenceRequired": false
+    },
+    "businessRelevance": {
+      "objective": "Thought Leadership",
+      "funnelRole": "TOFU"
+    },
+    "distributionTargets": [
+      "GOOGLE_SEARCH",
+      "GOOGLE_AI"
+    ],
+    "createdAt": "2026-09-27T11:08:01.462Z",
+    "updatedAt": "2026-09-27T11:08:01.462Z"
+  },
+  "editorialIntegrity": {
+    "status": "PASS",
+    "draftClaimAudit": {
+      "status": "PASS",
+      "propositions": [
+        {
+          "propositionId": "prop-1",
+          "sectionId": "sec-1",
+          "text": "Centang hijau adalah badge verifikasi visual yang ditampilkan di profil akun WhatsApp Business.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-2",
+          "sectionId": "sec-1",
+          "text": "Badge ini menunjukkan bahwa akun telah diverifikasi oleh Meta dan identitas bisnisnya telah dikonfirmasi.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-3",
+          "sectionId": "sec-1",
+          "text": "Verifikasi ini bertujuan untuk membangun kepercayaan pelanggan dan mengurangi potensi penipuan.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-4",
+          "sectionId": "sec-1",
+          "text": "Dengan adanya centang hijau, pelanggan dapat yakin bahwa mereka berinteraksi dengan bisnis asli dan bukan akun palsu.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-5",
+          "sectionId": "sec-2",
+          "text": "WhatsApp Business API adalah seperangkat protokol dan tools yang memungkinkan bisnis menghubungkan aplikasi internal mereka (seperti CRM, ERP, atau sistem ticketing) dengan platform WhatsApp.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-6"
+          ],
+          "evidenceIds": [
+            "evi-src-mujpt307-72vk-3",
+            "evi-src-mujpt307-72vk-4",
+            "evi-src-mujpt307-72vk-8",
+            "evi-src-mujpt307-72vk-14",
+            "evi-src-mujpt307-72vk-17",
+            "evi-src-mujpt307-72vk-19"
+          ],
+          "sourceIds": [
+            "src-mujpt307-72vk"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-6 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-6",
+          "sectionId": "sec-2",
+          "text": "Melalui API ini, bisnis dapat mengirimkan pesan transaksional otomatis, mengotomatiskan respons, dan menskalakan komunikasi dengan ribuan pelanggan sekaligus.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-6"
+          ],
+          "evidenceIds": [
+            "evi-src-mujpt307-72vk-3",
+            "evi-src-mujpt307-72vk-4",
+            "evi-src-mujpt307-72vk-8",
+            "evi-src-mujpt307-72vk-14",
+            "evi-src-mujpt307-72vk-17",
+            "evi-src-mujpt307-72vk-19"
+          ],
+          "sourceIds": [
+            "src-mujpt307-72vk"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-6 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-7",
+          "sectionId": "sec-2",
+          "text": "API ini dirancang khusus untuk kebutuhan operasional enterprise yang kompleks dan volume pesan tinggi.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-6"
+          ],
+          "evidenceIds": [
+            "evi-src-mujpt307-72vk-3",
+            "evi-src-mujpt307-72vk-4",
+            "evi-src-mujpt307-72vk-8",
+            "evi-src-mujpt307-72vk-14",
+            "evi-src-mujpt307-72vk-17",
+            "evi-src-mujpt307-72vk-19"
+          ],
+          "sourceIds": [
+            "src-mujpt307-72vk"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-6 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-8",
+          "sectionId": "sec-3",
+          "text": "Centang hijau dan WhatsApp Business API memiliki tujuan yang berbeda namun saling melengkifique.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-9",
+          "sectionId": "sec-3",
+          "text": "Centang hijau memastikan pelanggan percaya bahwa mereka berinteraksi dengan bisnis asli, sementara WhatsApp Business API memastikan bisnis dapat mengelola komunikasi dengan efisien dan andal.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-10",
+          "sectionId": "sec-3",
+          "text": "Tanpa centang hijau, pesan bisnis mungkin dianggap spam oleh pelanggan; tanpa API, bisnis tidak dapat menskalakan operasional komunikasi mereka.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-11",
+          "sectionId": "sec-4",
+          "text": "Langkah pertama: Daftarkan akun WhatsApp Business dan ajukan verifikasi centang hijau melalui proses yang ditentukan Meta.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-12",
+          "sectionId": "sec-4",
+          "text": "Langkah kedua: Setelah centang hijau berhasil didapat, bisnis dapat mulai menjalin kemitraan dengan mitra resmi Meta (Meta's WhatsApp Business Solution Providers) untuk mengakses WhatsApp Business API.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-13",
+          "sectionId": "sec-4",
+          "text": "Langkah ketiga: Integrasikan API ke sistem internal bisnis untuk mengotomatiskan alur kerja komunikasi dengan pelanggan.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-14",
+          "sectionId": "sec-5",
+          "text": "Salah mengartikan kedua konsep ini dapat menyebabkan kegagalan implementasi dan kerugian bisnis, misalnya mengira bahwa hanya mendaftar API sudah cukup untuk mendapat kepercayaan pelanggan.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-15",
+          "sectionId": "sec-5",
+          "text": "Pemahaman yang benar memungkinkan bisnis untuk merencanakan adopsi teknologi dengan lebih matang, mengalokasikan budget yang tepat, dan memilih mitra teknologi yang sesuai dengan kebutuhan spesifik mereka.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-16",
+          "sectionId": "sec-5",
+          "text": "Oleh karena itu, bisnis harus memastikan bahwa mereka membeli centang hijau dari sumber yang resmi dan menggunakan WhatsApp Business API melalui solusi provider yang terverificado.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        }
+      ],
+      "groundedExternalFacts": 3,
+      "ungroundedExternalFacts": 0,
+      "partialSupportCount": 0,
+      "originalAnalysisCount": 9,
+      "interpretationCount": 0,
+      "internalKnowledgeCount": 0,
+      "nonFactualCount": 4,
+      "numericClaimsTotal": 0,
+      "unsupportedNumericCount": 0,
+      "citationFailuresCount": 0,
+      "issues": [],
+      "summary": "DraftClaimAuditor: Seluruh 3 klaim faktual eksternal terbukti (ENTAILED). Analisis orisinal: 9. Sitasi valid.",
+      "auditedAt": "2026-09-27T11:08:35.594Z"
+    },
+    "groundingGuard": {
+      "status": "PASS",
+      "issues": [],
+      "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+    },
+    "propositions": [
+      {
+        "propositionId": "prop-1",
+        "sectionId": "sec-1",
+        "text": "Centang hijau adalah badge verifikasi visual yang ditampilkan di profil akun WhatsApp Business.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-2",
+        "sectionId": "sec-1",
+        "text": "Badge ini menunjukkan bahwa akun telah diverifikasi oleh Meta dan identitas bisnisnya telah dikonfirmasi.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-3",
+        "sectionId": "sec-1",
+        "text": "Verifikasi ini bertujuan untuk membangun kepercayaan pelanggan dan mengurangi potensi penipuan.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-4",
+        "sectionId": "sec-1",
+        "text": "Dengan adanya centang hijau, pelanggan dapat yakin bahwa mereka berinteraksi dengan bisnis asli dan bukan akun palsu.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-5",
+        "sectionId": "sec-2",
+        "text": "WhatsApp Business API adalah seperangkat protokol dan tools yang memungkinkan bisnis menghubungkan aplikasi internal mereka (seperti CRM, ERP, atau sistem ticketing) dengan platform WhatsApp.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-6"
+        ],
+        "evidenceIds": [
+          "evi-src-mujpt307-72vk-3",
+          "evi-src-mujpt307-72vk-4",
+          "evi-src-mujpt307-72vk-8",
+          "evi-src-mujpt307-72vk-14",
+          "evi-src-mujpt307-72vk-17",
+          "evi-src-mujpt307-72vk-19"
+        ],
+        "sourceIds": [
+          "src-mujpt307-72vk"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-6 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-6",
+        "sectionId": "sec-2",
+        "text": "Melalui API ini, bisnis dapat mengirimkan pesan transaksional otomatis, mengotomatiskan respons, dan menskalakan komunikasi dengan ribuan pelanggan sekaligus.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-6"
+        ],
+        "evidenceIds": [
+          "evi-src-mujpt307-72vk-3",
+          "evi-src-mujpt307-72vk-4",
+          "evi-src-mujpt307-72vk-8",
+          "evi-src-mujpt307-72vk-14",
+          "evi-src-mujpt307-72vk-17",
+          "evi-src-mujpt307-72vk-19"
+        ],
+        "sourceIds": [
+          "src-mujpt307-72vk"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-6 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-7",
+        "sectionId": "sec-2",
+        "text": "API ini dirancang khusus untuk kebutuhan operasional enterprise yang kompleks dan volume pesan tinggi.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-6"
+        ],
+        "evidenceIds": [
+          "evi-src-mujpt307-72vk-3",
+          "evi-src-mujpt307-72vk-4",
+          "evi-src-mujpt307-72vk-8",
+          "evi-src-mujpt307-72vk-14",
+          "evi-src-mujpt307-72vk-17",
+          "evi-src-mujpt307-72vk-19"
+        ],
+        "sourceIds": [
+          "src-mujpt307-72vk"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-6 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-8",
+        "sectionId": "sec-3",
+        "text": "Centang hijau dan WhatsApp Business API memiliki tujuan yang berbeda namun saling melengkifique.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-9",
+        "sectionId": "sec-3",
+        "text": "Centang hijau memastikan pelanggan percaya bahwa mereka berinteraksi dengan bisnis asli, sementara WhatsApp Business API memastikan bisnis dapat mengelola komunikasi dengan efisien dan andal.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-10",
+        "sectionId": "sec-3",
+        "text": "Tanpa centang hijau, pesan bisnis mungkin dianggap spam oleh pelanggan; tanpa API, bisnis tidak dapat menskalakan operasional komunikasi mereka.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-11",
+        "sectionId": "sec-4",
+        "text": "Langkah pertama: Daftarkan akun WhatsApp Business dan ajukan verifikasi centang hijau melalui proses yang ditentukan Meta.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-12",
+        "sectionId": "sec-4",
+        "text": "Langkah kedua: Setelah centang hijau berhasil didapat, bisnis dapat mulai menjalin kemitraan dengan mitra resmi Meta (Meta's WhatsApp Business Solution Providers) untuk mengakses WhatsApp Business API.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-13",
+        "sectionId": "sec-4",
+        "text": "Langkah ketiga: Integrasikan API ke sistem internal bisnis untuk mengotomatiskan alur kerja komunikasi dengan pelanggan.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-14",
+        "sectionId": "sec-5",
+        "text": "Salah mengartikan kedua konsep ini dapat menyebabkan kegagalan implementasi dan kerugian bisnis, misalnya mengira bahwa hanya mendaftar API sudah cukup untuk mendapat kepercayaan pelanggan.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-15",
+        "sectionId": "sec-5",
+        "text": "Pemahaman yang benar memungkinkan bisnis untuk merencanakan adopsi teknologi dengan lebih matang, mengalokasikan budget yang tepat, dan memilih mitra teknologi yang sesuai dengan kebutuhan spesifik mereka.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-16",
+        "sectionId": "sec-5",
+        "text": "Oleh karena itu, bisnis harus memastikan bahwa mereka membeli centang hijau dari sumber yang resmi dan menggunakan WhatsApp Business API melalui solusi provider yang terverificado.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      }
+    ],
+    "groundedExternalFacts": 3,
+    "ungroundedExternalFacts": 0,
+    "partialSupportCount": 0,
+    "originalAnalysisCount": 9,
+    "interpretationCount": 0,
+    "internalKnowledgeCount": 0,
+    "nonFactualCount": 4,
+    "numericClaimsTotal": 0,
+    "unsupportedNumericCount": 0,
+    "citationFailuresCount": 0,
+    "issues": [],
+    "summary": "Editorial Integrity Gate: PASS. Seluruh 3 klaim eksternal terbukti, 9 analisis orisinal valid, dan guard mekanikal lolos.",
+    "evaluatedAt": "2026-09-27T11:08:35.590Z"
+  },
+  "guardEvaluation": {
+    "status": "PASS",
+    "issues": [],
+    "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+  },
+  "discoverEvaluation": {
+    "articleId": "draft-mujptqpy",
+    "checks": [
+      {
+        "checkId": "DISCOVER_ELIGIBILITY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Artikel memenuhi seluruh kriteria kelayakan dasar Google Discover."
+      },
+      {
+        "checkId": "DISCOVER_ORIGINALITY",
+        "dimension": "ORIGINALITY",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Orisinalitas konten tinggi, didukung oleh data riset dan kerangka kerja konseptual orisinal."
+      },
+      {
+        "checkId": "DISCOVER_DEPTH",
+        "dimension": "DEPTH",
+        "status": "WARNING",
+        "scoreContribution": 10,
+        "summary": "Tingkat kedalaman konten: ADEQUATE."
+      },
+      {
+        "checkId": "DISCOVER_TIMELINESS",
+        "dimension": "TIMELINESS",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Konten terkini dengan aktualitas tinggi."
+      },
+      {
+        "checkId": "DISCOVER_INTEREST_FIT",
+        "dimension": "INTEREST_FIT",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Memiliki dasar minat audiens yang kuat berdasarkan dinamika pasar dan urgensi topik."
+      },
+      {
+        "checkId": "DISCOVER_TOPICAL_EXPERTISE",
+        "dimension": "TOPICAL_EXPERTISE",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Status keahlian topikal: DEVELOPING (0 artikel terhubung di territory TACTICAL)."
+      },
+      {
+        "checkId": "DISCOVER_LOCAL_RELEVANCE",
+        "dimension": "LOCAL_RELEVANCE",
+        "status": "PASS",
+        "scoreContribution": 2,
+        "summary": "Topik berskala global yang tetap memenuhi syarat kelayakan Discover."
+      },
+      {
+        "checkId": "DISCOVER_TITLE_INTEGRITY",
+        "dimension": "TITLE_INTEGRITY",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Judul berwibawa, menangkap esensi konten dengan akurat, dan bebas dari clickbait."
+      },
+      {
+        "checkId": "DISCOVER_VISUAL_READINESS",
+        "dimension": "VISUAL_READINESS",
+        "status": "PASS",
+        "scoreContribution": 15,
+        "summary": "Aset visual beresolusi tinggi, berformat lanskap, bebas logo, dan mendukung max-image-preview:large."
+      },
+      {
+        "checkId": "DISCOVER_PAGE_EXPERIENCE",
+        "dimension": "PAGE_EXPERIENCE",
+        "status": "WARNING",
+        "scoreContribution": 5,
+        "summary": "Status pengalaman halaman: UNKNOWN."
+      },
+      {
+        "checkId": "DISCOVER_POLICY_SAFETY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Konten aman dan mematuhi seluruh panduan kebijakan publikasi Google Discover."
+      }
+    ],
+    "issues": [
+      {
+        "code": "INSUFFICIENT_TOPIC_DEPTH",
+        "checkId": "DISCOVER_DEPTH",
+        "dimension": "DEPTH",
+        "severity": "INFO",
+        "message": "Kedalaman naskah cukup memadai, namun belum mencakup limitasi atau implikasi praktis menyeluruh.",
+        "location": "sections",
+        "recommendation": "Pertimbangkan menambahkan sudut pandang tandingan (counterpoint) untuk bobot analisis optimal."
+      }
+    ],
+    "recommendations": [
+      {
+        "type": "EDITORIAL_IMPROVEMENT",
+        "title": "Peningkatan Kedalaman & Orisinalitas [INSUFFICIENT_TOPIC_DEPTH]",
+        "description": "Kedalaman naskah cukup memadai, namun belum mencakup limitasi atau implikasi praktis menyeluruh.",
+        "suggestedAction": "Pertimbangkan menambahkan sudut pandang tandingan (counterpoint) untuk bobot analisis optimal.",
+        "crossEngineDestination": "EDITORIAL"
+      }
+    ],
+    "dimensions": {
+      "ORIGINALITY": 10,
+      "DEPTH": 10,
+      "TIMELINESS": 10,
+      "TOPICAL_EXPERTISE": 10,
+      "INTEREST_FIT": 10,
+      "TITLE_INTEGRITY": 10,
+      "VISUAL_READINESS": 15,
+      "PAGE_EXPERIENCE": 5,
+      "LOCAL_RELEVANCE": 2,
+      "POLICY_SAFETY": 3
+    },
+    "score": 85,
+    "classification": "READY",
+    "eligibility": "ELIGIBLE",
+    "criticalIneligibilityReasons": [],
+    "validatedAt": "2026-09-27T11:08:35.597Z",
+    "policyVersion": "DISCOVER_READINESS_POLICY_V1"
+  },
+  "visualPrompt": "Beda Verified Centang Hijau vs WhatsApp Business API, interlocking brass communication relay assembly featuring rotating verification seal gears and dual-tiered routing terminals, 3D isometric illustration, soft clay rendering, rounded geometric objects, soft studio lighting, minimal marketing illustration, clean composition, premium modern aesthetic. Clear visual hierarchy, single dominant focal object, generous negative space, no text, no logos. --ar 16:9",
+  "createdAt": "2026-09-27T11:08:36.136Z"
+}
