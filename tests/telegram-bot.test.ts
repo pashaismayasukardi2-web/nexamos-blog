@@ -58,6 +58,17 @@ describe('NexaMOS Telegram Editorial Bot Unit Tests', () => {
       const p3 = parseTelegramInput('topik: Analisis Pasar');
       assert.strictEqual(p3.topic, 'Analisis Pasar');
     });
+
+    test('Mengekstrak URL dari markdown link dan membersihkan compound tags', () => {
+      const input = `[TACTICAL][EXPLAINER] Buat artikel : Beda verified beda API, Wajib tahu! [https://koran-jakarta.com/2022-10-31/apa-itu-whatsapp-business-api-fungsi-dan-cara-mendapatkannya/amp](https://koran-jakarta.com/2022-10-31/apa-itu-whatsapp-business-api-fungsi-dan-cara-mendapatkannya/amp) [https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp](https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp) [https://faq.whatsapp.com/3872729742954601/?helpref=uf_share&_gl=1*1nmbo56*_gcl_au*MTQwNDA1MjIxMC4xNzg3ODc0NjY2](https://faq.whatsapp.com/3872729742954601/?helpref=uf_share&_gl=1*1nmbo56*_gcl_au*MTQwNDA1MjIxMC4xNzg3ODc0NjY2)[Koran Jakarta](https://koran-jakarta.com/2022-10-31/apa-itu-whatsapp-business-api-fungsi-dan-cara-mendapatkannya/amp)`;
+      const parsed = parseTelegramInput(input);
+
+      assert.match(parsed.topic, /^Beda verified beda API, Wajib tahu!/);
+      assert.strictEqual(parsed.urls.length, 3); // Deduplicated 3 unique URLs
+      assert.ok(parsed.urls.includes('https://koran-jakarta.com/2022-10-31/apa-itu-whatsapp-business-api-fungsi-dan-cara-mendapatkannya/amp'));
+      assert.ok(parsed.urls.includes('https://ivosights.com/read/artikel/whatsapp-business-verified-keunggulan-dan-cara-mendapatkannya/amp'));
+      assert.ok(!parsed.urls.some((u) => u.includes(']') || u.includes(')')));
+    });
   });
 
   // ===========================================================================

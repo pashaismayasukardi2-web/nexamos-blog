@@ -162,22 +162,66 @@ export function slugify(text: string): string {
  * Parser pesan teks pengguna untuk mengekstrak topik dan URL
  */
 export function parseTelegramInput(text: string): ParsedTelegramInput {
-  const urlRegex = /https?:\/\/[^\s]+/gi;
-  const urls = text.match(urlRegex) || [];
+  const extractedUrls: string[] = [];
 
-  let cleaned = text.replace(urlRegex, '').trim();
+  // 1. Ekstrak dan bersihkan format Markdown links [anchor](url)
+  const markdownLinkRegex = /\[([^\]]*)\]\(((?:https?:\/\/)[^\s\)]+)\)/gi;
+  let textWithoutMdLinks = text.replace(markdownLinkRegex, (_, _anchor, url) => {
+    extractedUrls.push(url);
+    return ' ';
+  });
+
+  // 2. Ekstrak URL mentah (raw URLs) yang berdiri sendiri
+  const rawUrlRegex = /https?:\/\/[^\s"'<>]+/gi;
+  const rawMatches = textWithoutMdLinks.match(rawUrlRegex) || [];
+  for (const match of rawMatches) {
+    extractedUrls.push(match);
+  }
+
+  // 3. Normalisasi & sanitasi URL (hilangkan tanda kurung, kurung siku, koma, dsb di akhir URL)
+  const cleanedUrls: string[] = [];
+  const seenUrls = new Set<string>();
+
+  for (const rawUrl of extractedUrls) {
+    let clean = rawUrl.replace(/[)\]}>,.;'"]+$/g, '').trim();
+    if (!clean.startsWith('http://') && !clean.startsWith('https://')) continue;
+    try {
+      const parsedUrl = new URL(clean);
+      const normalized = parsedUrl.toString();
+      if (!seenUrls.has(normalized)) {
+        seenUrls.add(normalized);
+        cleanedUrls.push(normalized);
+      }
+    } catch {
+      // Abaikan URL tidak valid
+    }
+  }
+
+  // 4. Bersihkan sisa-sisa URL mentah dari teks
+  let cleaned = textWithoutMdLinks.replace(rawUrlRegex, ' ').trim();
+
+  // 5. Bersihkan tag awalan berulang seperti [TACTICAL][EXPLAINER] atau /howto /explainer
+  let prevCleaned = '';
+  while (prevCleaned !== cleaned) {
+    prevCleaned = cleaned;
+    cleaned = cleaned
+      .replace(/^\[(how_to|howto|framework|explainer|analysis|tactical|strategy|intelligence|case_study|trend)\]\s*/i, '')
+      .replace(/^(\/bikin|\/write|\/buat|\/generate|\/create|\/howto|\/how_to|\/framework|\/explainer|\/analysis|\/tactical|\/strategy|\/intelligence)\s+/i, '')
+      .replace(/^(bikin|buat|tulis|buatkan|generate)\s+artikel\s*:?\s*/i, '')
+      .replace(/^(topik|judul|masalah)\s*:\s*/i, '')
+      .replace(/^(sumber|link|referensi)\s*:\s*/i, '')
+      .trim();
+  }
+
+  // 6. Bersihkan tanda kurung / siku kosong sisa markdown anchor dan normalisasi spasi
   cleaned = cleaned
-    .replace(/^(\/bikin|\/write|\/buat|\/generate|\/create|\/howto|\/how_to|\/framework|\/explainer|\/analysis|\/tactical|\/strategy|\/intelligence)\s+/i, '')
-    .replace(/^\[(how_to|howto|framework|explainer|analysis|tactical|strategy|intelligence|case_study|trend)\]\s*/i, '')
-    .replace(/^(bikin|buat|tulis|buatkan|generate)\s+artikel\s*:?\s*/i, '')
-    .replace(/^(topik|judul|masalah)\s*:\s*/i, '')
-    .replace(/^(sumber|link|referensi)\s*:\s*/i, '')
-    .replace(/\n+/g, ' ')
+    .replace(/\[\s*\]|\(\s*\)/g, '')
+    .replace(/\s+/g, ' ')
     .trim();
 
   return {
     topic: cleaned || 'Topik Riset Rekayasa Informasi NexaMOS',
-    urls,
+    urls: cleanedUrls,
     rawText: text
   };
 }
