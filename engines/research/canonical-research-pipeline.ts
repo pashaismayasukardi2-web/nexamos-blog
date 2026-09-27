@@ -474,15 +474,41 @@ export class CanonicalResearchPipeline {
       publicationAllowed: true
     }));
 
-    const evidenceIndex = selectedEvidenceForClaims.map((e) => ({
-      evidenceId: e.id,
-      sourceId: e.sourceId,
-      quote: e.content.slice(0, 250),
-      level: e.evidenceLevel || 'E2',
-      verified: true, // Terkonfirmasi lolos validasi integritas
-      provenanceType: e.provenanceType || 'EXTERNAL_EVIDENCE',
-      sourceUrl: e.sourceUrl || undefined
-    }));
+    const evidenceMap = new Map<string, any>();
+    for (const e of selectedEvidenceForClaims) {
+      evidenceMap.set(e.id, {
+        evidenceId: e.id,
+        sourceId: e.sourceId,
+        quote: e.content.slice(0, 250),
+        level: e.evidenceLevel || 'E2',
+        verified: true, // Terkonfirmasi lolos validasi integritas
+        provenanceType: e.provenanceType || 'EXTERNAL_EVIDENCE',
+        sourceUrl: e.sourceUrl || undefined
+      });
+    }
+
+    // Pastikan seluruh bukti pendukung resmi dari supportedClaims terdaftar dalam evidenceIndex
+    for (const claim of supportedClaims) {
+      const evIds = claim.supportingEvidenceIds || [];
+      for (const evId of evIds) {
+        if (!evidenceMap.has(evId)) {
+          const matchedEv = verifiedEvidenceList.find((e) => e.id === evId);
+          if (matchedEv) {
+            evidenceMap.set(evId, {
+              evidenceId: matchedEv.id,
+              sourceId: matchedEv.sourceId,
+              quote: matchedEv.content.slice(0, 250),
+              level: matchedEv.evidenceLevel || 'E2',
+              verified: true,
+              provenanceType: matchedEv.provenanceType || 'EXTERNAL_EVIDENCE',
+              sourceUrl: matchedEv.sourceUrl || undefined
+            });
+          }
+        }
+      }
+    }
+
+    const evidenceIndex = Array.from(evidenceMap.values());
 
     const researchBrief: ResearchBrief = {
       id: `brief-${Date.now().toString(36)}`,

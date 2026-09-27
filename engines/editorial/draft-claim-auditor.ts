@@ -598,10 +598,27 @@ export class DraftClaimAuditor {
       'hal ini mencerminkan',
       'secara operasional hal ini berarti',
       'kondisi ini menandakan',
-      'ini mengindikasikan bahwa'
+      'ini mengindikasikan bahwa',
+      'hal ini dikarenakan',
+      'hal ini karena',
+      'hal ini disebabkan',
+      'hal ini disebabkan oleh',
+      'hal ini terjadi karena',
+      'kondisi ini terjadi karena',
+      'alasan utamanya adalah',
+      'alasan utamanya',
+      'faktor pendorongnya adalah',
+      'secara fungsional hal ini',
+      'secara teknis hal ini',
+      'hal ini memungkinkan',
+      'hal ini menunjukkan bahwa'
     ];
     if (interpretationMarkers.some((m) => textLower.includes(m))) {
-      return 'INTERPRETATION';
+      // Jangan beri toleransi interpretasi jika memuat klaim efisiensi/dampak operasional tanpa bukti
+      const hasImpactFluff = /\b(?:meningkatkan efisiensi|meminimalkan intervensi|menghemat|memangkas biaya|mengurangi beban|meningkatkan pendapatan)\b/i.test(text);
+      if (!hasImpactFluff) {
+        return 'INTERPRETATION';
+      }
     }
 
     // Default: Pernyataan proposisional tentang realitas pasar/teknologi/eksternal -> EXTERNAL_FACT
@@ -640,7 +657,13 @@ export class DraftClaimAuditor {
     const stopWords = new Set([
       'yang', 'untuk', 'pada', 'dengan', 'dari', 'dalam', 'dan', 'atau', 'ini', 'itu',
       'adalah', 'sebagai', 'oleh', 'ke', 'di', 'karena', 'akan', 'dapat', 'bisa',
+      'ada', 'dia', 'hal', 'tak', 'pun', 'non', 'via', 'not', 'all', 'its', 'has', 'had', 'per',
       'the', 'is', 'in', 'and', 'to', 'of', 'for', 'with', 'a', 'an', 'by', 'on'
+    ]);
+
+    // Domain acronyms penting yang berukuran 3 huruf (jangan difilter oleh batasan panjang kata)
+    const domainAcronyms = new Set([
+      'api', 'crm', 'kpi', 'seo', 'web', 'ads', 'roi', 'llm', 'app', 'b2b', 'b2c', 'bot', 'url', 'cms', 'ctr', 'cpc', 'cpa'
     ]);
 
     const extractKeywords = (str: string) =>
@@ -648,7 +671,7 @@ export class DraftClaimAuditor {
         .toLowerCase()
         .replace(/[^a-z0-9\s]/g, ' ')
         .split(/\s+/)
-        .filter((w) => w.length > 3 && !stopWords.has(w));
+        .filter((w) => (w.length > 3 || domainAcronyms.has(w)) && !stopWords.has(w));
 
     const propKeywords = extractKeywords(text);
 
@@ -687,7 +710,7 @@ export class DraftClaimAuditor {
     // Fallback toleransi: jika tidak cocok langsung dengan supportedClaims, cari kecocokan di evidenceIndex
     if (!bestMatch && evidenceIndex.length > 0) {
       for (const ev of evidenceIndex) {
-        const evText = ev.quote || (ev as any).textSnippet || '';
+        const evText = ev.quote || (ev as any).textSnippet || (ev as any).content || (ev as any).text || '';
         const evKeywords = extractKeywords(evText);
         const shared = propKeywords.filter((w) => evKeywords.includes(w));
         const numMatched = numericClaims.some((num) => this.isNumericClaimInCorpus(num, evText));

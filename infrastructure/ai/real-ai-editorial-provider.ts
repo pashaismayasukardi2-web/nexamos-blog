@@ -83,6 +83,7 @@ PANDUAN PENYUSUNAN RENCANA (ANTI-SCOPE DRIFT):
   * DILARANG KERAS mencantumkan nomor klaim, ID klaim, kata 'Claim x', atau 'Klaim x Terotentasi' pada heading. Judul seksi harus berupa judul editorial yang bersih dan profesional.
   * Untuk seksi fakta/konteks industri: gunakan purpose HOOK, CONTEXT, ARGUMENT, atau EVIDENCE dan sebutkan plannedClaimIds dari daftar di atas.
   * Untuk seksi rekomendasi/taktik/analisis NexaMOS: gunakan purpose ANALYSIS, FRAMEWORK, IMPLICATION, atau PRACTICAL_APPLICATION.
+  * KHUSUS ARTIKEL DENGAN PERAN 'AUTHORITY' ATAU 'FLAGSHIP': WAJIB sertakan minimal 1 seksi dengan purpose 'PRACTICAL_APPLICATION' atau 'FRAMEWORK' atau 'IMPLICATION' untuk membedah langkah taktis/implementasi bisnis (anti-commodity).
 
 FORMAT JSON YANG WAJIB DIHASILKAN:
 {
@@ -114,6 +115,27 @@ FORMAT JSON YANG WAJIB DIHASILKAN:
     });
 
     const parsed = StructuredOutputValidator.parseJson(response.content);
+
+    // Normalisasi purpose seksi untuk artikel AUTHORITY / FLAGSHIP agar memenuhi syarat anti-komoditas
+    if (parsed && Array.isArray(parsed.sectionPlan) && parsed.sectionPlan.length >= 3) {
+      if (request.editorialRole === 'AUTHORITY' || request.editorialRole === 'FLAGSHIP') {
+        const hasOriginalFrameworkOrApplication = parsed.sectionPlan.some((s: any) => {
+          const p = (s?.purpose || '').toUpperCase();
+          return p.includes('FRAMEWORK') || p.includes('PRACTICAL_APPLICATION') || p.includes('IMPLICATION');
+        });
+
+        if (!hasOriginalFrameworkOrApplication) {
+          const analysisSec = parsed.sectionPlan.find((s: any) => (s?.purpose || '').toUpperCase().includes('ANALYSIS'));
+          if (analysisSec) {
+            analysisSec.purpose = 'PRACTICAL_APPLICATION';
+          } else {
+            const targetIdx = Math.max(0, parsed.sectionPlan.length - 2);
+            parsed.sectionPlan[targetIdx].purpose = 'PRACTICAL_APPLICATION';
+          }
+        }
+      }
+    }
+
     return StructuredOutputValidator.validateEditorialPlan(parsed);
   }
 
@@ -186,7 +208,7 @@ INSTRUKSI INTEGRITAS & ANTI-HALUSINASI (SANGAT PENTING):
 2. KLAIM FAKTUAL EKSTERNAL (ANTI-EKSTRAPOLASI ILMIAH/TEORETIS): Setiap kali Anda menulis fakta mengenai kondisi pasar, kapabilitas AI, kinerja tool, temuan industri, teori sains/psikologi kognitif, atau mekanisme eksternal, Anda WAJIB mengambil substansinya HANYA dari 'Klaim Terbukti' di atas dan mencatat claimId-nya di claimUsages dan citationMap. DILARANG KERAS mengarang klaim fakta ilmiah, mekanisme kognitif, atau teori penjelas baru (misal: 'memanfaatkan prinsip psikologi kognitif') jika konsep tersebut TIDAK tercantum secara eksplisit di 'Klaim Terbukti' di atas! Di seksi ber-purpose 'ARGUMENT' atau 'EVIDENCE', SETIAP kalimat faktual yang Anda tulis WAJIB bersumber langsung dari klaim terbukti.
 3. REKOMENDASI & TAKTIK NEXAMOS: Untuk bagian langkah praktis, kerangka kerja, atau alur kerja NexaMOS, letakkan dalam seksi dengan purpose 'ANALYSIS', 'FRAMEWORK', atau 'PRACTICAL_APPLICATION' dan gunakan frasa analisis orisinal (misal: "Rekomendasi taktis bagi tim editorial adalah...", "Bagi praktisi konten, implikasinya...", "Dalam perspektif strategis NexaMOS...", "Oleh karena itu, langkah praktis...").
 4. INTEGRITAS ID SITASI: Dilarang membuat claimId, sourceId, atau evidenceId palsu! Seluruh ID dalam claimUsages dan citationMap WAJIB bersumber dari data di atas. Gunakan supportingEvidenceIds resmi dari Klaim Terbukti di atas saat mengisi evidenceIds pada citationMap.
-5. LARANGAN KLAIM MANFAAT SPEKULATIF (ANTI-MARKETING FLUFF): DILARANG KERAS mengarang klaim manfaat, efisiensi operasional, atau hasil bisnis (seperti "meningkatkan efisiensi operasional", "meminimalkan intervensi manusia", "menghemat biaya", "mengurangi beban kerja", dsb.) di seksi mana pun jika klaim tersebut TIDAK didukung bukti empiris eksplisit di 'Klaim Terbukti' di atas. Tuliskan mekanisme teknis secara objektif apa adanya tanpa melebih-lebihkan dampak yang belum terbukti.
+5. LARANGAN KLAIM MANFAAT SPEKULATIF & FLUFF TEKNIS (ANTI-MARKETING FLUFF): DILARANG KERAS mengarang klaim manfaat, efisiensi operasional, atau hasil bisnis (seperti "meningkatkan efisiensi operasional", "meminimalkan intervensi manusia", "menghemat biaya", "mengurangi beban kerja", dsb.) di seksi mana pun jika klaim tersebut TIDAK didukung bukti empiris eksplisit di 'Klaim Terbukti' di atas. Hindari pula klaim absolut fiktif seperti "tanpa kendala teknis" atau "bebas hambatan". Tuliskan mekanisme teknis secara objektif apa adanya.
 6. LARANGAN ARTIFAK KLAIM PADA JUDUL (ANTI-LABEL LEAKAGE): DILARANG KERAS mencantumkan nomor klaim, kata 'Claim x', atau 'Klaim x Terotentasi' pada judul seksi (heading). ID klaim HANYA boleh dicatat di dalam field claimUsageIds, claimUsages, dan citationMap, BUKAN di dalam teks heading!
 
 FORMAT JSON YANG WAJIB DIHASILKAN:
@@ -259,6 +281,24 @@ FORMAT JSON YANG WAJIB DIHASILKAN:
           const parts = sec.purpose.split('|').map((p: string) => p.trim().toUpperCase());
           const chosen = priority.find((p) => parts.includes(p)) || parts[0];
           sec.purpose = chosen;
+        }
+      }
+
+      // Pastikan artikel peran AUTHORITY / FLAGSHIP memiliki minimal 1 seksi PRACTICAL_APPLICATION / FRAMEWORK / IMPLICATION
+      if (parsed.sections.length >= 3 && (request.editorialRole === 'AUTHORITY' || request.editorialRole === 'FLAGSHIP')) {
+        const hasFrameworkOrApplication = parsed.sections.some((s: any) => {
+          const p = (s?.purpose || '').toUpperCase();
+          return p.includes('FRAMEWORK') || p.includes('PRACTICAL_APPLICATION') || p.includes('IMPLICATION');
+        });
+
+        if (!hasFrameworkOrApplication && parsed.sections.length > 0) {
+          const analysisSec = parsed.sections.find((s: any) => (s?.purpose || '').toUpperCase().includes('ANALYSIS'));
+          if (analysisSec) {
+            analysisSec.purpose = 'PRACTICAL_APPLICATION';
+          } else {
+            const targetIdx = Math.max(0, parsed.sections.length - 2);
+            parsed.sections[targetIdx].purpose = 'PRACTICAL_APPLICATION';
+          }
         }
       }
     }
