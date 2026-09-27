@@ -213,7 +213,10 @@ export function parseTelegramInput(text: string): ParsedTelegramInput {
       .trim();
   }
 
-  // 6. Bersihkan tanda kurung / siku kosong sisa markdown anchor dan normalisasi spasi
+  // 6. Bersihkan penanda 'Sumber rujukan:', 'sumber:', 'link:', 'referensi:' di akhir topik
+  cleaned = cleaned.replace(/\s*(?:sumber(?:\s+rujukan)?|link|referensi)\s*:?\s*$/i, '').trim();
+
+  // 7. Bersihkan tanda kurung / siku kosong sisa markdown anchor dan normalisasi spasi
   cleaned = cleaned
     .replace(/\[\s*\]|\(\s*\)/g, '')
     .replace(/\s+/g, ' ')
