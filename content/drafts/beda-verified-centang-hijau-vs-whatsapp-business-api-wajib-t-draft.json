@@ -3,19 +3,19 @@
     "id": "draft-mujptqpy",
     "topicId": "top-mujpt0dy",
     "researchProjectId": "proj-mujpt0e0",
-    "title": "Memahami Perbedaan Centang Hijau dan WhatsApp Business API: Panduan Praktis untuk Bisnis",
-    "dek": "Banyak pebisnis masih salah mengira bahwa centang hijau dan WhatsApp Business API adalah satu hal yang sama. Artikel ini akan menguraikan perbedaan fundamental antara keduanya agar bisnis bisa membuat keputusan teknologi yang lebih cerdas.",
+    "title": "Memahami Perbedaan Centang Biru dan WhatsApp Business API: Panduan Praktis untuk Bisnis",
+    "dek": "Banyak pebisnis masih salah mengira bahwa centang biru dan WhatsApp Business API adalah satu hal yang sama. Artikel ini akan menguraikan perbedaan fundamental antara keduanya agar bisnis bisa membuat keputusan teknologi yang lebih cerdas.",
     "slug": "beda-verified-centang-hijau-vs-whatsapp-business-api-wajib-t",
     "territory": "TACTICAL",
     "articleType": "EXPLAINER",
     "editorialRole": "AUTHORITY",
-    "thesis": "Pemilik bisnis perlu memahami bahwa centang hijau dan WhatsApp Business API adalah dua konsep berbeda namun saling melengkifique; centang hijau adalah status verifikasi visual, sedangkan API adalah infrastruktur teknis untuk integración.",
-    "editorialAngle": "Artikel ini menolak kesalahpahaman umum bahwa centang hijau dan WhatsApp Business API adalah satu entitas yang sama, dengan memberikan klarifikasi definisi, fungsi, dan implikasi praktis yang tepat agar bisnis bisa membuat keputusan teknologi yang lebih cerdas.",
+    "thesis": "Pemilik bisnis perlu memahami bahwa centang biru dan WhatsApp Business API adalah dua konsep berbeda namun saling melengkapi; centang biru adalah status verifikasi visual, sedangkan API adalah infrastruktur teknis untuk integrasi.",
+    "editorialAngle": "Artikel ini menolak kesalahpahaman umum bahwa centang biru dan WhatsApp Business API adalah satu entitas yang sama, dengan memberikan klarifikasi definisi, fungsi, dan implikasi praktis yang tepat agar bisnis bisa membuat keputusan teknologi yang lebih cerdas.",
     "sections": [
       {
         "id": "sec-1",
-        "heading": "Centang Hijau: Identitas Visual yang Meningkatkan Kepercayaan Pelanggan",
-        "content": "Centang hijau adalah badge verifikasi visual yang ditampilkan di profil akun WhatsApp Business. Badge ini menunjukkan bahwa akun telah diverifikasi oleh Meta dan identitas bisnisnya telah dikonfirmasi. Verifikasi ini bertujuan untuk membangun kepercayaan pelanggan dan mengurangi potensi penipuan. Dengan adanya centang hijau, pelanggan dapat yakin bahwa mereka berinteraksi dengan bisnis asli dan bukan akun palsu.",
+        "heading": "Centang Biru: Identitas Visual yang Meningkatkan Kepercayaan Pelanggan",
+        "content": "Centang biru adalah badge verifikasi visual yang ditampilkan di profil akun WhatsApp Business. Badge ini menunjukkan bahwa akun telah diverifikasi oleh Meta dan identitas bisnisnya telah dikonfirmasi. Verifikasi ini bertujuan untuk membangun kepercayaan pelanggan dan mengurangi potensi penipuan. Dengan adanya centang biru, pelanggan dapat yakin bahwa mereka berinteraksi dengan bisnis asli dan bukan akun palsu.",
         "order": 1,
         "purpose": "CONTEXT",
         "claimUsageIds": [
@@ -35,7 +35,7 @@
       {
         "id": "sec-3",
         "heading": "Mengapa Bisnis Memerlukan Keduanya?",
-        "content": "Centang hijau dan WhatsApp Business API memiliki tujuan yang berbeda namun saling melengkifique. Centang hijau memastikan pelanggan percaya bahwa mereka berinteraksi dengan bisnis asli, sementara WhatsApp Business API memastikan bisnis dapat mengelola komunikasi dengan efisien dan andal. Tanpa centang hijau, pesan bisnis mungkin dianggap spam oleh pelanggan; tanpa API, bisnis tidak dapat menskalakan operasional komunikasi mereka.",
+        "content": "Centang biru dan WhatsApp Business API memiliki tujuan yang berbeda namun saling melengkapi. Centang biru memastikan pelanggan percaya bahwa mereka berinteraksi dengan bisnis asli, sementara WhatsApp Business API memastikan bisnis dapat mengelola komunikasi dengan efisien dan andal. Tanpa centang biru, pesan bisnis mungkin dianggap spam oleh pelanggan; tanpa API, bisnis tidak dapat menskalakan operasional komunikasi mereka.",
         "order": 3,
         "purpose": "ANALYSIS",
         "claimUsageIds": [
@@ -46,7 +46,7 @@
       {
         "id": "sec-4",
         "heading": "Langkah Implementasi bagi Bisnis yang Ingin Mengadopsi Keduanya",
-        "content": "Langkah pertama: Daftarkan akun WhatsApp Business dan ajukan verifikasi centang hijau melalui proses yang ditentukan Meta. Langkah kedua: Setelah centang hijau berhasil didapat, bisnis dapat mulai menjalin kemitraan dengan mitra resmi Meta (Meta's WhatsApp Business Solution Providers) untuk mengakses WhatsApp Business API. Langkah ketiga: Integrasikan API ke sistem internal bisnis untuk mengotomatiskan alur kerja komunikasi dengan pelanggan.",
+        "content": "Langkah pertama: Daftarkan akun WhatsApp Business dan ajukan verifikasi centang biru melalui proses yang ditentukan Meta. Langkah kedua: Setelah centang biru berhasil didapat, bisnis dapat mulai menjalin kemitraan dengan mitra resmi Meta (Meta's WhatsApp Business Solution Providers) untuk mengakses WhatsApp Business API. Langkah ketiga: Integrasikan API ke sistem internal bisnis untuk mengotomatiskan alur kerja komunikasi dengan pelanggan.",
         "order": 4,
         "purpose": "PRACTICAL_APPLICATION",
         "claimUsageIds": [
@@ -55,8 +55,8 @@
       },
       {
         "id": "sec-5",
-        "heading": "Implikasi Strategis: Membedakan Antara Centang Hijau dan WhatsApp Business API Adalah Kunci Keberhasilan Komunikasi Bisnis Digital",
-        "content": "Salah mengartikan kedua konsep ini dapat menyebabkan kegagalan implementasi dan kerugian bisnis, misalnya mengira bahwa hanya mendaftar API sudah cukup untuk mendapat kepercayaan pelanggan. Pemahaman yang benar memungkinkan bisnis untuk merencanakan adopsi teknologi dengan lebih matang, mengalokasikan budget yang tepat, dan memilih mitra teknologi yang sesuai dengan kebutuhan spesifik mereka. Oleh karena itu, bisnis harus memastikan bahwa mereka membeli centang hijau dari sumber yang resmi dan menggunakan WhatsApp Business API melalui solusi provider yang terverificado.",
+        "heading": "Implikasi Strategis: Membedakan Antara Centang Biru dan WhatsApp Business API Adalah Kunci Keberhasilan Komunikasi Bisnis Digital",
+        "content": "Salah mengartikan kedua konsep ini dapat menyebabkan kegagalan implementasi dan kerugian bisnis, misalnya mengira bahwa hanya mendaftar API sudah cukup untuk mendapat kepercayaan pelanggan. Pemahaman yang benar memungkinkan bisnis untuk merencanakan adopsi teknologi dengan lebih matang, mengalokasikan budget yang tepat, dan memilih mitra teknologi yang sesuai dengan kebutuhan spesifik mereka. Oleh karena itu, bisnis harus memastikan bahwa mereka membeli centang biru dari sumber yang resmi dan menggunakan WhatsApp Business API melalui solusi provider yang terverifikasi.",
         "order": 5,
         "purpose": "IMPLICATION",
         "claimUsageIds": [
@@ -651,7 +651,7 @@
         {
           "propositionId": "prop-8",
           "sectionId": "sec-3",
-          "text": "Centang hijau dan WhatsApp Business API memiliki tujuan yang berbeda namun saling melengkifique.",
+          "text": "Centang biru dan WhatsApp Business API memiliki tujuan yang berbeda namun saling melengkapi.",
           "classification": "ORIGINAL_ANALYSIS",
           "supportLevel": "NOT_APPLICABLE",
           "claimIds": [],
@@ -755,7 +755,7 @@
         {
           "propositionId": "prop-16",
           "sectionId": "sec-5",
-          "text": "Oleh karena itu, bisnis harus memastikan bahwa mereka membeli centang hijau dari sumber yang resmi dan menggunakan WhatsApp Business API melalui solusi provider yang terverificado.",
+          "text": "Oleh karena itu, bisnis harus memastikan bahwa mereka membeli centang biru dari sumber yang resmi dan menggunakan WhatsApp Business API melalui solusi provider yang terverifikasi.",
           "classification": "ORIGINAL_ANALYSIS",
           "supportLevel": "NOT_APPLICABLE",
           "claimIds": [],
@@ -913,7 +913,7 @@
       {
         "propositionId": "prop-8",
         "sectionId": "sec-3",
-        "text": "Centang hijau dan WhatsApp Business API memiliki tujuan yang berbeda namun saling melengkifique.",
+        "text": "Centang biru dan WhatsApp Business API memiliki tujuan yang berbeda namun saling melengkapi.",
         "classification": "ORIGINAL_ANALYSIS",
         "supportLevel": "NOT_APPLICABLE",
         "claimIds": [],
@@ -1017,7 +1017,7 @@
       {
         "propositionId": "prop-16",
         "sectionId": "sec-5",
-        "text": "Oleh karena itu, bisnis harus memastikan bahwa mereka membeli centang hijau dari sumber yang resmi dan menggunakan WhatsApp Business API melalui solusi provider yang terverificado.",
+        "text": "Oleh karena itu, bisnis harus memastikan bahwa mereka membeli centang biru dari sumber yang resmi dan menggunakan WhatsApp Business API melalui solusi provider yang terverifikasi.",
         "classification": "ORIGINAL_ANALYSIS",
         "supportLevel": "NOT_APPLICABLE",
         "claimIds": [],
