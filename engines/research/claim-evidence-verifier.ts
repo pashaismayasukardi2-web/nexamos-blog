@@ -54,9 +54,10 @@ const STOP_WORDS = new Set([
 ]);
 
 const CONTRADICTION_TRIGGERS = [
-  'tidak benar', 'salah', 'keliru', 'menolak', 'membantah', 'debunked',
-  'mitos', 'bukan', 'tidak terbukti', 'justru sebaliknya', 'menurun drastis',
-  'kontradiktif', 'dispute'
+  'tidak benar', 'keliru', 'menolak', 'membantah', 'debunked',
+  'mitos', 'tidak terbukti', 'justru sebaliknya', 'menurun drastis',
+  'kontradiktif', 'dispute', 'salah kaprah', 'salah besar', 'adalah salah',
+  'bukanlah fakta'
 ];
 
 /**
@@ -199,9 +200,15 @@ export class DeterministicClaimEvidenceVerifier implements ClaimEvidenceVerifier
     const hasContradiction = contradictingIds.length > 0;
 
     if (hasSupport && hasContradiction) {
-      calculatedStatus = 'DISPUTED';
-      reason = `Terdapat pertentangan bukti (${supportingIds.length} pendukung vs ${contradictingIds.length} penyangkal).`;
-      confidence = 0.5;
+      if (supportingIds.length >= 3 && supportingIds.length >= contradictingIds.length * 2) {
+        calculatedStatus = 'SUPPORTED';
+        confidence = Math.min(1.0, Math.round((totalScore / supportingIds.length) * 100) / 100);
+        reason = `Klaim terbukti secara faktual oleh konsensus mayoritas (${supportingIds.length} pendukung vs ${contradictingIds.length} catatan kontras).`;
+      } else {
+        calculatedStatus = 'DISPUTED';
+        reason = `Terdapat pertentangan bukti (${supportingIds.length} pendukung vs ${contradictingIds.length} penyangkal).`;
+        confidence = 0.5;
+      }
     } else if (hasContradiction) {
       calculatedStatus = 'CONTRADICTED';
       reason = `Klaim disangkal oleh ${contradictingIds.length} bukti terverifikasi.`;
