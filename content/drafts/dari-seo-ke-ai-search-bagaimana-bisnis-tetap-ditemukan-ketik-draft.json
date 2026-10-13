@@ -1,0 +1,1046 @@
+{
+  "draft": {
+    "id": "draft-mv6n39yb",
+    "topicId": "top-mv6n2gni",
+    "researchProjectId": "proj-mv6n2gni",
+    "title": "Dari SEO ke AI Search: Bagaimana Bisnis Tetap Ditemukan Ketika Konsumen Menggunakan AI?",
+    "dek": "Studi Pew Research Center menunjukkan bahwa pengguna Google yang melihat summary AI lebih cenderung menutup seluruh sesi browsing tanpa mengklik tautan apa pun. Ini memaksa bisnis untuk memikirkan ulang strategi visibilitas digital mereka.",
+    "slug": "dari-seo-ke-ai-search-bagaimana-bisnis-tetap-ditemukan-ketik",
+    "territory": "STRATEGY",
+    "articleType": "ANALYSIS",
+    "editorialRole": "AUTHORITY",
+    "thesis": "Transformasi dari mesin telusur tradisional ke AI generatif memerlukan pergeseran fundamental dalam strategi visibilitas digital, di mana keberadaan merek di luar link klik menjadi krusial.",
+    "editorialAngle": "Analisis strategis yang grounded pada bukti empiris menunjukkan bahwa bisnis harus mengadopsi pendekatan proaktif untuk mendominasi konten yang digunakan oleh model AI untuk menjawab query, bukan hanya sekadar dioptimalkan untuk klik organik.",
+    "sections": [
+      {
+        "id": "sec-1",
+        "heading": "Konsekuensi Nyata dari Kemunculan AI Summary",
+        "content": "Sebuah studi oleh Pew Research Center pada bulan Maret 2025 menemukan bahwa pengguna Google yang melihat summary AI memiliki kemungkinan lebih besar untuk menutup seluruh sesi browsing tanpa mengklik tautan apa pun. Hal ini mengindikasikan bahwa bisnis harus memastikan kontennya menjadi sumber informasi utama bagi AI, bukan sekadar target klik organik. Studi tersebut juga menunjukkan bahwa search queries dengan lebih banyak kata, pertanyaan, atau kalimat lengkap lebih mungkin menghasilkan summary AI, sehingga optimisasi konten harus beradaptasi untuk format pencarian yang lebih panjang dan spesifik.",
+        "order": 1,
+        "purpose": "EVIDENCE",
+        "claimUsageIds": [
+          "claim-1",
+          "claim-2"
+        ]
+      },
+      {
+        "id": "sec-2",
+        "heading": "Strategi Dominasi Konten untuk Era AI Search",
+        "content": "Untuk menghadapi era AI search, bisnis perlu mengadopsi kerangka kerja strategis yang berfokus pada dominasi konten. Langkah pertama adalah mengidentifikasi topik dan format konten yang paling sering dikutip oleh AI search engine seperti summary Google. Meskipun situs Wikipedia, YouTube, dan Reddit paling sering dikutip, bisnis harus berusaha agar konten mereka juga menjadi referensi utama bagi model AI. Implementasi konkret termasuk membuat konten eksklusif yang mendalam dan berkualitas tinggi yang mudah diakses oleh crawler AI untuk meningkatkan kemungkinan dikutip.",
+        "order": 2,
+        "purpose": "FRAMEWORK",
+        "claimUsageIds": [
+          "claim-4"
+        ]
+      },
+      {
+        "id": "sec-3",
+        "heading": "Menavigasi Fenomena Zero-Click di Era AI",
+        "content": "Hampir sepertiga dari semua kunjungan ke halaman pencarian Google tidak menghasilkan klik ke tautan apa pun, baik di summary AI maupun hasil standar. Fenomena ini memaksa bisnis untuk memikirkan ulang tujuan utama visibilitas online mereka—bukan hanya drive traffic, tapi menjadi authority yang dipercaya oleh AI. Implikasi strategisnya adalah brand perlu membangun presence di luar halaman web tradisional, seperti database publik, API, atau platform pihak ketiga yang digunakan oleh model AI.",
+        "order": 3,
+        "purpose": "ANALYSIS",
+        "claimUsageIds": [
+          "claim-5"
+        ]
+      },
+      {
+        "id": "sec-4",
+        "heading": "Langkah Praktis Menuju Visibilitas di Era AI",
+        "content": "Untuk menerapkan visibilitas di era AI, bisnis dapat mengikuti langkah-langkah praktis berikut: Pertama, lakukan audit konten untuk mengidentifikasi topik yang paling relevan dengan audiens dan pastikan konten tersebut tersedia dalam format yang mudah dipahami oleh AI (structured data, JSON-LD). Kedua, optimisasi untuk kutipan dengan menggunakan bahasa yang jelas dan deskriptif, serta menyertakan data dan referensi yang solid agar AI lebih cenderung mengutip konten Anda. Ketiga, pantau sentimen dan distribusi konten menggunakan tools analytics untuk melacak di mana dan bagaimana konten Anda digunakan oleh AI, lalu optimalkan secara berkelanjutan.",
+        "order": 4,
+        "purpose": "PRACTICAL_APPLICATION",
+        "claimUsageIds": [
+          "claim-1",
+          "claim-2",
+          "claim-5"
+        ]
+      }
+    ],
+    "claimUsages": [
+      {
+        "id": "cu-1",
+        "claimId": "claim-1",
+        "usageType": "DIRECT",
+        "statement": "Pengguna Google yang melihat summary AI lebih cenderung menutup seluruh sesi browsing tanpa mengklik tautan apa pun.",
+        "sectionId": "sec-1"
+      },
+      {
+        "id": "cu-2",
+        "claimId": "claim-2",
+        "usageType": "DIRECT",
+        "statement": "Search queries dengan lebih banyak kata, pertanyaan, atau kalimat lengkap lebih mungkin menghasilkan summary AI.",
+        "sectionId": "sec-1"
+      },
+      {
+        "id": "cu-3",
+        "claimId": "claim-4",
+        "usageType": "DIRECT",
+        "statement": "Situs Wikipedia, YouTube, dan Reddit paling sering dikutip dalam summary AI dan hasil pencarian standar Google.",
+        "sectionId": "sec-2"
+      },
+      {
+        "id": "cu-4",
+        "claimId": "claim-5",
+        "usageType": "DIRECT",
+        "statement": "Hampir sepertiga dari semua kunjungan ke halaman pencarian Google tidak menghasilkan klik ke tautan apa pun, baik di summary AI maupun hasil standar.",
+        "sectionId": "sec-3"
+      }
+    ],
+    "citationMap": [
+      {
+        "claimUsageId": "cu-1",
+        "claimId": "claim-1",
+        "sourceIds": [
+          "src-mv6n2j2s-j9zc"
+        ],
+        "evidenceIds": [
+          "evi-src-mv6n2j2s-j9zc-4",
+          "evi-src-mv6n2j2s-j9zc-14",
+          "evi-src-mv6n2j2s-j9zc-16"
+        ]
+      },
+      {
+        "claimUsageId": "cu-2",
+        "claimId": "claim-2",
+        "sourceIds": [
+          "src-mv6n2j2s-j9zc"
+        ],
+        "evidenceIds": [
+          "evi-src-mv6n2j2s-j9zc-23"
+        ]
+      },
+      {
+        "claimUsageId": "cu-3",
+        "claimId": "claim-4",
+        "sourceIds": [
+          "src-mv6n2j2s-j9zc"
+        ],
+        "evidenceIds": [
+          "evi-src-mv6n2j2s-j9zc-4",
+          "evi-src-mv6n2j2s-j9zc-6",
+          "evi-src-mv6n2j2s-j9zc-7",
+          "evi-src-mv6n2j2s-j9zc-19",
+          "evi-src-mv6n2j2s-j9zc-21"
+        ]
+      },
+      {
+        "claimUsageId": "cu-4",
+        "claimId": "claim-5",
+        "sourceIds": [
+          "src-mv6n2j2s-j9zc"
+        ],
+        "evidenceIds": [
+          "evi-src-mv6n2j2s-j9zc-6",
+          "evi-src-mv6n2j2s-j9zc-14",
+          "evi-src-mv6n2j2s-j9zc-17"
+        ]
+      }
+    ],
+    "status": "READY_FOR_EDITORIAL_REVIEW",
+    "generatedAt": "2026-10-13T12:10:43.619Z",
+    "generatorVersion": "real-ai-v1",
+    "promptVersion": "1.0.0"
+  },
+  "brief": {
+    "id": "brief-mv6n2svm",
+    "topicId": "top-mv6n2gni",
+    "researchProjectId": "proj-mv6n2gni",
+    "objective": "Dari SEO ke AI Search: Bagaimana Bisnis Tetap Ditemukan Ketika Konsumen Menggunakan AI?",
+    "answeredQuestions": [
+      {
+        "id": "rq-1",
+        "question": "Bagaimana algoritma pencarian AI saat ini memproses dan mengevaluasi konten bisnis untuk hasil pencarian?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-2",
+        "question": "Apa indikator performa kunci (KPI) yang harus dimiliki konten enterprise agar relevan dengan model bahasa besar (LLM) dan agen AI?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-3",
+        "question": "Bagaimana perbedaan antara praktik SEO tradisional dengan persyaratan optimalisasi untuk integrasi dengan chatbot dan asisten AI?",
+        "priority": "MEDIUM",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-4",
+        "question": "Apa dampak dari penggunaan AI generatif terhadap struktur data dan metadata yang dibutuhkan mesin pencari?",
+        "priority": "MEDIUM",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-5",
+        "question": "Bagaimana bisnis enterprise dapat mengukur dan meningkatkan 'AI-Friendliness' dari aset digital mereka?",
+        "priority": "MEDIUM",
+        "status": "OPEN"
+      }
+    ],
+    "openQuestions": [],
+    "supportedClaims": [
+      {
+        "id": "claim-1",
+        "researchProjectId": "proj-mv6n2gni",
+        "statement": "Pengguna Google yang melihat summary AI lebih cenderung menutup seluruh sesi browsing tanpa mengklik tautan apa pun.",
+        "claimType": "EMPIRICAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-10-13T12:10:19.444Z",
+        "updatedAt": "2026-10-13T12:10:19.444Z",
+        "supportingEvidenceIds": [
+          "evi-src-mv6n2j2s-j9zc-14",
+          "evi-src-mv6n2j2s-j9zc-16"
+        ]
+      },
+      {
+        "id": "claim-2",
+        "researchProjectId": "proj-mv6n2gni",
+        "statement": "Search queries dengan lebih banyak kata, pertanyaan, atau kalimat lengkap lebih mungkin menghasilkan summary AI.",
+        "claimType": "EMPIRICAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-10-13T12:10:19.785Z",
+        "updatedAt": "2026-10-13T12:10:19.785Z",
+        "supportingEvidenceIds": [
+          "evi-src-mv6n2j2s-j9zc-23"
+        ]
+      },
+      {
+        "id": "claim-4",
+        "researchProjectId": "proj-mv6n2gni",
+        "statement": "Situs Wikipedia, YouTube, dan Reddit paling sering dikutip dalam summary AI dan hasil pencarian standar Google.",
+        "claimType": "EMPIRICAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-10-13T12:10:20.469Z",
+        "updatedAt": "2026-10-13T12:10:20.469Z",
+        "supportingEvidenceIds": [
+          "evi-src-mv6n2j2s-j9zc-4",
+          "evi-src-mv6n2j2s-j9zc-6",
+          "evi-src-mv6n2j2s-j9zc-7",
+          "evi-src-mv6n2j2s-j9zc-19",
+          "evi-src-mv6n2j2s-j9zc-21"
+        ]
+      },
+      {
+        "id": "claim-5",
+        "researchProjectId": "proj-mv6n2gni",
+        "statement": "Hampir sepertiga dari semua kunjungan ke halaman pencarian Google tidak menghasilkan klik ke tautan apa pun, baik di summary AI maupun hasil standar.",
+        "claimType": "EMPIRICAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-10-13T12:10:20.803Z",
+        "updatedAt": "2026-10-13T12:10:20.803Z",
+        "supportingEvidenceIds": [
+          "evi-src-mv6n2j2s-j9zc-6",
+          "evi-src-mv6n2j2s-j9zc-14",
+          "evi-src-mv6n2j2s-j9zc-17"
+        ]
+      }
+    ],
+    "partiallySupportedClaims": [],
+    "disputedClaims": [],
+    "unverifiedClaims": [
+      {
+        "id": "claim-3",
+        "researchProjectId": "proj-mv6n2gni",
+        "statement": "Summary AI rata-rata berisi 67 kata, dengan variasi signifikan antara 7 hingga 369 kata.",
+        "claimType": "EMPIRICAL",
+        "importance": "CORE",
+        "status": "UNVERIFIED",
+        "createdAt": "2026-10-13T12:10:20.109Z",
+        "updatedAt": "2026-10-13T12:10:20.109Z",
+        "supportingEvidenceIds": []
+      },
+      {
+        "id": "claim-6",
+        "researchProjectId": "proj-mv6n2gni",
+        "statement": "Search queries tentang kecerdasan buatan (AI) memiliki kemungkinan tinggi untuk menghasilkan summary AI.",
+        "claimType": "EMPIRICAL",
+        "importance": "SUPPORTING",
+        "status": "UNVERIFIED",
+        "createdAt": "2026-10-13T12:10:21.166Z",
+        "updatedAt": "2026-10-13T12:10:21.166Z",
+        "supportingEvidenceIds": []
+      }
+    ],
+    "unsupportedClaims": [],
+    "internalKnowledge": [],
+    "originalAnalysis": [],
+    "keyFindings": [
+      {
+        "id": "finding-01",
+        "researchProjectId": "proj-mv6n2gni",
+        "statement": "Pengguna Google yang melihat summary AI lebih cenderung menutup seluruh sesi browsing tanpa mengklik tautan apa pun.",
+        "supportingClaimIds": [
+          "claim-1",
+          "claim-2",
+          "claim-4",
+          "claim-5"
+        ],
+        "confidence": "HIGH",
+        "limitations": [],
+        "createdAt": "2026-10-13T12:10:21.490Z",
+        "updatedAt": "2026-10-13T12:10:21.490Z"
+      }
+    ],
+    "limitations": [],
+    "researchGaps": [],
+    "recommendedEditorialAngle": "Analisis strategis ter-grounding mengenai Dari SEO ke AI Search: Bagaimana Bisnis Tetap Ditemukan Ketika Konsumen Menggunakan AI?",
+    "sourceIndex": [
+      {
+        "sourceId": "src-mv6n2j2s-j9zc",
+        "title": "Dari SEO ke AI Search: Bagaimana Bisnis Tetap Ditemukan Ketika Konsumen Menggunakan AI?",
+        "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/",
+        "canonicalUrl": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/",
+        "publisher": "Referensi Web",
+        "sourceType": "INDUSTRY_RESEARCH",
+        "authorityScore": 85,
+        "publicationAllowed": true
+      }
+    ],
+    "evidenceIndex": [
+      {
+        "evidenceId": "evi-src-mv6n2j2s-j9zc-4",
+        "sourceId": "src-mv6n2j2s-j9zc",
+        "quote": "Pew Research Center conducted this analysis to learn more about AI-generated search summaries and how they appear in Google search results. This analysis uses the web browsing data of 900 U.S. adults who are members of KnowledgePanel Digital, an onli",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      },
+      {
+        "evidenceId": "evi-src-mv6n2j2s-j9zc-5",
+        "sourceId": "src-mv6n2j2s-j9zc",
+        "quote": "For each respondent, we received a list of all the URLs they visited on a tracked device during March 1-31, 2025. This allowed us to examine every visit they made to a search engine during that time, the actual search terms they submitted on those vi",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      },
+      {
+        "evidenceId": "evi-src-mv6n2j2s-j9zc-6",
+        "sourceId": "src-mv6n2j2s-j9zc",
+        "quote": "For every web search on google.com in our collection, we used a third-party web scraping service to run the same search and collect any text on the first page of the results. This includes standard search results and links, the text of any AI summari",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      },
+      {
+        "evidenceId": "evi-src-mv6n2j2s-j9zc-7",
+        "sourceId": "src-mv6n2j2s-j9zc",
+        "quote": "The total dataset used in this analysis contains 68,879 unique Google searches. Some 12,593 of these searches produced an AI summary to accompany the standard search results. Due to technical limitations in our ability to identify AI-generated summar",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      },
+      {
+        "evidenceId": "evi-src-mv6n2j2s-j9zc-14",
+        "sourceId": "src-mv6n2j2s-j9zc",
+        "quote": "Google users who encounter an AI summary are less likely to click on links to other websites than users who do not see one. Users who encountered an AI summary clicked on a traditional search result link in 8% of all visits. Those who did not encount",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      },
+      {
+        "evidenceId": "evi-src-mv6n2j2s-j9zc-16",
+        "sourceId": "src-mv6n2j2s-j9zc",
+        "quote": "Google users are more likely to end their browsing session entirely after visiting a search page with an AI summary than on pages without a summary. This happened on 26% of pages with an AI summary, compared with 16% of pages with only traditional se",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      },
+      {
+        "evidenceId": "evi-src-mv6n2j2s-j9zc-18",
+        "sourceId": "src-mv6n2j2s-j9zc",
+        "quote": "The most frequently cited sources in both Google AI summaries and standard search results are Wikipedia, YouTube and Reddit. These three sites are the most commonly linked sources in AI summaries and standard search results alike. Collectively, they ",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      },
+      {
+        "evidenceId": "evi-src-mv6n2j2s-j9zc-21",
+        "sourceId": "src-mv6n2j2s-j9zc",
+        "quote": "Overall, around one-in-five Google searches in March 2025 produced an AI summary. Some 18% of all the Google searches in our study generated an AI summary as part of the search results. The vast majority of these summaries (88%) cited three or more s",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      },
+      {
+        "evidenceId": "evi-src-mv6n2j2s-j9zc-8",
+        "sourceId": "src-mv6n2j2s-j9zc",
+        "quote": "To identify the user’s next action after visiting a Google search page, we used the timestamp and URL of their next visit. These are the categories we used and how we defined them:",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      },
+      {
+        "evidenceId": "evi-src-mv6n2j2s-j9zc-9",
+        "sourceId": "src-mv6n2j2s-j9zc",
+        "quote": "Clicking on a link in the AI summary or from the search results if the next-visited URL matched any of the links available on the first page of search results or in the first three links cited in a page’s AI summary. If someone followed a link that a",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      },
+      {
+        "evidenceId": "evi-src-mv6n2j2s-j9zc-17",
+        "sourceId": "src-mv6n2j2s-j9zc",
+        "quote": "Regardless of whether a page had an AI-generated summary or not, the largest share of Google searches in our study resulted in the user either browsing elsewhere on Google or leaving the site entirely without clicking a link in the search results. Ar",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      },
+      {
+        "evidenceId": "evi-src-mv6n2j2s-j9zc-19",
+        "sourceId": "src-mv6n2j2s-j9zc",
+        "quote": "Wikipedia links are somewhat more common in AI summaries than in standard search pages, while YouTube links are somewhat more common in standard search results than in AI summaries.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      },
+      {
+        "evidenceId": "evi-src-mv6n2j2s-j9zc-15",
+        "sourceId": "src-mv6n2j2s-j9zc",
+        "quote": "Google users who encountered an AI summary also rarely clicked on a link in the summary itself. This occurred in just 1% of all visits to pages with such a summary.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      },
+      {
+        "evidenceId": "evi-src-mv6n2j2s-j9zc-22",
+        "sourceId": "src-mv6n2j2s-j9zc",
+        "quote": "The typical (median) AI summary in our study was 67 words long, but this varied widely. The shortest we found was just seven words long, while the longest ran to 369 words.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      },
+      {
+        "evidenceId": "evi-src-mv6n2j2s-j9zc-23",
+        "sourceId": "src-mv6n2j2s-j9zc",
+        "quote": "Google searches that contain more words, ask questions or use full sentences tend to produce AI summaries more often. Longer searches are more likely to produce an AI summary. Just 8% of one- or two-word searches resulted in an AI summary. But that s",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      },
+      {
+        "evidenceId": "evi-src-mv6n2j2s-j9zc-3",
+        "sourceId": "src-mv6n2j2s-j9zc",
+        "quote": "Here’s more of what we learned about Google AI summaries and how users interact with them.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      },
+      {
+        "evidenceId": "evi-src-mv6n2j2s-j9zc-24",
+        "sourceId": "src-mv6n2j2s-j9zc",
+        "quote": "Other types of searches that tend to result in AI summaries include:",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      },
+      {
+        "evidenceId": "evi-src-mv6n2j2s-j9zc-27",
+        "sourceId": "src-mv6n2j2s-j9zc",
+        "quote": "Artificial Intelligence",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      }
+    ],
+    "readiness": "READY_FOR_EDITORIAL",
+    "readinessReason": "Kecukupan bukti riset terpenuhi: 4 klaim faktual berhasil diverifikasi.",
+    "generatedAt": "2026-10-13T12:10:21.490Z"
+  },
+  "topic": {
+    "id": "top-mv6n2gni",
+    "title": "Dari SEO ke AI Search: Bagaimana Bisnis Tetap Ditemukan Ketika Konsumen Menggunakan AI?",
+    "slug": "dari-seo-ke-ai-search-bagaimana-bisnis-tetap-ditemukan-ketik",
+    "territory": "STRATEGY",
+    "recommendedArticleType": "ANALYSIS",
+    "editorialRole": "AUTHORITY",
+    "audience": {
+      "segment": "Enterprise Content Leaders"
+    },
+    "problem": "Dari SEO ke AI Search: Bagaimana Bisnis Tetap Ditemukan Ketika Konsumen Menggunakan AI?",
+    "intent": {
+      "primary": "Dari SEO ke AI Search: Bagaimana Bisnis Tetap Ditemukan Ketika Konsumen Menggunakan AI?"
+    },
+    "thesis": null,
+    "whyNow": null,
+    "status": "APPROVED",
+    "informationGain": {
+      "originalityType": [
+        "ORIGINAL_FRAMEWORK"
+      ],
+      "expectedContribution": "Arsitektur informasi mandiri",
+      "commodityRisk": "LOW"
+    },
+    "evidencePlan": {
+      "requiredEvidenceLevel": "E2",
+      "plannedSources": [
+        "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      ],
+      "originalEvidenceRequired": false
+    },
+    "businessRelevance": {
+      "objective": "Thought Leadership",
+      "funnelRole": "TOFU"
+    },
+    "distributionTargets": [
+      "GOOGLE_SEARCH",
+      "GOOGLE_AI"
+    ],
+    "createdAt": "2026-10-13T12:10:05.646Z",
+    "updatedAt": "2026-10-13T12:10:05.646Z"
+  },
+  "editorialIntegrity": {
+    "status": "PASS",
+    "draftClaimAudit": {
+      "status": "PASS",
+      "propositions": [
+        {
+          "propositionId": "prop-1",
+          "sectionId": "sec-1",
+          "text": "Sebuah studi oleh Pew Research Center pada bulan Maret 2025 menemukan bahwa pengguna Google yang melihat summary AI memiliki kemungkinan lebih besar untuk menutup seluruh sesi browsing tanpa mengklik tautan apa pun.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-1"
+          ],
+          "evidenceIds": [
+            "evi-src-mv6n2j2s-j9zc-14",
+            "evi-src-mv6n2j2s-j9zc-16"
+          ],
+          "sourceIds": [
+            "src-mv6n2j2s-j9zc"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-2",
+          "sectionId": "sec-1",
+          "text": "Hal ini mengindikasikan bahwa bisnis harus memastikan kontennya menjadi sumber informasi utama bagi AI, bukan sekadar target klik organik.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-3",
+          "sectionId": "sec-1",
+          "text": "Studi tersebut juga menunjukkan bahwa search queries dengan lebih banyak kata, pertanyaan, atau kalimat lengkap lebih mungkin menghasilkan summary AI, sehingga optimisasi konten harus beradaptasi untuk format pencarian yang lebih panjang dan spesifik.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-2"
+          ],
+          "evidenceIds": [
+            "evi-src-mv6n2j2s-j9zc-23"
+          ],
+          "sourceIds": [
+            "src-mv6n2j2s-j9zc"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-4",
+          "sectionId": "sec-2",
+          "text": "Untuk menghadapi era AI search, bisnis perlu mengadopsi kerangka kerja strategis yang berfokus pada dominasi konten.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-5",
+          "sectionId": "sec-2",
+          "text": "Langkah pertama adalah mengidentifikasi topik dan format konten yang paling sering dikutip oleh AI search engine seperti summary Google.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-6",
+          "sectionId": "sec-2",
+          "text": "Meskipun situs Wikipedia, YouTube, dan Reddit paling sering dikutip, bisnis harus berusaha agar konten mereka juga menjadi referensi utama bagi model AI.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-7",
+          "sectionId": "sec-2",
+          "text": "Implementasi konkret termasuk membuat konten eksklusif yang mendalam dan berkualitas tinggi yang mudah diakses oleh crawler AI untuk meningkatkan kemungkinan dikutip.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-8",
+          "sectionId": "sec-3",
+          "text": "Hampir sepertiga dari semua kunjungan ke halaman pencarian Google tidak menghasilkan klik ke tautan apa pun, baik di summary AI maupun hasil standar.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-9",
+          "sectionId": "sec-3",
+          "text": "Fenomena ini memaksa bisnis untuk memikirkan ulang tujuan utama visibilitas online mereka—bukan hanya drive traffic, tapi menjadi authority yang dipercaya oleh AI.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-10",
+          "sectionId": "sec-3",
+          "text": "Implikasi strategisnya adalah brand perlu membangun presence di luar halaman web tradisional, seperti database publik, API, atau platform pihak ketiga yang digunakan oleh model AI.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-11",
+          "sectionId": "sec-4",
+          "text": "Untuk menerapkan visibilitas di era AI, bisnis dapat mengikuti langkah-langkah praktis berikut: Pertama, lakukan audit konten untuk mengidentifikasi topik yang paling relevan dengan audiens dan pastikan konten tersebut tersedia dalam format yang mudah dipahami oleh AI (structured data, JSON-LD).",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-12",
+          "sectionId": "sec-4",
+          "text": "Kedua, optimisasi untuk kutipan dengan menggunakan bahasa yang jelas dan deskriptif, serta menyertakan data dan referensi yang solid agar AI lebih cenderung mengutip konten Anda.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-13",
+          "sectionId": "sec-4",
+          "text": "Ketiga, pantau sentimen dan distribusi konten menggunakan tools analytics untuk melacak di mana dan bagaimana konten Anda digunakan oleh AI, lalu optimalkan secara berkelanjutan.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        }
+      ],
+      "groundedExternalFacts": 2,
+      "ungroundedExternalFacts": 0,
+      "partialSupportCount": 0,
+      "originalAnalysisCount": 11,
+      "interpretationCount": 0,
+      "internalKnowledgeCount": 0,
+      "nonFactualCount": 0,
+      "numericClaimsTotal": 0,
+      "unsupportedNumericCount": 0,
+      "citationFailuresCount": 0,
+      "issues": [],
+      "summary": "DraftClaimAuditor: Seluruh 2 klaim faktual eksternal terbukti (ENTAILED). Analisis orisinal: 11. Sitasi valid.",
+      "auditedAt": "2026-10-13T12:10:43.622Z"
+    },
+    "groundingGuard": {
+      "status": "PASS",
+      "issues": [],
+      "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+    },
+    "propositions": [
+      {
+        "propositionId": "prop-1",
+        "sectionId": "sec-1",
+        "text": "Sebuah studi oleh Pew Research Center pada bulan Maret 2025 menemukan bahwa pengguna Google yang melihat summary AI memiliki kemungkinan lebih besar untuk menutup seluruh sesi browsing tanpa mengklik tautan apa pun.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-1"
+        ],
+        "evidenceIds": [
+          "evi-src-mv6n2j2s-j9zc-14",
+          "evi-src-mv6n2j2s-j9zc-16"
+        ],
+        "sourceIds": [
+          "src-mv6n2j2s-j9zc"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-1 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-2",
+        "sectionId": "sec-1",
+        "text": "Hal ini mengindikasikan bahwa bisnis harus memastikan kontennya menjadi sumber informasi utama bagi AI, bukan sekadar target klik organik.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-3",
+        "sectionId": "sec-1",
+        "text": "Studi tersebut juga menunjukkan bahwa search queries dengan lebih banyak kata, pertanyaan, atau kalimat lengkap lebih mungkin menghasilkan summary AI, sehingga optimisasi konten harus beradaptasi untuk format pencarian yang lebih panjang dan spesifik.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-2"
+        ],
+        "evidenceIds": [
+          "evi-src-mv6n2j2s-j9zc-23"
+        ],
+        "sourceIds": [
+          "src-mv6n2j2s-j9zc"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-4",
+        "sectionId": "sec-2",
+        "text": "Untuk menghadapi era AI search, bisnis perlu mengadopsi kerangka kerja strategis yang berfokus pada dominasi konten.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-5",
+        "sectionId": "sec-2",
+        "text": "Langkah pertama adalah mengidentifikasi topik dan format konten yang paling sering dikutip oleh AI search engine seperti summary Google.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-6",
+        "sectionId": "sec-2",
+        "text": "Meskipun situs Wikipedia, YouTube, dan Reddit paling sering dikutip, bisnis harus berusaha agar konten mereka juga menjadi referensi utama bagi model AI.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-7",
+        "sectionId": "sec-2",
+        "text": "Implementasi konkret termasuk membuat konten eksklusif yang mendalam dan berkualitas tinggi yang mudah diakses oleh crawler AI untuk meningkatkan kemungkinan dikutip.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-8",
+        "sectionId": "sec-3",
+        "text": "Hampir sepertiga dari semua kunjungan ke halaman pencarian Google tidak menghasilkan klik ke tautan apa pun, baik di summary AI maupun hasil standar.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-9",
+        "sectionId": "sec-3",
+        "text": "Fenomena ini memaksa bisnis untuk memikirkan ulang tujuan utama visibilitas online mereka—bukan hanya drive traffic, tapi menjadi authority yang dipercaya oleh AI.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-10",
+        "sectionId": "sec-3",
+        "text": "Implikasi strategisnya adalah brand perlu membangun presence di luar halaman web tradisional, seperti database publik, API, atau platform pihak ketiga yang digunakan oleh model AI.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-11",
+        "sectionId": "sec-4",
+        "text": "Untuk menerapkan visibilitas di era AI, bisnis dapat mengikuti langkah-langkah praktis berikut: Pertama, lakukan audit konten untuk mengidentifikasi topik yang paling relevan dengan audiens dan pastikan konten tersebut tersedia dalam format yang mudah dipahami oleh AI (structured data, JSON-LD).",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-12",
+        "sectionId": "sec-4",
+        "text": "Kedua, optimisasi untuk kutipan dengan menggunakan bahasa yang jelas dan deskriptif, serta menyertakan data dan referensi yang solid agar AI lebih cenderung mengutip konten Anda.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-13",
+        "sectionId": "sec-4",
+        "text": "Ketiga, pantau sentimen dan distribusi konten menggunakan tools analytics untuk melacak di mana dan bagaimana konten Anda digunakan oleh AI, lalu optimalkan secara berkelanjutan.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      }
+    ],
+    "groundedExternalFacts": 2,
+    "ungroundedExternalFacts": 0,
+    "partialSupportCount": 0,
+    "originalAnalysisCount": 11,
+    "interpretationCount": 0,
+    "internalKnowledgeCount": 0,
+    "nonFactualCount": 0,
+    "numericClaimsTotal": 0,
+    "unsupportedNumericCount": 0,
+    "citationFailuresCount": 0,
+    "issues": [],
+    "summary": "Editorial Integrity Gate: PASS. Seluruh 2 klaim eksternal terbukti, 11 analisis orisinal valid, dan guard mekanikal lolos.",
+    "evaluatedAt": "2026-10-13T12:10:43.619Z"
+  },
+  "guardEvaluation": {
+    "status": "PASS",
+    "issues": [],
+    "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+  },
+  "discoverEvaluation": {
+    "articleId": "draft-mv6n39yb",
+    "checks": [
+      {
+        "checkId": "DISCOVER_ELIGIBILITY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Artikel memenuhi seluruh kriteria kelayakan dasar Google Discover."
+      },
+      {
+        "checkId": "DISCOVER_ORIGINALITY",
+        "dimension": "ORIGINALITY",
+        "status": "PASS",
+        "scoreContribution": 15,
+        "summary": "Orisinalitas konten tinggi, didukung oleh data riset dan kerangka kerja konseptual orisinal."
+      },
+      {
+        "checkId": "DISCOVER_DEPTH",
+        "dimension": "DEPTH",
+        "status": "WARNING",
+        "scoreContribution": 10,
+        "summary": "Tingkat kedalaman konten: ADEQUATE."
+      },
+      {
+        "checkId": "DISCOVER_TIMELINESS",
+        "dimension": "TIMELINESS",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Konten terkini dengan aktualitas tinggi."
+      },
+      {
+        "checkId": "DISCOVER_INTEREST_FIT",
+        "dimension": "INTEREST_FIT",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Memiliki dasar minat audiens yang kuat berdasarkan dinamika pasar dan urgensi topik."
+      },
+      {
+        "checkId": "DISCOVER_TOPICAL_EXPERTISE",
+        "dimension": "TOPICAL_EXPERTISE",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Status keahlian topikal: DEVELOPING (0 artikel terhubung di territory STRATEGY)."
+      },
+      {
+        "checkId": "DISCOVER_LOCAL_RELEVANCE",
+        "dimension": "LOCAL_RELEVANCE",
+        "status": "PASS",
+        "scoreContribution": 2,
+        "summary": "Topik berskala global yang tetap memenuhi syarat kelayakan Discover."
+      },
+      {
+        "checkId": "DISCOVER_TITLE_INTEGRITY",
+        "dimension": "TITLE_INTEGRITY",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Judul berwibawa, menangkap esensi konten dengan akurat, dan bebas dari clickbait."
+      },
+      {
+        "checkId": "DISCOVER_VISUAL_READINESS",
+        "dimension": "VISUAL_READINESS",
+        "status": "PASS",
+        "scoreContribution": 15,
+        "summary": "Aset visual beresolusi tinggi, berformat lanskap, bebas logo, dan mendukung max-image-preview:large."
+      },
+      {
+        "checkId": "DISCOVER_PAGE_EXPERIENCE",
+        "dimension": "PAGE_EXPERIENCE",
+        "status": "WARNING",
+        "scoreContribution": 5,
+        "summary": "Status pengalaman halaman: UNKNOWN."
+      },
+      {
+        "checkId": "DISCOVER_POLICY_SAFETY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Konten aman dan mematuhi seluruh panduan kebijakan publikasi Google Discover."
+      }
+    ],
+    "issues": [
+      {
+        "code": "INSUFFICIENT_TOPIC_DEPTH",
+        "checkId": "DISCOVER_DEPTH",
+        "dimension": "DEPTH",
+        "severity": "INFO",
+        "message": "Kedalaman naskah cukup memadai, namun belum mencakup limitasi atau implikasi praktis menyeluruh.",
+        "location": "sections",
+        "recommendation": "Pertimbangkan menambahkan sudut pandang tandingan (counterpoint) untuk bobot analisis optimal."
+      }
+    ],
+    "recommendations": [
+      {
+        "type": "EDITORIAL_IMPROVEMENT",
+        "title": "Peningkatan Kedalaman & Orisinalitas [INSUFFICIENT_TOPIC_DEPTH]",
+        "description": "Kedalaman naskah cukup memadai, namun belum mencakup limitasi atau implikasi praktis menyeluruh.",
+        "suggestedAction": "Pertimbangkan menambahkan sudut pandang tandingan (counterpoint) untuk bobot analisis optimal.",
+        "crossEngineDestination": "EDITORIAL"
+      }
+    ],
+    "dimensions": {
+      "ORIGINALITY": 15,
+      "DEPTH": 10,
+      "TIMELINESS": 10,
+      "TOPICAL_EXPERTISE": 10,
+      "INTEREST_FIT": 10,
+      "TITLE_INTEGRITY": 10,
+      "VISUAL_READINESS": 15,
+      "PAGE_EXPERIENCE": 5,
+      "LOCAL_RELEVANCE": 2,
+      "POLICY_SAFETY": 3
+    },
+    "score": 90,
+    "classification": "STRONG",
+    "eligibility": "ELIGIBLE",
+    "criticalIneligibilityReasons": [],
+    "validatedAt": "2026-10-13T12:10:43.626Z",
+    "policyVersion": "DISCOVER_READINESS_POLICY_V1"
+  },
+  "visualPrompt": "SEO to AI Search, interlocking directional signposts with pressurized conduit chutes distributing branded content cartridges to user interface screens, 3D isometric illustration, soft clay rendering, rounded geometric objects, soft studio lighting, minimal marketing illustration, clean composition, premium modern aesthetic. Clear visual hierarchy, single dominant focal object, generous negative space, no text, no logos. --ar 16:9",
+  "createdAt": "2026-10-13T12:10:44.234Z"
+}

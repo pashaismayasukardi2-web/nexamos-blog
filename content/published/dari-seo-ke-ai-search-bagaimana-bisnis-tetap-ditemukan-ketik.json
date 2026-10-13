@@ -1,0 +1,254 @@
+{
+  "id": "pkg-mv6n5zmb-s84cet",
+  "candidateId": "cand-dari-seo-ke-ai-search-bagaimana-bisnis-tetap-ditemukan-ketik",
+  "articleId": "art-dari-seo-ke-ai-search-bagaimana-bisnis-tetap-ditemukan-ketik",
+  "slug": "dari-seo-ke-ai-search-bagaimana-bisnis-tetap-ditemukan-ketik",
+  "internalRoute": "/dari-seo-ke-ai-search-bagaimana-bisnis-tetap-ditemukan-ketik",
+  "publicCanonicalPath": "/blog/dari-seo-ke-ai-search-bagaimana-bisnis-tetap-ditemukan-ketik",
+  "canonicalPath": "/blog/dari-seo-ke-ai-search-bagaimana-bisnis-tetap-ditemukan-ketik",
+  "canonicalUrl": "https://nexamos.cloud/blog/dari-seo-ke-ai-search-bagaimana-bisnis-tetap-ditemukan-ketik",
+  "title": "From SEO to AI Search: How Businesses Stay Found When Consumers Use AI?",
+  "description": "A Pew Research Center study reveals that Google users who see AI-generated summaries are more likely to end their entire browsing session without clicking any links, forcing businesses to rethink their digital visibility strategies.",
+  "territory": "STRATEGY",
+  "articleType": "ANALYSIS",
+  "editorialRole": "AUTHORITY",
+  "articleContent": {
+    "headline": "From SEO to AI Search: How Businesses Stay Found When Consumers Use AI?",
+    "dek": "A Pew Research Center study reveals that Google users who see AI-generated summaries are more likely to end their entire browsing session without clicking any links, forcing businesses to rethink their digital visibility strategies.",
+    "sections": [
+      {
+        "id": "sec-1",
+        "heading": "The Real Consequences of AI Summary Emergence",
+        "content": "A March 2025 study by the Pew Research Center found that Google users who view AI-generated summaries are more likely to close their entire browsing session without clicking on any links. This indicates that businesses must ensure their content becomes the primary source of information for AI, not just a target for organic clicks. The study also revealed that search queries with more words, questions, or complete sentences are more likely to generate AI summaries, meaning content optimization must adapt to longer and more specific search formats.",
+        "order": 1,
+        "purpose": "EVIDENCE"
+      },
+      {
+        "id": "sec-2",
+        "heading": "Content Dominance Strategy for the AI Search Era",
+        "content": "To navigate the era of AI search, businesses need to adopt a strategic framework focused on content dominance. The first step is identifying topics and content formats most frequently cited by AI search engines such as Google's AI summary feature. While Wikipedia, YouTube, and Reddit sites are most commonly cited, businesses should strive to become the primary reference for AI models as well. Practical implementation includes creating exclusive, in-depth, and high-quality content that is easily accessible to AI crawlers to increase the likelihood of being cited.",
+        "order": 2,
+        "purpose": "FRAMEWORK"
+      },
+      {
+        "id": "sec-3",
+        "heading": "Navigating the Zero-Click Phenomenon in the AI Era",
+        "content": "Nearly one-third of all visits to Google search pages do not result in clicks on any links, whether in AI summaries or standard results. This phenomenon forces businesses to rethink the primary goal of their online visibility—not just driving traffic, but becoming an authority trusted by AI. The strategic implication is that brands need to build presence beyond traditional web pages, such as public databases, APIs, or third-party platforms used by AI models.",
+        "order": 3,
+        "purpose": "ANALYSIS"
+      },
+      {
+        "id": "sec-4",
+        "heading": "Practical Steps Toward Visibility in the AI Era",
+        "content": "To implement visibility in the AI era, businesses can follow these practical steps: First, conduct a content audit to identify topics most relevant to your audience and ensure that content is available in formats easily understood by AI (structured data, JSON-LD). Second, optimize for citations by using clear and descriptive language, and include solid data and references so that AI is more likely to cite your content. Third, monitor content sentiment and distribution using analytics tools to track where and how your content is used by AI, then continuously optimize based on the insights gained.",
+        "order": 4,
+        "purpose": "PRACTICAL_APPLICATION"
+      }
+    ],
+    "plainTextSummary": "A March 2025 study by the Pew Research Center found that Google users who view AI-generated summaries are more likely to close their entire browsing session without clicking on any links. This indicates that businesses must ensure their content becomes the primary source of information for AI, not just a target for organic clicks. The study also revealed that search queries with more words, questions, or complete sentences are more likely to generate AI summaries, meaning content optimization must adapt to longer and more specific search formats. To navigate the era of AI search, businesses need to adopt a strategic framework focused on content dominance. The first step is identifying topics and content formats most frequently cited by AI search engines such as Google's AI summary feature. While Wikipedia, YouTube, and Reddit sites are most commonly cited, businesses should strive to become the primary reference for AI models as well. Practical implementation includes creating exclusive, in-depth, and high-quality content that is easily accessible to AI crawlers to increase the likelihood of being cited. Nearly one-third of all visits to Google search pages do not result in clicks on any links, whether in AI summaries or standard results. This phenomenon forces businesses to rethink the primary goal of their online visibility—not just driving traffic, but becoming an authority trusted by AI. The strategic implication is that brands need to build presence beyond traditional web pages, such as public databases, APIs, or third-party platforms used by AI models. To implement visibility in the AI era, businesses can follow these practical steps: First, conduct a content audit to identify topics most relevant to your audience and ensure that content is available in formats easily understood by AI (structured data, JSON-LD). Second, optimize for citations by using clear and descriptive language, and include solid data and references so that AI is more likely to cite your content. Third, monitor content sentiment and distribution using analytics tools to track where and how your content is used by AI, then continuously optimize based on the insights gained."
+  },
+  "defaultLanguage": "en",
+  "translations": {
+    "id": {
+      "title": "Dari SEO ke AI Search: Bagaimana Bisnis Tetap Ditemukan Ketika Konsumen Menggunakan AI?",
+      "description": "Studi Pew Research Center menunjukkan bahwa pengguna Google yang melihat summary AI lebih cenderung menutup seluruh sesi browsing tanpa mengklik tautan apa pun. Ini memaksa bisnis untuk memikirkan ulang strategi visibilitas digital mereka.",
+      "headline": "Dari SEO ke AI Search: Bagaimana Bisnis Tetap Ditemukan Ketika Konsumen Menggunakan AI?",
+      "dek": "Studi Pew Research Center menunjukkan bahwa pengguna Google yang melihat summary AI lebih cenderung menutup seluruh sesi browsing tanpa mengklik tautan apa pun. Ini memaksa bisnis untuk memikirkan ulang strategi visibilitas digital mereka.",
+      "sections": [
+        {
+          "id": "sec-1",
+          "heading": "Konsekuensi Nyata dari Kemunculan AI Summary",
+          "content": "Sebuah studi oleh Pew Research Center pada bulan Maret 2025 menemukan bahwa pengguna Google yang melihat summary AI memiliki kemungkinan lebih besar untuk menutup seluruh sesi browsing tanpa mengklik tautan apa pun. Hal ini mengindikasikan bahwa bisnis harus memastikan kontennya menjadi sumber informasi utama bagi AI, bukan sekadar target klik organik. Studi tersebut juga menunjukkan bahwa search queries dengan lebih banyak kata, pertanyaan, atau kalimat lengkap lebih mungkin menghasilkan summary AI, sehingga optimisasi konten harus beradaptasi untuk format pencarian yang lebih panjang dan spesifik.",
+          "order": 1,
+          "purpose": "EVIDENCE"
+        },
+        {
+          "id": "sec-2",
+          "heading": "Strategi Dominasi Konten untuk Era AI Search",
+          "content": "Untuk menghadapi era AI search, bisnis perlu mengadopsi kerangka kerja strategis yang berfokus pada dominasi konten. Langkah pertama adalah mengidentifikasi topik dan format konten yang paling sering dikutip oleh AI search engine seperti summary Google. Meskipun situs Wikipedia, YouTube, dan Reddit paling sering dikutip, bisnis harus berusaha agar konten mereka juga menjadi referensi utama bagi model AI. Implementasi konkret termasuk membuat konten eksklusif yang mendalam dan berkualitas tinggi yang mudah diakses oleh crawler AI untuk meningkatkan kemungkinan dikutip.",
+          "order": 2,
+          "purpose": "FRAMEWORK"
+        },
+        {
+          "id": "sec-3",
+          "heading": "Menavigasi Fenomena Zero-Click di Era AI",
+          "content": "Hampir sepertiga dari semua kunjungan ke halaman pencarian Google tidak menghasilkan klik ke tautan apa pun, baik di summary AI maupun hasil standar. Fenomena ini memaksa bisnis untuk memikirkan ulang tujuan utama visibilitas online mereka—bukan hanya drive traffic, tapi menjadi authority yang dipercaya oleh AI. Implikasi strategisnya adalah brand perlu membangun presence di luar halaman web tradisional, seperti database publik, API, atau platform pihak ketiga yang digunakan oleh model AI.",
+          "order": 3,
+          "purpose": "ANALYSIS"
+        },
+        {
+          "id": "sec-4",
+          "heading": "Langkah Praktis Menuju Visibilitas di Era AI",
+          "content": "Untuk menerapkan visibilitas di era AI, bisnis dapat mengikuti langkah-langkah praktis berikut: Pertama, lakukan audit konten untuk mengidentifikasi topik yang paling relevan dengan audiens dan pastikan konten tersebut tersedia dalam format yang mudah dipahami oleh AI (structured data, JSON-LD). Kedua, optimisasi untuk kutipan dengan menggunakan bahasa yang jelas dan deskriptif, serta menyertakan data dan referensi yang solid agar AI lebih cenderung mengutip konten Anda. Ketiga, pantau sentimen dan distribusi konten menggunakan tools analytics untuk melacak di mana dan bagaimana konten Anda digunakan oleh AI, lalu optimalkan secara berkelanjutan.",
+          "order": 4,
+          "purpose": "PRACTICAL_APPLICATION"
+        }
+      ]
+    },
+    "en": {
+      "title": "From SEO to AI Search: How Businesses Stay Found When Consumers Use AI?",
+      "description": "A Pew Research Center study reveals that Google users who see AI-generated summaries are more likely to end their entire browsing session without clicking any links, forcing businesses to rethink their digital visibility strategies.",
+      "headline": "From SEO to AI Search: How Businesses Stay Found When Consumers Use AI?",
+      "dek": "A Pew Research Center study reveals that Google users who see AI-generated summaries are more likely to end their entire browsing session without clicking any links, forcing businesses to rethink their digital visibility strategies.",
+      "sections": [
+        {
+          "id": "sec-1",
+          "heading": "The Real Consequences of AI Summary Emergence",
+          "content": "A March 2025 study by the Pew Research Center found that Google users who view AI-generated summaries are more likely to close their entire browsing session without clicking on any links. This indicates that businesses must ensure their content becomes the primary source of information for AI, not just a target for organic clicks. The study also revealed that search queries with more words, questions, or complete sentences are more likely to generate AI summaries, meaning content optimization must adapt to longer and more specific search formats.",
+          "order": 1,
+          "purpose": "EVIDENCE"
+        },
+        {
+          "id": "sec-2",
+          "heading": "Content Dominance Strategy for the AI Search Era",
+          "content": "To navigate the era of AI search, businesses need to adopt a strategic framework focused on content dominance. The first step is identifying topics and content formats most frequently cited by AI search engines such as Google's AI summary feature. While Wikipedia, YouTube, and Reddit sites are most commonly cited, businesses should strive to become the primary reference for AI models as well. Practical implementation includes creating exclusive, in-depth, and high-quality content that is easily accessible to AI crawlers to increase the likelihood of being cited.",
+          "order": 2,
+          "purpose": "FRAMEWORK"
+        },
+        {
+          "id": "sec-3",
+          "heading": "Navigating the Zero-Click Phenomenon in the AI Era",
+          "content": "Nearly one-third of all visits to Google search pages do not result in clicks on any links, whether in AI summaries or standard results. This phenomenon forces businesses to rethink the primary goal of their online visibility—not just driving traffic, but becoming an authority trusted by AI. The strategic implication is that brands need to build presence beyond traditional web pages, such as public databases, APIs, or third-party platforms used by AI models.",
+          "order": 3,
+          "purpose": "ANALYSIS"
+        },
+        {
+          "id": "sec-4",
+          "heading": "Practical Steps Toward Visibility in the AI Era",
+          "content": "To implement visibility in the AI era, businesses can follow these practical steps: First, conduct a content audit to identify topics most relevant to your audience and ensure that content is available in formats easily understood by AI (structured data, JSON-LD). Second, optimize for citations by using clear and descriptive language, and include solid data and references so that AI is more likely to cite your content. Third, monitor content sentiment and distribution using analytics tools to track where and how your content is used by AI, then continuously optimize based on the insights gained.",
+          "order": 4,
+          "purpose": "PRACTICAL_APPLICATION"
+        }
+      ]
+    }
+  },
+  "author": {
+    "name": "Tim Riset & Rekayasa NexaMOS",
+    "role": "NexaMOS Knowledge & AI Engineering",
+    "avatarUrl": "https://nexamos.cloud/authors/default.png"
+  },
+  "publishedAt": "2026-10-13T12:12:50.195Z",
+  "updatedAt": "2026-10-13T12:12:45.405Z",
+  "seoMetadata": {
+    "metaTitle": "From SEO to AI Search: How Businesses Stay Found When Consumers Use AI? | NexaMOS",
+    "metaDescription": "A Pew Research Center study reveals that Google users who see AI-generated summaries are more likely to end their entire browsing session without clicking any links, forcing businesses to rethink their digital visibility strategies.",
+    "openGraph": {
+      "og:title": "From SEO to AI Search: How Businesses Stay Found When Consumers Use AI?",
+      "og:description": "A Pew Research Center study reveals that Google users who see AI-generated summaries are more likely to end their entire browsing session without clicking any links, forcing businesses to rethink their digital visibility strategies.",
+      "og:url": "https://nexamos.cloud/blog/dari-seo-ke-ai-search-bagaimana-bisnis-tetap-ditemukan-ketik",
+      "og:type": "article"
+    },
+    "twitterCard": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "From SEO to AI Search: How Businesses Stay Found When Consumers Use AI?",
+      "twitter:description": "A Pew Research Center study reveals that Google users who see AI-generated summaries are more likely to end their entire browsing session without clicking any links, forcing businesses to rethink their digital visibility strategies."
+    }
+  },
+  "discoverMetadata": {
+    "hasLargeImagePreview": true,
+    "interestFit": "Dari SEO ke AI Search: Bagaimana Bisnis Tetap Ditemukan Ketika Konsumen Menggunakan AI?"
+  },
+  "aiVisibilityMetadata": {
+    "retrievability": "HIGH",
+    "answerability": "STRONG",
+    "claimTraceability": "FULL"
+  },
+  "heroImage": {
+    "url": "/blog/images/hero-dari-seo-ke-ai-search-bagaimana-bisnis-tetap-ditemukan-ketik.webp",
+    "alt": "Dari SEO ke AI Search: Bagaimana Bisnis Tetap Ditemukan Ketika Konsumen Menggunakan AI?",
+    "width": 1200,
+    "height": 630,
+    "caption": "Studi Pew Research Center menunjukkan bahwa pengguna Google yang melihat summary AI lebih cenderung menutup seluruh sesi browsing tanpa mengklik tautan apa pun. Ini memaksa bisnis untuk memikirkan ulang strategi visibilitas digital mereka."
+  },
+  "visualAssets": [
+    {
+      "url": "/blog/images/hero-dari-seo-ke-ai-search-bagaimana-bisnis-tetap-ditemukan-ketik.webp",
+      "width": 1200,
+      "height": 630,
+      "aspectRatio": "16:9",
+      "alt": "Dari SEO ke AI Search: Bagaimana Bisnis Tetap Ditemukan Ketika Konsumen Menggunakan AI?",
+      "caption": "Studi Pew Research Center menunjukkan bahwa pengguna Google yang melihat summary AI lebih cenderung menutup seluruh sesi browsing tanpa mengklik tautan apa pun. Ini memaksa bisnis untuk memikirkan ulang strategi visibilitas digital mereka."
+    }
+  ],
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": "https://nexamos.cloud/blog/dari-seo-ke-ai-search-bagaimana-bisnis-tetap-ditemukan-ketik#article",
+        "headline": "Dari SEO ke AI Search: Bagaimana Bisnis Tetap Ditemukan Ketika Konsumen Menggunakan AI?",
+        "description": "Studi Pew Research Center menunjukkan bahwa pengguna Google yang melihat summary AI lebih cenderung menutup seluruh sesi browsing tanpa mengklik tautan apa pun. Ini memaksa bisnis untuk memikirkan ulang strategi visibilitas digital mereka.",
+        "mainEntityOfPage": "https://nexamos.cloud/blog/dari-seo-ke-ai-search-bagaimana-bisnis-tetap-ditemukan-ketik",
+        "datePublished": "2026-10-13T12:12:50.195Z",
+        "dateModified": "2026-10-13T12:12:45.405Z",
+        "author": {
+          "@type": "Person",
+          "name": "Tim Riset & Rekayasa NexaMOS",
+          "jobTitle": "NexaMOS Knowledge & AI Engineering"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "NexaMOS Knowledge Journal",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://nexamos.cloud/brand/logo.png"
+          }
+        },
+        "image": [
+          "/blog/images/hero-dari-seo-ke-ai-search-bagaimana-bisnis-tetap-ditemukan-ketik.webp"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://nexamos.cloud/blog/dari-seo-ke-ai-search-bagaimana-bisnis-tetap-ditemukan-ketik#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://nexamos.cloud"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://nexamos.cloud/blog"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Dari SEO ke AI Search: Bagaimana Bisnis Tetap Ditemukan Ketika Konsumen Menggunakan AI?",
+            "item": "https://nexamos.cloud/blog/dari-seo-ke-ai-search-bagaimana-bisnis-tetap-ditemukan-ketik"
+          }
+        ]
+      }
+    ]
+  },
+  "internalLinks": [],
+  "externalCitations": [
+    {
+      "id": "cit-1",
+      "title": "Dari SEO ke AI Search: Bagaimana Bisnis Tetap Ditemukan Ketika Konsumen Menggunakan AI?",
+      "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/",
+      "publisher": "Referensi Web",
+      "isPubliclyAccessible": true
+    }
+  ],
+  "robots": {
+    "index": true,
+    "follow": true,
+    "maxSnippet": -1,
+    "maxImagePreview": "large",
+    "maxVideoPreview": -1
+  },
+  "sitemapEntry": {
+    "loc": "https://nexamos.cloud/blog/dari-seo-ke-ai-search-bagaimana-bisnis-tetap-ditemukan-ketik",
+    "lastmod": "2026-10-13T12:12:50.195Z",
+    "changefreq": "weekly",
+    "priority": 0.8
+  },
+  "isSyntheticTestData": false,
+  "fixtureOnly": false,
+  "generatedAt": "2026-10-13T12:12:50.195Z",
+  "packageVersion": "v1.0.0"
+}
