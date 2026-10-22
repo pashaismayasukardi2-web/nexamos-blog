@@ -1,0 +1,1420 @@
+{
+  "draft": {
+    "id": "draft-mutaykog",
+    "topicId": "top-mutaxglp",
+    "researchProjectId": "proj-mutaxglp",
+    "title": "Memahami Lead secara Mendalam: Beyond Leadsheet ke Strategi Konversi",
+    "dek": "Lead bukanlah sekadar database kontak, tetapi aset dinamis yang memerlukan identifikasi, penilaian, dan nurturing sistematis untuk meningkatkan konversi menjadi pelanggan bernilai.",
+    "slug": "apa-itu-lead",
+    "territory": "INTELLIGENCE",
+    "articleType": "EXPLAINER",
+    "editorialRole": "AUTHORITY",
+    "thesis": "Lead bukan hanya sekadar kontak yang diperoleh, tetapi entitas dinamis yang memerlukan identifikasi, penilaian, dan pengembangan sistematis agar dapat dikonversi menjadi pelanggan yang bernilai.",
+    "editorialAngle": "Artikel ini menolak pemahaman komoditas tentang lead sebagai data mentah, melainkan menguraikan lead sebagai aset strategis yang membutuhkan pendekatan holistik: identifikasi kualitas, skoring berbasis perilaku, serta nurturing interaktif untuk meningkatkan konversi.",
+    "sections": [
+      {
+        "id": "sec-1",
+        "heading": "Definisi Lead: Lebih dari Sekadar Kontak",
+        "content": "Lead adalah individu atau organisasi yang telah menunjukkan minat awal dengan memberikan informasi kontak, seperti alamat email atau nama, melalui berbagai titik kontak digital. Namun, definisi ini seringkali disederhanakan menjadi sekadar data mentah yang dikumpulkan dari formulir web atau unduhan konten. Padahal, lead belum tentu merupakan prospek penjualan aktif; banyak dari mereka hanya memiliki ketertarikan awal, bukan kemampuan atau kesiapan finansial untuk melakukan pembelian. Oleh karena itu, lead harus dipahami sebagai entitas yang membutuhkan evaluasi lebih lanjut sebelum dapat dikategorikan sebagai prospek yang siap dibeli.",
+        "order": 1,
+        "purpose": "CONTEXT",
+        "claimUsageIds": [
+          "cu-1"
+        ]
+      },
+      {
+        "id": "sec-2",
+        "heading": "Hierarki Lead: MQL vs SQL",
+        "content": "Lead tidak bersifat tunggal; mereka melewati tahapan kematangan yang berbeda-beda dalam funnel penjualan. Marketing Qualified Lead (MQL) adalah lead yang telah memenuhi kriteria tertentu berdasarkan demografi, perilaku, atau keterlibatan dengan konten pemasaran, menandakan bahwa mereka layak untuk diprospek lebih lanjut oleh tim sales. Selanjutnya, Sales Qualified Lead (SQL) adalah MQL yang telah diverifikasi oleh tim sales sebagai lead yang memiliki anggaran, kebutuhan nyata, dan kesiapan untuk berdiskusi tentang solusi. Proses perpindahan dari MQL ke SQL memerlukan koordinasi erat antara pemasaran dan penjualan, sering kali difasilitasi oleh sistem Customer Relationship Management (CRM).",
+        "order": 2,
+        "purpose": "ARGUMENT",
+        "claimUsageIds": [
+          "cu-2"
+        ]
+      },
+      {
+        "id": "sec-3",
+        "heading": "Lead Scoring: Mengukur Potensi dan Kesiapan Beli",
+        "content": "Untuk mengoptimalkan alokasi sumber daya dan fokus pada calon pelanggan dengan probabilitas konversi tertinggi, perusahaan perlu mengidentifikasi dan menilai potensi lead. Lead scoring adalah metode kuantitatif atau kualitatif yang menetapkan nilai numerik kepada lead berdasarkan profil risiko (seperti industri, ukuran perusahaan) dan aktivitas keterlibatan (seperti unduhan whitepaper, klik tombol ajakan bertindak, kunjungan halaman). Skor tinggi menunjukkan lead sangat tertarik dan siap untuk dibeli, sementara skor rendah menandakan bahwa lead tersebut masih memerlukan nurturing lebih lanjut sebelum follow-up penjualan.",
+        "order": 3,
+        "purpose": "FRAMEWORK",
+        "claimUsageIds": [
+          "cu-3"
+        ]
+      },
+      {
+        "id": "sec-4",
+        "heading": "Peran CRM dalam Pengelolaan Lead",
+        "content": "Sistem Customer Relationship Management (CRM) bertindak sebagai pusat data tunggal untuk seluruh siklus hidup lead. CRM menyimpan informasi kontak lengkap, riwayat interaksi dengan brand, skor lead yang telah dihitung, dan status pipeline penjualan. Dengan demikian, CRM memastikan visibilitas end-to-end bagi tim pemasaran dan penjualan, memfasilitasi transfer seamless dari MQL ke SQL, serta menyediakan laporan performa lead generation yang detail. Data ini sangat penting untuk mengoptimalkan efektivitas kampanye pemasaran dan penjualan.",
+        "order": 4,
+        "purpose": "EVIDENCE",
+        "claimUsageIds": [
+          "cu-4"
+        ]
+      },
+      {
+        "id": "sec-5",
+        "heading": "Strategi Nurturing Lead: Personalisasi dan Omnichannel",
+        "content": "Nurturing adalah proses jangka panjang yang krusial untuk mengedukasi, membangun kepercayaan, dan mempersiapkan lead sebelum mereka siap melakukan pembelian. Langkah praktis termasuk mengirimkan konten yang personal sesuai tahap funnel (awareness, consideration, decision) melalui berbagai channel seperti email, SMS, atau media sosial. Otomasi workflow nurturing berbasis perilaku juga sangat efektif untuk menjaga keterlibatan. Selain itu, fasilitasi komunikasi dua arah melalui live chat atau demo gratis membantu memahami kebutuhan spesifik lead. Efektivitas nurturing dipantau melalui metrik seperti open rate, click-through rate, dan kenaikan skor lead, sehingga perusahaan dapat menyesuaikan strategi untuk meningkatkan konversi.",
+        "order": 5,
+        "purpose": "PRACTICAL_APPLICATION",
+        "claimUsageIds": [
+          "cu-5"
+        ]
+      },
+      {
+        "id": "sec-6",
+        "heading": "Implikasi Strategis: Memperlakukan Lead sebagai Aset",
+        "content": "Lead adalah aset penting yang mempengaruhi bottom-line perusahaan. Investasi dalam sistem CRM, lead scoring, dan nurturing yang terarah adalah investasi untuk mempercepat waktu konversi dan meningkatkan nilai pesanan rata-rata. Organisasi yang menerapkan manajemen lead yang efektif akan mengalami peningkatan kolaborasi antara pemasaran dan penjualan, peningkatan efisiensi biaya akuisisi, dan akhirnya pertumbuhan pendapatan yang berkelanjutan. Oleh karena itu, lead harus dikelola dengan pendekatan strategis yang holistik, bukan hanya sebagai data transaksional semata.",
+        "order": 6,
+        "purpose": "IMPLICATION",
+        "claimUsageIds": [
+          "cu-1",
+          "cu-2",
+          "cu-3",
+          "cu-4",
+          "cu-5"
+        ]
+      }
+    ],
+    "claimUsages": [
+      {
+        "id": "cu-1",
+        "claimId": "claim-1",
+        "sectionId": "sec-1",
+        "usageType": "PARAPHRASED",
+        "statement": "Lead adalah calon pelanggan yang menunjukkan minat dengan memberikan kontak, namun tidak semua memiliki kemampuan beli."
+      },
+      {
+        "id": "cu-2",
+        "claimId": "claim-2",
+        "sectionId": "sec-2",
+        "usageType": "PARAPHRASED",
+        "statement": "Marketing Qualified Lead (MQL) berubah menjadi Sales Qualified Lead (SQL) saat lead memenuhi kriteria khusus dan siap dibeli."
+      },
+      {
+        "id": "cu-3",
+        "claimId": "claim-3",
+        "sectionId": "sec-3",
+        "usageType": "PARAPHRASED",
+        "statement": "Lead scoring digunakan untuk mengidentifikasi leads potensial berdasarkan konsistensi interaksi dan kesiapan beli."
+      },
+      {
+        "id": "cu-4",
+        "claimId": "claim-4",
+        "sectionId": "sec-4",
+        "usageType": "PARAPHRASED",
+        "statement": "CRM berperan sentral dalam mengelola leads dengan menyimpan data interaksi dan memfasilitasi transfer antar tim."
+      },
+      {
+        "id": "cu-5",
+        "claimId": "claim-5",
+        "sectionId": "sec-5",
+        "usageType": "PARAPHRASED",
+        "statement": "Nurturing leads membutuhkan komunikasi dua arah, konten personal, dan otomasi omnichannel untuk menjaga keterlibatan."
+      }
+    ],
+    "citationMap": [
+      {
+        "claimUsageId": "cu-1",
+        "claimId": "claim-1",
+        "sourceIds": [
+          "src-mutaxj2k-1d9g"
+        ],
+        "evidenceIds": [
+          "evi-src-mutaxj2k-1d9g-10",
+          "evi-src-mutaxj2k-1d9g-21",
+          "evi-src-mutaxj2k-1d9g-57"
+        ]
+      },
+      {
+        "claimUsageId": "cu-2",
+        "claimId": "claim-2",
+        "sourceIds": [
+          "src-mutaxj2k-1d9g"
+        ],
+        "evidenceIds": [
+          "evi-src-mutaxj2k-1d9g-46"
+        ]
+      },
+      {
+        "claimUsageId": "cu-3",
+        "claimId": "claim-3",
+        "sourceIds": [
+          "src-mutaxj2k-1d9g"
+        ],
+        "evidenceIds": [
+          "evi-src-mutaxj2k-1d9g-57"
+        ]
+      },
+      {
+        "claimUsageId": "cu-4",
+        "claimId": "claim-4",
+        "sourceIds": [
+          "src-mutaxj2k-1d9g"
+        ],
+        "evidenceIds": [
+          "evi-src-mutaxj2k-1d9g-47"
+        ]
+      },
+      {
+        "claimUsageId": "cu-5",
+        "claimId": "claim-5",
+        "sourceIds": [
+          "src-mutaxj2k-1d9g"
+        ],
+        "evidenceIds": [
+          "evi-src-mutaxj2k-1d9g-58"
+        ]
+      }
+    ],
+    "status": "READY_FOR_EDITORIAL_REVIEW",
+    "generatedAt": "2026-10-04T04:10:08.560Z",
+    "generatorVersion": "real-ai-v1",
+    "promptVersion": "1.0.0"
+  },
+  "brief": {
+    "id": "brief-mutaxyh6",
+    "topicId": "top-mutaxglp",
+    "researchProjectId": "proj-mutaxglp",
+    "objective": "Apa itu lead",
+    "answeredQuestions": [
+      {
+        "id": "rq-1",
+        "question": "Apa definisi operasional dan parameter kualitas (validitas, reliabilitas) dari 'lead' dalam ekosistem enterprise content management?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-2",
+        "question": "Bagaimana proses konversi dan klasifikasi lead (marketing qualified lead vs sales qualified lead) berlangsung di perusahaan enterprise modern?",
+        "priority": "MEDIUM",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-3",
+        "question": "Apa metrik performa utama (conversion rate, cost per lead, lead velocity) yang digunakan untuk mengukur efektivitas generasi lead?",
+        "priority": "MEDIUM",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-4",
+        "question": "Apa tantangan umum dan best practice dalam manajemen database lead untuk meningkatkan akurasi dan kekinian data?",
+        "priority": "LOW",
+        "status": "OPEN"
+      }
+    ],
+    "openQuestions": [],
+    "supportedClaims": [
+      {
+        "id": "claim-1",
+        "researchProjectId": "proj-mutaxglp",
+        "statement": "Lead adalah calon pelanggan yang menunjukkan minat dengan memberikan kontak, namun tidak semua memiliki kemampuan beli.",
+        "claimType": "DEFINITIONAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-10-04T04:09:37.769Z",
+        "updatedAt": "2026-10-04T04:09:37.769Z",
+        "supportingEvidenceIds": [
+          "evi-src-mutaxj2k-1d9g-10",
+          "evi-src-mutaxj2k-1d9g-21",
+          "evi-src-mutaxj2k-1d9g-57"
+        ]
+      },
+      {
+        "id": "claim-2",
+        "researchProjectId": "proj-mutaxglp",
+        "statement": "Marketing Qualified Lead (MQL) berubah menjadi Sales Qualified Lead (SQL) saat lead memenuhi kriteria khusus dan siap dibeli.",
+        "claimType": "ANALYTICAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-10-04T04:09:38.082Z",
+        "updatedAt": "2026-10-04T04:09:38.082Z",
+        "supportingEvidenceIds": [
+          "evi-src-mutaxj2k-1d9g-46"
+        ]
+      },
+      {
+        "id": "claim-3",
+        "researchProjectId": "proj-mutaxglp",
+        "statement": "Lead scoring digunakan untuk mengidentifikasi leads potensial berdasarkan konsistensi interaksi dan kesiapan beli.",
+        "claimType": "ANALYTICAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-10-04T04:09:38.448Z",
+        "updatedAt": "2026-10-04T04:09:38.448Z",
+        "supportingEvidenceIds": [
+          "evi-src-mutaxj2k-1d9g-57"
+        ]
+      },
+      {
+        "id": "claim-4",
+        "researchProjectId": "proj-mutaxglp",
+        "statement": "CRM berperan sentral dalam mengelola leads dengan menyimpan data interaksi dan memfasilitasi transfer antar tim.",
+        "claimType": "ANALYTICAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-10-04T04:09:38.792Z",
+        "updatedAt": "2026-10-04T04:09:38.792Z",
+        "supportingEvidenceIds": [
+          "evi-src-mutaxj2k-1d9g-47"
+        ]
+      },
+      {
+        "id": "claim-5",
+        "researchProjectId": "proj-mutaxglp",
+        "statement": "Nurturing leads membutuhkan komunikasi dua arah, konten personal, dan otomasi omnichannel untuk menjaga keterlibatan.",
+        "claimType": "ANALYTICAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-10-04T04:09:39.115Z",
+        "updatedAt": "2026-10-04T04:09:39.115Z",
+        "supportingEvidenceIds": [
+          "evi-src-mutaxj2k-1d9g-58"
+        ]
+      }
+    ],
+    "partiallySupportedClaims": [],
+    "disputedClaims": [],
+    "unverifiedClaims": [
+      {
+        "id": "claim-6",
+        "researchProjectId": "proj-mutaxglp",
+        "statement": "Metrik seperti conversion rate, cost per lead, dan lead velocity digunakan untuk mengukur efektivitas generasi leads.",
+        "claimType": "ANALYTICAL",
+        "importance": "CORE",
+        "status": "UNVERIFIED",
+        "createdAt": "2026-10-04T04:09:39.487Z",
+        "updatedAt": "2026-10-04T04:09:39.487Z",
+        "supportingEvidenceIds": []
+      }
+    ],
+    "unsupportedClaims": [],
+    "internalKnowledge": [],
+    "originalAnalysis": [],
+    "keyFindings": [
+      {
+        "id": "finding-01",
+        "researchProjectId": "proj-mutaxglp",
+        "statement": "Lead adalah calon pelanggan yang menunjukkan minat dengan memberikan kontak, namun tidak semua memiliki kemampuan beli.",
+        "supportingClaimIds": [
+          "claim-1",
+          "claim-2",
+          "claim-3",
+          "claim-4",
+          "claim-5"
+        ],
+        "confidence": "HIGH",
+        "limitations": [],
+        "createdAt": "2026-10-04T04:09:39.786Z",
+        "updatedAt": "2026-10-04T04:09:39.786Z"
+      }
+    ],
+    "limitations": [],
+    "researchGaps": [],
+    "recommendedEditorialAngle": "Analisis strategis ter-grounding mengenai Apa itu lead",
+    "sourceIndex": [
+      {
+        "sourceId": "src-mutaxj2k-1d9g",
+        "title": "Apa itu lead",
+        "url": "https://qontak.com/blog/leads-adalah/",
+        "canonicalUrl": "https://qontak.com/blog/leads-adalah/",
+        "publisher": "Referensi Web",
+        "sourceType": "INDUSTRY_RESEARCH",
+        "authorityScore": 85,
+        "publicationAllowed": true
+      }
+    ],
+    "evidenceIndex": [
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-58",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Untuk menjaga minat leads agar tidak “dingin”, bisnis perlu mengirimkan konten yang relevan dan personal secara berkala. Komunikasi dua arah melalui email, media sosial, atau chat juga membantu mempertahankan keterlibatan. Selain itu, penawaran ekskl",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      },
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-46",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Transisi dari tim marketing ke tim sales harus mulus dan tanpa kehilangan informasi. Anda harus memahami kapan sebuah lead berubah dari Marketing Qualified Lead (MQL) menjadi Sales Qualified Lead (SQL).",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      },
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-56",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Leads berkualitas bisa gagal dikonversi menjadi pelanggan karena kurangnya tindak lanjut yang tepat waktu atau komunikasi yang tidak relevan dengan kebutuhan mereka. Selain itu, pesan penawaran yang terlalu umum atau tidak personal sering membuat cal",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      },
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-19",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Dengan memproses leads secara bertaha, bisnis dapat mempercepat dan meningkatkan efisiensi proses konversi dari sekadar minat menjadi pembelian yang nyata.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      },
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-50",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Pengelolaan leads yang efektif harus selalu didukung oleh data dan metrik kinerja yang jelas. Anda perlu melacak tingkat konversi di setiap tahap funnel dan mengukur ROI dari berbagai sumber leads.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      },
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-45",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Proses nurturing ini seringkali diotomatisasi menggunakan omnichannel untuk memastikan pesan yang kohesif diterima lead melalui berbagai saluran seperti email, media sosial, dan chat.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      },
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-47",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Aplikasi CRM memainkan peran sentral di sini, berfungsi sebagai pusat data tunggal untuk menyimpan riwayat interaksi lead dan memudahkan transfer tanggung jawab tim.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      },
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-51",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Umpan balik langsung dari tim sales sangat penting untuk terus menyesuaikan kriteria lead scoring dan menyempurnakan strategi pemasaran di masa mendatang.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      },
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-57",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Leads yang benar-benar potensial biasanya menunjukkan konsistensi dalam interaksi, seperti membuka email, mengunduh konten, atau meminta demo produk. Sementara itu, leads yang hanya tertarik sementara cenderung pasif setelah kontak awal. Penggunaan s",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      },
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-54",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Anda tak perlu khawatir dengan keamanan data, karena software ini telah tersertifikasi ISO27001 dan telah dipercaya lebih dari 3500+ perusahaan terkemuka untuk membantu mengelola hubungan bisnisnya secara efisien dan efektif.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      },
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-6",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Bagi banyak pelaku bisnis, istilah leads sudah sangat familiar karena mereka adalah calon pelanggan yang paling mungkin membeli produk bisnis Anda.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      },
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-8",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Kenali lebih dalam terkait leads, fungsinya dalam bisnis, jenis, cara mendapatkannya, hingga mengelolanya dengan baik pada ulasan Mekari Qontak berikut ini.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      },
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-9",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Leads adalah orang yang menunjukkan minat dengan mengambil tindakan, misalnya memberikan detail informasi kontak , follow media sosial, dan sebagainya.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      },
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-10",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Meskipun demikian, tidak semua leads berkualitas. Beberapa mungkin tidak memiliki kemampuan beli atau kebutuhan yang sesuai. Oleh karena itu, bisnis harus fokus mengidentifikasi leads yang paling berpotensi menghasilkan penjualan melalui konten dan p",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      },
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-43",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Hanya leads yang mencapai skor tinggi dan memenuhi kriteria yang ketat yang diloloskan, memastikan sumber daya dialokasikan secara efisien.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      },
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-44",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Mayoritas leads belum siap membeli saat pertama kali datang, sehingga memelihara hubungan menjadi kunci penting. Anda harus secara konsisten mengirimkan konten edukatif yang relevan sesuai dengan posisi lead.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      },
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-12",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Leads berfungsi sebagai bahan baku utama dalam membangun database prospek yang berharga. Dengan mengumpulkan informasi kontak dari leads, bisnis memiliki daftar orang-orang yang secara aktif menunjukkan minat.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      },
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-16",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Berdasarkan data yang diberikan leads, bisnis dapat mengelompokkan (segmentasi) mereka ke dalam kategori yang lebih kecil.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      },
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-21",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Leads baru menunjukkan minat, tetapi belum jelas apakah mereka mampu atau memenuhi syarat untuk membeli. Sebaliknya, prospek sudah selangkah lebih maju karena mereka telah teridentifikasi memenuhi kriteria dan memiliki kemampuan daya beli.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      },
+      {
+        "evidenceId": "evi-src-mutaxj2k-1d9g-22",
+        "sourceId": "src-mutaxj2k-1d9g",
+        "quote": "Kedua kelompok ini membutuhkan tindakan lanjutan dari tim sales untuk diubah menjadi pelanggan. Detail perbedaan selengkapnya dapat Anda lihat pada tabel berikut.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://qontak.com/blog/leads-adalah/"
+      }
+    ],
+    "readiness": "READY_FOR_EDITORIAL",
+    "readinessReason": "Kecukupan bukti riset terpenuhi: 5 klaim faktual berhasil diverifikasi.",
+    "generatedAt": "2026-10-04T04:09:39.786Z"
+  },
+  "topic": {
+    "id": "top-mutaxglp",
+    "title": "Apa itu lead",
+    "slug": "apa-itu-lead",
+    "territory": "INTELLIGENCE",
+    "recommendedArticleType": "EXPLAINER",
+    "editorialRole": "AUTHORITY",
+    "audience": {
+      "segment": "Enterprise Content Leaders"
+    },
+    "problem": "Apa itu lead",
+    "intent": {
+      "primary": "Apa itu lead"
+    },
+    "thesis": null,
+    "whyNow": null,
+    "status": "APPROVED",
+    "informationGain": {
+      "originalityType": [
+        "ORIGINAL_FRAMEWORK"
+      ],
+      "expectedContribution": "Arsitektur informasi mandiri",
+      "commodityRisk": "LOW"
+    },
+    "evidencePlan": {
+      "requiredEvidenceLevel": "E2",
+      "plannedSources": [
+        "https://qontak.com/blog/leads-adalah/"
+      ],
+      "originalEvidenceRequired": false
+    },
+    "businessRelevance": {
+      "objective": "Thought Leadership",
+      "funnelRole": "TOFU"
+    },
+    "distributionTargets": [
+      "GOOGLE_SEARCH",
+      "GOOGLE_AI"
+    ],
+    "createdAt": "2026-10-04T04:09:16.621Z",
+    "updatedAt": "2026-10-04T04:09:16.621Z"
+  },
+  "editorialIntegrity": {
+    "status": "FAIL",
+    "draftClaimAudit": {
+      "status": "FAIL",
+      "propositions": [
+        {
+          "propositionId": "prop-1",
+          "sectionId": "sec-1",
+          "text": "Lead adalah individu atau organisasi yang telah menunjukkan minat awal dengan memberikan informasi kontak, seperti alamat email atau nama, melalui berbagai titik kontak digital.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-2",
+          "sectionId": "sec-1",
+          "text": "Namun, definisi ini seringkali disederhanakan menjadi sekadar data mentah yang dikumpulkan dari formulir web atau unduhan konten.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-3",
+          "sectionId": "sec-1",
+          "text": "Padahal, lead belum tentu merupakan prospek penjualan aktif; banyak dari mereka hanya memiliki ketertarikan awal, bukan kemampuan atau kesiapan finansial untuk melakukan pembelian.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-4",
+          "sectionId": "sec-1",
+          "text": "Oleh karena itu, lead harus dipahami sebagai entitas yang membutuhkan evaluasi lebih lanjut sebelum dapat dikategorikan sebagai prospek yang siap dibeli.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-5",
+          "sectionId": "sec-2",
+          "text": "Lead tidak bersifat tunggal; mereka melewati tahapan kematangan yang berbeda-beda dalam funnel penjualan.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-2"
+          ],
+          "evidenceIds": [
+            "evi-src-mutaxj2k-1d9g-46"
+          ],
+          "sourceIds": [
+            "src-mutaxj2k-1d9g"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-6",
+          "sectionId": "sec-2",
+          "text": "Marketing Qualified Lead (MQL) adalah lead yang telah memenuhi kriteria tertentu berdasarkan demografi, perilaku, atau keterlibatan dengan konten pemasaran, menandakan bahwa mereka layak untuk diprospek lebih lanjut oleh tim sales.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-2"
+          ],
+          "evidenceIds": [
+            "evi-src-mutaxj2k-1d9g-46"
+          ],
+          "sourceIds": [
+            "src-mutaxj2k-1d9g"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-7",
+          "sectionId": "sec-2",
+          "text": "Selanjutnya, Sales Qualified Lead (SQL) adalah MQL yang telah diverifikasi oleh tim sales sebagai lead yang memiliki anggaran, kebutuhan nyata, dan kesiapan untuk berdiskusi tentang solusi.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-2"
+          ],
+          "evidenceIds": [
+            "evi-src-mutaxj2k-1d9g-46"
+          ],
+          "sourceIds": [
+            "src-mutaxj2k-1d9g"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-8",
+          "sectionId": "sec-2",
+          "text": "Proses perpindahan dari MQL ke SQL memerlukan koordinasi erat antara pemasaran dan penjualan, sering kali difasilitasi oleh sistem Customer Relationship Management (CRM).",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "UNSUPPORTED",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Tidak ditemukan klaim riset dengan kesesuaian semantik yang mencukupi.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-9",
+          "sectionId": "sec-3",
+          "text": "Untuk mengoptimalkan alokasi sumber daya dan fokus pada calon pelanggan dengan probabilitas konversi tertinggi, perusahaan perlu mengidentifikasi dan menilai potensi lead.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-10",
+          "sectionId": "sec-3",
+          "text": "Lead scoring adalah metode kuantitatif atau kualitatif yang menetapkan nilai numerik kepada lead berdasarkan profil risiko (seperti industri, ukuran perusahaan) dan aktivitas keterlibatan (seperti unduhan whitepaper, klik tombol ajakan bertindak, kunjungan halaman).",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-11",
+          "sectionId": "sec-3",
+          "text": "Skor tinggi menunjukkan lead sangat tertarik dan siap untuk dibeli, sementara skor rendah menandakan bahwa lead tersebut masih memerlukan nurturing lebih lanjut sebelum follow-up penjualan.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-12",
+          "sectionId": "sec-4",
+          "text": "Sistem Customer Relationship Management (CRM) bertindak sebagai pusat data tunggal untuk seluruh siklus hidup lead.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-4"
+          ],
+          "evidenceIds": [
+            "evi-src-mutaxj2k-1d9g-47"
+          ],
+          "sourceIds": [
+            "src-mutaxj2k-1d9g"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-4 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-13",
+          "sectionId": "sec-4",
+          "text": "CRM menyimpan informasi kontak lengkap, riwayat interaksi dengan brand, skor lead yang telah dihitung, dan status pipeline penjualan.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-4"
+          ],
+          "evidenceIds": [
+            "evi-src-mutaxj2k-1d9g-47"
+          ],
+          "sourceIds": [
+            "src-mutaxj2k-1d9g"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-4 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-14",
+          "sectionId": "sec-4",
+          "text": "Dengan demikian, CRM memastikan visibilitas end-to-end bagi tim pemasaran dan penjualan, memfasilitasi transfer seamless dari MQL ke SQL, serta menyediakan laporan performa lead generation yang detail.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-15",
+          "sectionId": "sec-4",
+          "text": "Data ini sangat penting untuk mengoptimalkan efektivitas kampanye pemasaran dan penjualan.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-4"
+          ],
+          "evidenceIds": [
+            "evi-src-mutaxj2k-1d9g-47"
+          ],
+          "sourceIds": [
+            "src-mutaxj2k-1d9g"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-4 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-16",
+          "sectionId": "sec-5",
+          "text": "Nurturing adalah proses jangka panjang yang krusial untuk mengedukasi, membangun kepercayaan, dan mempersiapkan lead sebelum mereka siap melakukan pembelian.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-17",
+          "sectionId": "sec-5",
+          "text": "Langkah praktis termasuk mengirimkan konten yang personal sesuai tahap funnel (awareness, consideration, decision) melalui berbagai channel seperti email, SMS, atau media sosial.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-18",
+          "sectionId": "sec-5",
+          "text": "Otomasi workflow nurturing berbasis perilaku juga sangat efektif untuk menjaga keterlibatan.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-19",
+          "sectionId": "sec-5",
+          "text": "Selain itu, fasilitasi komunikasi dua arah melalui live chat atau demo gratis membantu memahami kebutuhan spesifik lead.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-20",
+          "sectionId": "sec-5",
+          "text": "Efektivitas nurturing dipantau melalui metrik seperti open rate, click-through rate, dan kenaikan skor lead, sehingga perusahaan dapat menyesuaikan strategi untuk meningkatkan konversi.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-21",
+          "sectionId": "sec-6",
+          "text": "Lead adalah aset penting yang mempengaruhi bottom-line perusahaan.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-22",
+          "sectionId": "sec-6",
+          "text": "Investasi dalam sistem CRM, lead scoring, dan nurturing yang terarah adalah investasi untuk mempercepat waktu konversi dan meningkatkan nilai pesanan rata-rata.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-23",
+          "sectionId": "sec-6",
+          "text": "Organisasi yang menerapkan manajemen lead yang efektif akan mengalami peningkatan kolaborasi antara pemasaran dan penjualan, peningkatan efisiensi biaya akuisisi, dan akhirnya pertumbuhan pendapatan yang berkelanjutan.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-24",
+          "sectionId": "sec-6",
+          "text": "Oleh karena itu, lead harus dikelola dengan pendekatan strategis yang holistik, bukan hanya sebagai data transaksional semata.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        }
+      ],
+      "groundedExternalFacts": 6,
+      "ungroundedExternalFacts": 1,
+      "partialSupportCount": 0,
+      "originalAnalysisCount": 12,
+      "interpretationCount": 0,
+      "internalKnowledgeCount": 0,
+      "nonFactualCount": 5,
+      "numericClaimsTotal": 0,
+      "unsupportedNumericCount": 0,
+      "citationFailuresCount": 0,
+      "issues": [
+        {
+          "code": "UNGROUNDED_EXTERNAL_FACT",
+          "severity": "CRITICAL",
+          "message": "Proposisi faktual eksternal 'prop-8' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"Proses perpindahan dari MQL ke SQL memerlukan koordinasi erat antara pemasaran dan penjualan, sering kali difasilitasi oleh sistem Customer Relationship Management (CRM).\"",
+          "propositionId": "prop-8",
+          "sectionId": "sec-2",
+          "snippet": "Proses perpindahan dari MQL ke SQL memerlukan koordinasi erat antara pemasaran dan penjualan, sering kali difasilitasi oleh sistem Customer Relationship Management (CRM)."
+        }
+      ],
+      "summary": "DraftClaimAuditor: GAGAL. Terdeteksi 1 klaim eksternal tak berdasar / perluasan semantik dan 1 isu integritas.",
+      "auditedAt": "2026-10-04T04:10:08.567Z"
+    },
+    "groundingGuard": {
+      "status": "PASS",
+      "issues": [],
+      "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+    },
+    "propositions": [
+      {
+        "propositionId": "prop-1",
+        "sectionId": "sec-1",
+        "text": "Lead adalah individu atau organisasi yang telah menunjukkan minat awal dengan memberikan informasi kontak, seperti alamat email atau nama, melalui berbagai titik kontak digital.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-2",
+        "sectionId": "sec-1",
+        "text": "Namun, definisi ini seringkali disederhanakan menjadi sekadar data mentah yang dikumpulkan dari formulir web atau unduhan konten.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-3",
+        "sectionId": "sec-1",
+        "text": "Padahal, lead belum tentu merupakan prospek penjualan aktif; banyak dari mereka hanya memiliki ketertarikan awal, bukan kemampuan atau kesiapan finansial untuk melakukan pembelian.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-4",
+        "sectionId": "sec-1",
+        "text": "Oleh karena itu, lead harus dipahami sebagai entitas yang membutuhkan evaluasi lebih lanjut sebelum dapat dikategorikan sebagai prospek yang siap dibeli.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-5",
+        "sectionId": "sec-2",
+        "text": "Lead tidak bersifat tunggal; mereka melewati tahapan kematangan yang berbeda-beda dalam funnel penjualan.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-2"
+        ],
+        "evidenceIds": [
+          "evi-src-mutaxj2k-1d9g-46"
+        ],
+        "sourceIds": [
+          "src-mutaxj2k-1d9g"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-6",
+        "sectionId": "sec-2",
+        "text": "Marketing Qualified Lead (MQL) adalah lead yang telah memenuhi kriteria tertentu berdasarkan demografi, perilaku, atau keterlibatan dengan konten pemasaran, menandakan bahwa mereka layak untuk diprospek lebih lanjut oleh tim sales.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-2"
+        ],
+        "evidenceIds": [
+          "evi-src-mutaxj2k-1d9g-46"
+        ],
+        "sourceIds": [
+          "src-mutaxj2k-1d9g"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-7",
+        "sectionId": "sec-2",
+        "text": "Selanjutnya, Sales Qualified Lead (SQL) adalah MQL yang telah diverifikasi oleh tim sales sebagai lead yang memiliki anggaran, kebutuhan nyata, dan kesiapan untuk berdiskusi tentang solusi.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-2"
+        ],
+        "evidenceIds": [
+          "evi-src-mutaxj2k-1d9g-46"
+        ],
+        "sourceIds": [
+          "src-mutaxj2k-1d9g"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-2 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-8",
+        "sectionId": "sec-2",
+        "text": "Proses perpindahan dari MQL ke SQL memerlukan koordinasi erat antara pemasaran dan penjualan, sering kali difasilitasi oleh sistem Customer Relationship Management (CRM).",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "UNSUPPORTED",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Tidak ditemukan klaim riset dengan kesesuaian semantik yang mencukupi.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-9",
+        "sectionId": "sec-3",
+        "text": "Untuk mengoptimalkan alokasi sumber daya dan fokus pada calon pelanggan dengan probabilitas konversi tertinggi, perusahaan perlu mengidentifikasi dan menilai potensi lead.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-10",
+        "sectionId": "sec-3",
+        "text": "Lead scoring adalah metode kuantitatif atau kualitatif yang menetapkan nilai numerik kepada lead berdasarkan profil risiko (seperti industri, ukuran perusahaan) dan aktivitas keterlibatan (seperti unduhan whitepaper, klik tombol ajakan bertindak, kunjungan halaman).",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-11",
+        "sectionId": "sec-3",
+        "text": "Skor tinggi menunjukkan lead sangat tertarik dan siap untuk dibeli, sementara skor rendah menandakan bahwa lead tersebut masih memerlukan nurturing lebih lanjut sebelum follow-up penjualan.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-12",
+        "sectionId": "sec-4",
+        "text": "Sistem Customer Relationship Management (CRM) bertindak sebagai pusat data tunggal untuk seluruh siklus hidup lead.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-4"
+        ],
+        "evidenceIds": [
+          "evi-src-mutaxj2k-1d9g-47"
+        ],
+        "sourceIds": [
+          "src-mutaxj2k-1d9g"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-4 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-13",
+        "sectionId": "sec-4",
+        "text": "CRM menyimpan informasi kontak lengkap, riwayat interaksi dengan brand, skor lead yang telah dihitung, dan status pipeline penjualan.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-4"
+        ],
+        "evidenceIds": [
+          "evi-src-mutaxj2k-1d9g-47"
+        ],
+        "sourceIds": [
+          "src-mutaxj2k-1d9g"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-4 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-14",
+        "sectionId": "sec-4",
+        "text": "Dengan demikian, CRM memastikan visibilitas end-to-end bagi tim pemasaran dan penjualan, memfasilitasi transfer seamless dari MQL ke SQL, serta menyediakan laporan performa lead generation yang detail.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-15",
+        "sectionId": "sec-4",
+        "text": "Data ini sangat penting untuk mengoptimalkan efektivitas kampanye pemasaran dan penjualan.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-4"
+        ],
+        "evidenceIds": [
+          "evi-src-mutaxj2k-1d9g-47"
+        ],
+        "sourceIds": [
+          "src-mutaxj2k-1d9g"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-4 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-16",
+        "sectionId": "sec-5",
+        "text": "Nurturing adalah proses jangka panjang yang krusial untuk mengedukasi, membangun kepercayaan, dan mempersiapkan lead sebelum mereka siap melakukan pembelian.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-17",
+        "sectionId": "sec-5",
+        "text": "Langkah praktis termasuk mengirimkan konten yang personal sesuai tahap funnel (awareness, consideration, decision) melalui berbagai channel seperti email, SMS, atau media sosial.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-18",
+        "sectionId": "sec-5",
+        "text": "Otomasi workflow nurturing berbasis perilaku juga sangat efektif untuk menjaga keterlibatan.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-19",
+        "sectionId": "sec-5",
+        "text": "Selain itu, fasilitasi komunikasi dua arah melalui live chat atau demo gratis membantu memahami kebutuhan spesifik lead.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-20",
+        "sectionId": "sec-5",
+        "text": "Efektivitas nurturing dipantau melalui metrik seperti open rate, click-through rate, dan kenaikan skor lead, sehingga perusahaan dapat menyesuaikan strategi untuk meningkatkan konversi.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-21",
+        "sectionId": "sec-6",
+        "text": "Lead adalah aset penting yang mempengaruhi bottom-line perusahaan.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-22",
+        "sectionId": "sec-6",
+        "text": "Investasi dalam sistem CRM, lead scoring, dan nurturing yang terarah adalah investasi untuk mempercepat waktu konversi dan meningkatkan nilai pesanan rata-rata.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-23",
+        "sectionId": "sec-6",
+        "text": "Organisasi yang menerapkan manajemen lead yang efektif akan mengalami peningkatan kolaborasi antara pemasaran dan penjualan, peningkatan efisiensi biaya akuisisi, dan akhirnya pertumbuhan pendapatan yang berkelanjutan.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-24",
+        "sectionId": "sec-6",
+        "text": "Oleh karena itu, lead harus dikelola dengan pendekatan strategis yang holistik, bukan hanya sebagai data transaksional semata.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      }
+    ],
+    "groundedExternalFacts": 6,
+    "ungroundedExternalFacts": 1,
+    "partialSupportCount": 0,
+    "originalAnalysisCount": 12,
+    "interpretationCount": 0,
+    "internalKnowledgeCount": 0,
+    "nonFactualCount": 5,
+    "numericClaimsTotal": 0,
+    "unsupportedNumericCount": 0,
+    "citationFailuresCount": 0,
+    "issues": [
+      {
+        "code": "UNGROUNDED_EXTERNAL_FACT",
+        "severity": "CRITICAL",
+        "message": "Proposisi faktual eksternal 'prop-8' tidak memiliki rujukan klaim terverifikasi pada ResearchBrief: \"Proses perpindahan dari MQL ke SQL memerlukan koordinasi erat antara pemasaran dan penjualan, sering kali difasilitasi oleh sistem Customer Relationship Management (CRM).\"",
+        "propositionId": "prop-8",
+        "sectionId": "sec-2",
+        "snippet": "Proses perpindahan dari MQL ke SQL memerlukan koordinasi erat antara pemasaran dan penjualan, sering kali difasilitasi oleh sistem Customer Relationship Management (CRM)."
+      }
+    ],
+    "summary": "Editorial Integrity Gate: FAIL. Ditemukan 1 klaim faktual tak ter-grounding dan 1 catatan kritis. Publikasi diblokir.",
+    "evaluatedAt": "2026-10-04T04:10:08.561Z"
+  },
+  "guardEvaluation": {
+    "status": "PASS",
+    "issues": [],
+    "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+  },
+  "discoverEvaluation": {
+    "articleId": "draft-mutaykog",
+    "checks": [
+      {
+        "checkId": "DISCOVER_ELIGIBILITY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Artikel memenuhi seluruh kriteria kelayakan dasar Google Discover."
+      },
+      {
+        "checkId": "DISCOVER_ORIGINALITY",
+        "dimension": "ORIGINALITY",
+        "status": "PASS",
+        "scoreContribution": 15,
+        "summary": "Orisinalitas konten tinggi, didukung oleh data riset dan kerangka kerja konseptual orisinal."
+      },
+      {
+        "checkId": "DISCOVER_DEPTH",
+        "dimension": "DEPTH",
+        "status": "PASS",
+        "scoreContribution": 15,
+        "summary": "Kedalaman analitis tinggi: mencakup konteks, bukti data, kerangka kerja, limitasi, dan implikasi."
+      },
+      {
+        "checkId": "DISCOVER_TIMELINESS",
+        "dimension": "TIMELINESS",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Konten terkini dengan aktualitas tinggi."
+      },
+      {
+        "checkId": "DISCOVER_INTEREST_FIT",
+        "dimension": "INTEREST_FIT",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Memiliki dasar minat audiens yang kuat berdasarkan dinamika pasar dan urgensi topik."
+      },
+      {
+        "checkId": "DISCOVER_TOPICAL_EXPERTISE",
+        "dimension": "TOPICAL_EXPERTISE",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Status keahlian topikal: DEVELOPING (0 artikel terhubung di territory INTELLIGENCE)."
+      },
+      {
+        "checkId": "DISCOVER_LOCAL_RELEVANCE",
+        "dimension": "LOCAL_RELEVANCE",
+        "status": "PASS",
+        "scoreContribution": 2,
+        "summary": "Topik berskala global yang tetap memenuhi syarat kelayakan Discover."
+      },
+      {
+        "checkId": "DISCOVER_TITLE_INTEGRITY",
+        "dimension": "TITLE_INTEGRITY",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Judul berwibawa, menangkap esensi konten dengan akurat, dan bebas dari clickbait."
+      },
+      {
+        "checkId": "DISCOVER_VISUAL_READINESS",
+        "dimension": "VISUAL_READINESS",
+        "status": "PASS",
+        "scoreContribution": 15,
+        "summary": "Aset visual beresolusi tinggi, berformat lanskap, bebas logo, dan mendukung max-image-preview:large."
+      },
+      {
+        "checkId": "DISCOVER_PAGE_EXPERIENCE",
+        "dimension": "PAGE_EXPERIENCE",
+        "status": "WARNING",
+        "scoreContribution": 5,
+        "summary": "Status pengalaman halaman: UNKNOWN."
+      },
+      {
+        "checkId": "DISCOVER_POLICY_SAFETY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Konten aman dan mematuhi seluruh panduan kebijakan publikasi Google Discover."
+      }
+    ],
+    "issues": [],
+    "recommendations": [],
+    "dimensions": {
+      "ORIGINALITY": 15,
+      "DEPTH": 15,
+      "TIMELINESS": 10,
+      "TOPICAL_EXPERTISE": 10,
+      "INTEREST_FIT": 10,
+      "TITLE_INTEGRITY": 10,
+      "VISUAL_READINESS": 15,
+      "PAGE_EXPERIENCE": 5,
+      "LOCAL_RELEVANCE": 2,
+      "POLICY_SAFETY": 3
+    },
+    "score": 95,
+    "classification": "STRONG",
+    "eligibility": "ELIGIBLE",
+    "criticalIneligibilityReasons": [],
+    "validatedAt": "2026-10-04T04:10:08.572Z",
+    "policyVersion": "DISCOVER_READINESS_POLICY_V1"
+  },
+  "visualPrompt": "Understanding Lead Dynamics, layered gravitational sorting funnel filtering incoming customer inquiries based on engagement weight and purchase intent, 3D isometric illustration, soft clay rendering, rounded geometric objects, soft studio lighting, minimal marketing illustration, clean composition, premium modern aesthetic. Clear visual hierarchy, single dominant focal object, generous negative space, no text, no logos. --ar 16:9",
+  "createdAt": "2026-10-04T04:10:09.071Z"
+}

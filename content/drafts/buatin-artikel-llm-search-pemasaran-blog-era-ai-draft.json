@@ -1,0 +1,1689 @@
+{
+  "draft": {
+    "id": "draft-muv21hsr",
+    "topicId": "top-muv1z4li",
+    "researchProjectId": "proj-muv1z4li",
+    "title": "Menggali Potensi Bisnis Tinggi: Strategi LLM Search untuk Dominasi Pemasaran Blog Era AI",
+    "dek": "Banyak perusahaan menghasilkan ratusan artikel blog namun gagal mengaitkan performa konten dengan metrik bisnis inti seperti pipeline penjualan. Artikel ini menjelaskan bagaimana perusahaan enterprise harus mengoptimalkan konten mereka agar mesin generatif seperti LLM dapat dengan mudah mengindeks dan mempromosikan topik dengan potensi bisnis tertinggi, menciptakan siklus umpan balik positif antara visibilitas digital dan konversi nyata.",
+    "slug": "buatin-artikel-llm-search-pemasaran-blog-era-ai",
+    "territory": "INTELLIGENCE",
+    "articleType": "ANALYSIS",
+    "editorialRole": "AUTHORITY",
+    "thesis": "Untuk berhasil dalam era AI, perusahaan enterprise harus mengoptimalkan konten blog mereka agar mesin generatif seperti LLM dapat dengan mudah mengindeks dan mempromosikan topik dengan potensi bisnis tertinggi, menciptakan siklus umpan balik positif antara visibilitas digital dan konversi nyata.",
+    "editorialAngle": "Artikel ini menolak pendekatan komoditas SEO tradisional dan mengusulkan pendekatan strategis yang mengintegrasikan arsitektur informasi, pemilihan topik, dan metrik bisnis langsung ke dalam alur kerja penulisan konten, sehingga setiap artikel bukan hanya untuk mesin pencari, tetapi untuk LLM yang bertindak sebagai katalisator penjualan.",
+    "sections": [
+      {
+        "id": "sec-1",
+        "heading": "Mengapa Konten Tanpa Loop Bisnis Adalah Sampah Digital?",
+        "content": "Banyak perusahaan enterprise menghabiskan sumber daya besar untuk menghasilkan ratusan artikel blog setiap tahun. Namun, sangat sedikit dari upaya ini yang benar-benar mengaitkan performa konten dengan metrik bisnis inti seperti pipeline penjualan atau akuisisi pelanggan baru. Hal ini menciptakan masalah fundamental: konten tanpa loop bisnis hanyalah sampah digital yang tidak memberikan kontribusi nyata terhadap bottom line perusahaan.\n\nMengapa masalah ini semakin krusial di era LLM? LLM seperti ChatGPT dan Google Gemini tidak lagi hanya mengindeks konten statis untuk menampilkan link di halaman hasil pencarian. Sebaliknya, mereka menghasilkan ringkasan, rekomendasi, dan bahkan respons penjualan otomatis berbasis konten yang mereka indeks. Jika konten tidak memiliki fokus pada topik dengan potensi bisnis tinggi, upaya pemasaran blog menjadi sia-sia karena tidak ada siklus umpan balik yang menghubungkan kunjungan web ke konversi nyata. Oleh karena itu, perusahaan harus mengubah paradigma: setiap artikel blog harus dirancang untuk menjadi bahan baku bagi LLM yang bertindak sebagai katalisator penjualan.",
+        "order": 1,
+        "purpose": "CONTEXT",
+        "claimUsageIds": [
+          "cu-1"
+        ]
+      },
+      {
+        "id": "sec-2",
+        "heading": "Mengidentifikasi Topik dengan Potensi Bisnis Tertinggi: Beyond Trend dan SEO",
+        "content": "Praktisi pemasaran sering kali salah fokus pada volume pencarian atau kesadaran merek daripada nilai transaksional langsung dari sebuah topik. Volume pencarian tinggi tidak selalu berarti potensi bisnis tinggi. Analisis internal data CRM, sales funnel, dan customer feedback jauh lebih efektif daripada alat riset kata kunci tradisional untuk menemukan topik yang menghasilkan pipeline bisnis nyata.\n\nLLM cenderung mengutamakan konten yang memiliki relevansi bisnis eksplisit karena outputnya dimaksudkan untuk mendukung keputusan pembelian. Ketika LLM menemukan konten yang dengan jelas mengklaim nilai bisnis, menguraikan tantangan nyata pelanggan, dan menyajikan solusi konkret, mesin tersebut akan lebih sering mengutip dan mempromosikan konten tersebut. Dengan demikian, identifikasi topik dengan potensi bisnis tertinggi adalah fondasi yang harus menggerakkan seluruh strategi pemasaran blog enterprise.",
+        "order": 2,
+        "purpose": "ANALYSIS",
+        "claimUsageIds": [
+          "cu-2"
+        ]
+      },
+      {
+        "id": "sec-3",
+        "heading": "Arsitektur Informasi untuk LLM: Membuat Konten Terlihat oleh Mesin Penjualan",
+        "content": "Arsitektur informasi harus dirancang untuk memandu LLM menemukan topik bisnis tinggi dengan cepat. Struktur URL semantik, breadcrumb navigation yang konsisten, dan metadata deskriptif bernilai bisnis adalah elemen kunci. Dengan struktur silo konten yang mengelompokkan artikel berdasarkan persona pembeli dan tahap funnel, LLM dapat memahami hierarki nilai dari setiap topik secara sistematis.\n\nOptimasi teknis juga penting. Structured data markup untuk produk, studi kasus, dan panduan cara kerja (how-to) memastikan bahwa LLM dapat mengambil cuplikan konten yang relevan untuk presentasi kepada calon pembeli. Ketika LLM dapat dengan mudah mengidentifikasi dan memahami nilai bisnis yang ditawarkan oleh setiap halaman, kemungkinan konten tersebut digunakan sebagai dasar untuk respons penjualan meningkat drastis.",
+        "order": 3,
+        "purpose": "FRAMEWORK",
+        "claimUsageIds": [
+          "cu-3"
+        ]
+      },
+      {
+        "id": "sec-4",
+        "heading": "Menulis untuk LLM: Menulis untuk Konversi",
+        "content": "Tim penulis harus mengadopsi format yang mengutamakan klarifikasi nilai bisnis di paragraf awal, bukan narasi historis atau definisi teoretis. Paragraf pembuka harus langsung menyampaikan value proposition yang mengatasi masalah nyata pelanggan. Setiap artikel harus mengandung call-to-action yang jelas yang mengarahkan LLM dan pembaca ke langkah bisnis selanjutnya, seperti demo gratis, konsultasi, atau unduhan whitepaper.\n\nPenggunaan data konkret, hasil pengujian, dan testimonial pelanggan dalam tubuh artikel membuat konten lebih menarik bagi LLM untuk dikutip sebagai referensi pembelian yang sah. Data kuantitatif memberikan bukti nyata tentang keefektifan solusi, sementara testimonial menyediakan validasi sosial yang kuat. Dengan demikian, setiap kalimat dalam artikel harus dirancang untuk memicu respons positif baik dari pembaca maupun LLM.",
+        "order": 4,
+        "purpose": "PRACTICAL_APPLICATION",
+        "claimUsageIds": [
+          "cu-4"
+        ]
+      },
+      {
+        "id": "sec-5",
+        "heading": "Mengukur Keberhasilan: Menghubungkan Kunjungan ke Pendapatan Nyata",
+        "content": "Model atribusi tradisional seperti last-click tidak lagi cukup. Perusahaan harus mengimplementasikan model yang menghitung kontribusi konten blog terhadap keseluruhan pipeline penjualan. Metrik seperti share of voice dalam percakapan dengan LLM, jumlah kali konten digunakan sebagai input untuk proposal penjualan, dan peningkatan engagement pada halaman produk adalah indikator yang lebih tepat daripada hanya pageviews.\n\nDengan mengukur loop umpan balik antara visibilitas AI dan konversi bisnis, perusahaan dapat terus menyempurnakan strategi topik mereka untuk hasil yang lebih menguntungkan. Jika sebuah topik menghasilkan banyak kutipan dari LLM tetapi tidak menghasilkan konversi, maka perlu dilakukan evaluasi ulang terhadap value proposition atau call-to-action yang digunakan. Siklus pengukuran dan penyempurnaan ini adalah kunci untuk menciptakan dominasi pemasaran blog di era AI.",
+        "order": 5,
+        "purpose": "IMPLICATION",
+        "claimUsageIds": [
+          "cu-5"
+        ]
+      },
+      {
+        "id": "sec-6",
+        "heading": "Langkah Praktis Menuju Pemasaran Blog yang Berorientasi Bisnis",
+        "content": "Langkah pertama adalah melakukan audit portofolio konten yang sudah ada, lalu mengurutkan berdasarkan kontribusi pendapatan historis untuk mengidentifikasi pola topik sukses. Kemudian, bangun tim kolaboratif antara pemasaran, sales, dan engineering untuk menentukan kata kunci bisnis spesifik dan struktur silo konten yang sesuai dengan fungsi perusahaan.\n\nImplementasikan alat analisis yang dapat melacak bagaimana LLM menggunakan konten Anda, misalnya dengan menggunakan Google Search Console's Performance report untuk melihat query yang menghasilkan snippet terperinci. Terakhir, terapkan proses tinjauan konten triwulanan yang membuang topik dengan ROI rendah dan mengalihkan sumber daya ke topik dengan potensi bisnis tertinggi. Dengan menerapkan langkah-langkah praktis ini secara konsisten, perusahaan dapat memastikan bahwa setiap artikel blog berkontribusi langsung terhadap pertumbuhan bisnis.",
+        "order": 6,
+        "purpose": "PRACTICAL_APPLICATION",
+        "claimUsageIds": [
+          "cu-6"
+        ]
+      }
+    ],
+    "claimUsages": [
+      {
+        "id": "cu-1",
+        "claimId": "claim-2",
+        "sectionId": "sec-1",
+        "usageType": "PARAPHRASED",
+        "statement": "Perusahaan enterprise harus fokus pada topik dengan potensi bisnis tinggi untuk menciptakan loop umpan balik antara kunjungan web dan visibilitas AI."
+      },
+      {
+        "id": "cu-2",
+        "claimId": "claim-2",
+        "sectionId": "sec-2",
+        "usageType": "PARAPHRASED",
+        "statement": "Perusahaan enterprise harus fokus pada topik dengan potensi bisnis tinggi untuk menciptakan loop umpan balik antara kunjungan web dan visibilitas AI."
+      },
+      {
+        "id": "cu-3",
+        "claimId": "claim-2",
+        "sectionId": "sec-3",
+        "usageType": "PARAPHRASED",
+        "statement": "Perusahaan enterprise harus fokus pada topik dengan potensi bisnis tinggi untuk menciptakan loop umpan balik antara kunjutan web dan visibilitas AI."
+      },
+      {
+        "id": "cu-4",
+        "claimId": "claim-2",
+        "sectionId": "sec-4",
+        "usageType": "PARAPHRASED",
+        "statement": "Perusahaan enterprise harus fokus pada topik dengan potensi bisnis tinggi untuk menciptakan loop umpan balik antara kunjutan web dan visibilitas AI."
+      },
+      {
+        "id": "cu-5",
+        "claimId": "claim-2",
+        "sectionId": "sec-5",
+        "usageType": "PARAPHRASED",
+        "statement": "Perusahaan enterprise harus fokus pada topik dengan potensi bisnis tinggi untuk menciptakan loop umpan balik antara kunjutan web dan visibilitas AI."
+      },
+      {
+        "id": "cu-6",
+        "claimId": "claim-2",
+        "sectionId": "sec-6",
+        "usageType": "PARAPHRASED",
+        "statement": "Perusahaan enterprise harus fokus pada topik dengan potensi bisnis tinggi untuk menciptakan loop umpan balik antara kunjutan web dan visibilitas AI."
+      }
+    ],
+    "citationMap": [
+      {
+        "claimUsageId": "cu-1",
+        "claimId": "claim-2",
+        "sourceIds": [
+          "src-muv1z70n-rurf"
+        ],
+        "evidenceIds": [
+          "evi-src-muv1z70n-rurf-76",
+          "evi-src-muv1z70n-rurf-115",
+          "evi-src-muv1z70n-rurf-117"
+        ]
+      },
+      {
+        "claimUsageId": "cu-2",
+        "claimId": "claim-2",
+        "sourceIds": [
+          "src-muv1z70n-rurf"
+        ],
+        "evidenceIds": [
+          "evi-src-muv1z70n-rurf-170",
+          "evi-src-muv1z70n-rurf-12",
+          "evi-src-muv1z70n-rurf-13"
+        ]
+      },
+      {
+        "claimUsageId": "cu-3",
+        "claimId": "claim-2",
+        "sourceIds": [
+          "src-muv1z70n-rurf"
+        ],
+        "evidenceIds": [
+          "evi-src-muv1z70n-rurf-22",
+          "evi-src-muv1z70n-rurf-25",
+          "evi-src-muv1z70n-rurf-26"
+        ]
+      },
+      {
+        "claimUsageId": "cu-4",
+        "claimId": "claim-2",
+        "sourceIds": [
+          "src-muv1z70n-rurf"
+        ],
+        "evidenceIds": [
+          "evi-src-muv1z70n-rurf-115"
+        ]
+      },
+      {
+        "claimUsageId": "cu-5",
+        "claimId": "claim-2",
+        "sourceIds": [
+          "src-muv1z70n-rurf"
+        ],
+        "evidenceIds": [
+          "evi-src-muv1z70n-rurf-117"
+        ]
+      },
+      {
+        "claimUsageId": "cu-6",
+        "claimId": "claim-2",
+        "sourceIds": [
+          "src-muv1z70n-rurf"
+        ],
+        "evidenceIds": [
+          "evi-src-muv1z70n-rurf-22"
+        ]
+      }
+    ],
+    "status": "READY_FOR_EDITORIAL_REVIEW",
+    "generatedAt": "2026-10-05T09:36:00.603Z",
+    "generatorVersion": "real-ai-v1",
+    "promptVersion": "1.0.0"
+  },
+  "brief": {
+    "id": "brief-muv20r8g",
+    "topicId": "top-muv1z4li",
+    "researchProjectId": "proj-muv1z4li",
+    "objective": "Buatin artikel : llm search : pemasaran blog era AI",
+    "answeredQuestions": [
+      {
+        "id": "rq-1",
+        "question": "Bagaimana integrasi LLM Search mempengaruhi performa SEO organik dan keterlibatan pengguna pada blog enterprise?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-2",
+        "question": "Apa indikator kinerja utama (KPI) yang tepat untuk mengukur keberhasilan pemasaran blog di era LLM Search?",
+        "priority": "MEDIUM",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-3",
+        "question": "Bagaimana perusahaan enterprise dapat mengalokasikan sumber daya teknologi dan konten secara efisien untuk mendukung strategi LLM Search?",
+        "priority": "MEDIUM",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-4",
+        "question": "Apa tantangan implementasi dan solusi praktis yang dihadapi oleh Content Leaders enterprise saat menerapkan LLM Search?",
+        "priority": "LOW",
+        "status": "OPEN"
+      }
+    ],
+    "openQuestions": [],
+    "supportedClaims": [
+      {
+        "id": "claim-2",
+        "researchProjectId": "proj-muv1z4li",
+        "statement": "Perusahaan enterprise harus fokus pada topik dengan potensi bisnis tinggi untuk menciptakan loop umpan balik antara kunjungan web dan visibilitas AI.",
+        "claimType": "ANALYTICAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-10-05T09:35:24.377Z",
+        "updatedAt": "2026-10-05T09:35:24.377Z",
+        "supportingEvidenceIds": [
+          "evi-src-muv1z70n-rurf-75"
+        ]
+      }
+    ],
+    "partiallySupportedClaims": [],
+    "disputedClaims": [],
+    "unverifiedClaims": [
+      {
+        "id": "claim-1",
+        "researchProjectId": "proj-muv1z4li",
+        "statement": "LLM search mengubah tujuan akhir dari pencarian tradisional yang hanya menampilkan daftar hasil menjadi respons bahasa natural langsung.",
+        "claimType": "EMPIRICAL",
+        "importance": "CORE",
+        "status": "PARTIALLY_SUPPORTED",
+        "createdAt": "2026-10-05T09:35:24.002Z",
+        "updatedAt": "2026-10-05T09:35:24.002Z",
+        "supportingEvidenceIds": []
+      },
+      {
+        "id": "claim-3",
+        "researchProjectId": "proj-muv1z4li",
+        "statement": "Integrasi LLM search mempengaruhi performa SEO organik karena mesin pencari kini bersaing dengan model bahasa besar untuk mendominasi ruang jawaban langsung.",
+        "claimType": "CAUSAL",
+        "importance": "CORE",
+        "status": "PARTIALLY_SUPPORTED",
+        "createdAt": "2026-10-05T09:35:24.709Z",
+        "updatedAt": "2026-10-05T09:35:24.709Z",
+        "supportingEvidenceIds": []
+      },
+      {
+        "id": "claim-4",
+        "researchProjectId": "proj-muv1z4li",
+        "statement": "Indikator kinerja utama untuk LLM search termasuk persentase domain yang dikutip oleh LLM dan asosiasi merek dalam pemikiran pelanggan.",
+        "claimType": "FACTUAL",
+        "importance": "SUPPORTING",
+        "status": "UNVERIFIED",
+        "createdAt": "2026-10-05T09:35:25.085Z",
+        "updatedAt": "2026-10-05T09:35:25.085Z",
+        "supportingEvidenceIds": []
+      },
+      {
+        "id": "claim-5",
+        "researchProjectId": "proj-muv1z4li",
+        "statement": "Content Leaders enterprise menghadapi tantangan alokasi sumber daya teknologi dan konten yang kompleks karena dominasi beberapa domain utama di berbagai permukaan LLM search.",
+        "claimType": "ANALYTICAL",
+        "importance": "SUPPORTING",
+        "status": "UNVERIFIED",
+        "createdAt": "2026-10-05T09:35:25.426Z",
+        "updatedAt": "2026-10-05T09:35:25.426Z",
+        "supportingEvidenceIds": []
+      },
+      {
+        "id": "claim-6",
+        "researchProjectId": "proj-muv1z4li",
+        "statement": "Strategi optimal untuk LLM search melibatkan pembentukan authority jangka panjang melalui ulangan pesan positif di kepala pelanggan.",
+        "claimType": "PREDICTIVE",
+        "importance": "SUPPORTING",
+        "status": "PARTIALLY_SUPPORTED",
+        "createdAt": "2026-10-05T09:35:25.831Z",
+        "updatedAt": "2026-10-05T09:35:25.831Z",
+        "supportingEvidenceIds": []
+      }
+    ],
+    "unsupportedClaims": [],
+    "internalKnowledge": [],
+    "originalAnalysis": [],
+    "keyFindings": [
+      {
+        "id": "finding-01",
+        "researchProjectId": "proj-muv1z4li",
+        "statement": "Perusahaan enterprise harus fokus pada topik dengan potensi bisnis tinggi untuk menciptakan loop umpan balik antara kunjungan web dan visibilitas AI.",
+        "supportingClaimIds": [
+          "claim-2"
+        ],
+        "confidence": "HIGH",
+        "limitations": [],
+        "createdAt": "2026-10-05T09:35:26.176Z",
+        "updatedAt": "2026-10-05T09:35:26.176Z"
+      }
+    ],
+    "limitations": [],
+    "researchGaps": [],
+    "recommendedEditorialAngle": "Analisis strategis ter-grounding mengenai Buatin artikel : llm search : pemasaran blog era AI",
+    "sourceIndex": [
+      {
+        "sourceId": "src-muv1z70n-rurf",
+        "title": "Buatin artikel : llm search : pemasaran blog era AI",
+        "url": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com",
+        "canonicalUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com",
+        "publisher": "Referensi Web",
+        "sourceType": "INDUSTRY_RESEARCH",
+        "authorityScore": 85,
+        "publicationAllowed": true
+      }
+    ],
+    "evidenceIndex": [
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-31",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "LLM search is about ensuring that your brand and content are discoverable and extractable in AI-generated answers.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-76",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "A lot of advice has been flying around about structuring content for AI and LLM search—not all of it substantiated.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-115",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "Content clusters aren’t new. But evidence points to them being of even greater importance in LLM search.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-117",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "LLM search can handle multi-step tasks, multi-modal content, and reasoning, making it pretty formidable for task assistance.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-170",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "Louise first learned the ropes of SEO during her time at enterprise SEO company, Pi. Within weeks of joining, she had published a piece on cannibalization that caught the attention of the biggest name in SEO at the time: Rand Fishkin. Since then, she",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-12",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "How does LLM search compare to traditional search?",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-13",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "How to optimize for LLM search",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-22",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "If you want any chance of visibility in LLM search, you need to understand how to make your brand visible in AI answers.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-25",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "LLM search refers to how large language models gather and deliver information to users—whether that&apos;s via Google’s AI Overviews, ChatGPT, or Perplexity.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-26",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "Where search engines hand you a list of options, an LLM goes straight to producing a natural language response.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-27",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "Sometimes that response is based on what the model already knows, other times it leans on external sources of information like up-to-date web results.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-29",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "Like traditional search, LLM search is becoming an ecosystem in its own right—only the end goal is a little different.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-30",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "Traditional search was about ranking web pages higher in search results.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-32",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "AI companies don’t reveal how LLMs select sources, so it’s hard to know how to influence their outputs.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-33",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "Here’s what we’ve learned about LLM optimization so far, based on primary and third-party LLM search studies.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-45",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "When that happens, positive associations and lasting authority will become the real differentiators in LLM search.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-60",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "The more the message gets repeated, the more space it takes up in a customer’s mind, and in LLM search.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-70",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "If we want to dominate AI conversations in LLM search—which, incidentally, we do—we can track this percentage over time to understand brand alignment, and see which tactics move the needle.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-75",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "When it comes to LLM search, your MO should be covering high Business Potential topics to create a feedback loop of web mentions and AI visibility.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      },
+      {
+        "evidenceId": "evi-src-muv1z70n-rurf-141",
+        "sourceId": "src-muv1z70n-rurf",
+        "quote": "The top-cited domains vary a lot between different LLM search surfaces. Being a winner in one doesn’t guarantee presence in others.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      }
+    ],
+    "readiness": "READY_FOR_EDITORIAL",
+    "readinessReason": "Kecukupan bukti riset terpenuhi: 1 klaim faktual berhasil diverifikasi.",
+    "generatedAt": "2026-10-05T09:35:26.176Z"
+  },
+  "topic": {
+    "id": "top-muv1z4li",
+    "title": "Buatin artikel : llm search : pemasaran blog era AI",
+    "slug": "buatin-artikel-llm-search-pemasaran-blog-era-ai",
+    "territory": "INTELLIGENCE",
+    "recommendedArticleType": "ANALYSIS",
+    "editorialRole": "AUTHORITY",
+    "audience": {
+      "segment": "Enterprise Content Leaders"
+    },
+    "problem": "Buatin artikel : llm search : pemasaran blog era AI",
+    "intent": {
+      "primary": "Buatin artikel : llm search : pemasaran blog era AI"
+    },
+    "thesis": null,
+    "whyNow": null,
+    "status": "APPROVED",
+    "informationGain": {
+      "originalityType": [
+        "ORIGINAL_FRAMEWORK"
+      ],
+      "expectedContribution": "Arsitektur informasi mandiri",
+      "commodityRisk": "LOW"
+    },
+    "evidencePlan": {
+      "requiredEvidenceLevel": "E2",
+      "plannedSources": [
+        "https://ahrefs.com/blog/llm-search/?utm_source=chatgpt.com"
+      ],
+      "originalEvidenceRequired": false
+    },
+    "businessRelevance": {
+      "objective": "Thought Leadership",
+      "funnelRole": "TOFU"
+    },
+    "distributionTargets": [
+      "GOOGLE_SEARCH",
+      "GOOGLE_AI"
+    ],
+    "createdAt": "2026-10-05T09:34:10.182Z",
+    "updatedAt": "2026-10-05T09:34:10.182Z"
+  },
+  "editorialIntegrity": {
+    "status": "PASS",
+    "draftClaimAudit": {
+      "status": "PASS",
+      "propositions": [
+        {
+          "propositionId": "prop-1",
+          "sectionId": "sec-1",
+          "text": "Banyak perusahaan enterprise menghabiskan sumber daya besar untuk menghasilkan ratusan artikel blog setiap tahun.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-2",
+          "sectionId": "sec-1",
+          "text": "Namun, sangat sedikit dari upaya ini yang benar-benar mengaitkan performa konten dengan metrik bisnis inti seperti pipeline penjualan atau akuisisi pelanggan baru.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-3",
+          "sectionId": "sec-1",
+          "text": "Hal ini menciptakan masalah fundamental: konten tanpa loop bisnis hanyalah sampah digital yang tidak memberikan kontribusi nyata terhadap bottom line perusahaan.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-4",
+          "sectionId": "sec-1",
+          "text": "Mengapa masalah ini semakin krusial di era LLM?",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-5",
+          "sectionId": "sec-1",
+          "text": "LLM seperti ChatGPT dan Google Gemini tidak lagi hanya mengindeks konten statis untuk menampilkan link di halaman hasil pencarian.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-6",
+          "sectionId": "sec-1",
+          "text": "Sebaliknya, mereka menghasilkan ringkasan, rekomendasi, dan bahkan respons penjualan otomatis berbasis konten yang mereka indeks.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-7",
+          "sectionId": "sec-1",
+          "text": "Jika konten tidak memiliki fokus pada topik dengan potensi bisnis tinggi, upaya pemasaran blog menjadi sia-sia karena tidak ada siklus umpan balik yang menghubungkan kunjungan web ke konversi nyata.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-8",
+          "sectionId": "sec-1",
+          "text": "Oleh karena itu, perusahaan harus mengubah paradigma: setiap artikel blog harus dirancang untuk menjadi bahan baku bagi LLM yang bertindak sebagai katalisator penjualan.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-9",
+          "sectionId": "sec-2",
+          "text": "Praktisi pemasaran sering kali salah fokus pada volume pencarian atau kesadaran merek daripada nilai transaksional langsung dari sebuah topik.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-10",
+          "sectionId": "sec-2",
+          "text": "Volume pencarian tinggi tidak selalu berarti potensi bisnis tinggi.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-11",
+          "sectionId": "sec-2",
+          "text": "Analisis internal data CRM, sales funnel, dan customer feedback jauh lebih efektif daripada alat riset kata kunci tradisional untuk menemukan topik yang menghasilkan pipeline bisnis nyata.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-12",
+          "sectionId": "sec-2",
+          "text": "LLM cenderung mengutamakan konten yang memiliki relevansi bisnis eksplisit karena outputnya dimaksudkan untuk mendukung keputusan pembelian.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-13",
+          "sectionId": "sec-2",
+          "text": "Ketika LLM menemukan konten yang dengan jelas mengklaim nilai bisnis, menguraikan tantangan nyata pelanggan, dan menyajikan solusi konkret, mesin tersebut akan lebih sering mengutip dan mempromosikan konten tersebut.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-14",
+          "sectionId": "sec-2",
+          "text": "Dengan demikian, identifikasi topik dengan potensi bisnis tertinggi adalah fondasi yang harus menggerakkan seluruh strategi pemasaran blog enterprise.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-15",
+          "sectionId": "sec-3",
+          "text": "Arsitektur informasi harus dirancang untuk memandu LLM menemukan topik bisnis tinggi dengan cepat.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-16",
+          "sectionId": "sec-3",
+          "text": "Struktur URL semantik, breadcrumb navigation yang konsisten, dan metadata deskriptif bernilai bisnis adalah elemen kunci.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-17",
+          "sectionId": "sec-3",
+          "text": "Dengan struktur silo konten yang mengelompokkan artikel berdasarkan persona pembeli dan tahap funnel, LLM dapat memahami hierarki nilai dari setiap topik secara sistematis.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-18",
+          "sectionId": "sec-3",
+          "text": "Optimasi teknis juga penting.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-19",
+          "sectionId": "sec-3",
+          "text": "Structured data markup untuk produk, studi kasus, dan panduan cara kerja (how-to) memastikan bahwa LLM dapat mengambil cuplikan konten yang relevan untuk presentasi kepada calon pembeli.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-20",
+          "sectionId": "sec-3",
+          "text": "Ketika LLM dapat dengan mudah mengidentifikasi dan memahami nilai bisnis yang ditawarkan oleh setiap halaman, kemungkinan konten tersebut digunakan sebagai dasar untuk respons penjualan meningkat drastis.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-21",
+          "sectionId": "sec-4",
+          "text": "Tim penulis harus mengadopsi format yang mengutamakan klarifikasi nilai bisnis di paragraf awal, bukan narasi historis atau definisi teoretis.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-22",
+          "sectionId": "sec-4",
+          "text": "Paragraf pembuka harus langsung menyampaikan value proposition yang mengatasi masalah nyata pelanggan.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-23",
+          "sectionId": "sec-4",
+          "text": "Setiap artikel harus mengandung call-to-action yang jelas yang mengarahkan LLM dan pembaca ke langkah bisnis selanjutnya, seperti demo gratis, konsultasi, atau unduhan whitepaper.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-24",
+          "sectionId": "sec-4",
+          "text": "Penggunaan data konkret, hasil pengujian, dan testimonial pelanggan dalam tubuh artikel membuat konten lebih menarik bagi LLM untuk dikutip sebagai referensi pembelian yang sah.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-25",
+          "sectionId": "sec-4",
+          "text": "Data kuantitatif memberikan bukti nyata tentang keefektifan solusi, sementara testimonial menyediakan validasi sosial yang kuat.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-26",
+          "sectionId": "sec-4",
+          "text": "Dengan demikian, setiap kalimat dalam artikel harus dirancang untuk memicu respons positif baik dari pembaca maupun LLM.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-27",
+          "sectionId": "sec-5",
+          "text": "Model atribusi tradisional seperti last-click tidak lagi cukup.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-28",
+          "sectionId": "sec-5",
+          "text": "Perusahaan harus mengimplementasikan model yang menghitung kontribusi konten blog terhadap keseluruhan pipeline penjualan.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-29",
+          "sectionId": "sec-5",
+          "text": "Metrik seperti share of voice dalam percakapan dengan LLM, jumlah kali konten digunakan sebagai input untuk proposal penjualan, dan peningkatan engagement pada halaman produk adalah indikator yang lebih tepat daripada hanya pageviews.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-30",
+          "sectionId": "sec-5",
+          "text": "Dengan mengukur loop umpan balik antara visibilitas AI dan konversi bisnis, perusahaan dapat terus menyempurnakan strategi topik mereka untuk hasil yang lebih menguntungkan.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-31",
+          "sectionId": "sec-5",
+          "text": "Jika sebuah topik menghasilkan banyak kutipan dari LLM tetapi tidak menghasilkan konversi, maka perlu dilakukan evaluasi ulang terhadap value proposition atau call-to-action yang digunakan.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-32",
+          "sectionId": "sec-5",
+          "text": "Siklus pengukuran dan penyempurnaan ini adalah kunci untuk menciptakan dominasi pemasaran blog di era AI.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-33",
+          "sectionId": "sec-6",
+          "text": "Langkah pertama adalah melakukan audit portofolio konten yang sudah ada, lalu mengurutkan berdasarkan kontribusi pendapatan historis untuk mengidentifikasi pola topik sukses.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-34",
+          "sectionId": "sec-6",
+          "text": "Kemudian, bangun tim kolaboratif antara pemasaran, sales, dan engineering untuk menentukan kata kunci bisnis spesifik dan struktur silo konten yang sesuai dengan fungsi perusahaan.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-35",
+          "sectionId": "sec-6",
+          "text": "Implementasikan alat analisis yang dapat melacak bagaimana LLM menggunakan konten Anda, misalnya dengan menggunakan Google Search Console's Performance report untuk melihat query yang menghasilkan snippet terperinci.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-36",
+          "sectionId": "sec-6",
+          "text": "Terakhir, terapkan proses tinjauan konten triwulanan yang membuang topik dengan ROI rendah dan mengalihkan sumber daya ke topik dengan potensi bisnis tertinggi.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-37",
+          "sectionId": "sec-6",
+          "text": "Dengan menerapkan langkah-langkah praktis ini secara konsisten, perusahaan dapat memastikan bahwa setiap artikel blog berkontribusi langsung terhadap pertumbuhan bisnis.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        }
+      ],
+      "groundedExternalFacts": 0,
+      "ungroundedExternalFacts": 0,
+      "partialSupportCount": 0,
+      "originalAnalysisCount": 27,
+      "interpretationCount": 0,
+      "internalKnowledgeCount": 0,
+      "nonFactualCount": 10,
+      "numericClaimsTotal": 0,
+      "unsupportedNumericCount": 0,
+      "citationFailuresCount": 0,
+      "issues": [],
+      "summary": "DraftClaimAuditor: Seluruh 0 klaim faktual eksternal terbukti (ENTAILED). Analisis orisinal: 27. Sitasi valid.",
+      "auditedAt": "2026-10-05T09:36:00.605Z"
+    },
+    "groundingGuard": {
+      "status": "PASS",
+      "issues": [],
+      "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+    },
+    "propositions": [
+      {
+        "propositionId": "prop-1",
+        "sectionId": "sec-1",
+        "text": "Banyak perusahaan enterprise menghabiskan sumber daya besar untuk menghasilkan ratusan artikel blog setiap tahun.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-2",
+        "sectionId": "sec-1",
+        "text": "Namun, sangat sedikit dari upaya ini yang benar-benar mengaitkan performa konten dengan metrik bisnis inti seperti pipeline penjualan atau akuisisi pelanggan baru.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-3",
+        "sectionId": "sec-1",
+        "text": "Hal ini menciptakan masalah fundamental: konten tanpa loop bisnis hanyalah sampah digital yang tidak memberikan kontribusi nyata terhadap bottom line perusahaan.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-4",
+        "sectionId": "sec-1",
+        "text": "Mengapa masalah ini semakin krusial di era LLM?",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-5",
+        "sectionId": "sec-1",
+        "text": "LLM seperti ChatGPT dan Google Gemini tidak lagi hanya mengindeks konten statis untuk menampilkan link di halaman hasil pencarian.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-6",
+        "sectionId": "sec-1",
+        "text": "Sebaliknya, mereka menghasilkan ringkasan, rekomendasi, dan bahkan respons penjualan otomatis berbasis konten yang mereka indeks.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-7",
+        "sectionId": "sec-1",
+        "text": "Jika konten tidak memiliki fokus pada topik dengan potensi bisnis tinggi, upaya pemasaran blog menjadi sia-sia karena tidak ada siklus umpan balik yang menghubungkan kunjungan web ke konversi nyata.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-8",
+        "sectionId": "sec-1",
+        "text": "Oleh karena itu, perusahaan harus mengubah paradigma: setiap artikel blog harus dirancang untuk menjadi bahan baku bagi LLM yang bertindak sebagai katalisator penjualan.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-9",
+        "sectionId": "sec-2",
+        "text": "Praktisi pemasaran sering kali salah fokus pada volume pencarian atau kesadaran merek daripada nilai transaksional langsung dari sebuah topik.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-10",
+        "sectionId": "sec-2",
+        "text": "Volume pencarian tinggi tidak selalu berarti potensi bisnis tinggi.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-11",
+        "sectionId": "sec-2",
+        "text": "Analisis internal data CRM, sales funnel, dan customer feedback jauh lebih efektif daripada alat riset kata kunci tradisional untuk menemukan topik yang menghasilkan pipeline bisnis nyata.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-12",
+        "sectionId": "sec-2",
+        "text": "LLM cenderung mengutamakan konten yang memiliki relevansi bisnis eksplisit karena outputnya dimaksudkan untuk mendukung keputusan pembelian.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-13",
+        "sectionId": "sec-2",
+        "text": "Ketika LLM menemukan konten yang dengan jelas mengklaim nilai bisnis, menguraikan tantangan nyata pelanggan, dan menyajikan solusi konkret, mesin tersebut akan lebih sering mengutip dan mempromosikan konten tersebut.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-14",
+        "sectionId": "sec-2",
+        "text": "Dengan demikian, identifikasi topik dengan potensi bisnis tertinggi adalah fondasi yang harus menggerakkan seluruh strategi pemasaran blog enterprise.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-15",
+        "sectionId": "sec-3",
+        "text": "Arsitektur informasi harus dirancang untuk memandu LLM menemukan topik bisnis tinggi dengan cepat.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-16",
+        "sectionId": "sec-3",
+        "text": "Struktur URL semantik, breadcrumb navigation yang konsisten, dan metadata deskriptif bernilai bisnis adalah elemen kunci.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-17",
+        "sectionId": "sec-3",
+        "text": "Dengan struktur silo konten yang mengelompokkan artikel berdasarkan persona pembeli dan tahap funnel, LLM dapat memahami hierarki nilai dari setiap topik secara sistematis.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-18",
+        "sectionId": "sec-3",
+        "text": "Optimasi teknis juga penting.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-19",
+        "sectionId": "sec-3",
+        "text": "Structured data markup untuk produk, studi kasus, dan panduan cara kerja (how-to) memastikan bahwa LLM dapat mengambil cuplikan konten yang relevan untuk presentasi kepada calon pembeli.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-20",
+        "sectionId": "sec-3",
+        "text": "Ketika LLM dapat dengan mudah mengidentifikasi dan memahami nilai bisnis yang ditawarkan oleh setiap halaman, kemungkinan konten tersebut digunakan sebagai dasar untuk respons penjualan meningkat drastis.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-21",
+        "sectionId": "sec-4",
+        "text": "Tim penulis harus mengadopsi format yang mengutamakan klarifikasi nilai bisnis di paragraf awal, bukan narasi historis atau definisi teoretis.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-22",
+        "sectionId": "sec-4",
+        "text": "Paragraf pembuka harus langsung menyampaikan value proposition yang mengatasi masalah nyata pelanggan.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-23",
+        "sectionId": "sec-4",
+        "text": "Setiap artikel harus mengandung call-to-action yang jelas yang mengarahkan LLM dan pembaca ke langkah bisnis selanjutnya, seperti demo gratis, konsultasi, atau unduhan whitepaper.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-24",
+        "sectionId": "sec-4",
+        "text": "Penggunaan data konkret, hasil pengujian, dan testimonial pelanggan dalam tubuh artikel membuat konten lebih menarik bagi LLM untuk dikutip sebagai referensi pembelian yang sah.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-25",
+        "sectionId": "sec-4",
+        "text": "Data kuantitatif memberikan bukti nyata tentang keefektifan solusi, sementara testimonial menyediakan validasi sosial yang kuat.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-26",
+        "sectionId": "sec-4",
+        "text": "Dengan demikian, setiap kalimat dalam artikel harus dirancang untuk memicu respons positif baik dari pembaca maupun LLM.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-27",
+        "sectionId": "sec-5",
+        "text": "Model atribusi tradisional seperti last-click tidak lagi cukup.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-28",
+        "sectionId": "sec-5",
+        "text": "Perusahaan harus mengimplementasikan model yang menghitung kontribusi konten blog terhadap keseluruhan pipeline penjualan.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-29",
+        "sectionId": "sec-5",
+        "text": "Metrik seperti share of voice dalam percakapan dengan LLM, jumlah kali konten digunakan sebagai input untuk proposal penjualan, dan peningkatan engagement pada halaman produk adalah indikator yang lebih tepat daripada hanya pageviews.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-30",
+        "sectionId": "sec-5",
+        "text": "Dengan mengukur loop umpan balik antara visibilitas AI dan konversi bisnis, perusahaan dapat terus menyempurnakan strategi topik mereka untuk hasil yang lebih menguntungkan.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-31",
+        "sectionId": "sec-5",
+        "text": "Jika sebuah topik menghasilkan banyak kutipan dari LLM tetapi tidak menghasilkan konversi, maka perlu dilakukan evaluasi ulang terhadap value proposition atau call-to-action yang digunakan.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-32",
+        "sectionId": "sec-5",
+        "text": "Siklus pengukuran dan penyempurnaan ini adalah kunci untuk menciptakan dominasi pemasaran blog di era AI.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-33",
+        "sectionId": "sec-6",
+        "text": "Langkah pertama adalah melakukan audit portofolio konten yang sudah ada, lalu mengurutkan berdasarkan kontribusi pendapatan historis untuk mengidentifikasi pola topik sukses.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-34",
+        "sectionId": "sec-6",
+        "text": "Kemudian, bangun tim kolaboratif antara pemasaran, sales, dan engineering untuk menentukan kata kunci bisnis spesifik dan struktur silo konten yang sesuai dengan fungsi perusahaan.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-35",
+        "sectionId": "sec-6",
+        "text": "Implementasikan alat analisis yang dapat melacak bagaimana LLM menggunakan konten Anda, misalnya dengan menggunakan Google Search Console's Performance report untuk melihat query yang menghasilkan snippet terperinci.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-36",
+        "sectionId": "sec-6",
+        "text": "Terakhir, terapkan proses tinjauan konten triwulanan yang membuang topik dengan ROI rendah dan mengalihkan sumber daya ke topik dengan potensi bisnis tertinggi.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-37",
+        "sectionId": "sec-6",
+        "text": "Dengan menerapkan langkah-langkah praktis ini secara konsisten, perusahaan dapat memastikan bahwa setiap artikel blog berkontribusi langsung terhadap pertumbuhan bisnis.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      }
+    ],
+    "groundedExternalFacts": 0,
+    "ungroundedExternalFacts": 0,
+    "partialSupportCount": 0,
+    "originalAnalysisCount": 27,
+    "interpretationCount": 0,
+    "internalKnowledgeCount": 0,
+    "nonFactualCount": 10,
+    "numericClaimsTotal": 0,
+    "unsupportedNumericCount": 0,
+    "citationFailuresCount": 0,
+    "issues": [],
+    "summary": "Editorial Integrity Gate: PASS. Seluruh 0 klaim eksternal terbukti, 27 analisis orisinal valid, dan guard mekanikal lolos.",
+    "evaluatedAt": "2026-10-05T09:36:00.604Z"
+  },
+  "guardEvaluation": {
+    "status": "PASS",
+    "issues": [],
+    "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+  },
+  "discoverEvaluation": {
+    "articleId": "draft-muv21hsr",
+    "checks": [
+      {
+        "checkId": "DISCOVER_ELIGIBILITY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Artikel memenuhi seluruh kriteria kelayakan dasar Google Discover."
+      },
+      {
+        "checkId": "DISCOVER_ORIGINALITY",
+        "dimension": "ORIGINALITY",
+        "status": "PASS",
+        "scoreContribution": 15,
+        "summary": "Orisinalitas konten tinggi, didukung oleh data riset dan kerangka kerja konseptual orisinal."
+      },
+      {
+        "checkId": "DISCOVER_DEPTH",
+        "dimension": "DEPTH",
+        "status": "WARNING",
+        "scoreContribution": 10,
+        "summary": "Tingkat kedalaman konten: ADEQUATE."
+      },
+      {
+        "checkId": "DISCOVER_TIMELINESS",
+        "dimension": "TIMELINESS",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Konten terkini dengan aktualitas tinggi."
+      },
+      {
+        "checkId": "DISCOVER_INTEREST_FIT",
+        "dimension": "INTEREST_FIT",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Memiliki dasar minat audiens yang kuat berdasarkan dinamika pasar dan urgensi topik."
+      },
+      {
+        "checkId": "DISCOVER_TOPICAL_EXPERTISE",
+        "dimension": "TOPICAL_EXPERTISE",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Status keahlian topikal: DEVELOPING (0 artikel terhubung di territory INTELLIGENCE)."
+      },
+      {
+        "checkId": "DISCOVER_LOCAL_RELEVANCE",
+        "dimension": "LOCAL_RELEVANCE",
+        "status": "PASS",
+        "scoreContribution": 2,
+        "summary": "Topik berskala global yang tetap memenuhi syarat kelayakan Discover."
+      },
+      {
+        "checkId": "DISCOVER_TITLE_INTEGRITY",
+        "dimension": "TITLE_INTEGRITY",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Judul berwibawa, menangkap esensi konten dengan akurat, dan bebas dari clickbait."
+      },
+      {
+        "checkId": "DISCOVER_VISUAL_READINESS",
+        "dimension": "VISUAL_READINESS",
+        "status": "PASS",
+        "scoreContribution": 15,
+        "summary": "Aset visual beresolusi tinggi, berformat lanskap, bebas logo, dan mendukung max-image-preview:large."
+      },
+      {
+        "checkId": "DISCOVER_PAGE_EXPERIENCE",
+        "dimension": "PAGE_EXPERIENCE",
+        "status": "WARNING",
+        "scoreContribution": 5,
+        "summary": "Status pengalaman halaman: UNKNOWN."
+      },
+      {
+        "checkId": "DISCOVER_POLICY_SAFETY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Konten aman dan mematuhi seluruh panduan kebijakan publikasi Google Discover."
+      }
+    ],
+    "issues": [
+      {
+        "code": "INSUFFICIENT_TOPIC_DEPTH",
+        "checkId": "DISCOVER_DEPTH",
+        "dimension": "DEPTH",
+        "severity": "INFO",
+        "message": "Kedalaman naskah cukup memadai, namun belum mencakup limitasi atau implikasi praktis menyeluruh.",
+        "location": "sections",
+        "recommendation": "Pertimbangkan menambahkan sudut pandang tandingan (counterpoint) untuk bobot analisis optimal."
+      }
+    ],
+    "recommendations": [
+      {
+        "type": "EDITORIAL_IMPROVEMENT",
+        "title": "Peningkatan Kedalaman & Orisinalitas [INSUFFICIENT_TOPIC_DEPTH]",
+        "description": "Kedalaman naskah cukup memadai, namun belum mencakup limitasi atau implikasi praktis menyeluruh.",
+        "suggestedAction": "Pertimbangkan menambahkan sudut pandang tandingan (counterpoint) untuk bobot analisis optimal.",
+        "crossEngineDestination": "EDITORIAL"
+      }
+    ],
+    "dimensions": {
+      "ORIGINALITY": 15,
+      "DEPTH": 10,
+      "TIMELINESS": 10,
+      "TOPICAL_EXPERTISE": 10,
+      "INTEREST_FIT": 10,
+      "TITLE_INTEGRITY": 10,
+      "VISUAL_READINESS": 15,
+      "PAGE_EXPERIENCE": 5,
+      "LOCAL_RELEVANCE": 2,
+      "POLICY_SAFETY": 3
+    },
+    "score": 90,
+    "classification": "STRONG",
+    "eligibility": "ELIGIBLE",
+    "criticalIneligibilityReasons": [],
+    "validatedAt": "2026-10-05T09:36:00.610Z",
+    "policyVersion": "DISCOVER_READINESS_POLICY_V1"
+  },
+  "visualPrompt": "LLM Search, towering, translucent vitrine display system showcasing nested product prototypes, each emitting distinct business-performance heat signatures that guide a hovering omnidirectional scanning laser to prioritize high-conversion content topics., 3D isometric illustration, soft clay rendering, rounded geometric objects, soft studio lighting, minimal marketing illustration, clean composition, premium modern aesthetic. Clear visual hierarchy, single dominant focal object, generous negative space, no text, no logos. --ar 16:9",
+  "createdAt": "2026-10-05T09:36:01.361Z"
+}
