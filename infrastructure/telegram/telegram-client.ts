@@ -7,8 +7,22 @@
  */
 
 import { Buffer } from 'node:buffer';
+// @ts-ignore - tipe Node belum tersedia di lingkungan editor (tanpa @types/node)
+import dns from 'node:dns';
+// @ts-ignore - tipe Node belum tersedia di lingkungan editor (tanpa @types/node)
+import net from 'node:net';
 import type { TelegramConfig } from './telegram-config.ts';
 import { loadTelegramConfig } from './telegram-config.ts';
+
+// Render/cloud sering memiliki rute IPv6 ke api.telegram.org yang macet (ETIMEDOUT).
+// Paksa IPv4 lebih dulu dan beri waktu lebih lama untuk happy-eyeballs.
+try {
+  dns.setDefaultResultOrder('ipv4first');
+  net.setDefaultAutoSelectFamily?.(true);
+  net.setDefaultAutoSelectFamilyAttemptTimeout?.(1000);
+} catch {
+  // abaikan pada runtime lama
+}
 
 export interface TelegramUser {
   id: number;
