@@ -1,0 +1,1336 @@
+{
+  "draft": {
+    "id": "draft-mvje8340",
+    "topicId": "top-mvje6xbq",
+    "researchProjectId": "proj-mvje6xbr",
+    "title": "Memahami Perbedaan Mendasar: Mengapa Lead Tidak Sama Dengan Prospek",
+    "dek": "Lead yang masuk ke database perusahaan belum tentu siap untuk dibeli. Artikel ini menjelaskan mengapa filtering awal sangat penting untuk menghindari pemborosan sumber daya tim sales.",
+    "slug": "tidak-semua-leads-layak-dikejar",
+    "territory": "TACTICAL",
+    "articleType": "ANALYSIS",
+    "editorialRole": "AUTHORITY",
+    "thesis": "Lead yang masuk ke dalam database perusahaan belum tentu memiliki kesiapan atau kesesuaian untuk dibeli. Oleh karena itu, tidak semua lead layak dikejar oleh tim sales agar efisiensi operasional terjaga.",
+    "editorialAngle": "Artikel ini menggugat asumsi umum bahwa setiap lead yang masuk otomatis menjadi target penjualan. Grounded pada riset, tulisan ini menjelaskan perbedaan konseptual antara lead dan prospek serta memberikan landasan logis mengapa filtering awal sangat krusial untuk menghindari pemborosan sumber daya.",
+    "sections": [
+      {
+        "id": "sec-1",
+        "heading": "Lead vs Prospek: Memahami Batas Konseptual",
+        "content": "Lead adalah kontak yang telah menunjukkan minat awal tetapi belum dievaluasi untuk kesesuaian atau potensi pembelian. Mereka hanya merepresentasikan tahap awal dari sebuah hubungan bisnis dan belum diverifikasi sebagai calon pelanggan yang siap melakukan pembelian. Proses selanjutnya, yaitu prospecting, menyaring dan mengidentifikasi prospek baru di luar database lead yang ada. Prospek adalah lead yang telah melewati tiga tahap evaluasi dan siap untuk dibeli. Oleh karena itu, lead dan prospek adalah dua konsep yang sangat berbeda secara fundamental.",
+        "order": 1,
+        "purpose": "CONTEXT",
+        "claimUsageIds": [
+          "claim-1",
+          "claim-2",
+          "claim-4"
+        ]
+      },
+      {
+        "id": "sec-2",
+        "heading": "Filter Organizational Fit: Langkah Pertama yang Sering Terlewat",
+        "content": "Organizational fit harus disingkirkan sejak awal untuk menghemat sumber daya tim sales. Lead yang tidak segera divalidasi sering kali sedang mengevaluasi solusi pesaing dan tidak memiliki urgensi untuk bertransaksi. Dengan demikian, filtering awal sangat krusial untuk mengalokasikan sumber daya pada kontak yang benar-benar memiliki potensi nyata. Sales Hub menyediakan infrastruktur yang dapat mendukung proses pengelolaan dari lead hingga kontrak, termasuk di dalamnya automasi untuk filtering awal.",
+        "order": 2,
+        "purpose": "ARGUMENT",
+        "claimUsageIds": [
+          "claim-3",
+          "claim-5",
+          "claim-6"
+        ]
+      },
+      {
+        "id": "sec-3",
+        "heading": "Langkah Praktis: Menerapkan Framework Penilaian Lead",
+        "content": "Tim sales harus mengadopsi framework evaluasi yang mencakup kriteria finansial, budaya organisasi, dan kesiapan implementasi. Lead yang gagal memenuhi kriteria minimum harus dialokasikan ulang ke program pemasaran untuk nurturing jangka panjang. Pemetaan journey buyer journey membantu menentukan kapan follow-up aktif harus dimulai, sehingga memastikan bahwa upaya sales hanya dilakukan pada kontak yang memiliki probabilitas closing tinggi.",
+        "order": 3,
+        "purpose": "FRAMEWORK",
+        "claimUsageIds": [
+          "claim-1",
+          "claim-3"
+        ]
+      },
+      {
+        "id": "sec-4",
+        "heading": "Implikasi Strategis: Efisiensi Operasional Melalui Seleksi Ketat",
+        "content": "Penolakan lead yang tidak sesuai secara proaktif mengurangi waktu meeting yang sia-sia dan meningkatkan kecepatan closing tim sales. Fokus pada lead berkualitas tinggi memperkuat posisi merek sebagai penyedia solusi premium, bukan komoditas. Penggunaan Sales Hub untuk automasi filtering membebaskan tenaga sales untuk aktivitas bernilai tambah tinggi, seperti negosiasi dan building relationship.",
+        "order": 4,
+        "purpose": "IMPLICATION",
+        "claimUsageIds": [
+          "claim-1",
+          "claim-3",
+          "claim-6"
+        ]
+      },
+      {
+        "id": "sec-5",
+        "heading": "Kesimpulan: Keberanian Menolak Adalah Bagian dari Kesuksesan",
+        "content": "Tidak semua lead layak dikejar karena mereka belum diverifikasi sebagai prospek yang siap beli. Implementasi filter awal dan framework penilaian yang solid adalah investasi cerdas untuk meningkatkan performa sales. Keputusan untuk tidak menghubungi lead tertentu adalah bentuk disiplin yang membedakan tim sales sukses dari yang gagal.",
+        "order": 5,
+        "purpose": "CONCLUSION",
+        "claimUsageIds": [
+          "claim-1",
+          "claim-3"
+        ]
+      }
+    ],
+    "claimUsages": [
+      {
+        "id": "cu-1",
+        "claimId": "claim-1",
+        "sectionId": "sec-1",
+        "usageType": "DIRECT",
+        "statement": "Lead adalah kontak yang telah menunjukkan minat awal tetapi belum dievaluasi untuk kesesuaian atau potensi pembelian."
+      },
+      {
+        "id": "cu-2",
+        "claimId": "claim-2",
+        "sectionId": "sec-1",
+        "usageType": "PARAPHRASED",
+        "statement": "Prospecting menyaring dan mengidentifikasi prospek baru di luar database lead yang ada."
+      },
+      {
+        "id": "cu-3",
+        "claimId": "claim-3",
+        "sectionId": "sec-2",
+        "usageType": "DIRECT",
+        "statement": "Organizational fit harus disingkirkan sejak awal untuk menghemat sumber daya tim sales."
+      },
+      {
+        "id": "cu-4",
+        "claimId": "claim-4",
+        "sectionId": "sec-1",
+        "usageType": "DIRECT",
+        "statement": "Prospek adalah lead yang telah divalidasi sebagai calon pelanggan potensial melalui tiga tahap evaluasi."
+      },
+      {
+        "id": "cu-5",
+        "claimId": "claim-5",
+        "sectionId": "sec-2",
+        "usageType": "DIRECT",
+        "statement": "Lead yang tidak segera divalidasi sering kali sedang mengevaluasi solusi pesaing."
+      },
+      {
+        "id": "cu-6",
+        "claimId": "claim-6",
+        "sectionId": "sec-2",
+        "usageType": "PARAPHRASED",
+        "statement": "Sales Hub menyediakan infrastruktur untuk mengelola proses dari lead hingga kontrak."
+      },
+      {
+        "id": "cu-7",
+        "claimId": "claim-1",
+        "sectionId": "sec-3",
+        "usageType": "DIRECT",
+        "statement": "Lead adalah kontak yang telah menunjukkan minat awal tetapi belum dievaluasi untuk kesesuaian atau potensi pembelian."
+      },
+      {
+        "id": "cu-8",
+        "claimId": "claim-3",
+        "sectionId": "sec-3",
+        "usageType": "DIRECT",
+        "statement": "Organizational fit harus disingkirkan sejak awal untuk menghemat sumber daya tim sales."
+      },
+      {
+        "id": "cu-9",
+        "claimId": "claim-6",
+        "sectionId": "sec-4",
+        "usageType": "PARAPHRASED",
+        "statement": "Sales Hub menyediakan infrastruktur untuk mengelola proses dari lead hingga kontrak."
+      }
+    ],
+    "citationMap": [
+      {
+        "claimUsageId": "cu-1",
+        "claimId": "claim-1",
+        "sourceIds": [
+          "src-mvje6zgk-zw75"
+        ],
+        "evidenceIds": [
+          "evi-src-mvje6zgk-zw75-16",
+          "evi-src-mvje6zgk-zw75-22",
+          "evi-src-mvje6zgk-zw75-30",
+          "evi-src-mvje6zgk-zw75-49",
+          "evi-src-mvje6zgk-zw75-70"
+        ]
+      },
+      {
+        "claimUsageId": "cu-2",
+        "claimId": "claim-2",
+        "sourceIds": [
+          "src-mvje6zgk-zw75"
+        ],
+        "evidenceIds": [
+          "evi-src-mvje6zgk-zw75-18"
+        ]
+      },
+      {
+        "claimUsageId": "cu-3",
+        "claimId": "claim-3",
+        "sourceIds": [
+          "src-mvje6zgk-zw75"
+        ],
+        "evidenceIds": [
+          "evi-src-mvje6zgk-zw75-24",
+          "evi-src-mvje6zgk-zw75-49"
+        ]
+      },
+      {
+        "claimUsageId": "cu-4",
+        "claimId": "claim-4",
+        "sourceIds": [
+          "src-mvje6zgk-zw75"
+        ],
+        "evidenceIds": [
+          "evi-src-mvje6zgk-zw75-22",
+          "evi-src-mvje6zgk-zw75-54"
+        ]
+      },
+      {
+        "claimUsageId": "cu-5",
+        "claimId": "claim-5",
+        "sourceIds": [
+          "src-mvje6zgk-zw75"
+        ],
+        "evidenceIds": [
+          "evi-src-mvje6zgk-zw75-29"
+        ]
+      },
+      {
+        "claimUsageId": "cu-6",
+        "claimId": "claim-6",
+        "sourceIds": [
+          "src-mvje6zgk-zw75"
+        ],
+        "evidenceIds": [
+          "evi-src-mvje6zgk-zw75-54",
+          "evi-src-mvje6zgk-zw75-112"
+        ]
+      },
+      {
+        "claimUsageId": "cu-7",
+        "claimId": "claim-1",
+        "sourceIds": [
+          "src-mvje6zgk-zw75"
+        ],
+        "evidenceIds": [
+          "evi-src-mvje6zgk-zw75-16"
+        ]
+      },
+      {
+        "claimUsageId": "cu-8",
+        "claimId": "claim-3",
+        "sourceIds": [
+          "src-mvje6zgk-zw75"
+        ],
+        "evidenceIds": [
+          "evi-src-mvje6zgk-zw75-24"
+        ]
+      },
+      {
+        "claimUsageId": "cu-9",
+        "claimId": "claim-6",
+        "sourceIds": [
+          "src-mvje6zgk-zw75"
+        ],
+        "evidenceIds": [
+          "evi-src-mvje6zgk-zw75-54"
+        ]
+      }
+    ],
+    "status": "READY_FOR_EDITORIAL_REVIEW",
+    "generatedAt": "2026-10-22T10:23:31.776Z",
+    "generatorVersion": "real-ai-v1",
+    "promptVersion": "1.0.0"
+  },
+  "brief": {
+    "id": "brief-mvje7hfb",
+    "topicId": "top-mvje6xbq",
+    "researchProjectId": "proj-mvje6xbr",
+    "objective": "Tidak semua leads layak dikejar",
+    "answeredQuestions": [
+      {
+        "id": "rq-1",
+        "question": "Apa indikator kunci (demografi, perilaku, atau kebutuhan bisnis) yang secara konsisten membedakan leads yang closing dengan yang tidak?",
+        "priority": "HIGH",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-2",
+        "question": "Bagaimana tingkat kesesuaian (fit) antara persona buyer ideal dan profil lead yang berhasil ditutup selama periode Q3-Q4 2023?",
+        "priority": "MEDIUM",
+        "status": "OPEN"
+      },
+      {
+        "id": "rq-3",
+        "question": "Apakah ada pola penggunaan trial atau interaksi awal platform yang menjadi prediktor kuat keberhasilan negosiasi enterprise?",
+        "priority": "LOW",
+        "status": "OPEN"
+      }
+    ],
+    "openQuestions": [],
+    "supportedClaims": [
+      {
+        "id": "claim-1",
+        "researchProjectId": "proj-mvje6xbr",
+        "statement": "Lead adalah kontak yang telah menunjukkan minat awal tetapi belum dievaluasi untuk kesesuaian atau potensi pembelian.",
+        "claimType": "FACTUAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-10-22T10:23:02.405Z",
+        "updatedAt": "2026-10-22T10:23:02.405Z",
+        "supportingEvidenceIds": [
+          "evi-src-mvje6zgk-zw75-16",
+          "evi-src-mvje6zgk-zw75-22",
+          "evi-src-mvje6zgk-zw75-30",
+          "evi-src-mvje6zgk-zw75-49",
+          "evi-src-mvje6zgk-zw75-70"
+        ]
+      },
+      {
+        "id": "claim-2",
+        "researchProjectId": "proj-mvje6xbr",
+        "statement": "Prospecting menyaring dan mengidentifikasi prospek baru di luar database lead yang ada.",
+        "claimType": "FACTUAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-10-22T10:23:02.660Z",
+        "updatedAt": "2026-10-22T10:23:02.660Z",
+        "supportingEvidenceIds": [
+          "evi-src-mvje6zgk-zw75-18"
+        ]
+      },
+      {
+        "id": "claim-3",
+        "researchProjectId": "proj-mvje6xbr",
+        "statement": "Organizational fit harus disingkirkan sejak awal untuk menghemat sumber daya tim sales.",
+        "claimType": "EMPIRICAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-10-22T10:23:02.861Z",
+        "updatedAt": "2026-10-22T10:23:02.861Z",
+        "supportingEvidenceIds": [
+          "evi-src-mvje6zgk-zw75-24",
+          "evi-src-mvje6zgk-zw75-49"
+        ]
+      },
+      {
+        "id": "claim-4",
+        "researchProjectId": "proj-mvje6xbr",
+        "statement": "Prospek adalah lead yang telah divalidasi sebagai calon pelanggan potensial melalui tiga tahap evaluasi.",
+        "claimType": "FACTUAL",
+        "importance": "CORE",
+        "status": "SUPPORTED",
+        "createdAt": "2026-10-22T10:23:03.072Z",
+        "updatedAt": "2026-10-22T10:23:03.072Z",
+        "supportingEvidenceIds": [
+          "evi-src-mvje6zgk-zw75-22",
+          "evi-src-mvje6zgk-zw75-54"
+        ]
+      },
+      {
+        "id": "claim-5",
+        "researchProjectId": "proj-mvje6xbr",
+        "statement": "Lead yang tidak segera divalidasi sering kali sedang mengevaluasi solusi pesaing.",
+        "claimType": "EMPIRICAL",
+        "importance": "SUPPORTING",
+        "status": "SUPPORTED",
+        "createdAt": "2026-10-22T10:23:03.301Z",
+        "updatedAt": "2026-10-22T10:23:03.301Z",
+        "supportingEvidenceIds": [
+          "evi-src-mvje6zgk-zw75-29"
+        ]
+      },
+      {
+        "id": "claim-6",
+        "researchProjectId": "proj-mvje6xbr",
+        "statement": "Sales Hub menyediakan infrastruktur untuk mengelola proses dari lead hingga kontrak.",
+        "claimType": "FACTUAL",
+        "importance": "SUPPORTING",
+        "status": "SUPPORTED",
+        "createdAt": "2026-10-22T10:23:03.473Z",
+        "updatedAt": "2026-10-22T10:23:03.473Z",
+        "supportingEvidenceIds": [
+          "evi-src-mvje6zgk-zw75-54",
+          "evi-src-mvje6zgk-zw75-112"
+        ]
+      }
+    ],
+    "partiallySupportedClaims": [],
+    "disputedClaims": [],
+    "unverifiedClaims": [],
+    "unsupportedClaims": [],
+    "internalKnowledge": [],
+    "originalAnalysis": [],
+    "keyFindings": [
+      {
+        "id": "finding-01",
+        "researchProjectId": "proj-mvje6xbr",
+        "statement": "Lead adalah kontak yang telah menunjukkan minat awal tetapi belum dievaluasi untuk kesesuaian atau potensi pembelian.",
+        "supportingClaimIds": [
+          "claim-1",
+          "claim-2",
+          "claim-3",
+          "claim-4",
+          "claim-5",
+          "claim-6"
+        ],
+        "confidence": "HIGH",
+        "limitations": [],
+        "createdAt": "2026-10-22T10:23:03.671Z",
+        "updatedAt": "2026-10-22T10:23:03.671Z"
+      }
+    ],
+    "limitations": [],
+    "researchGaps": [],
+    "recommendedEditorialAngle": "Analisis strategis ter-grounding mengenai Tidak semua leads layak dikejar",
+    "sourceIndex": [
+      {
+        "sourceId": "src-mvje6zgk-zw75",
+        "title": "Tidak semua leads layak dikejar",
+        "url": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think",
+        "canonicalUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think",
+        "publisher": "Referensi Web",
+        "sourceType": "INDUSTRY_RESEARCH",
+        "authorityScore": 85,
+        "publicationAllowed": true
+      }
+    ],
+    "evidenceIndex": [
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-16",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "A lead is an individual or organization that has shown initial interest in a company’s product or service but has not yet been evaluated for fit or purchase potential. Leads represent the earliest stage of the sales funnel — present in the pipeline, ",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-17",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "Leads enter the funnel through two paths: inbound leads come to the business on their own terms through forms, content downloads, or event sign-ups, while cold outreach or prospecting lists identify outbound leads. Either way, fit and readiness to bu",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-52",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "“Lead with value, build relationships, and then assess BANT when the timing is right. That ultimately leads to more sales success,” Bobriakov says.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-4",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "This article covers how leads become sales opportunities: what each stage means, how to qualify contacts, and what makes an opportunity real. Sales teams can use this guide and tools like HubSpot Sales Hub to stop chasing the wrong contacts and start",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-18",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "Lead generation and prospecting are similar but distinct activities. Lead generation fills the funnel by attracting contacts at scale through marketing channels and campaigns. Prospecting filters it — but it also extends beyond existing leads. Sales ",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-24",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "It’s best to disqualify leads that fall outside the target profile early at the organizational level. Pursuing a poor organizational fit diverts resources from higher-potential contacts.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-92",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "The tool researches prospects and drafts personalized emails tailored to their specific situation and needs, reducing the manual work required to move a lead through the qualification funnel. Teams managing high volumes of leads can use prospecting a",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-110",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "Consistent pipeline performance begins with consistent definitions. Understanding the difference between a lead, a prospect, and a sales opportunity starts with clear qualification criteria at every stage of the funnel. When sales teams align on what",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-111",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "The progression from lead to prospect to sales opportunity is not a straight line. Contacts move forward as evidence accumulates, stall when stakeholder engagement lags, and occasionally require re-qualification as circumstances change. Sales teams t",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-113",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "Editor’s note: This post was originally published in January 2020 and has been updated for comprehensiveness.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-122",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "21 Signs Your Buyer Is a Poor Fit [Sales Process Checklist], According to HubSpot's Former Sales Director",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-13",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "How HubSpot Helps Teams Manage Leads, Prospects, and Opportunities",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-29",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "Sales teams should also keep in mind that leads who are not yet qualified are often evaluating competitor solutions simultaneously, making timely stakeholder engagement a competitive advantage.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-104",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "Pipeline data becomes unreliable, and forecasting suffers when reps rely on gut instinct to prioritize leads. High-performing teams establish shared qualification standards across sales and marketing.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-106",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "Disqualifying leads too early or applying late-stage criteria like budget confirmation to contacts still in early exploration eliminates opportunities that would have converted with more time and relationship investment.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-112",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "Sales Hub gives sales teams the infrastructure to manage that progression systematically, from the first inbound form fill to a signed contract.",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-22",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "A prospect is a lead that has been evaluated and confirmed as a potential fit for a company’s product or service. The qualification process moves a contact from lead to prospect by validating three things: organizational fit, a genuine opportunity or",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-23",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "Organization-level qualification determines whether the lead’s company is the right fit on paper. Sales teams assess factors such as company size, industry, geographic location, and, in some cases, the existing technology stack. This step relies on r",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-25",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "Opportunity-level qualification confirms whether the lead has a specific, identifiable need that the product or service can address. Even a lead that matches the ideal company profile does not become a prospect without a genuine problem to solve. Sal",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-34",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "Lead confirmed as a fit against the qualification criteria",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-30",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "A sales opportunity is a qualified prospect who has entered the sales cycle and is actively considering a purchase. At this stage, the prospect has demonstrated organizational fit, a confirmed need, and stakeholder engagement — the foundational crite",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-49",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "Not all sales opportunities carry the same weight or urgency, however. An early-stage opportunity might involve a prospect who has expressed interest and confirmed fit but has no formal budget or timeline yet. A late-stage opportunity involves a pros",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-70",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "An early-stage opportunity is a qualified prospect who has confirmed interest and organizational fit but has not yet established a formal budget or timeline. At this stage, the prospect is aware of a problem and open to solutions, but the purchasing ",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      },
+      {
+        "evidenceId": "evi-src-mvje6zgk-zw75-54",
+        "sourceId": "src-mvje6zgk-zw75",
+        "quote": "Sales opportunities progress through three distinct stages, each defined by the level of stakeholder engagement, budget clarity, and purchase intent. Identifying which stage an opportunity occupies helps sales teams prioritize their pipeline, allocat",
+        "level": "E2",
+        "verified": true,
+        "provenanceType": "EXTERNAL_EVIDENCE",
+        "sourceUrl": "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      }
+    ],
+    "readiness": "READY_FOR_EDITORIAL",
+    "readinessReason": "Kecukupan bukti riset terpenuhi: 6 klaim faktual berhasil diverifikasi.",
+    "generatedAt": "2026-10-22T10:23:03.671Z"
+  },
+  "topic": {
+    "id": "top-mvje6xbq",
+    "title": "Tidak semua leads layak dikejar",
+    "slug": "tidak-semua-leads-layak-dikejar",
+    "territory": "TACTICAL",
+    "recommendedArticleType": "ANALYSIS",
+    "editorialRole": "AUTHORITY",
+    "audience": {
+      "segment": "Enterprise Content Leaders"
+    },
+    "problem": "Tidak semua leads layak dikejar",
+    "intent": {
+      "primary": "Tidak semua leads layak dikejar"
+    },
+    "thesis": null,
+    "whyNow": null,
+    "status": "APPROVED",
+    "informationGain": {
+      "originalityType": [
+        "ORIGINAL_FRAMEWORK"
+      ],
+      "expectedContribution": "Arsitektur informasi mandiri",
+      "commodityRisk": "LOW"
+    },
+    "evidencePlan": {
+      "requiredEvidenceLevel": "E2",
+      "plannedSources": [
+        "https://blog.hubspot.com/sales/criteria-to-upgrade-a-lead-to-an-opportunity-and-theyre-not-what-you-think"
+      ],
+      "originalEvidenceRequired": false
+    },
+    "businessRelevance": {
+      "objective": "Thought Leadership",
+      "funnelRole": "TOFU"
+    },
+    "distributionTargets": [
+      "GOOGLE_SEARCH",
+      "GOOGLE_AI"
+    ],
+    "createdAt": "2026-10-22T10:22:37.622Z",
+    "updatedAt": "2026-10-22T10:22:37.622Z"
+  },
+  "editorialIntegrity": {
+    "status": "PASS",
+    "draftClaimAudit": {
+      "status": "PASS",
+      "propositions": [
+        {
+          "propositionId": "prop-1",
+          "sectionId": "sec-1",
+          "text": "Lead adalah kontak yang telah menunjukkan minat awal tetapi belum dievaluasi untuk kesesuaian atau potensi pembelian.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-2",
+          "sectionId": "sec-1",
+          "text": "Mereka hanya merepresentasikan tahap awal dari sebuah hubungan bisnis dan belum diverifikasi sebagai calon pelanggan yang siap melakukan pembelian.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-3",
+          "sectionId": "sec-1",
+          "text": "Proses selanjutnya, yaitu prospecting, menyaring dan mengidentifikasi prospek baru di luar database lead yang ada.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-4",
+          "sectionId": "sec-1",
+          "text": "Prospek adalah lead yang telah melewati tiga tahap evaluasi dan siap untuk dibeli.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-5",
+          "sectionId": "sec-1",
+          "text": "Oleh karena itu, lead dan prospek adalah dua konsep yang sangat berbeda secara fundamental.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-6",
+          "sectionId": "sec-2",
+          "text": "Organizational fit harus disingkirkan sejak awal untuk menghemat sumber daya tim sales.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-3"
+          ],
+          "evidenceIds": [
+            "evi-src-mvje6zgk-zw75-24",
+            "evi-src-mvje6zgk-zw75-49"
+          ],
+          "sourceIds": [
+            "src-mvje6zgk-zw75"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-3 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-7",
+          "sectionId": "sec-2",
+          "text": "Lead yang tidak segera divalidasi sering kali sedang mengevaluasi solusi pesaing dan tidak memiliki urgensi untuk bertransaksi.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-5"
+          ],
+          "evidenceIds": [
+            "evi-src-mvje6zgk-zw75-29"
+          ],
+          "sourceIds": [
+            "src-mvje6zgk-zw75"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-5 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-8",
+          "sectionId": "sec-2",
+          "text": "Dengan demikian, filtering awal sangat krusial untuk mengalokasikan sumber daya pada kontak yang benar-benar memiliki potensi nyata.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-9",
+          "sectionId": "sec-2",
+          "text": "Sales Hub menyediakan infrastruktur yang dapat mendukung proses pengelolaan dari lead hingga kontrak, termasuk di dalamnya automasi untuk filtering awal.",
+          "classification": "EXTERNAL_FACT",
+          "supportLevel": "ENTAILED",
+          "claimIds": [
+            "claim-6"
+          ],
+          "evidenceIds": [
+            "evi-src-mvje6zgk-zw75-54",
+            "evi-src-mvje6zgk-zw75-112"
+          ],
+          "sourceIds": [
+            "src-mvje6zgk-zw75"
+          ],
+          "reason": "Didukung penuh secara semantik oleh claim-6 dengan rantai bukti dan sumber valid.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-10",
+          "sectionId": "sec-3",
+          "text": "Tim sales harus mengadopsi framework evaluasi yang mencakup kriteria finansial, budaya organisasi, dan kesiapan implementasi.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-11",
+          "sectionId": "sec-3",
+          "text": "Lead yang gagal memenuhi kriteria minimum harus dialokasikan ulang ke program pemasaran untuk nurturing jangka panjang.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-12",
+          "sectionId": "sec-3",
+          "text": "Pemetaan journey buyer journey membantu menentukan kapan follow-up aktif harus dimulai, sehingga memastikan bahwa upaya sales hanya dilakukan pada kontak yang memiliki probabilitas closing tinggi.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-13",
+          "sectionId": "sec-4",
+          "text": "Penolakan lead yang tidak sesuai secara proaktif mengurangi waktu meeting yang sia-sia dan meningkatkan kecepatan closing tim sales.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-14",
+          "sectionId": "sec-4",
+          "text": "Fokus pada lead berkualitas tinggi memperkuat posisi merek sebagai penyedia solusi premium, bukan komoditas.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-15",
+          "sectionId": "sec-4",
+          "text": "Penggunaan Sales Hub untuk automasi filtering membebaskan tenaga sales untuk aktivitas bernilai tambah tinggi, seperti negosiasi dan building relationship.",
+          "classification": "ORIGINAL_ANALYSIS",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-16",
+          "sectionId": "sec-5",
+          "text": "Tidak semua lead layak dikejar karena mereka belum diverifikasi sebagai prospek yang siap beli.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-17",
+          "sectionId": "sec-5",
+          "text": "Implementasi filter awal dan framework penilaian yang solid adalah investasi cerdas untuk meningkatkan performa sales.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        },
+        {
+          "propositionId": "prop-18",
+          "sectionId": "sec-5",
+          "text": "Keputusan untuk tidak menghubungi lead tertentu adalah bentuk disiplin yang membedakan tim sales sukses dari yang gagal.",
+          "classification": "NON_FACTUAL_EDITORIAL",
+          "supportLevel": "NOT_APPLICABLE",
+          "claimIds": [],
+          "evidenceIds": [],
+          "sourceIds": [],
+          "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+          "numericClaims": [],
+          "hasDirectQuote": false
+        }
+      ],
+      "groundedExternalFacts": 3,
+      "ungroundedExternalFacts": 0,
+      "partialSupportCount": 0,
+      "originalAnalysisCount": 6,
+      "interpretationCount": 0,
+      "internalKnowledgeCount": 0,
+      "nonFactualCount": 9,
+      "numericClaimsTotal": 0,
+      "unsupportedNumericCount": 0,
+      "citationFailuresCount": 0,
+      "issues": [],
+      "summary": "DraftClaimAuditor: Seluruh 3 klaim faktual eksternal terbukti (ENTAILED). Analisis orisinal: 6. Sitasi valid.",
+      "auditedAt": "2026-10-22T10:23:31.779Z"
+    },
+    "groundingGuard": {
+      "status": "PASS",
+      "issues": [],
+      "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+    },
+    "propositions": [
+      {
+        "propositionId": "prop-1",
+        "sectionId": "sec-1",
+        "text": "Lead adalah kontak yang telah menunjukkan minat awal tetapi belum dievaluasi untuk kesesuaian atau potensi pembelian.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-2",
+        "sectionId": "sec-1",
+        "text": "Mereka hanya merepresentasikan tahap awal dari sebuah hubungan bisnis dan belum diverifikasi sebagai calon pelanggan yang siap melakukan pembelian.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-3",
+        "sectionId": "sec-1",
+        "text": "Proses selanjutnya, yaitu prospecting, menyaring dan mengidentifikasi prospek baru di luar database lead yang ada.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-4",
+        "sectionId": "sec-1",
+        "text": "Prospek adalah lead yang telah melewati tiga tahap evaluasi dan siap untuk dibeli.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-5",
+        "sectionId": "sec-1",
+        "text": "Oleh karena itu, lead dan prospek adalah dua konsep yang sangat berbeda secara fundamental.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-6",
+        "sectionId": "sec-2",
+        "text": "Organizational fit harus disingkirkan sejak awal untuk menghemat sumber daya tim sales.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-3"
+        ],
+        "evidenceIds": [
+          "evi-src-mvje6zgk-zw75-24",
+          "evi-src-mvje6zgk-zw75-49"
+        ],
+        "sourceIds": [
+          "src-mvje6zgk-zw75"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-3 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-7",
+        "sectionId": "sec-2",
+        "text": "Lead yang tidak segera divalidasi sering kali sedang mengevaluasi solusi pesaing dan tidak memiliki urgensi untuk bertransaksi.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-5"
+        ],
+        "evidenceIds": [
+          "evi-src-mvje6zgk-zw75-29"
+        ],
+        "sourceIds": [
+          "src-mvje6zgk-zw75"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-5 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-8",
+        "sectionId": "sec-2",
+        "text": "Dengan demikian, filtering awal sangat krusial untuk mengalokasikan sumber daya pada kontak yang benar-benar memiliki potensi nyata.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-9",
+        "sectionId": "sec-2",
+        "text": "Sales Hub menyediakan infrastruktur yang dapat mendukung proses pengelolaan dari lead hingga kontrak, termasuk di dalamnya automasi untuk filtering awal.",
+        "classification": "EXTERNAL_FACT",
+        "supportLevel": "ENTAILED",
+        "claimIds": [
+          "claim-6"
+        ],
+        "evidenceIds": [
+          "evi-src-mvje6zgk-zw75-54",
+          "evi-src-mvje6zgk-zw75-112"
+        ],
+        "sourceIds": [
+          "src-mvje6zgk-zw75"
+        ],
+        "reason": "Didukung penuh secara semantik oleh claim-6 dengan rantai bukti dan sumber valid.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-10",
+        "sectionId": "sec-3",
+        "text": "Tim sales harus mengadopsi framework evaluasi yang mencakup kriteria finansial, budaya organisasi, dan kesiapan implementasi.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-11",
+        "sectionId": "sec-3",
+        "text": "Lead yang gagal memenuhi kriteria minimum harus dialokasikan ulang ke program pemasaran untuk nurturing jangka panjang.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-12",
+        "sectionId": "sec-3",
+        "text": "Pemetaan journey buyer journey membantu menentukan kapan follow-up aktif harus dimulai, sehingga memastikan bahwa upaya sales hanya dilakukan pada kontak yang memiliki probabilitas closing tinggi.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-13",
+        "sectionId": "sec-4",
+        "text": "Penolakan lead yang tidak sesuai secara proaktif mengurangi waktu meeting yang sia-sia dan meningkatkan kecepatan closing tim sales.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-14",
+        "sectionId": "sec-4",
+        "text": "Fokus pada lead berkualitas tinggi memperkuat posisi merek sebagai penyedia solusi premium, bukan komoditas.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-15",
+        "sectionId": "sec-4",
+        "text": "Penggunaan Sales Hub untuk automasi filtering membebaskan tenaga sales untuk aktivitas bernilai tambah tinggi, seperti negosiasi dan building relationship.",
+        "classification": "ORIGINAL_ANALYSIS",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Analisis orisinal / kerangka kerja interpretasi NexaMOS.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-16",
+        "sectionId": "sec-5",
+        "text": "Tidak semua lead layak dikejar karena mereka belum diverifikasi sebagai prospek yang siap beli.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-17",
+        "sectionId": "sec-5",
+        "text": "Implementasi filter awal dan framework penilaian yang solid adalah investasi cerdas untuk meningkatkan performa sales.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      },
+      {
+        "propositionId": "prop-18",
+        "sectionId": "sec-5",
+        "text": "Keputusan untuk tidak menghubungi lead tertentu adalah bentuk disiplin yang membedakan tim sales sukses dari yang gagal.",
+        "classification": "NON_FACTUAL_EDITORIAL",
+        "supportLevel": "NOT_APPLICABLE",
+        "claimIds": [],
+        "evidenceIds": [],
+        "sourceIds": [],
+        "reason": "Bahasa editorial non-faktual / transisi / pertanyaan retoris.",
+        "numericClaims": [],
+        "hasDirectQuote": false
+      }
+    ],
+    "groundedExternalFacts": 3,
+    "ungroundedExternalFacts": 0,
+    "partialSupportCount": 0,
+    "originalAnalysisCount": 6,
+    "interpretationCount": 0,
+    "internalKnowledgeCount": 0,
+    "nonFactualCount": 9,
+    "numericClaimsTotal": 0,
+    "unsupportedNumericCount": 0,
+    "citationFailuresCount": 0,
+    "issues": [],
+    "summary": "Editorial Integrity Gate: PASS. Seluruh 3 klaim eksternal terbukti, 6 analisis orisinal valid, dan guard mekanikal lolos.",
+    "evaluatedAt": "2026-10-22T10:23:31.776Z"
+  },
+  "guardEvaluation": {
+    "status": "PASS",
+    "issues": [],
+    "summary": "Grounding Guard: Seluruh klaim, sitasi, angka, dan kutipan tervalidasi terhadap ResearchBrief."
+  },
+  "discoverEvaluation": {
+    "articleId": "draft-mvje8340",
+    "checks": [
+      {
+        "checkId": "DISCOVER_ELIGIBILITY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Artikel memenuhi seluruh kriteria kelayakan dasar Google Discover."
+      },
+      {
+        "checkId": "DISCOVER_ORIGINALITY",
+        "dimension": "ORIGINALITY",
+        "status": "PASS",
+        "scoreContribution": 15,
+        "summary": "Orisinalitas konten tinggi, didukung oleh data riset dan kerangka kerja konseptual orisinal."
+      },
+      {
+        "checkId": "DISCOVER_DEPTH",
+        "dimension": "DEPTH",
+        "status": "WARNING",
+        "scoreContribution": 10,
+        "summary": "Tingkat kedalaman konten: ADEQUATE."
+      },
+      {
+        "checkId": "DISCOVER_TIMELINESS",
+        "dimension": "TIMELINESS",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Konten terkini dengan aktualitas tinggi."
+      },
+      {
+        "checkId": "DISCOVER_INTEREST_FIT",
+        "dimension": "INTEREST_FIT",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Memiliki dasar minat audiens yang kuat berdasarkan dinamika pasar dan urgensi topik."
+      },
+      {
+        "checkId": "DISCOVER_TOPICAL_EXPERTISE",
+        "dimension": "TOPICAL_EXPERTISE",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Status keahlian topikal: DEVELOPING (0 artikel terhubung di territory TACTICAL)."
+      },
+      {
+        "checkId": "DISCOVER_LOCAL_RELEVANCE",
+        "dimension": "LOCAL_RELEVANCE",
+        "status": "PASS",
+        "scoreContribution": 2,
+        "summary": "Topik berskala global yang tetap memenuhi syarat kelayakan Discover."
+      },
+      {
+        "checkId": "DISCOVER_TITLE_INTEGRITY",
+        "dimension": "TITLE_INTEGRITY",
+        "status": "PASS",
+        "scoreContribution": 10,
+        "summary": "Judul berwibawa, menangkap esensi konten dengan akurat, dan bebas dari clickbait."
+      },
+      {
+        "checkId": "DISCOVER_VISUAL_READINESS",
+        "dimension": "VISUAL_READINESS",
+        "status": "PASS",
+        "scoreContribution": 15,
+        "summary": "Aset visual beresolusi tinggi, berformat lanskap, bebas logo, dan mendukung max-image-preview:large."
+      },
+      {
+        "checkId": "DISCOVER_PAGE_EXPERIENCE",
+        "dimension": "PAGE_EXPERIENCE",
+        "status": "WARNING",
+        "scoreContribution": 5,
+        "summary": "Status pengalaman halaman: UNKNOWN."
+      },
+      {
+        "checkId": "DISCOVER_POLICY_SAFETY",
+        "dimension": "POLICY_SAFETY",
+        "status": "PASS",
+        "scoreContribution": 3,
+        "summary": "Konten aman dan mematuhi seluruh panduan kebijakan publikasi Google Discover."
+      }
+    ],
+    "issues": [
+      {
+        "code": "INSUFFICIENT_TOPIC_DEPTH",
+        "checkId": "DISCOVER_DEPTH",
+        "dimension": "DEPTH",
+        "severity": "INFO",
+        "message": "Kedalaman naskah cukup memadai, namun belum mencakup limitasi atau implikasi praktis menyeluruh.",
+        "location": "sections",
+        "recommendation": "Pertimbangkan menambahkan sudut pandang tandingan (counterpoint) untuk bobot analisis optimal."
+      }
+    ],
+    "recommendations": [
+      {
+        "type": "EDITORIAL_IMPROVEMENT",
+        "title": "Peningkatan Kedalaman & Orisinalitas [INSUFFICIENT_TOPIC_DEPTH]",
+        "description": "Kedalaman naskah cukup memadai, namun belum mencakup limitasi atau implikasi praktis menyeluruh.",
+        "suggestedAction": "Pertimbangkan menambahkan sudut pandang tandingan (counterpoint) untuk bobot analisis optimal.",
+        "crossEngineDestination": "EDITORIAL"
+      }
+    ],
+    "dimensions": {
+      "ORIGINALITY": 15,
+      "DEPTH": 10,
+      "TIMELINESS": 10,
+      "TOPICAL_EXPERTISE": 10,
+      "INTEREST_FIT": 10,
+      "TITLE_INTEGRITY": 10,
+      "VISUAL_READINESS": 15,
+      "PAGE_EXPERIENCE": 5,
+      "LOCAL_RELEVANCE": 2,
+      "POLICY_SAFETY": 3
+    },
+    "score": 90,
+    "classification": "STRONG",
+    "eligibility": "ELIGIBLE",
+    "criticalIneligibilityReasons": [],
+    "validatedAt": "2026-10-22T10:23:31.782Z",
+    "policyVersion": "DISCOVER_READINESS_POLICY_V1"
+  },
+  "visualPrompt": "Understanding the Core Difference, stacked calibration cylinders sliding through a tapered inspection funnel, 3D isometric illustration, soft clay rendering, rounded geometric objects, soft studio lighting, minimal marketing illustration, clean composition, premium modern aesthetic. Clear visual hierarchy, single dominant focal object, generous negative space, no text, no logos. --ar 16:9",
+  "createdAt": "2026-10-22T10:23:32.205Z"
+}
